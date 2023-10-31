@@ -1,0 +1,106 @@
+.. index:: 
+  !PixelFormat Enumeration
+
+.. _pixel_format_enum:
+
+===============================================================================
+PixelFormat Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates supported pixel formats.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class PixelFormat
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum PixelFormat
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum PixelFormat
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum PixelFormat
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum PixelFormat
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerPixelFormat
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``undefined``
+    - 0
+    - Undefined.
+  * - ``grayscale8Bits``
+    - 10
+    - 8-bits grayscale.
+  * - ``grayscale16Bits``
+    - 20
+    - 16-bits grayscale.
+  * - ``grayscaleFloat``
+    - 25
+    - Floating point grayscale.
+  * - ``bgr24Bits``
+    - 30
+    - 24 bits BGR.
+  * - ``rgb24Bits``
+    - 31
+    - 24 bits RGB.
+  * - ``bgra``
+    - 32
+    - 32 bits BGRA.
+  * - ``nv12``
+    - 40
+    - NV12 (YUV semi-planar format).
+  * - ``i420``
+    - 41
+    - I420 (YUV packed format).
+  * - ``yuy2``
+    - 42
+    - YUY2 (YUV packed format).
+  * - ``yv12``
+    - 43
+    - YV12 (YUV packed format).

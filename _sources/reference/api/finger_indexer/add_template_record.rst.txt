@@ -1,0 +1,184 @@
+.. index:: 
+  !FingerIndexer.addTemplateRecord Method
+  
+.. _finger_indexer_add_template_record_class_method:
+
+===============================================================================
+FingerIndexer.addTemplateRecord Method
+===============================================================================
+
+Module: :ref:`FingerIndexer<finger_indexer_class>`
+
+Definition
+----------
+
+Adds a template record to the finger indexer.
+
+.. note:: This function is thread safe with other AddTemplateRecord() calls but not with SearchTemplateRecord() calls.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        add_template_record(self, finger_template_record: FingerTemplateRecord, id: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``finger_template_record`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Finger template record to add to the finger indexer.
+
+          ``id`` str
+          :guilabel:`in` ID of the added finger template record.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void addTemplateRecord(FingerTemplateRecord fingerTemplateRecord, String? id)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerTemplateRecord`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Finger template record to add to the finger indexer.
+
+          ``id`` String
+          :guilabel:`in` ID of the added finger template record.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void AddTemplateRecord(FingerTemplateRecord fingerTemplateRecord, string id)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerTemplateRecord`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Finger template record to add to the finger indexer.
+
+          ``id`` string
+          :guilabel:`in` ID of the added finger template record.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void addTemplateRecord(FingerTemplateRecord fingerTemplateRecord, String id) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerTemplateRecord`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Finger template record to add to the finger indexer.
+
+          ``id`` String
+          :guilabel:`in` ID of the added finger template record.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func addTemplateRecord(fingerTemplateRecord: FingerTemplateRecord, id: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerTemplateRecord`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Finger template record to add to the finger indexer.
+
+          ``id`` String
+          :guilabel:`in` ID of the added finger template record.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerIndexer_AddTemplateRecord (
+            ID3_FINGER_INDEXER hFingerIndexer, 
+            ID3_FINGER_TEMPLATE_RECORD hFingerTemplateRecord, 
+            const char * id)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerIndexer`` :ref:`ID3_FINGER_INDEXER<finger_indexer_class>`
+          :guilabel:`in` Handle to the FingerIndexer object.
+
+          ``hFingerTemplateRecord`` :ref:`ID3_FINGER_TEMPLATE_RECORD<finger_template_record_class>`
+          :guilabel:`in` Finger template record to add to the finger indexer.
+
+          ``id`` const char *
+          :guilabel:`in` ID of the added finger template record.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

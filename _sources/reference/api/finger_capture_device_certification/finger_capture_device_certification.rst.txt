@@ -1,0 +1,88 @@
+.. index:: 
+  !FingerCaptureDeviceCertification Enumeration
+
+.. _finger_capture_device_certification_enum:
+
+===============================================================================
+FingerCaptureDeviceCertification Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Certifications that can claim fingerprint capture devices.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerCaptureDeviceCertification
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerCaptureDeviceCertification
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerCaptureDeviceCertification
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerCaptureDeviceCertification
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerCaptureDeviceCertification
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerCaptureDeviceCertification
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``none``
+    - 0
+    - No certification.
+  * - ``afis``
+    - 1
+    - Image quality specification for AFIS systems, as defined in ISO/IEC 19794:2011.
+  * - ``piv``
+    - 2
+    - Image quality specification for personal verification, as defined in ISO/IEC 19794:2011.
+  * - ``opticalScanner``
+    - 3
+    - Requirements and test procedures for optical fingerprint scanners, as defined in ISO/IEC 19794:2011.
+  * - ``iqs``
+    - 8
+    - The capture equipment is certified to be compliant with the US Federal Bureau of Invertigation's Image Quality Specifications, Appendix F.

@@ -1,0 +1,168 @@
+.. index:: 
+  !FingerLibrary.checkLicenseBuffer Method
+  
+.. _finger_library_check_license_buffer_class_method:
+
+===============================================================================
+FingerLibrary.checkLicenseBuffer Method
+===============================================================================
+
+Module: :ref:`FingerLibrary<finger_library_class>`
+
+Definition
+----------
+
+Checks the license from a buffer.
+
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLibrary_CheckLicenseBuffer (
+            unsigned char * licenseBuffer, 
+            int licenseBufferSize, 
+            void * optionalParameter)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseBuffer`` unsigned char *
+          :guilabel:`in` License buffer.
+
+          ``licenseBufferSize`` int
+          :guilabel:`in` Size of the 'licenseBuffer' buffer.
+
+          ``optionalParameter`` void *
+          :guilabel:`in` Internal usage only. Must be set to nullptr.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static void checkLicenseBuffer(Uint8List? licenseBuffer)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseBuffer`` Uint8List
+          :guilabel:`in` License buffer.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static void CheckLicenseBuffer(byte[] licenseBuffer)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseBuffer`` byte[]
+          :guilabel:`in` License buffer.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static void checkLicenseBuffer(byte[] licenseBuffer) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseBuffer`` byte[]
+          :guilabel:`in` License buffer.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        check_license_buffer(license_buffer: bytearray) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``license_buffer`` bytearray
+          :guilabel:`in` License buffer.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func checkLicenseBuffer(licenseBuffer: [UInt8]) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseBuffer`` [UInt8]
+          :guilabel:`in` License buffer.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

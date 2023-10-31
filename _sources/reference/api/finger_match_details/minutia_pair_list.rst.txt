@@ -1,0 +1,118 @@
+.. index:: 
+  !FingerMatchDetails.minutiaPairList Property
+
+.. _finger_match_details_minutia_pair_list_class_member:
+
+===============================================================================
+FingerMatchDetails.minutiaPairList Property
+===============================================================================
+
+Module: :ref:`FingerMatchDetails<finger_match_details_class>`
+
+Type: :ref:`FingerMinutiaPairList<finger_minutia_pair_list_class>`
+
+Definition
+----------
+
+Minutia pair list associated to this comparison.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      minutia_pair_list: FingerMinutiaPairList
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerMinutiaPairList get minutiaPairList => getMinutiaPairList();
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public FingerMinutiaPairList minutiaPairList
+      {
+          get => GetminutiaPairList();
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public FingerMinutiaPairList getMinutiaPairList() throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var minutiaPairList: FingerMinutiaPairList
+          get {
+              return try! getMinutiaPairList()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerMatchDetails_GetMinutiaPairList (ID3_FINGER_MATCH_DETAILS hFingerMatchDetails, ID3_FINGER_MINUTIA_PAIR_LIST hMinutiaPairList)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

@@ -1,0 +1,202 @@
+.. index:: 
+  !FingerPad.computeLivenessScore Method
+  
+.. _finger_pad_compute_liveness_score_class_method:
+
+===============================================================================
+FingerPad.computeLivenessScore Method
+===============================================================================
+
+Module: :ref:`FingerPad<finger_pad_class>`
+
+Definition
+----------
+
+Computes a liveness score for a finger image using the loaded model.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        compute_liveness_score(self, image: FingerImage) -> int
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Liveness score. In the range [0:100], 100 meaning that the finger image is very much likely to be live.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        int computeLivenessScore(FingerImage image)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Liveness score. In the range [0:100], 100 meaning that the finger image is very much likely to be live.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public int ComputeLivenessScore(FingerImage image)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Liveness score. In the range [0:100], 100 meaning that the finger image is very much likely to be live.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public int computeLivenessScore(FingerImage image) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Liveness score. In the range [0:100], 100 meaning that the finger image is very much likely to be live.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func computeLivenessScore(image: FingerImage) throws -> Int32
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``Int``
+          Liveness score. In the range [0:100], 100 meaning that the finger image is very much likely to be live.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerPad_ComputeLivenessScore (
+            ID3_FINGER_PAD hFingerPad, 
+            ID3_FINGER_IMAGE hImage, 
+            int * score)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerPad`` :ref:`ID3_FINGER_PAD<finger_pad_class>`
+          :guilabel:`in` Handle to the FingerPad object.
+
+          ``hImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+          ``score`` int *
+          :guilabel:`out` Liveness score. In the range [0:100], 100 meaning that the finger image is very much likely to be live.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

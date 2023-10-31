@@ -1,0 +1,155 @@
+.. index:: 
+  !FingerLicense.getLicenseType Method
+  
+.. _finger_license_get_license_type_class_method:
+
+===============================================================================
+FingerLicense.getLicenseType Method
+===============================================================================
+
+Module: :ref:`FingerLicense<finger_license_class>`
+
+Definition
+----------
+
+Retrieves the license type.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        get_license_type() -> LicenseType
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`LicenseType<license_type_enum>`
+          The license type.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static LicenseType getLicenseType()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`LicenseType<license_type_enum>`
+          The license type.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static LicenseType GetLicenseType()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`LicenseType<license_type_enum>`
+          The license type.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static LicenseType getLicenseType() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`LicenseType<license_type_enum>`
+          The license type.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func getLicenseType() throws -> LicenseType
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`LicenseType<license_type_enum>`
+          The license type.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_GetLicenseType (
+            id3FingerLicenseType * eFingerLicenseType)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``eFingerLicenseType`` :ref:`id3FingerLicenseType *<license_type_enum>`
+          :guilabel:`out` The license type.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

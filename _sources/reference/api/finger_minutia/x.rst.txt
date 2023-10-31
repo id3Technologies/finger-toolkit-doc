@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerMinutia.x Property
+
+.. _finger_minutia_x_class_member:
+
+===============================================================================
+FingerMinutia.x Property
+===============================================================================
+
+Module: :ref:`FingerMinutia<finger_minutia_class>`
+
+Type: int
+
+Definition
+----------
+
+X-coordinate of the miutia.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      x: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get x => getX();
+      set x(int value) => setX(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int x
+      {
+          get => Getx();
+          set => Setx(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getX() throws FingerException
+      public void setX(int x) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var x: Int
+          get {
+              return Int(try! getX())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerMinutia_GetX (ID3_FINGER_MINUTIA hFingerMinutia, int * x)
+      int id3FingerMinutia_SetX (ID3_FINGER_MINUTIA hFingerMinutia, int x)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

@@ -1,0 +1,59 @@
+.. _general_considerations:
+
+=======
+General
+=======
+
+This section describes the main usages of |product-name|.
+
+.. toctree::
+    :maxdepth: 1
+
+    conventions
+    error_handling
+    license_handling
+
+
+Adding the library to your project
+==================================
+
+.. tab-set::
+
+    .. tab-item:: C
+        :sync: c
+
+        .. code-block:: c
+
+            #include "id3Finger.h"
+
+    .. tab-item:: Dart
+        :sync: dart
+
+        .. code-block:: dart
+
+            import 'package:id3_finger/id3_finger.dart';
+
+    .. tab-item:: C#
+        :sync: csharp
+
+        id3 Finger C# API is available in the package `id3.Finger`:
+
+        .. code-block:: csharp
+
+            using id3.Finger;
+
+    .. tab-item:: Java
+        :sync: java
+   
+        .. code-block:: java
+        
+            import eu.id3.finger;
+
+    .. tab-item:: Python
+        :sync: python
+
+        .. code-block:: python
+
+            from id3Finger import *
+
+

@@ -1,0 +1,237 @@
+.. index:: 
+  !FingerTemplateRecord Class
+
+.. _finger_template_record_class:
+
+===============================================================================
+FingerTemplateRecord Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  add<add>
+  clear<clear>
+  count<count>
+  fromBuffer<from_buffer>
+  fromFile<from_file>
+  get<get>
+  getCount<get_count>
+  removeAt<remove_at>
+  resize<resize>
+  set<set>
+  toBuffer<to_buffer>
+  toFile<to_file>
+
+
+Definition
+----------
+.. line-block::
+    Represents a finger template record.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerTemplateRecord
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerTemplateRecord implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerTemplateRecord
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerTemplateRecord implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerTemplateRecord
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerTemplateRecord *ID3_FINGER_TEMPLATE_RECORD;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerTemplateRecord = FingerTemplateRecord()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerTemplateRecord
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerTemplateRecord = sdk.FingerTemplateRecord();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerTemplateRecord.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerTemplateRecord = new FingerTemplateRecord())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerTemplateRecord = new FingerTemplateRecord()
+        // ...
+        fingerTemplateRecord.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerTemplateRecord fingerTemplateRecord = new FingerTemplateRecord()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerTemplateRecord fingerTemplateRecord = new FingerTemplateRecord();
+        // ...
+        fingerTemplateRecord.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerTemplateRecord: FingerTemplateRecord? = nil
+        fingerTemplateRecord = try FingerTemplateRecord()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_TEMPLATE_RECORD hFingerTemplateRecord{};
+        int err = id3FingerTemplateRecord_Initialize(&hFingerTemplateRecord);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerTemplateRecord_Dispose(&hFingerTemplateRecord);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`count<finger_template_record_count_class_member>`
+    - int
+    - Gets the number of elements contained in the list
+  * - operator [int index]
+    - :ref:`FingerTemplate<finger_template_class>`
+    - Gets or sets the element at the specified index in the list.
+
+Iteration
+---------
+
+This class supports iteration in Dart, C#, Java and Python.
+
+
+Static Methods
+--------------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`fromBuffer<finger_template_record_from_buffer_class_method>`
+    - Imports the finger template record object from a buffer.
+  * - :ref:`fromFile<finger_template_record_from_file_class_method>`
+    - Imports the finger template record object from a file.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`add<finger_template_record_add_class_method>`
+    - Adds an item to the FingerTemplateRecord object.
+  * - :ref:`clear<finger_template_record_clear_class_method>`
+    - Clears the FingerTemplateRecord object.
+  * - :ref:`get<finger_template_record_get_class_method>`
+    - Gets an item of the FingerTemplateRecord object.
+  * - :ref:`getCount<finger_template_record_get_count_class_method>`
+    - Gets the number of elements in the FingerTemplateRecord object.
+  * - :ref:`removeAt<finger_template_record_remove_at_class_method>`
+    - Removes an element of the FingerTemplateRecord object.
+  * - :ref:`resize<finger_template_record_resize_class_method>`
+    - FingerTemplateRecord object.
+  * - :ref:`set<finger_template_record_set_class_method>`
+    - Sets an item of the FingerTemplateRecord object.
+  * - :ref:`toBuffer<finger_template_record_to_buffer_class_method>`
+    - Exports the finger template object to a buffer.
+  * - :ref:`toFile<finger_template_record_to_file_class_method>`
+    - Exports the finger template record object to a file.

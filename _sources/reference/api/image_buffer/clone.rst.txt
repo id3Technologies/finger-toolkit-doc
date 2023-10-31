@@ -1,0 +1,158 @@
+.. index:: 
+  !ImageBuffer.clone Method
+  
+.. _image_buffer_clone_class_method:
+
+===============================================================================
+ImageBuffer.clone Method
+===============================================================================
+
+Module: :ref:`ImageBuffer<image_buffer_class>`
+
+Definition
+----------
+
+Clones the ImageBuffer object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        clone(self) -> ImageBuffer
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`ImageBuffer<image_buffer_class>`
+          The newly created image buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        ImageBuffer clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`ImageBuffer<image_buffer_class>`
+          The newly created image buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public ImageBuffer Clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`ImageBuffer<image_buffer_class>`
+          The newly created image buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public ImageBuffer clone() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`ImageBuffer<image_buffer_class>`
+          The newly created image buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func clone() throws -> ImageBuffer
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`ImageBuffer<image_buffer_class>`
+          The newly created image buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImageBuffer_CopyTo (
+            ID3_FINGER_IMAGE_BUFFER hImageBuffer, 
+            ID3_FINGER_IMAGE_BUFFER hImageBufferDst)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hImageBuffer`` :ref:`ID3_FINGER_IMAGE_BUFFER<image_buffer_class>`
+          :guilabel:`in` Handle to the ImageBuffer object.
+
+          ``hImageBufferDst`` :ref:`ID3_FINGER_IMAGE_BUFFER<image_buffer_class>`
+          :guilabel:`out` The newly created image buffer.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

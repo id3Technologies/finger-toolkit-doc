@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerMinutia.angle Property
+
+.. _finger_minutia_angle_class_member:
+
+===============================================================================
+FingerMinutia.angle Property
+===============================================================================
+
+Module: :ref:`FingerMinutia<finger_minutia_class>`
+
+Type: float
+
+Definition
+----------
+
+Angle of the minutia in radians. In [0;2*PI[, 0 being horizontal and oriented to the right side of the image, turning clockwise.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      angle: float
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      double get angle => getAngle();
+      set angle(double value) => setAngle(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public float angle
+      {
+          get => Getangle();
+          set => Setangle(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public float getAngle() throws FingerException
+      public void setAngle(float angle) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var angle: Float
+          get {
+              return try! getAngle()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerMinutia_GetAngle (ID3_FINGER_MINUTIA hFingerMinutia, float * angle)
+      int id3FingerMinutia_SetAngle (ID3_FINGER_MINUTIA hFingerMinutia, float angle)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

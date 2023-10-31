@@ -1,0 +1,79 @@
+.. _license_activation:
+
+==========================
+License activation
+==========================
+
+The activation of a license is required prior to use any module of this SDK.
+
+License manager (Windows only)
+==============================
+On windows the graphical License Manager application may also be used to activate licenses. Please refer to the License Manager user's guide for more details.
+
+Please note that on windows, and windows only, you can lock your license on a USB device.
+
+Command-line interface
+======================
+
+A command-line activation software is available in the `activation/cli-tool` directory.
+
+For example on linux x64:
+
+.. code-block::
+
+    cd activation/cli-tool/linux/x64
+    chmod +x id3LicenseActivationCLI
+    ./id3LicenseActivationCLI --help
+
+Several options are possible to activate a license. See :ref:`license_activation_options` for details.
+
+**Activation with a serial number:**
+
+.. code-block::
+
+    id3LicenseActivationCLI.exe --activate .\data\id3Finger.lic --serialkey="XXXX-XXXX-XXXX-XXXX"
+
+**Activation with an activation key:**
+
+.. code-block::
+
+    id3LicenseActivationCLI.exe --activate .\data\id3Finger.lic --activationkey="email-XXXXXXXX-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"
+
+**Activation with credentials:**
+
+.. code-block::
+
+    id3LicenseActivationCLI.exe --activate .\data\id3Finger.lic --login="login@domain.com" --password="myPassword" --reference="XXXXXXXX"
+
+
+Programmatic activation
+=======================
+
+It is generally preferred to activate the license programmatically within your application. 
+See :ref:`license_handling` in the :ref:`sdk_usage` section for details.
+
+.. note:: On mobile devices, the :ref:`license_hardware_id` is linked to the application itself, so programmatic activation is the only way to activate a license in this case.
+
+
+.. _license_activation_options:
+
+License activation options
+==========================
+
+The following license activation options are available:
+
+- **Serial number**: A unique key in the format ``XXXX-XXXX-XXXX-XXXX`` allowing a single activation.
+- **Activation key**: A unique key in the format ``email-XXXXXXXX-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`` allowing multiple activations on multiple devices.
+- **Credentials**: Customer login/password and reference number of the product to be activated.
+ 
+.. important:: 
+    An internet connection is required to complete the activation procedure.
+    Unless the ``Online`` option is enabled, once the license is activated, the internet is no longer required.
+
+.. note:: During the activation process, the SDK license is linked to a unique hardware identifier. See :ref:`license_hardware_id` for details.
+
+
+See also
+========
+- :ref:`license_handling`
+- :ref:`license_hardware_id`

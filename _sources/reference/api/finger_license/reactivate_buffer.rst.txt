@@ -1,0 +1,222 @@
+.. index:: 
+  !FingerLicense.reactivateBuffer Method
+  
+.. _finger_license_reactivate_buffer_class_method:
+
+===============================================================================
+FingerLicense.reactivateBuffer Method
+===============================================================================
+
+Module: :ref:`FingerLicense<finger_license_class>`
+
+Definition
+----------
+
+Reactivates a license in a data buffer using the host hardware code and the product reference.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        reactivate_buffer(hardware_code: str, product_reference: str) -> bytearray
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardware_code`` str
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``product_reference`` str
+          :guilabel:`in` The product reference.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``bytearray``
+          The new license data buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static Uint8List reactivateBuffer(String? hardwareCode, String? productReference)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``productReference`` String
+          :guilabel:`in` The product reference.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``Uint8List``
+          The new license data buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static byte[] ReactivateBuffer(string hardwareCode, string productReference)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` string
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``productReference`` string
+          :guilabel:`in` The product reference.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``byte[]``
+          The new license data buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static byte[] reactivateBuffer(String hardwareCode, String productReference) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``productReference`` String
+          :guilabel:`in` The product reference.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``byte[]``
+          The new license data buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func reactivateBuffer(hardwareCode: String, productReference: String) throws -> [UInt8]
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``productReference`` String
+          :guilabel:`in` The product reference.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``[UInt8]``
+          The new license data buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_ReactivateBuffer (
+            const char * hardwareCode, 
+            const char * productReference, 
+            unsigned char * licenseFileBuffer, 
+            int * licenseFileBufferSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` const char *
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``productReference`` const char *
+          :guilabel:`in` The product reference.
+
+          ``licenseFileBuffer`` unsigned char *
+          :guilabel:`out` The new license data buffer.
+
+          ``licenseFileBufferSize`` int *
+          :guilabel:`in` Size of the 'licenseFileBuffer' buffer. Receives the number of elements in the 'licenseFileBuffer' array.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

@@ -1,0 +1,88 @@
+.. _terms:
+
+=====================
+Terms and Definitions
+=====================
+
+For the purpose of this document, the following terms and definitions apply.
+
+.. list-table:: 
+    :width: 100%
+    :widths: 30 70
+
+    * - Algorithm
+      - A sequence of instructions that tell a biometric system how to solve a particular problem. An algorithm will have a finite number of steps and is typically used by the biometric engine (i.e. the biometric system software) to compute whether a biometric sample and template match. 
+
+    * - Biometric data
+      - Data encoding a feature or features used in biometric verification. 
+
+    * - Comparison
+      - The process of comparing a biometric sample with a previously stored reference template or templates. 
+
+    * - Comparison score
+      - Numerical value resulting from a comparison. 
+
+    * - Enrollment
+      - The process of collecting biometric samples from a person and the subsequent preparation and storage of biometric reference templates representing that person's identity. 
+
+    * - Extraction
+      - The process of converting a captured biometric sample into biometric data so that it can be compared to a reference template; sometimes called 'characterization'. 
+
+    * - False match
+      - Comparison decision of 'match' for a biometric probe and a biometric reference that are from different biometric capture subjects. 
+
+    * - False match rate
+      - Expected probability that a captured biometric sample will be falsely declared to match to a single, randomly-selected, non-self biometric reference. 
+
+    * - False non-match
+      - Comparison decision of 'non-match' for a biometric probe and a biometric reference that are from the same biometric capture subject and of the same biometric characteristic. 
+
+    * - False non-match rate
+      - Proportion of the completed biometric mated comparison trials that result in a false non-match. 
+
+    * - Fingerprint image
+      - Area of friction skin on the fleshy surface of a finger located horizontally between the two edges of the fingernail and vertically between the first joint and the tip of a finger. It contains a unique pattern of friction ridge and valley information commonly referred to as a “fingerprint”.
+
+    * - Match / Matching
+      - The process of comparing a biometric sample against a previously stored template and scoring the level of similarity. 
+
+    * - Minutiae
+      - Friction ridge characteristics that are used to individualize a fingerprint. Minutiae occur at points where a single friction ridge deviates from an uninterrupted flow. Deviation may take the form of ending, bifurcation, or a more complicated “composite” type.
+
+    * - One-to-many search
+      - Process in which a biometric probe of one biometric data subject is searched against the biometric references of more than one biometric data subject to return a candidate list or a comparison decision. 
+
+    * - One-to-one comparison
+      - Process in which a biometric probe from one biometric data subject is compared to a biometric reference from one biometric data subject to produce a comparison score. 
+
+    * - Template / Reference template
+      - | Data, which represents the biometric measurement of an enrollee, used by a biometric system for comparison against subsequently submitted biometric samples.
+        | NOTE - this term is not restricted to mean only data used in any particular recognition method, such as template matching. 
+
+    * - Threshold
+      - Numerical value (or set of values) at which a decision boundary exists
+
+Abbreviated Terms
+=================
+
+For the purpose of this document, the following abbreviations apply.
+
+.. list-table:: 
+    :width: 100%
+    :widths: 30 70
+
+    * - API    
+      - Application Programming Interface
+    * - ANSI   
+      - American National Standards Institute
+    * - GPU    
+      - Graphical Processing Unit
+    * - ISO	   
+      - International Organization for Standardization
+    * - NIST   
+      - National Institute of Standards And Technology
+    * - PAD    
+      - Presentation attack detection
+    * - SDK    
+      - Software Development Kit
+

@@ -1,0 +1,142 @@
+.. index:: 
+  !FingerError Enumeration
+
+.. _finger_error_enum:
+
+===============================================================================
+FingerError Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the possible error codes returned by this SDK.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerError
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerError
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerError
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerError
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerError
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerError
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``success``
+    - 0
+    - No error.
+  * - ``base``
+    - -2000
+    - Base error code of the Finger module.
+  * - ``minimum``
+    - -2999
+    - Minimum error code of the Finger module.
+  * - ``invalidHandle``
+    - -2001
+    - The handle is invalid.
+  * - ``invalidParameter``
+    - -2002
+    - The parameter is invalid.
+  * - ``insufficientBuffer``
+    - -2003
+    - The given buffer is too small.
+  * - ``invalidPixelFormat``
+    - -2004
+    - The image pixel format is invalid.
+  * - ``invalidTemplateFormat``
+    - -2005
+    - The template format is invalid.
+  * - ``invalidResolution``
+    - -2006
+    - The image resolution is invalid.
+  * - ``invalidModelPath``
+    - -2008
+    - The model could not be found in the given directory path.
+  * - ``unloadedModel``
+    - -2020
+    - The model which is required for this operation was not loaded.
+  * - ``inferenceBackendError``
+    - -2040
+    - The inference backend failed to infer, probably due to inconsistent input.
+  * - ``moduleBusy``
+    - -2041
+    - This module is currently used by another thread.
+  * - ``notSupportedAn2kTransaction``
+    - -2042
+    - This ANSI/NIST-ITL 1:2011 transaction cannot be loaded in a finger image record.
+  * - ``indexerAlreadyInitialized``
+    - -2050
+    - The finger indexer object is already initialized.
+  * - ``indexerIdAlreadyExists``
+    - -2051
+    - The requested ID already exists in the finger indexer object.
+  * - ``indexerInvalidTemplateData``
+    - -2052
+    - The data of the template is corrupted and cannot be added to the finger indexer object.
+  * - ``indexerFull``
+    - -2053
+    - Maximum size of the finger indexer object has been reached.
+  * - ``indexerIdNotFound``
+    - -2054
+    - No data with this ID has been found in the finger indexer object.
+  * - ``indexerInvalidIndexFile``
+    - -2055
+    - This index file is not valid and cannot be loaded.
+  * - ``tooManyMinutiae``
+    - -2100
+    - The number of minutiae is too large to export the template as is. It needs to be pruned under 255 minutiae.
+  * - ``unalignedImage``
+    - -2101
+    - The image was not aligned before encoding, one should set a FingerAligner model to the FingerExtractor.
+  * - ``functionNotImplemented``
+    - -2102
+    - This function is not implemented.

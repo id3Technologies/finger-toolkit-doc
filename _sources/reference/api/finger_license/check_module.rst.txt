@@ -1,0 +1,160 @@
+.. index:: 
+  !FingerLicense.checkModule Method
+  
+.. _finger_license_check_module_class_method:
+
+===============================================================================
+FingerLicense.checkModule Method
+===============================================================================
+
+Module: :ref:`FingerLicense<finger_license_class>`
+
+Definition
+----------
+
+Checks if a module is present in the previously loaded license.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        check_module(module_name: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``module_name`` str
+          :guilabel:`in` The module name.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static void checkModule(String? moduleName)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``moduleName`` String
+          :guilabel:`in` The module name.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static void CheckModule(string moduleName)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``moduleName`` string
+          :guilabel:`in` The module name.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static void checkModule(String moduleName) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``moduleName`` String
+          :guilabel:`in` The module name.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func checkModule(moduleName: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``moduleName`` String
+          :guilabel:`in` The module name.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_CheckModule (
+            const char * moduleName)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``moduleName`` const char *
+          :guilabel:`in` The module name.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

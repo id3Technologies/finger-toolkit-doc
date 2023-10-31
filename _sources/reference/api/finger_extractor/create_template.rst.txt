@@ -1,0 +1,204 @@
+.. index:: 
+  !FingerExtractor.createTemplate Method
+  
+.. _finger_extractor_create_template_class_method:
+
+===============================================================================
+FingerExtractor.createTemplate Method
+===============================================================================
+
+Module: :ref:`FingerExtractor<finger_extractor_class>`
+
+Definition
+----------
+
+Extracts the unique features of a finger image and generates a FingerTemplate.
+
+.. note:: The extracted features depend on the models of the finger extractor instance.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        create_template(self, image: FingerImage) -> FingerTemplate
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          Generated finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerTemplate createTemplate(FingerImage image)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          Generated finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerTemplate CreateTemplate(FingerImage image)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          Generated finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerTemplate createTemplate(FingerImage image) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          Generated finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func createTemplate(image: FingerImage) throws -> FingerTemplate
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          Generated finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerExtractor_CreateTemplate (
+            ID3_FINGER_EXTRACTOR hFingerExtractor, 
+            ID3_FINGER_IMAGE hImage, 
+            ID3_FINGER_TEMPLATE hFingerTemplate)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerExtractor`` :ref:`ID3_FINGER_EXTRACTOR<finger_extractor_class>`
+          :guilabel:`in` Handle to the FingerExtractor object.
+
+          ``hImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+          ``hFingerTemplate`` :ref:`ID3_FINGER_TEMPLATE<finger_template_class>`
+          :guilabel:`out` Generated finger template.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

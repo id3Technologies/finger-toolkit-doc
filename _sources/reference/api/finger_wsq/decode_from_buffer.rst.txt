@@ -1,0 +1,203 @@
+.. index:: 
+  !FingerWsq.decodeFromBuffer Method
+  
+.. _finger_wsq_decode_from_buffer_class_method:
+
+===============================================================================
+FingerWsq.decodeFromBuffer Method
+===============================================================================
+
+Module: :ref:`FingerWsq<finger_wsq_class>`
+
+Definition
+----------
+
+Decodes a NIST WSQ encoded buffer to a FingerImage.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        decode_from_buffer(data: bytearray) -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``data`` bytearray
+          :guilabel:`in` Buffer to import the finger template object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The decoded WSQ image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static FingerImage decodeFromBuffer(Uint8List? data)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``data`` Uint8List
+          :guilabel:`in` Buffer to import the finger template object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The decoded WSQ image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static FingerImage DecodeFromBuffer(byte[] data)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``data`` byte[]
+          :guilabel:`in` Buffer to import the finger template object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The decoded WSQ image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static FingerImage decodeFromBuffer(byte[] data) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``data`` byte[]
+          :guilabel:`in` Buffer to import the finger template object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The decoded WSQ image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func decodeFromBuffer(data: [UInt8]) throws -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``data`` [UInt8]
+          :guilabel:`in` Buffer to import the finger template object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The decoded WSQ image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerWsq_DecodeFromBuffer (
+            unsigned char * data, 
+            int dataSize, 
+            ID3_FINGER_IMAGE hImage)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``data`` unsigned char *
+          :guilabel:`in` Buffer to import the finger template object from.
+
+          ``dataSize`` int
+          :guilabel:`in` Size of the 'data' buffer.
+
+          ``hImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`out` The decoded WSQ image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

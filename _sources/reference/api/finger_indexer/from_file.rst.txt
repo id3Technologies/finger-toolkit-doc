@@ -1,0 +1,199 @@
+.. index:: 
+  !FingerIndexer.fromFile Method
+  
+.. _finger_indexer_from_file_class_method:
+
+===============================================================================
+FingerIndexer.fromFile Method
+===============================================================================
+
+Module: :ref:`FingerIndexer<finger_indexer_class>`
+
+Definition
+----------
+
+Imports the finger indexer object from a file.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        from_file(path: str) -> FingerIndexer
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` str
+          :guilabel:`in` Path to the file to import the finger indexer object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerIndexer<finger_indexer_class>`
+          The newly created finger indexer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static FingerIndexer fromFile(String? path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` String
+          :guilabel:`in` Path to the file to import the finger indexer object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerIndexer<finger_indexer_class>`
+          The newly created finger indexer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static FingerIndexer FromFile(string path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` string
+          :guilabel:`in` Path to the file to import the finger indexer object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerIndexer<finger_indexer_class>`
+          The newly created finger indexer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static FingerIndexer fromFile(String path) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` String
+          :guilabel:`in` Path to the file to import the finger indexer object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerIndexer<finger_indexer_class>`
+          The newly created finger indexer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func fromFile(path: String) throws -> FingerIndexer
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` String
+          :guilabel:`in` Path to the file to import the finger indexer object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerIndexer<finger_indexer_class>`
+          The newly created finger indexer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerIndexer_FromFile (
+            ID3_FINGER_INDEXER hFingerIndexer, 
+            const char * path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerIndexer`` :ref:`ID3_FINGER_INDEXER<finger_indexer_class>`
+          :guilabel:`in` Handle to the FingerIndexer object.
+
+          ``path`` const char *
+          :guilabel:`in` Path to the file to import the finger indexer object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

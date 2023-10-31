@@ -1,0 +1,199 @@
+.. index:: 
+  !License.getModuleValue Method
+  
+.. _license_get_module_value_class_method:
+
+===============================================================================
+License.getModuleValue Method
+===============================================================================
+
+Module: :ref:`License<license_class>`
+
+Definition
+----------
+
+Retrieves the value of a given module in the license.
+
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_GetModuleValue (
+            const char * name, 
+            int * value)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``name`` const char *
+          :guilabel:`in` Name of the requested module.
+
+          ``value`` int *
+          :guilabel:`out` Pointer to an int which will contain the requested value.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static int getModuleValue(String? name)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``name`` String
+          :guilabel:`in` Name of the requested module.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Pointer to an int which will contain the requested value.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static int GetModuleValue(string name)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``name`` string
+          :guilabel:`in` Name of the requested module.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Pointer to an int which will contain the requested value.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static int getModuleValue(String name) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``name`` String
+          :guilabel:`in` Name of the requested module.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Pointer to an int which will contain the requested value.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        get_module_value(name: str) -> int
+
+      **Parameters**
+
+        .. line-block::
+
+          ``name`` str
+          :guilabel:`in` Name of the requested module.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Pointer to an int which will contain the requested value.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func getModuleValue(name: String) throws -> Int32
+
+      **Parameters**
+
+        .. line-block::
+
+          ``name`` String
+          :guilabel:`in` Name of the requested module.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``Int``
+          Pointer to an int which will contain the requested value.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

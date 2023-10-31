@@ -1,0 +1,364 @@
+.. index:: 
+  !FingerImage Class
+
+.. _finger_image_class:
+
+===============================================================================
+FingerImage Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  acquisitionLevel<acquisition_level>
+  captureDeviceCertificationList<capture_device_certification_list>
+  captureDeviceTechnology<capture_device_technology>
+  captureDeviceType<capture_device_type>
+  captureDeviceVendorId<capture_device_vendor_id>
+  cbeffProductId<cbeff_product_id>
+  clone<clone>
+  compare<compare>
+  compressionAlgorithm<compression_algorithm>
+  correctGamma<correct_gamma>
+  data<data>
+  downscale<downscale>
+  downscaleTo<downscale_to>
+  extractRoi<extract_roi>
+  flip<flip>
+  flipTo<flip_to>
+  fromBuffer<from_buffer>
+  fromFile<from_file>
+  fromRawBuffer<from_raw_buffer>
+  fromYuvPlanes<from_yuv_planes>
+  getPixels<get_pixels>
+  height<height>
+  horizontalResolution<horizontal_resolution>
+  horizontalScanResolution<horizontal_scan_resolution>
+  impressionType<impression_type>
+  pixelDepth<pixel_depth>
+  pixelFormat<pixel_format>
+  position<position>
+  quality<quality>
+  qualityAlgorithmId<quality_algorithm_id>
+  qualityAlgorithmVendorId<quality_algorithm_vendor_id>
+  reallocate<reallocate>
+  rescale<rescale>
+  resize<resize>
+  resizeTo<resize_to>
+  rotate<rotate>
+  rotateTo<rotate_to>
+  set<set>
+  setResolution<set_resolution>
+  stride<stride>
+  toBuffer<to_buffer>
+  toBufferObject<to_buffer_object>
+  toFile<to_file>
+  toNumpy<to_numpy>
+  toRawBuffer<to_raw_buffer>
+  transpose<transpose>
+  verticalResolution<vertical_resolution>
+  verticalScanResolution<vertical_scan_resolution>
+  viewNumber<view_number>
+  width<width>
+
+
+Definition
+----------
+.. line-block::
+    Represents a finger image.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerImage
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerImage implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerImage
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerImage implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerImage
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerImage *ID3_FINGER_IMAGE;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerImage = FingerImage()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerImage
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerImage = sdk.FingerImage();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerImage.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerImage = new FingerImage())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerImage = new FingerImage()
+        // ...
+        fingerImage.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerImage fingerImage = new FingerImage()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerImage fingerImage = new FingerImage();
+        // ...
+        fingerImage.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerImage: FingerImage? = nil
+        fingerImage = try FingerImage()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_IMAGE hFingerImage{};
+        int err = id3FingerImage_Initialize(&hFingerImage);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerImage_Dispose(&hFingerImage);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`acquisitionLevel<finger_image_acquisition_level_class_member>`
+    - int
+    - Level of acquisition of the image.
+  * - :ref:`captureDeviceCertificationList<finger_image_capture_device_certification_list_class_member>`
+    - :ref:`FingerCaptureDeviceCertificationList<finger_capture_device_certification_list_class>`
+    - List of certifications obtained by the capture device.
+  * - :ref:`captureDeviceTechnology<finger_image_capture_device_technology_class_member>`
+    - :ref:`FingerCaptureDeviceTechnology<finger_capture_device_technology_enum>`
+    - Technology of the capture device, as defined in ISO/IEC 19794-2:2011.
+  * - :ref:`captureDeviceType<finger_image_capture_device_type_class_member>`
+    - int
+    - Capture device type identifier that identifies the product type that created this finger image.
+  * - :ref:`captureDeviceVendorId<finger_image_capture_device_vendor_id_class_member>`
+    - int
+    - Capture device vendor identifier.
+  * - :ref:`cbeffProductId<finger_image_cbeff_product_id_class_member>`
+    - int
+    - CBEFF product ID as registered with the IBIA (www.ibia.org).
+  * - :ref:`compressionAlgorithm<finger_image_compression_algorithm_class_member>`
+    - :ref:`FingerImageCompressionAlgorithm<finger_image_compression_algorithm_enum>`
+    - Compression algorithm used to compress the image in a record.
+  * - :ref:`data<finger_image_data_class_member>`
+    - byte[]
+    - Raw data buffer of the image.
+  * - :ref:`height<finger_image_height_class_member>`
+    - int
+    - Height in pixels.
+  * - :ref:`horizontalResolution<finger_image_horizontal_resolution_class_member>`
+    - int
+    - Horizontal resolution of the image (in DPI).
+  * - :ref:`horizontalScanResolution<finger_image_horizontal_scan_resolution_class_member>`
+    - int
+    - Horizontal scan resolution of the image (in DPI). Independent from image rescaling.
+  * - :ref:`impressionType<finger_image_impression_type_class_member>`
+    - :ref:`FingerImpressionType<finger_impression_type_enum>`
+    - Impression type of the finger image.
+  * - :ref:`pixelDepth<finger_image_pixel_depth_class_member>`
+    - int
+    - Pixel depth.
+  * - :ref:`pixelFormat<finger_image_pixel_format_class_member>`
+    - :ref:`PixelFormat<pixel_format_enum>`
+    - Pixel format.
+  * - :ref:`position<finger_image_position_class_member>`
+    - :ref:`FingerPosition<finger_position_enum>`
+    - Finger position, as defined in ANSI/NIST-ITL 1-2011.
+  * - :ref:`quality<finger_image_quality_class_member>`
+    - int
+    - Quality of the created template, from 0 to 100. 100 being maximum quality and -1 meaning 'not computed'.
+  * - :ref:`qualityAlgorithmId<finger_image_quality_algorithm_id_class_member>`
+    - int
+    - Quality algorithm identifier (including version) as assigned by the vendor.
+  * - :ref:`qualityAlgorithmVendorId<finger_image_quality_algorithm_vendor_id_class_member>`
+    - int
+    - Quality algorithm vendor identifier as registered with the IBIA (www.ibia.org). 
+  * - :ref:`stride<finger_image_stride_class_member>`
+    - int
+    - Stride in bytes.
+  * - :ref:`verticalResolution<finger_image_vertical_resolution_class_member>`
+    - int
+    - Vertical resolution of the image (in DPI).
+  * - :ref:`verticalScanResolution<finger_image_vertical_scan_resolution_class_member>`
+    - int
+    - Vertical scan resolution of the image (in DPI). Independent from image rescaling.
+  * - :ref:`viewNumber<finger_image_view_number_class_member>`
+    - int
+    - Number of the view. Mostly useful for lists with multiple views of the same finger position.
+  * - :ref:`width<finger_image_width_class_member>`
+    - int
+    - Width in pixels.
+
+Static Methods
+--------------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`fromBuffer<finger_image_from_buffer_class_method>`
+    - Creates an Image from the specified data buffer.
+  * - :ref:`fromFile<finger_image_from_file_class_method>`
+    - Creates an Image from the specified file.
+  * - :ref:`fromRawBuffer<finger_image_from_raw_buffer_class_method>`
+    - Creates an Image from the specified raw data buffer.
+  * - :ref:`fromYuvPlanes<finger_image_from_yuv_planes_class_method>`
+    - Creates an Image from the specified YUV planes.
+  * - :ref:`set<finger_image_set_class_method>`
+    - Sets the Image object fields.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`clone<finger_image_clone_class_method>`
+    - Clones the FingerImage object.
+  * - :ref:`compare<finger_image_compare_class_method>`
+    - Computes the difference with another image.
+  * - :ref:`correctGamma<finger_image_correct_gamma_class_method>`
+    - Applies a gamma correction to the image.
+  * - :ref:`downscale<finger_image_downscale_class_method>`
+    - Downscales the image in-place so that its maximum dimension is equal to the given maximum size, while preserving the aspect ratio.
+  * - :ref:`downscaleTo<finger_image_downscale_to_class_method>`
+    - Downscales the image so that its maximum dimension equals the given maximum size, while preserving the aspect ratio.
+  * - :ref:`extractRoi<finger_image_extract_roi_class_method>`
+    - Extracts a region of interest in the image according to the given bounds.
+  * - :ref:`flip<finger_image_flip_class_method>`
+    - Flips the image in-place.
+  * - :ref:`flipTo<finger_image_flip_to_class_method>`
+    - Flips the image.
+  * - :ref:`getPixels<finger_image_get_pixels_class_method>`
+    - Gets a pointer to the image pixels.
+  * - :ref:`reallocate<finger_image_reallocate_class_method>`
+    - Reallocates the internal memory of the Image from parameters.
+  * - :ref:`rescale<finger_image_rescale_class_method>`
+    - Rescales the image to the required resolution.
+  * - :ref:`resize<finger_image_resize_class_method>`
+    - Resizes the image in-place to the required width and height.
+  * - :ref:`resizeTo<finger_image_resize_to_class_method>`
+    - Resizes the image to the specified width and height.
+  * - :ref:`rotate<finger_image_rotate_class_method>`
+    - Rotates the image in-place to the specified angle.
+  * - :ref:`rotateTo<finger_image_rotate_to_class_method>`
+    - Rotates the image to the specified angle.
+  * - :ref:`setResolution<finger_image_set_resolution_class_method>`
+    - Sets both the image horizontal and vertical resolutions.
+  * - :ref:`toBuffer<finger_image_to_buffer_class_method>`
+    - Exports the image to a buffer.
+  * - :ref:`toBufferObject<finger_image_to_buffer_object_class_method>`
+    - Copies the image to a buffer in the specified format.
+  * - :ref:`toFile<finger_image_to_file_class_method>`
+    - Saves the image to the specified file.
+  * - :ref:`toNumpy<finger_image_to_numpy_class_method>`
+    - Exports the image to a numpy array (Python only)
+  * - :ref:`toRawBuffer<finger_image_to_raw_buffer_class_method>`
+    - Copies image pixels in the specified format into a buffer.
+  * - :ref:`transpose<finger_image_transpose_class_method>`
+    - Transposes the image object.

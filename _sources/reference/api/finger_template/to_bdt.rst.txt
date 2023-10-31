@@ -1,0 +1,164 @@
+.. index:: 
+  !FingerTemplate.toBdt Method
+  
+.. _finger_template_to_bdt_class_method:
+
+===============================================================================
+FingerTemplate.toBdt Method
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Definition
+----------
+
+Exports the finger template object to a Biometric Data Template (BDT) buffer.
+
+This buffer can only be used with id3 Finger Match-on-Card specific implementations to verify a finger template.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        to_bdt(self) -> bytearray
+
+      **Returns**
+
+        .. line-block::
+
+          ``bytearray``
+          A buffer that receives the biometric data template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        Uint8List toBdt()
+
+      **Returns**
+
+        .. line-block::
+
+          ``Uint8List``
+          A buffer that receives the biometric data template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public byte[] ToBdt()
+
+      **Returns**
+
+        .. line-block::
+
+          ``byte[]``
+          A buffer that receives the biometric data template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public byte[] toBdt() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          ``byte[]``
+          A buffer that receives the biometric data template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func toBdt() throws -> [UInt8]
+
+      **Returns**
+
+        .. line-block::
+
+          ``[UInt8]``
+          A buffer that receives the biometric data template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerTemplate_ToBdt (
+            ID3_FINGER_TEMPLATE hFingerTemplate, 
+            unsigned char * data, 
+            int * dataSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerTemplate`` :ref:`ID3_FINGER_TEMPLATE<finger_template_class>`
+          :guilabel:`in` Handle to the FingerTemplate object.
+
+          ``data`` unsigned char *
+          :guilabel:`out` A buffer that receives the biometric data template.
+
+          ``dataSize`` int *
+          :guilabel:`in` Size of the 'data' buffer. Receives the number of elements in the 'data' array.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

@@ -1,0 +1,163 @@
+.. index:: 
+  !StringList.removeAt Method
+  
+.. _string_list_remove_at_class_method:
+
+===============================================================================
+StringList.removeAt Method
+===============================================================================
+
+Module: :ref:`StringList<string_list_class>`
+
+Definition
+----------
+
+Removes an element of the StringList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        remove_at(self, index: int) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void removeAt(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void RemoveAt(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void removeAt(int index) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func removeAt(index: Int32) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` Index of the  item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerStringList_RemoveAt (
+            ID3_FINGER_STRING_LIST hStringList, 
+            int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hStringList`` :ref:`ID3_FINGER_STRING_LIST<string_list_class>`
+          :guilabel:`in` Handle to the StringList object.
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to remove.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

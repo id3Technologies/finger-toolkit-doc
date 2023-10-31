@@ -1,0 +1,124 @@
+.. index:: 
+  !FingerMatcher.minutiaPatchOnly Property
+
+.. _finger_matcher_minutia_patch_only_class_member:
+
+===============================================================================
+FingerMatcher.minutiaPatchOnly Property
+===============================================================================
+
+Module: :ref:`FingerMatcher<finger_matcher_class>`
+
+Type: bool
+
+Definition
+----------
+
+Parameter to force the matcher to use minutia patch data only to perform template comparison.
+
+By default, the matcher uses all the data contained in templates to compare them.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      minutia_patch_only: bool
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      bool get minutiaPatchOnly => getMinutiaPatchOnly();
+      set minutiaPatchOnly(bool value) => setMinutiaPatchOnly(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public bool minutiaPatchOnly
+      {
+          get => GetminutiaPatchOnly();
+          set => SetminutiaPatchOnly(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public boolean getMinutiaPatchOnly() throws FingerException
+      public void setMinutiaPatchOnly(boolean minutiaPatchOnly) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var minutiaPatchOnly: Bool
+          get {
+              return try! getMinutiaPatchOnly()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerMatcher_GetMinutiaPatchOnly (ID3_FINGER_MATCHER hFingerMatcher, bool * minutiaPatchOnly)
+      int id3FingerMatcher_SetMinutiaPatchOnly (ID3_FINGER_MATCHER hFingerMatcher, bool minutiaPatchOnly)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

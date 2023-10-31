@@ -1,0 +1,163 @@
+.. index:: 
+  !FingerCaptureDeviceCertificationList.add Method
+  
+.. _finger_capture_device_certification_list_add_class_method:
+
+===============================================================================
+FingerCaptureDeviceCertificationList.add Method
+===============================================================================
+
+Module: :ref:`FingerCaptureDeviceCertificationList<finger_capture_device_certification_list_class>`
+
+Definition
+----------
+
+Adds an item to the FingerCaptureDeviceCertificationList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        add(self, finger_capture_device_certification_item: FingerCaptureDeviceCertification) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``finger_capture_device_certification_item`` :ref:`FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+          :guilabel:`in` FingerCaptureDeviceCertification item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void add(FingerCaptureDeviceCertification fingerCaptureDeviceCertificationItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerCaptureDeviceCertificationItem`` :ref:`FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+          :guilabel:`in` FingerCaptureDeviceCertification item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Add(FingerCaptureDeviceCertification fingerCaptureDeviceCertificationItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerCaptureDeviceCertificationItem`` :ref:`FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+          :guilabel:`in` FingerCaptureDeviceCertification item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void add(FingerCaptureDeviceCertification fingerCaptureDeviceCertificationItem) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerCaptureDeviceCertificationItem`` :ref:`FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+          :guilabel:`in` FingerCaptureDeviceCertification item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func add(fingerCaptureDeviceCertificationItem: FingerCaptureDeviceCertification) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerCaptureDeviceCertificationItem`` :ref:`FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+          :guilabel:`in` FingerCaptureDeviceCertification item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerCaptureDeviceCertificationList_Add (
+            ID3_FINGER_CAPTURE_DEVICE_CERTIFICATION_LIST hFingerCaptureDeviceCertificationList, 
+            id3FingerCaptureDeviceCertification eFingerCaptureDeviceCertificationItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerCaptureDeviceCertificationList`` :ref:`ID3_FINGER_CAPTURE_DEVICE_CERTIFICATION_LIST<finger_capture_device_certification_list_class>`
+          :guilabel:`in` Handle to the FingerCaptureDeviceCertificationList object.
+
+          ``eFingerCaptureDeviceCertificationItem`` :ref:`id3FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+          :guilabel:`in` FingerCaptureDeviceCertification item to add.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

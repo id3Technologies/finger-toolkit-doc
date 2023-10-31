@@ -1,0 +1,241 @@
+.. index:: 
+  !FingerLicense.activateSerialKeyBuffer Method
+  
+.. _finger_license_activate_serial_key_buffer_class_method:
+
+===============================================================================
+FingerLicense.activateSerialKeyBuffer Method
+===============================================================================
+
+Module: :ref:`FingerLicense<finger_license_class>`
+
+Definition
+----------
+
+Activates a license using a serial key and returns the license in a data buffer.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        activate_serial_key_buffer(hardware_code: str, serial_key: str, commentary: str) -> bytearray
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardware_code`` str
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``serial_key`` str
+          :guilabel:`in` The id3 serial key.
+
+          ``commentary`` str
+          :guilabel:`in` Commentary associated to this license activation.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``bytearray``
+          The license data buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static Uint8List activateSerialKeyBuffer(String? hardwareCode, String? serialKey, String? commentary)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``serialKey`` String
+          :guilabel:`in` The id3 serial key.
+
+          ``commentary`` String
+          :guilabel:`in` Commentary associated to this license activation.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``Uint8List``
+          The license data buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static byte[] ActivateSerialKeyBuffer(string hardwareCode, string serialKey, string commentary)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` string
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``serialKey`` string
+          :guilabel:`in` The id3 serial key.
+
+          ``commentary`` string
+          :guilabel:`in` Commentary associated to this license activation.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``byte[]``
+          The license data buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static byte[] activateSerialKeyBuffer(String hardwareCode, String serialKey, String commentary) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``serialKey`` String
+          :guilabel:`in` The id3 serial key.
+
+          ``commentary`` String
+          :guilabel:`in` Commentary associated to this license activation.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``byte[]``
+          The license data buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func activateSerialKeyBuffer(hardwareCode: String, serialKey: String, commentary: String) throws -> [UInt8]
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``serialKey`` String
+          :guilabel:`in` The id3 serial key.
+
+          ``commentary`` String
+          :guilabel:`in` Commentary associated to this license activation.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``[UInt8]``
+          The license data buffer.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_ActivateSerialKeyBuffer (
+            const char * hardwareCode, 
+            const char * serialKey, 
+            const char * commentary, 
+            unsigned char * licenseFileBuffer, 
+            int * licenseFileBufferSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` const char *
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``serialKey`` const char *
+          :guilabel:`in` The id3 serial key.
+
+          ``commentary`` const char *
+          :guilabel:`in` Commentary associated to this license activation.
+
+          ``licenseFileBuffer`` unsigned char *
+          :guilabel:`out` The license data buffer.
+
+          ``licenseFileBufferSize`` int *
+          :guilabel:`in` Size of the 'licenseFileBuffer' buffer. Receives the number of elements in the 'licenseFileBuffer' array.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

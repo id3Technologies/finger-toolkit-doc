@@ -1,0 +1,67 @@
+.. _sdk_usage:
+
+=========
+SDK usage
+=========
+
+The SDK consists of several modules which provide easy access to advanced biometric functionalities.
+
+.. toctree::
+    :maxdepth: 1
+
+    conventions
+    error_handling
+    license_handling
+    ai_models
+    finger_image
+    finger_template
+    finger_detection
+    feature_extraction
+    finger_comparison
+    finger_comparison_on_card
+    finger_search
+
+
+Adding the library to your project
+==================================
+
+.. tab-set::
+
+    .. tab-item:: Python
+        :sync: Python
+
+        .. code-block:: python
+
+            import id3finger
+
+    .. tab-item:: Dart
+        :sync: Dart
+
+        .. code-block:: dart
+
+            import 'package:id3_finger/id3_finger.dart';
+
+    .. tab-item:: C#
+        :sync: C#
+
+        id3 Finger C# API is available in the package `id3.Finger`:
+
+        .. code-block:: csharp
+
+            using id3.Finger;
+
+    .. tab-item:: Java
+        :sync: Java
+   
+        .. code-block:: java
+        
+            import eu.id3.finger;
+
+    .. tab-item:: C
+        :sync: C
+
+        .. code-block:: c
+
+            #include "id3Finger.h"
+
+

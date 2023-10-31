@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerTemplate.quality Property
+
+.. _finger_template_quality_class_member:
+
+===============================================================================
+FingerTemplate.quality Property
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Type: int
+
+Definition
+----------
+
+Quality of the created template. In the range [0;100] U {-1}, 100 being maximum quality and -1 meaning 'not computed'.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      quality: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get quality => getQuality();
+      set quality(int value) => setQuality(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int quality
+      {
+          get => Getquality();
+          set => Setquality(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getQuality() throws FingerException
+      public void setQuality(int quality) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var quality: Int
+          get {
+              return Int(try! getQuality())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerTemplate_GetQuality (ID3_FINGER_TEMPLATE hFingerTemplate, int * quality)
+      int id3FingerTemplate_SetQuality (ID3_FINGER_TEMPLATE hFingerTemplate, int quality)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

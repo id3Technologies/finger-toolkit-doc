@@ -1,0 +1,217 @@
+.. index:: 
+  !DetectedFingerList Class
+
+.. _detected_finger_list_class:
+
+===============================================================================
+DetectedFingerList Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  add<add>
+  clear<clear>
+  clone<clone>
+  count<count>
+  get<get>
+  getCount<get_count>
+  removeAt<remove_at>
+  resize<resize>
+  set<set>
+
+
+Definition
+----------
+.. line-block::
+    Represents a list of detected fingers.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class DetectedFingerList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class DetectedFingerList implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class DetectedFingerList
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class DetectedFingerList implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class DetectedFingerList
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3DetectedFingerList *ID3_DETECTED_FINGER_LIST;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        detectedFingerList = DetectedFingerList()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del detectedFingerList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final detectedFingerList = sdk.DetectedFingerList();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        detectedFingerList.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var detectedFingerList = new DetectedFingerList())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var detectedFingerList = new DetectedFingerList()
+        // ...
+        detectedFingerList.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (DetectedFingerList detectedFingerList = new DetectedFingerList()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        DetectedFingerList detectedFingerList = new DetectedFingerList();
+        // ...
+        detectedFingerList.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var detectedFingerList: DetectedFingerList? = nil
+        detectedFingerList = try DetectedFingerList()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_DETECTED_FINGER_LIST hDetectedFingerList{};
+        int err = id3DetectedFingerList_Initialize(&hDetectedFingerList);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3DetectedFingerList_Dispose(&hDetectedFingerList);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`count<detected_finger_list_count_class_member>`
+    - int
+    - Gets the number of elements contained in the list
+  * - operator [int index]
+    - :ref:`DetectedFinger<detected_finger_class>`
+    - Gets or sets the element at the specified index in the list.
+
+Iteration
+---------
+
+This class supports iteration in Dart, C#, Java and Python.
+
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`add<detected_finger_list_add_class_method>`
+    - Adds an item to the DetectedFingerList object.
+  * - :ref:`clear<detected_finger_list_clear_class_method>`
+    - Clears the DetectedFingerList object.
+  * - :ref:`clone<detected_finger_list_clone_class_method>`
+    - Clones the DetectedFingerList object.
+  * - :ref:`get<detected_finger_list_get_class_method>`
+    - Gets an item of the DetectedFingerList object.
+  * - :ref:`getCount<detected_finger_list_get_count_class_method>`
+    - Gets the number of elements in the DetectedFingerList object.
+  * - :ref:`removeAt<detected_finger_list_remove_at_class_method>`
+    - Removes an element of the DetectedFingerList object.
+  * - :ref:`resize<detected_finger_list_resize_class_method>`
+    - DetectedFingerList object.
+  * - :ref:`set<detected_finger_list_set_class_method>`
+    - Sets an item of the DetectedFingerList object.

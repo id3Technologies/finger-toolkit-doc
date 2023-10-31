@@ -1,0 +1,91 @@
+.. index:: 
+  !FingerImageCompressionAlgorithm Enumeration
+
+.. _finger_image_compression_algorithm_enum:
+
+===============================================================================
+FingerImageCompressionAlgorithm Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the finger image compression algorithms.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerImageCompressionAlgorithm
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerImageCompressionAlgorithm
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerImageCompressionAlgorithm
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerImageCompressionAlgorithm
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerImageCompressionAlgorithm
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerImageCompressionAlgorithm
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``none``
+    - 0
+    - Uncompressed - no bit packing.
+  * - ``packed``
+    - 1
+    - Uncompressed - bit packed.
+  * - ``wsq``
+    - 2
+    - Compressed - WSQ (IAFIS_IC-0110 Annex E).
+  * - ``jpeg``
+    - 3
+    - Compressed - JPEG (ISO/IEC 10918-1).
+  * - ``jpeg2000``
+    - 4
+    - Compressed - JPEG2000 (ISO/IEC 15444)
+  * - ``png``
+    - 5
+    - Compressed - PNG (ISO/IEC 15948)

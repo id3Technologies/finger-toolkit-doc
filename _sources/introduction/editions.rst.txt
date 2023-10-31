@@ -1,0 +1,29 @@
+.. index:: 
+  !Product editions
+
+.. _product_editions:
+
+========
+Editions
+========
+
+|product-name| is available in the following editions:
+
+.. list-table:: 
+  :width: 100%
+  :widths: 15 30 55
+  :header-rows: 1
+
+  * - Edition
+    - Platforms
+    - Description
+  * - Server
+    - Windows, Linux or macOS
+    - | Full-featured edition generally used for server or desktop-based applications.
+      | Enables one-to-many search mode.
+  * - Mobile
+    - Android, iOS
+    - This edition is for mobile applications.
+  * - Edge
+    - Raspberry PI, NXP iMX
+    - This edition is optimized for embedded systems.

@@ -1,0 +1,166 @@
+.. index:: 
+  !FingerPosition Enumeration
+
+.. _finger_position_enum:
+
+===============================================================================
+FingerPosition Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the finger positions, as defined in ISO/IEC 19794-2:2011.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerPosition
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerPosition
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerPosition
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerPosition
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerPosition
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerPosition
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``unknown``
+    - 0
+    - Unknown position.
+  * - ``rightThumb``
+    - 1
+    - Right thumb.
+  * - ``rightIndex``
+    - 2
+    - Right index finger.
+  * - ``rightMiddle``
+    - 3
+    - Right middle finger.
+  * - ``rightRing``
+    - 4
+    - Right ring finger.
+  * - ``rightLittle``
+    - 5
+    - Right little finger.
+  * - ``leftThumb``
+    - 6
+    - Left thumb.
+  * - ``leftIndex``
+    - 7
+    - Left index finger.
+  * - ``leftMiddle``
+    - 8
+    - Left middle finger.
+  * - ``leftRing``
+    - 9
+    - Left ring finger.
+  * - ``leftLittle``
+    - 10
+    - Left little finger.
+  * - ``plainRightThumb``
+    - 11
+    - Plain right thumb.
+  * - ``plainLeftThumb``
+    - 12
+    - Plain left thumb.
+  * - ``plainRightFour``
+    - 13
+    - Plain right four fingers.
+  * - ``plainLeftFour``
+    - 14
+    - Plain left four fingers.
+  * - ``leftThumbAndRightThumb``
+    - 15
+    - Left thumb and right thumb fingers.
+  * - ``rightExtraDigit``
+    - 16
+    - Right extra digit finger.
+  * - ``leftExtraDigit``
+    - 17
+    - Left extra digit finger.
+  * - ``frictionRidgeUnknown``
+    - 18
+    - Unknown friction ridge.
+  * - ``ejiOrTip``
+    - 19
+    - Entire Joint Image (EJI) or tip.
+  * - ``rightIndexAndMiddle``
+    - 40
+    - Right index and middle fingers.
+  * - ``rightMiddleAndRing``
+    - 41
+    - Right middle and ring fingers.
+  * - ``rightRingAndLittle``
+    - 42
+    - Right ring and little fingers.
+  * - ``leftIndexAndMiddle``
+    - 43
+    - Left index and middle fingers.
+  * - ``leftMiddleAndRing``
+    - 44
+    - Left middle and ring fingers.
+  * - ``leftRingAndLittle``
+    - 45
+    - Right ring and little fingers.
+  * - ``rightIndexAndLeftIndex``
+    - 46
+    - Right index and left index fingers.
+  * - ``rightIndexAndMiddleAndRing``
+    - 47
+    - Right index and middle and ring fingers.
+  * - ``rightMiddleAndRingAndLittle``
+    - 48
+    - Right middle and ring and little fingers.
+  * - ``leftIndexAndMiddleAndRing``
+    - 49
+    - Left index and middle and ring fingers.
+  * - ``leftMiddleAndRingAndLittle``
+    - 50
+    - Left middle and ring and little fingers.

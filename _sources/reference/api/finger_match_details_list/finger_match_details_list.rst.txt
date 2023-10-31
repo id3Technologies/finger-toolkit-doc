@@ -1,0 +1,214 @@
+.. index:: 
+  !FingerMatchDetailsList Class
+
+.. _finger_match_details_list_class:
+
+===============================================================================
+FingerMatchDetailsList Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  add<add>
+  clear<clear>
+  count<count>
+  get<get>
+  getCount<get_count>
+  removeAt<remove_at>
+  resize<resize>
+  set<set>
+
+
+Definition
+----------
+.. line-block::
+    Represents a list of finger matching details.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerMatchDetailsList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerMatchDetailsList implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerMatchDetailsList
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerMatchDetailsList implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerMatchDetailsList
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerMatchDetailsList *ID3_FINGER_MATCH_DETAILS_LIST;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerMatchDetailsList = FingerMatchDetailsList()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerMatchDetailsList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerMatchDetailsList = sdk.FingerMatchDetailsList();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerMatchDetailsList.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerMatchDetailsList = new FingerMatchDetailsList())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerMatchDetailsList = new FingerMatchDetailsList()
+        // ...
+        fingerMatchDetailsList.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerMatchDetailsList fingerMatchDetailsList = new FingerMatchDetailsList()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerMatchDetailsList fingerMatchDetailsList = new FingerMatchDetailsList();
+        // ...
+        fingerMatchDetailsList.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerMatchDetailsList: FingerMatchDetailsList? = nil
+        fingerMatchDetailsList = try FingerMatchDetailsList()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_MATCH_DETAILS_LIST hFingerMatchDetailsList{};
+        int err = id3FingerMatchDetailsList_Initialize(&hFingerMatchDetailsList);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerMatchDetailsList_Dispose(&hFingerMatchDetailsList);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`count<finger_match_details_list_count_class_member>`
+    - int
+    - Gets the number of elements contained in the list
+  * - operator [int index]
+    - :ref:`FingerMatchDetails<finger_match_details_class>`
+    - Gets or sets the element at the specified index in the list.
+
+Iteration
+---------
+
+This class supports iteration in Dart, C#, Java and Python.
+
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`add<finger_match_details_list_add_class_method>`
+    - Adds an item to the FingerMatchDetailsList object.
+  * - :ref:`clear<finger_match_details_list_clear_class_method>`
+    - Clears the FingerMatchDetailsList object.
+  * - :ref:`get<finger_match_details_list_get_class_method>`
+    - Gets an item of the FingerMatchDetailsList object.
+  * - :ref:`getCount<finger_match_details_list_get_count_class_method>`
+    - Gets the number of elements in the FingerMatchDetailsList object.
+  * - :ref:`removeAt<finger_match_details_list_remove_at_class_method>`
+    - Removes an element of the FingerMatchDetailsList object.
+  * - :ref:`resize<finger_match_details_list_resize_class_method>`
+    - FingerMatchDetailsList object.
+  * - :ref:`set<finger_match_details_list_set_class_method>`
+    - Sets an item of the FingerMatchDetailsList object.

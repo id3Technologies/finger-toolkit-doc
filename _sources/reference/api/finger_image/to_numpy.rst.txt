@@ -1,0 +1,42 @@
+.. index:: 
+  !FingerImage.toNumpy Method
+  
+.. _finger_image_to_numpy_class_method:
+
+===============================================================================
+FingerImage.toNumpy Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Exports the image to a numpy array (Python only)
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        to_numpy(self) -> bytearray
+
+      **Returns**
+
+        .. line-block::
+
+          ``bytearray``
+          Buffer that receives the numpy array.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

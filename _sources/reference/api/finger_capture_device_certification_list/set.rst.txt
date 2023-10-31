@@ -1,0 +1,182 @@
+.. index:: 
+  !FingerCaptureDeviceCertificationList.set Method
+  
+.. _finger_capture_device_certification_list_set_class_method:
+
+===============================================================================
+FingerCaptureDeviceCertificationList.set Method
+===============================================================================
+
+Module: :ref:`FingerCaptureDeviceCertificationList<finger_capture_device_certification_list_class>`
+
+Definition
+----------
+
+Sets an item of the FingerCaptureDeviceCertificationList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        set(self, index: int, finger_capture_device_certification_item: FingerCaptureDeviceCertification) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCaptureDeviceCertification item to set.
+
+          ``finger_capture_device_certification_item`` :ref:`FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+          :guilabel:`in` FingerCaptureDeviceCertification item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void set(int index, FingerCaptureDeviceCertification fingerCaptureDeviceCertificationItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCaptureDeviceCertification item to set.
+
+          ``fingerCaptureDeviceCertificationItem`` :ref:`FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+          :guilabel:`in` FingerCaptureDeviceCertification item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Set(int index, FingerCaptureDeviceCertification fingerCaptureDeviceCertificationItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCaptureDeviceCertification item to set.
+
+          ``fingerCaptureDeviceCertificationItem`` :ref:`FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+          :guilabel:`in` FingerCaptureDeviceCertification item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void set(int index, FingerCaptureDeviceCertification fingerCaptureDeviceCertificationItem) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCaptureDeviceCertification item to set.
+
+          ``fingerCaptureDeviceCertificationItem`` :ref:`FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+          :guilabel:`in` FingerCaptureDeviceCertification item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func set(index: Int32, fingerCaptureDeviceCertificationItem: FingerCaptureDeviceCertification) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` Index of the FingerCaptureDeviceCertification item to set.
+
+          ``fingerCaptureDeviceCertificationItem`` :ref:`FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+          :guilabel:`in` FingerCaptureDeviceCertification item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerCaptureDeviceCertificationList_Set (
+            ID3_FINGER_CAPTURE_DEVICE_CERTIFICATION_LIST hFingerCaptureDeviceCertificationList, 
+            int index, 
+            id3FingerCaptureDeviceCertification eFingerCaptureDeviceCertificationItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerCaptureDeviceCertificationList`` :ref:`ID3_FINGER_CAPTURE_DEVICE_CERTIFICATION_LIST<finger_capture_device_certification_list_class>`
+          :guilabel:`in` Handle to the FingerCaptureDeviceCertificationList object.
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCaptureDeviceCertification item to set.
+
+          ``eFingerCaptureDeviceCertificationItem`` :ref:`id3FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+          :guilabel:`in` FingerCaptureDeviceCertification item to set.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

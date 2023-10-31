@@ -1,0 +1,92 @@
+.. index:: 
+  !Rectangle Structure
+
+.. _rectangle_struct:
+
+===============================================================================
+Rectangle Structure
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  bottomLeft<bottom_left>
+  bottomRight<bottom_right>
+  topLeft<top_left>
+  topRight<top_right>
+
+Definition
+----------
+.. line-block::
+    Represents a rectangle.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      class Rectangle
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      class Rectangle
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public partial struct Rectangle
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public class Rectangle
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public typealias Rectangle = id3FingerRectangle
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      typedef struct id3FingerRectangle
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`bottomLeft<rectangle_bottom_left_struct_member>`
+    - :ref:`Point<point_struct>`
+    - Bottom-left corner of the rectangle.
+  * - :ref:`bottomRight<rectangle_bottom_right_struct_member>`
+    - :ref:`Point<point_struct>`
+    - Bottom-right corner of the rectangle.
+  * - :ref:`topLeft<rectangle_top_left_struct_member>`
+    - :ref:`Point<point_struct>`
+    - Top-left corner of the rectangle.
+  * - :ref:`topRight<rectangle_top_right_struct_member>`
+    - :ref:`Point<point_struct>`
+    - Top-right corner of the rectangle.

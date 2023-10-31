@@ -1,0 +1,18 @@
+.. _distributing_windows_app:
+
+---------------------------------
+Distributing Windows applications
+---------------------------------
+
+To distribute a Windows application that uses |product-name|, you must deploy the following libraries and files:
+
+- id3Finger.dll
+- Microsoft Visual C++ 2017 Redistributable
+- :ref:`ai_models`
+
+
+For .NET applications the .NET librairy *id3.Finger.dll* shall be distributed in addition to the Windows native libraries.
+
+For Java applications the java archive file *eu.id3.finger.jar* shall be distributed in addition to the native libraries.
+
+.. note:: For GPU usage, additional requirements are specified in section :ref:`gpu_version`.

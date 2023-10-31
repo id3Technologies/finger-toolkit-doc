@@ -1,0 +1,124 @@
+.. index:: 
+  !FingerTemplate.captureDeviceType Property
+
+.. _finger_template_capture_device_type_class_member:
+
+===============================================================================
+FingerTemplate.captureDeviceType Property
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Type: int
+
+Definition
+----------
+
+Capture device type identifier that identifies the product type that created this finger template.
+
+.. note:: The identifier shall be assigned by the registered product owner or other approved registration authority, such as IBIA (www.ibia.org). A value of all zeros indicates that the capture device type is unreported.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      capture_device_type: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get captureDeviceType => getCaptureDeviceType();
+      set captureDeviceType(int value) => setCaptureDeviceType(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int captureDeviceType
+      {
+          get => GetcaptureDeviceType();
+          set => SetcaptureDeviceType(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getCaptureDeviceType() throws FingerException
+      public void setCaptureDeviceType(int captureDeviceType) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var captureDeviceType: Int
+          get {
+              return Int(try! getCaptureDeviceType())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerTemplate_GetCaptureDeviceType (ID3_FINGER_TEMPLATE hFingerTemplate, int * captureDeviceType)
+      int id3FingerTemplate_SetCaptureDeviceType (ID3_FINGER_TEMPLATE hFingerTemplate, int captureDeviceType)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

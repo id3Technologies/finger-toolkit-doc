@@ -1,0 +1,202 @@
+.. index:: 
+  !FingerImageRecord.get Method
+  
+.. _finger_image_record_get_class_method:
+
+===============================================================================
+FingerImageRecord.get Method
+===============================================================================
+
+Module: :ref:`FingerImageRecord<finger_image_record_class>`
+
+Definition
+----------
+
+Gets an item of the FingerImageRecord object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        get(self, index: int) -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerImage item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          FingerImage item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerImage get(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerImage item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          FingerImage item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerImage Get(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerImage item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          FingerImage item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerImage get(int index) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerImage item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          FingerImage item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func get(index: Int32) throws -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` Index of the FingerImage item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          FingerImage item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImageRecord_Get (
+            ID3_FINGER_IMAGE_RECORD hFingerImageRecord, 
+            int index, 
+            ID3_FINGER_IMAGE hFingerImageItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImageRecord`` :ref:`ID3_FINGER_IMAGE_RECORD<finger_image_record_class>`
+          :guilabel:`in` Handle to the FingerImageRecord object.
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerImage item to get.
+
+          ``hFingerImageItem`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`out` FingerImage item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

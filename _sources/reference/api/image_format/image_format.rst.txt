@@ -1,0 +1,94 @@
+.. index:: 
+  !ImageFormat Enumeration
+
+.. _image_format_enum:
+
+===============================================================================
+ImageFormat Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates supported image formats.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class ImageFormat
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum ImageFormat
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum ImageFormat
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum ImageFormat
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum ImageFormat
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerImageFormat
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``bmp``
+    - 0
+    - BMP.
+  * - ``jpeg``
+    - 2
+    - JPEG.
+  * - ``png``
+    - 13
+    - PNG.
+  * - ``tiff``
+    - 18
+    - Tiff.
+  * - ``jpeg2000``
+    - 30
+    - JPEG 2000.
+  * - ``webp``
+    - 31
+    - WEBP.
+  * - ``raw``
+    - 34
+    - Raw.

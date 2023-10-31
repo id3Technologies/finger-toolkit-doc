@@ -1,0 +1,206 @@
+.. index:: 
+  !StringList.get Method
+  
+.. _string_list_get_class_method:
+
+===============================================================================
+StringList.get Method
+===============================================================================
+
+Module: :ref:`StringList<string_list_class>`
+
+Definition
+----------
+
+Gets an item of the StringList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        get(self, index: int) -> str
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``str``
+           item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        String get(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+           item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public string Get(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``string``
+           item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public String get(int index) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+           item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func get(index: Int32) throws -> String
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` Index of the  item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+           item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerStringList_Get (
+            ID3_FINGER_STRING_LIST hStringList, 
+            int index, 
+            char * item, 
+            int * itemSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hStringList`` :ref:`ID3_FINGER_STRING_LIST<string_list_class>`
+          :guilabel:`in` Handle to the StringList object.
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to get.
+
+          ``item`` char *
+          :guilabel:`out`  item to get.
+
+          ``itemSize`` int *
+          :guilabel:`in` Size of the 'item' buffer. Receives the minimum required buffer size to hold the 'item' string if the given one is too small (including the terminating NULL character), otherwise receives the number of characters in 'item' (excluding terminating NULL character).
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

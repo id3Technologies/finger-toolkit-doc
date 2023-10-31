@@ -1,0 +1,84 @@
+.. index:: 
+  !Point Structure
+
+.. _point_struct:
+
+===============================================================================
+Point Structure
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  x<x>
+  y<y>
+
+Definition
+----------
+.. line-block::
+    Represents a point.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      class Point
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      class Point
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public partial struct Point
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public class Point
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public typealias Point = id3FingerPoint
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      typedef struct id3FingerPoint
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`x<point_x_struct_member>`
+    - int
+    - X-coordinate of the point.
+  * - :ref:`y<point_y_struct_member>`
+    - int
+    - Y-coordinate of the point.

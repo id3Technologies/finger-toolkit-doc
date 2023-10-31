@@ -1,0 +1,88 @@
+.. index:: 
+  !LibVersion Structure
+
+.. _lib_version_struct:
+
+===============================================================================
+LibVersion Structure
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  build<build>
+  major<major>
+  minor<minor>
+
+Definition
+----------
+.. line-block::
+    Contains data for LibVersion
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      class LibVersion
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      class LibVersion
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public partial struct LibVersion
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public class LibVersion
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public typealias LibVersion = id3FingerLibVersion
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      typedef struct id3FingerLibVersion
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`build<lib_version_build_struct_member>`
+    - int
+    - Build.
+  * - :ref:`major<lib_version_major_struct_member>`
+    - int
+    - Version.
+  * - :ref:`minor<lib_version_minor_struct_member>`
+    - int
+    - Release.

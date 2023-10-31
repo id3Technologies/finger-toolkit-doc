@@ -1,0 +1,182 @@
+.. index:: 
+  !FingerTemplate.prune Method
+  
+.. _finger_template_prune_class_method:
+
+===============================================================================
+FingerTemplate.prune Method
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Definition
+----------
+
+Reduces the number of minutiae in the template using the given method.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        prune(self, pruning_method: PruningMethod, max_minutiae_count: int) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pruning_method`` :ref:`PruningMethod<pruning_method_enum>`
+          :guilabel:`in` Method to use to prune the template.
+
+          ``max_minutiae_count`` int
+          :guilabel:`in` Maximum number of minutiae to prune to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void prune(PruningMethod pruningMethod, int maxMinutiaeCount)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pruningMethod`` :ref:`PruningMethod<pruning_method_enum>`
+          :guilabel:`in` Method to use to prune the template.
+
+          ``maxMinutiaeCount`` int
+          :guilabel:`in` Maximum number of minutiae to prune to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Prune(PruningMethod pruningMethod, int maxMinutiaeCount)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pruningMethod`` :ref:`PruningMethod<pruning_method_enum>`
+          :guilabel:`in` Method to use to prune the template.
+
+          ``maxMinutiaeCount`` int
+          :guilabel:`in` Maximum number of minutiae to prune to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void prune(PruningMethod pruningMethod, int maxMinutiaeCount) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pruningMethod`` :ref:`PruningMethod<pruning_method_enum>`
+          :guilabel:`in` Method to use to prune the template.
+
+          ``maxMinutiaeCount`` int
+          :guilabel:`in` Maximum number of minutiae to prune to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func prune(pruningMethod: PruningMethod, maxMinutiaeCount: Int32) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pruningMethod`` :ref:`PruningMethod<pruning_method_enum>`
+          :guilabel:`in` Method to use to prune the template.
+
+          ``maxMinutiaeCount`` Int32
+          :guilabel:`in` Maximum number of minutiae to prune to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerTemplate_Prune (
+            ID3_FINGER_TEMPLATE hFingerTemplate, 
+            id3FingerPruningMethod ePruningMethod, 
+            int maxMinutiaeCount)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerTemplate`` :ref:`ID3_FINGER_TEMPLATE<finger_template_class>`
+          :guilabel:`in` Handle to the FingerTemplate object.
+
+          ``ePruningMethod`` :ref:`id3FingerPruningMethod<pruning_method_enum>`
+          :guilabel:`in` Method to use to prune the template.
+
+          ``maxMinutiaeCount`` int
+          :guilabel:`in` Maximum number of minutiae to prune to.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

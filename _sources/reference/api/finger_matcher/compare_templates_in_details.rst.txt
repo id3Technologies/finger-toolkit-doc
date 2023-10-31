@@ -1,0 +1,221 @@
+.. index:: 
+  !FingerMatcher.compareTemplatesInDetails Method
+  
+.. _finger_matcher_compare_templates_in_details_class_method:
+
+===============================================================================
+FingerMatcher.compareTemplatesInDetails Method
+===============================================================================
+
+Module: :ref:`FingerMatcher<finger_matcher_class>`
+
+Definition
+----------
+
+Compares two templates and outputs a score along with matching details.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        compare_templates_in_details(self, reference: FingerTemplate, probe: FingerTemplate) -> FingerMatchDetails
+
+      **Parameters**
+
+        .. line-block::
+
+          ``reference`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` Reference template.
+
+          ``probe`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` Probe template.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMatchDetails<finger_match_details_class>`
+          Finger match details associated to this comparison.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerMatchDetails compareTemplatesInDetails(FingerTemplate reference, FingerTemplate probe)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``reference`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` Reference template.
+
+          ``probe`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` Probe template.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMatchDetails<finger_match_details_class>`
+          Finger match details associated to this comparison.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerMatchDetails CompareTemplatesInDetails(FingerTemplate reference, FingerTemplate probe)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``reference`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` Reference template.
+
+          ``probe`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` Probe template.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMatchDetails<finger_match_details_class>`
+          Finger match details associated to this comparison.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerMatchDetails compareTemplatesInDetails(FingerTemplate reference, FingerTemplate probe) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``reference`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` Reference template.
+
+          ``probe`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` Probe template.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMatchDetails<finger_match_details_class>`
+          Finger match details associated to this comparison.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func compareTemplatesInDetails(reference: FingerTemplate, probe: FingerTemplate) throws -> FingerMatchDetails
+
+      **Parameters**
+
+        .. line-block::
+
+          ``reference`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` Reference template.
+
+          ``probe`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` Probe template.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMatchDetails<finger_match_details_class>`
+          Finger match details associated to this comparison.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerMatcher_CompareTemplatesInDetails (
+            ID3_FINGER_MATCHER hFingerMatcher, 
+            ID3_FINGER_TEMPLATE hReference, 
+            ID3_FINGER_TEMPLATE hProbe, 
+            ID3_FINGER_MATCH_DETAILS hMatchDetails)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerMatcher`` :ref:`ID3_FINGER_MATCHER<finger_matcher_class>`
+          :guilabel:`in` Handle to the FingerMatcher object.
+
+          ``hReference`` :ref:`ID3_FINGER_TEMPLATE<finger_template_class>`
+          :guilabel:`in` Reference template.
+
+          ``hProbe`` :ref:`ID3_FINGER_TEMPLATE<finger_template_class>`
+          :guilabel:`in` Probe template.
+
+          ``hMatchDetails`` :ref:`ID3_FINGER_MATCH_DETAILS<finger_match_details_class>`
+          :guilabel:`out` Finger match details associated to this comparison.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

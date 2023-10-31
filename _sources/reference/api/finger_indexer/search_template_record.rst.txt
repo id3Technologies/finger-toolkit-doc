@@ -1,0 +1,242 @@
+.. index:: 
+  !FingerIndexer.searchTemplateRecord Method
+  
+.. _finger_indexer_search_template_record_class_method:
+
+===============================================================================
+FingerIndexer.searchTemplateRecord Method
+===============================================================================
+
+Module: :ref:`FingerIndexer<finger_indexer_class>`
+
+Definition
+----------
+
+Performs a one-to-many search of a probe finger template record against a previously initialized finger indexer and outputs a candidate list.
+
+.. note:: This function is thread safe with other SearchTemplateRecord() calls but not with AddTemplateRecords() calls.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        search_template_record(self, probe: FingerTemplateRecord, max_candidates: int, trust_filled_positions: bool) -> FingerCandidateList
+
+      **Parameters**
+
+        .. line-block::
+
+          ``probe`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` The probe finger template record.
+
+          ``max_candidates`` int
+          :guilabel:`in` Maximum candidates count in the retrieved candidate list.
+
+          ``trust_filled_positions`` bool
+          :guilabel:`in` If False, search does not trust the TemplateRecord positions : each query template is searched across all different positions. If True, each query template is only search against templates of its position.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidateList<finger_candidate_list_class>`
+          List of candidates sorted by decreasing match score.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerCandidateList searchTemplateRecord(FingerTemplateRecord probe, int maxCandidates, bool trustFilledPositions)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``probe`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` The probe finger template record.
+
+          ``maxCandidates`` int
+          :guilabel:`in` Maximum candidates count in the retrieved candidate list.
+
+          ``trustFilledPositions`` bool
+          :guilabel:`in` If False, search does not trust the TemplateRecord positions : each query template is searched across all different positions. If True, each query template is only search against templates of its position.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidateList<finger_candidate_list_class>`
+          List of candidates sorted by decreasing match score.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerCandidateList SearchTemplateRecord(FingerTemplateRecord probe, int maxCandidates, bool trustFilledPositions)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``probe`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` The probe finger template record.
+
+          ``maxCandidates`` int
+          :guilabel:`in` Maximum candidates count in the retrieved candidate list.
+
+          ``trustFilledPositions`` bool
+          :guilabel:`in` If False, search does not trust the TemplateRecord positions : each query template is searched across all different positions. If True, each query template is only search against templates of its position.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidateList<finger_candidate_list_class>`
+          List of candidates sorted by decreasing match score.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerCandidateList searchTemplateRecord(FingerTemplateRecord probe, int maxCandidates, boolean trustFilledPositions) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``probe`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` The probe finger template record.
+
+          ``maxCandidates`` int
+          :guilabel:`in` Maximum candidates count in the retrieved candidate list.
+
+          ``trustFilledPositions`` boolean
+          :guilabel:`in` If False, search does not trust the TemplateRecord positions : each query template is searched across all different positions. If True, each query template is only search against templates of its position.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidateList<finger_candidate_list_class>`
+          List of candidates sorted by decreasing match score.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func searchTemplateRecord(probe: FingerTemplateRecord, maxCandidates: Int32, trustFilledPositions: Bool) throws -> FingerCandidateList
+
+      **Parameters**
+
+        .. line-block::
+
+          ``probe`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` The probe finger template record.
+
+          ``maxCandidates`` Int32
+          :guilabel:`in` Maximum candidates count in the retrieved candidate list.
+
+          ``trustFilledPositions`` Bool
+          :guilabel:`in` If False, search does not trust the TemplateRecord positions : each query template is searched across all different positions. If True, each query template is only search against templates of its position.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidateList<finger_candidate_list_class>`
+          List of candidates sorted by decreasing match score.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerIndexer_SearchTemplateRecord (
+            ID3_FINGER_INDEXER hFingerIndexer, 
+            ID3_FINGER_TEMPLATE_RECORD hProbe, 
+            int maxCandidates, 
+            bool trustFilledPositions, 
+            ID3_FINGER_CANDIDATE_LIST hCandidates)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerIndexer`` :ref:`ID3_FINGER_INDEXER<finger_indexer_class>`
+          :guilabel:`in` Handle to the FingerIndexer object.
+
+          ``hProbe`` :ref:`ID3_FINGER_TEMPLATE_RECORD<finger_template_record_class>`
+          :guilabel:`in` The probe finger template record.
+
+          ``maxCandidates`` int
+          :guilabel:`in` Maximum candidates count in the retrieved candidate list.
+
+          ``trustFilledPositions`` bool
+          :guilabel:`in` If False, search does not trust the TemplateRecord positions : each query template is searched across all different positions. If True, each query template is only search against templates of its position.
+
+          ``hCandidates`` :ref:`ID3_FINGER_CANDIDATE_LIST<finger_candidate_list_class>`
+          :guilabel:`out` List of candidates sorted by decreasing match score.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

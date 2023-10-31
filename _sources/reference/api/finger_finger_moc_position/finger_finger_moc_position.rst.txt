@@ -1,0 +1,106 @@
+.. index:: 
+  !FingerFingerMocPosition Enumeration
+
+.. _finger_finger_moc_position_enum:
+
+===============================================================================
+FingerFingerMocPosition Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the finger positions as defined in ISO/IEC 19785-3:2007 Table 11.6
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerFingerMocPosition
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerFingerMocPosition
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerFingerMocPosition
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerFingerMocPosition
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerFingerMocPosition
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerFingerMocPosition
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``unknown``
+    - 0
+    - Unknown position.
+  * - ``rightThumb``
+    - 0x05
+    - Right thumb.
+  * - ``rightIndex``
+    - 0x09
+    - Right index finger.
+  * - ``rightMiddle``
+    - 0x0D
+    - Right middle finger.
+  * - ``rightRing``
+    - 0x11
+    - Right ring finger.
+  * - ``rightLittle``
+    - 0x15
+    - Right little finger.
+  * - ``leftThumb``
+    - 0x06
+    - Left thumb.
+  * - ``leftIndex``
+    - 0x0A
+    - Left index finger.
+  * - ``leftMiddle``
+    - 0x0E
+    - Left middle finger.
+  * - ``leftRing``
+    - 0x12
+    - Left ring finger.
+  * - ``leftLittle``
+    - 0x16
+    - Left little finger.

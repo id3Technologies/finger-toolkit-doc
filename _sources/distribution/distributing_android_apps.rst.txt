@@ -1,0 +1,7 @@
+.. _distributing_android_apps:
+
+---------------------------------
+Distributing Android applications
+---------------------------------
+For Android applications this SDK is provided as an android archive file *eu.id3.finger.aar*. This archive contains java classes and the native libraries for both armeabi-v7a and arm64_v8a architecture. It must be included along with your application. Please refer to the samples for more information on android usage.
+

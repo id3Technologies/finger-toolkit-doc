@@ -1,0 +1,222 @@
+.. index:: 
+  !FingerImageList.fromFile Method
+  
+.. _finger_image_list_from_file_class_method:
+
+===============================================================================
+FingerImageList.fromFile Method
+===============================================================================
+
+Module: :ref:`FingerImageList<finger_image_list_class>`
+
+Definition
+----------
+
+Imports the finger image list object from a file.
+
+When importing from an ANSI/NIST-ITL 1-2011 (AN2K) transaction, all images in records of type 04 and 14 are imported and added to the list.
+
+For AN2K transaction both traditional and NIEM-XML encodings are supported.
+
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImageList_FromFile (
+            ID3_FINGER_IMAGE_LIST hFingerImageList, 
+            id3FingerImageBufferType eImageBufferType, 
+            const char * path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImageList`` :ref:`ID3_FINGER_IMAGE_LIST<finger_image_list_class>`
+          :guilabel:`in` Handle to the FingerImageList object.
+
+          ``eImageBufferType`` :ref:`id3FingerImageBufferType<finger_image_buffer_type_enum>`
+          :guilabel:`in` Finger image buffer type to import the finger image list object from.
+
+          ``path`` const char *
+          :guilabel:`in` Path to the file to import the finger image list object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static FingerImageList fromFile(FingerImageBufferType imageBufferType, String? path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``imageBufferType`` :ref:`FingerImageBufferType<finger_image_buffer_type_enum>`
+          :guilabel:`in` Finger image buffer type to import the finger image list object from.
+
+          ``path`` String
+          :guilabel:`in` Path to the file to import the finger image list object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImageList<finger_image_list_class>`
+          The newly created finger image list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static FingerImageList FromFile(FingerImageBufferType imageBufferType, string path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``imageBufferType`` :ref:`FingerImageBufferType<finger_image_buffer_type_enum>`
+          :guilabel:`in` Finger image buffer type to import the finger image list object from.
+
+          ``path`` string
+          :guilabel:`in` Path to the file to import the finger image list object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImageList<finger_image_list_class>`
+          The newly created finger image list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static FingerImageList fromFile(FingerImageBufferType imageBufferType, String path) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``imageBufferType`` :ref:`FingerImageBufferType<finger_image_buffer_type_enum>`
+          :guilabel:`in` Finger image buffer type to import the finger image list object from.
+
+          ``path`` String
+          :guilabel:`in` Path to the file to import the finger image list object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImageList<finger_image_list_class>`
+          The newly created finger image list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        from_file(image_buffer_type: FingerImageBufferType, path: str) -> FingerImageList
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image_buffer_type`` :ref:`FingerImageBufferType<finger_image_buffer_type_enum>`
+          :guilabel:`in` Finger image buffer type to import the finger image list object from.
+
+          ``path`` str
+          :guilabel:`in` Path to the file to import the finger image list object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImageList<finger_image_list_class>`
+          The newly created finger image list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func fromFile(imageBufferType: FingerImageBufferType, path: String) throws -> FingerImageList
+
+      **Parameters**
+
+        .. line-block::
+
+          ``imageBufferType`` :ref:`FingerImageBufferType<finger_image_buffer_type_enum>`
+          :guilabel:`in` Finger image buffer type to import the finger image list object from.
+
+          ``path`` String
+          :guilabel:`in` Path to the file to import the finger image list object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImageList<finger_image_list_class>`
+          The newly created finger image list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

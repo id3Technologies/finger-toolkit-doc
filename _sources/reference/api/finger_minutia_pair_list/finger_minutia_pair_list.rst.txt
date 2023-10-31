@@ -1,0 +1,217 @@
+.. index:: 
+  !FingerMinutiaPairList Class
+
+.. _finger_minutia_pair_list_class:
+
+===============================================================================
+FingerMinutiaPairList Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  add<add>
+  clear<clear>
+  clone<clone>
+  count<count>
+  get<get>
+  getCount<get_count>
+  removeAt<remove_at>
+  resize<resize>
+  set<set>
+
+
+Definition
+----------
+.. line-block::
+    Represents a list of finger minutia pairs.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerMinutiaPairList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerMinutiaPairList implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerMinutiaPairList
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerMinutiaPairList implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerMinutiaPairList
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerMinutiaPairList *ID3_FINGER_MINUTIA_PAIR_LIST;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerMinutiaPairList = FingerMinutiaPairList()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerMinutiaPairList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerMinutiaPairList = sdk.FingerMinutiaPairList();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerMinutiaPairList.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerMinutiaPairList = new FingerMinutiaPairList())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerMinutiaPairList = new FingerMinutiaPairList()
+        // ...
+        fingerMinutiaPairList.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerMinutiaPairList fingerMinutiaPairList = new FingerMinutiaPairList()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerMinutiaPairList fingerMinutiaPairList = new FingerMinutiaPairList();
+        // ...
+        fingerMinutiaPairList.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerMinutiaPairList: FingerMinutiaPairList? = nil
+        fingerMinutiaPairList = try FingerMinutiaPairList()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_MINUTIA_PAIR_LIST hFingerMinutiaPairList{};
+        int err = id3FingerMinutiaPairList_Initialize(&hFingerMinutiaPairList);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerMinutiaPairList_Dispose(&hFingerMinutiaPairList);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`count<finger_minutia_pair_list_count_class_member>`
+    - int
+    - Gets the number of elements contained in the list
+  * - operator [int index]
+    - :ref:`FingerMinutiaPair<finger_minutia_pair_struct>`
+    - Gets or sets the element at the specified index in the list.
+
+Iteration
+---------
+
+This class supports iteration in Dart, C#, Java and Python.
+
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`add<finger_minutia_pair_list_add_class_method>`
+    - Adds an item to the FingerMinutiaPairList object.
+  * - :ref:`clear<finger_minutia_pair_list_clear_class_method>`
+    - Clears the FingerMinutiaPairList object.
+  * - :ref:`clone<finger_minutia_pair_list_clone_class_method>`
+    - Clones the FingerMinutiaPairList object.
+  * - :ref:`get<finger_minutia_pair_list_get_class_method>`
+    - Gets an item of the FingerMinutiaPairList object.
+  * - :ref:`getCount<finger_minutia_pair_list_get_count_class_method>`
+    - Gets the number of elements in the FingerMinutiaPairList object.
+  * - :ref:`removeAt<finger_minutia_pair_list_remove_at_class_method>`
+    - Removes an element of the FingerMinutiaPairList object.
+  * - :ref:`resize<finger_minutia_pair_list_resize_class_method>`
+    - FingerMinutiaPairList object.
+  * - :ref:`set<finger_minutia_pair_list_set_class_method>`
+    - Sets an item of the FingerMinutiaPairList object.

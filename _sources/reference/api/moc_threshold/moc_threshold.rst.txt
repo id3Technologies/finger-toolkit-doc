@@ -1,0 +1,91 @@
+.. index:: 
+  !MocThreshold Enumeration
+
+.. _moc_threshold_enum:
+
+===============================================================================
+MocThreshold Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates some typical values for the match-on-card decision threshold.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class MocThreshold
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum MocThreshold
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum MocThreshold
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum MocThreshold
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum MocThreshold
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerMocThreshold
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``fmr100``
+    - 2045
+    - False Match Rate = 1%
+  * - ``fmr1000``
+    - 2828
+    - False Match Rate = 0.1% (1/1K)
+  * - ``fmr10000``
+    - 3785
+    - False Match Rate = 0.01% (1/10K)
+  * - ``fmr100000``
+    - 5011
+    - False Match Rate = 0.001% (1/100K)
+  * - ``fmr1000000``
+    - 6569
+    - False Match Rate = 0.0001% (1/1M)
+  * - ``fmr10000000``
+    - 8534
+    - False Match Rate = 0.00001% (1/10M)

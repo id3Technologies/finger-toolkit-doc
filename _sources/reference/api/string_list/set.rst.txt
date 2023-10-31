@@ -1,0 +1,182 @@
+.. index:: 
+  !StringList.set Method
+  
+.. _string_list_set_class_method:
+
+===============================================================================
+StringList.set Method
+===============================================================================
+
+Module: :ref:`StringList<string_list_class>`
+
+Definition
+----------
+
+Sets an item of the StringList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        set(self, index: int, item: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to set.
+
+          ``item`` str
+          :guilabel:`in`  item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void set(int index, String? item)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to set.
+
+          ``item`` String
+          :guilabel:`in`  item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Set(int index, string item)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to set.
+
+          ``item`` string
+          :guilabel:`in`  item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void set(int index, String item) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to set.
+
+          ``item`` String
+          :guilabel:`in`  item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func set(index: Int32, item: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` Index of the  item to set.
+
+          ``item`` String
+          :guilabel:`in`  item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerStringList_Set (
+            ID3_FINGER_STRING_LIST hStringList, 
+            int index, 
+            const char * item)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hStringList`` :ref:`ID3_FINGER_STRING_LIST<string_list_class>`
+          :guilabel:`in` Handle to the StringList object.
+
+          ``index`` int
+          :guilabel:`in` Index of the  item to set.
+
+          ``item`` const char *
+          :guilabel:`in`  item to set.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

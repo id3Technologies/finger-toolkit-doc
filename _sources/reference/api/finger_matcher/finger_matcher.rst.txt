@@ -1,0 +1,209 @@
+.. index:: 
+  !FingerMatcher Class
+
+.. _finger_matcher_class:
+
+===============================================================================
+FingerMatcher Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  compareTemplateRecords<compare_template_records>
+  compareTemplates<compare_templates>
+  compareTemplatesInDetails<compare_templates_in_details>
+  fingerEmbeddingOnly<finger_embedding_only>
+  maximumRotation<maximum_rotation>
+  minexOnly<minex_only>
+  minutiaPatchOnly<minutia_patch_only>
+  normalizedScores<normalized_scores>
+
+
+Definition
+----------
+.. line-block::
+    Compares two finger templates and searches for a finger template in a list.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerMatcher
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerMatcher implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerMatcher
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerMatcher implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerMatcher
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerMatcher *ID3_FINGER_MATCHER;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerMatcher = FingerMatcher()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerMatcher
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerMatcher = sdk.FingerMatcher();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerMatcher.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerMatcher = new FingerMatcher())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerMatcher = new FingerMatcher()
+        // ...
+        fingerMatcher.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerMatcher fingerMatcher = new FingerMatcher()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerMatcher fingerMatcher = new FingerMatcher();
+        // ...
+        fingerMatcher.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerMatcher: FingerMatcher? = nil
+        fingerMatcher = try FingerMatcher()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_MATCHER hFingerMatcher{};
+        int err = id3FingerMatcher_Initialize(&hFingerMatcher);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerMatcher_Dispose(&hFingerMatcher);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`fingerEmbeddingOnly<finger_matcher_finger_embedding_only_class_member>`
+    - bool
+    - Parameter to force the matcher to use finger embedding data only to perform template comparison.
+  * - :ref:`maximumRotation<finger_matcher_maximum_rotation_class_member>`
+    - int
+    - Maximum supported rotation in degrees between two templates during matching. Range is [0-180].
+  * - :ref:`minexOnly<finger_matcher_minex_only_class_member>`
+    - bool
+    - Parameter to force the matcher to use interoperable minutiae data only to perform template comparison.
+  * - :ref:`minutiaPatchOnly<finger_matcher_minutia_patch_only_class_member>`
+    - bool
+    - Parameter to force the matcher to use minutia patch data only to perform template comparison.
+  * - :ref:`normalizedScores<finger_matcher_normalized_scores_class_member>`
+    - bool
+    - Parameter to force the matcher to normalize the scores. Should always be True.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`compareTemplateRecords<finger_matcher_compare_template_records_class_method>`
+    - Compares two template records and outputs a list of match details.
+  * - :ref:`compareTemplates<finger_matcher_compare_templates_class_method>`
+    - Compares two finger templates and outputs a comparison score.
+  * - :ref:`compareTemplatesInDetails<finger_matcher_compare_templates_in_details_class_method>`
+    - Compares two templates and outputs a score along with matching details.

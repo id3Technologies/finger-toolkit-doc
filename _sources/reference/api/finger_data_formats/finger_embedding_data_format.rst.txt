@@ -1,0 +1,61 @@
+.. index:: 
+  !FingerDataFormats.fingerEmbeddingDataFormat Property
+
+.. _finger_data_formats_finger_embedding_data_format_struct_member:
+
+===============================================================================
+FingerDataFormats.fingerEmbeddingDataFormat Property
+===============================================================================
+
+Structure: :ref:`FingerDataFormats<finger_data_formats_struct>`
+
+Definition
+----------
+
+Finger embedding data format.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      FingerDataFormat finger_embedding_data_format
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerDataFormat fingerEmbeddingDataFormat
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      FingerDataFormat FingerEmbeddingDataFormat
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      FingerDataFormat fingerEmbeddingDataFormat
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      FingerDataFormat fingerEmbeddingDataFormat
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      id3FingerDataFormat FingerEmbeddingDataFormat
+

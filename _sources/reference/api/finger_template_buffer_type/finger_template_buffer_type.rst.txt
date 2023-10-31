@@ -1,0 +1,97 @@
+.. index:: 
+  !FingerTemplateBufferType Enumeration
+
+.. _finger_template_buffer_type_enum:
+
+===============================================================================
+FingerTemplateBufferType Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the fingerprint template buffer types.
+
+.. tab-set::
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerTemplateBufferType
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerTemplateBufferType
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerTemplateBufferType
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerTemplateBufferType
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerTemplateBufferType
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerTemplateBufferType
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``undefined``
+    - 0
+    - Undefined template buffer format.
+  * - ``incits378_2004``
+    - 10
+    - ANSI INCITS 378-2004.
+  * - ``incits378_2009``
+    - 11
+    - ANSI INCITS 378-2009.
+  * - ``iso19794_2_2005``
+    - 20
+    - ISO/IEC 19794-2:2005 record format.
+  * - ``iso19794_2_2011``
+    - 21
+    - ISO/IEC 19794-2:2011 record format.
+  * - ``compactCardIso19794_2_2005``
+    - 30
+    - ISO/IEC 19794-2:2005 compact card format.
+  * - ``normalSizeCompactCardIso19794_2_2005``
+    - 31
+    - ISO/IEC 19794-2:2005 normal size compact card format.
+  * - ``biometricDataTemplate``
+    - 50
+    - Biometric data template buffer type. It encapsulates the card compact buffer type into a specific header dedicated to id3 match-on-card applications.

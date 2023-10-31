@@ -1,0 +1,163 @@
+.. index:: 
+  !FingerIndexer.deleteTemplateRecord Method
+  
+.. _finger_indexer_delete_template_record_class_method:
+
+===============================================================================
+FingerIndexer.deleteTemplateRecord Method
+===============================================================================
+
+Module: :ref:`FingerIndexer<finger_indexer_class>`
+
+Definition
+----------
+
+Deletes a template record from the finger indexed.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        delete_template_record(self, id: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``id`` str
+          :guilabel:`in` ID of the finger template record to delete.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void deleteTemplateRecord(String? id)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``id`` String
+          :guilabel:`in` ID of the finger template record to delete.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void DeleteTemplateRecord(string id)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``id`` string
+          :guilabel:`in` ID of the finger template record to delete.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void deleteTemplateRecord(String id) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``id`` String
+          :guilabel:`in` ID of the finger template record to delete.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func deleteTemplateRecord(id: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``id`` String
+          :guilabel:`in` ID of the finger template record to delete.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerIndexer_DeleteTemplateRecord (
+            ID3_FINGER_INDEXER hFingerIndexer, 
+            const char * id)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerIndexer`` :ref:`ID3_FINGER_INDEXER<finger_indexer_class>`
+          :guilabel:`in` Handle to the FingerIndexer object.
+
+          ``id`` const char *
+          :guilabel:`in` ID of the finger template record to delete.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

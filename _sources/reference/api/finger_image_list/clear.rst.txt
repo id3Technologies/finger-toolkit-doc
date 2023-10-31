@@ -1,0 +1,119 @@
+.. index:: 
+  !FingerImageList.clear Method
+  
+.. _finger_image_list_clear_class_method:
+
+===============================================================================
+FingerImageList.clear Method
+===============================================================================
+
+Module: :ref:`FingerImageList<finger_image_list_class>`
+
+Definition
+----------
+
+Clears the FingerImageList object.
+
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImageList_Clear (
+            ID3_FINGER_IMAGE_LIST hFingerImageList)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImageList`` :ref:`ID3_FINGER_IMAGE_LIST<finger_image_list_class>`
+          :guilabel:`in` Handle to the FingerImageList object.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void clear()
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Clear()
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void clear() throws FingerException
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        clear(self) -> None
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func clear() throws
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

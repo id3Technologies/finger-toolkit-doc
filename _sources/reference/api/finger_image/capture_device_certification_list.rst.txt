@@ -1,0 +1,118 @@
+.. index:: 
+  !FingerImage.captureDeviceCertificationList Property
+
+.. _finger_image_capture_device_certification_list_class_member:
+
+===============================================================================
+FingerImage.captureDeviceCertificationList Property
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Type: :ref:`FingerCaptureDeviceCertificationList<finger_capture_device_certification_list_class>`
+
+Definition
+----------
+
+List of certifications obtained by the capture device.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      capture_device_certification_list: FingerCaptureDeviceCertificationList
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerCaptureDeviceCertificationList get captureDeviceCertificationList => getCaptureDeviceCertificationList();
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public FingerCaptureDeviceCertificationList captureDeviceCertificationList
+      {
+          get => GetcaptureDeviceCertificationList();
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public FingerCaptureDeviceCertificationList getCaptureDeviceCertificationList() throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var captureDeviceCertificationList: FingerCaptureDeviceCertificationList
+          get {
+              return try! getCaptureDeviceCertificationList()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerImage_GetCaptureDeviceCertificationList (ID3_FINGER_IMAGE hFingerImage, ID3_FINGER_CAPTURE_DEVICE_CERTIFICATION_LIST hCaptureDeviceCertificationList)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

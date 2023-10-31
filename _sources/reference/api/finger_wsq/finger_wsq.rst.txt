@@ -1,0 +1,81 @@
+.. index:: 
+  !FingerWsq Class
+
+.. _finger_wsq_class:
+
+===============================================================================
+FingerWsq Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  decodeFromBuffer<decode_from_buffer>
+  decodeFromFile<decode_from_file>
+  encodeToBuffer<encode_to_buffer>
+  encodeToFile<encode_to_file>
+
+
+Definition
+----------
+.. line-block::
+    Compresses finger images with the NIST WSQ algorithm.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerWsq
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerWsq
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static partial class FingerWsq
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerWsq
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerWsq
+
+
+Static Methods
+--------------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`decodeFromBuffer<finger_wsq_decode_from_buffer_class_method>`
+    - Decodes a NIST WSQ encoded buffer to a FingerImage.
+  * - :ref:`decodeFromFile<finger_wsq_decode_from_file_class_method>`
+    - Decodes a NIST WSQ encoded file to a FingerImage.
+  * - :ref:`encodeToBuffer<finger_wsq_encode_to_buffer_class_method>`
+    - Encodes a FingerImage to a NIST WSQ data buffer.
+  * - :ref:`encodeToFile<finger_wsq_encode_to_file_class_method>`
+    - Encodes a FingerImage to a NIST WSQ file.

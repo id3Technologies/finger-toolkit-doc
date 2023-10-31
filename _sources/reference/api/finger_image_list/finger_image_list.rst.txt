@@ -1,0 +1,240 @@
+.. index:: 
+  !FingerImageList Class
+
+.. _finger_image_list_class:
+
+===============================================================================
+FingerImageList Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  add<add>
+  clear<clear>
+  clone<clone>
+  count<count>
+  fromBuffer<from_buffer>
+  fromFile<from_file>
+  get<get>
+  getCount<get_count>
+  removeAt<remove_at>
+  resize<resize>
+  set<set>
+  toBuffer<to_buffer>
+  toFile<to_file>
+
+
+Definition
+----------
+.. line-block::
+    Represents a list of fingerprint images.
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerImageList *ID3_FINGER_IMAGE_LIST;
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerImageList implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerImageList
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerImageList implements AutoCloseable, Serializable
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerImageList
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerImageList
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_IMAGE_LIST hFingerImageList{};
+        int err = id3FingerImageList_Initialize(&hFingerImageList);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerImageList_Dispose(&hFingerImageList);
+        }
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerImageList = sdk.FingerImageList();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerImageList.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerImageList = new FingerImageList())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerImageList = new FingerImageList()
+        // ...
+        fingerImageList.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerImageList fingerImageList = new FingerImageList()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerImageList fingerImageList = new FingerImageList();
+        // ...
+        fingerImageList.close();
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerImageList = FingerImageList()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerImageList
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerImageList: FingerImageList? = nil
+        fingerImageList = try FingerImageList()
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`count<finger_image_list_count_class_member>`
+    - int
+    - Gets the number of elements contained in the list
+  * - operator [int index]
+    - :ref:`FingerImage<finger_image_class>`
+    - Gets or sets the element at the specified index in the list.
+
+Iteration
+---------
+
+This class supports iteration in Dart, C#, Java and Python.
+
+
+Static Methods
+--------------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`fromBuffer<finger_image_list_from_buffer_class_method>`
+    - Imports the finger image list object from a buffer.
+  * - :ref:`fromFile<finger_image_list_from_file_class_method>`
+    - Imports the finger image list object from a file.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`add<finger_image_list_add_class_method>`
+    - Adds an item to the FingerImageList object.
+  * - :ref:`clear<finger_image_list_clear_class_method>`
+    - Clears the FingerImageList object.
+  * - :ref:`clone<finger_image_list_clone_class_method>`
+    - Clones the FingerImageList object.
+  * - :ref:`get<finger_image_list_get_class_method>`
+    - Gets an item of the FingerImageList object.
+  * - :ref:`getCount<finger_image_list_get_count_class_method>`
+    - Gets the number of elements in the FingerImageList object.
+  * - :ref:`removeAt<finger_image_list_remove_at_class_method>`
+    - Removes an element of the FingerImageList object.
+  * - :ref:`resize<finger_image_list_resize_class_method>`
+    - FingerImageList object.
+  * - :ref:`set<finger_image_list_set_class_method>`
+    - Sets an item of the FingerImageList object.
+  * - :ref:`toBuffer<finger_image_list_to_buffer_class_method>`
+    - Exports the finger image object to a buffer.
+  * - :ref:`toFile<finger_image_list_to_file_class_method>`
+    - Exports the finger image list object to a file.

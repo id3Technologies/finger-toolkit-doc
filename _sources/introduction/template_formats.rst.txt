@@ -1,0 +1,29 @@
+.. _template_formats:
+
+================
+Template formats
+================
+
+The following template formats are currently supported:
+
+- ANSI INCITS 378 (2004 and 2009 versions)
+  
+  - Finger minutiae interchange format
+  - American standard
+  - Designed for general storage, data interchange, or card-based system
+  - Includes a general header
+  - 6 bytes per minutia
+
+- ISO/IEC 19794-2 (2005 and 2011 versions)
+
+  - Finger minutiae interchange format
+  - International standard
+  - Designed for general storage, data interchange, or card-based system
+  - Includes a general header
+  - 6 bytes per minutia
+
+- ISO/IEC 19794-2:2005 Compact Card
+
+  - On-card comparison format intended for the comparison-on-card application (match-on-card)
+  - No header
+  - 3 bytes per minutia

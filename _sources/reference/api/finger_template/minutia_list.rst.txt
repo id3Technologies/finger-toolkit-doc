@@ -1,0 +1,118 @@
+.. index:: 
+  !FingerTemplate.minutiaList Property
+
+.. _finger_template_minutia_list_class_member:
+
+===============================================================================
+FingerTemplate.minutiaList Property
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Type: :ref:`FingerMinutiaList<finger_minutia_list_class>`
+
+Definition
+----------
+
+List of minutiae.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      minutia_list: FingerMinutiaList
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerMinutiaList get minutiaList => getMinutiaList();
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public FingerMinutiaList minutiaList
+      {
+          get => GetminutiaList();
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public FingerMinutiaList getMinutiaList() throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var minutiaList: FingerMinutiaList
+          get {
+              return try! getMinutiaList()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerTemplate_GetMinutiaList (ID3_FINGER_TEMPLATE hFingerTemplate, ID3_FINGER_MINUTIA_LIST hMinutiaList)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

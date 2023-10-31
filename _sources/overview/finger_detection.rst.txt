@@ -1,0 +1,68 @@
+.. _finger_detection:
+
+================
+Finger detection
+================
+
+id3 Finger SDK provides a finger detection component used to detect one or multiple fingerprints in images. When detecting multiple fingerprints, the operation is sometimes referred to as **slap
+segmentation**.
+
+.. image:: /_static/images/finger-slap-detection.jpg
+
+A number of issues must be addressed in order to use slap fingerprints in an operational system. Key among
+these is the problem of segmentation error which could result in failures to enroll (FTE), or, if undetected,
+the enrollment of fingerprints into the database in the wrong order. Here are some issues addressed by the
+segmentation algorithm:
+
+• **Rotation** -- most slap images are rotated, but when slaps are rotated more than usual, it may be more difficult to find the pads of all fingers.
+
+• **Cropped fingers** -- fingerprints frequently overlap the edges of slap images which may affect the quality of the resulting fingerprints and/or the accuracy of segmentation.
+
+• **Missing fingers** -- missing fingers are rare, but do occur.
+
+• Fingers are occasionally pressed together unnaturally to force them on the platen.
+
+• **Latent fingerprint** -- in occasion, the backgrounds contain latent fingerprint detail which may affect the feature extraction process.
+
+• **Haloing around fingers** -- some live-scan images have grey halos around the fingers, apparently due to temperature or moisture.
+
+.. note:: When an image is known to contain only one fingerprint, it is not necessary to use the finger detection component.
+  
+AI model
+========
+
+The finger detector component uses the following machine learning model:
+
+.. list-table::
+    :width: 100%
+    :widths: 70 30
+    :header-rows: 1
+
+    * - Model
+      - Size
+
+    * - FingerDetector2A 
+      - 2855 kB
+
+
+Example
+=======
+
+The example below demonstrates how to generate a :ref:`FingerTemplate<finger_template_class>` from a :ref:`FingerImage<finger_image_class>`:
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: python
+
+    .. literalinclude:: /../samples/sample.py
+      :language: python
+      :start-after: [finger_detection]
+      :end-before: [finger_detection]
+      :dedent: 4
+
+See also
+========
+
+- :ref:`finger_detector_class`
+- :ref:`finger_image_class`

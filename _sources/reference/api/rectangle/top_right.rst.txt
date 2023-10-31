@@ -1,0 +1,61 @@
+.. index:: 
+  !Rectangle.topRight Property
+
+.. _rectangle_top_right_struct_member:
+
+===============================================================================
+Rectangle.topRight Property
+===============================================================================
+
+Structure: :ref:`Rectangle<rectangle_struct>`
+
+Definition
+----------
+
+Top-right corner of the rectangle.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      Point top_right
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      Point topRight
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      Point TopRight
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      Point topRight
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      Point topRight
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      id3FingerPoint * TopRight
+

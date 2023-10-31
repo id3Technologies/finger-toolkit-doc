@@ -1,0 +1,164 @@
+.. index:: 
+  !FingerLibrary.checkLicense Method
+  
+.. _finger_library_check_license_class_method:
+
+===============================================================================
+FingerLibrary.checkLicense Method
+===============================================================================
+
+Module: :ref:`FingerLibrary<finger_library_class>`
+
+Definition
+----------
+
+Checks the license file.
+
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLibrary_CheckLicense (
+            const char * licensePath, 
+            void * optionalParameter)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licensePath`` const char *
+          :guilabel:`in` License path.
+
+          ``optionalParameter`` void *
+          :guilabel:`in` Internal usage only. Must be set to nullptr.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static void checkLicense(String? licensePath)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licensePath`` String
+          :guilabel:`in` License path.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static void CheckLicense(string licensePath)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licensePath`` string
+          :guilabel:`in` License path.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static void checkLicense(String licensePath) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licensePath`` String
+          :guilabel:`in` License path.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        check_license(license_path: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``license_path`` str
+          :guilabel:`in` License path.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func checkLicense(licensePath: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licensePath`` String
+          :guilabel:`in` License path.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

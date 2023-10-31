@@ -1,0 +1,20 @@
+==========================
+Frequently Asked Questions
+==========================
+
+This section provides answers to frequently asked questions about this SDK.
+
+Licensing
+=========
+
+* What's the difference between a Developer license and a Runtime license?
+
+    | A Developer license must be purchased to start developing your application.
+    | One license per developer is requested.
+    | The runtime license is necessary to deploy your application.
+
+* How can I view and manage my licenses?
+
+    | To view and manage your licenses, just connect to our customer web portal:
+    | https://portal.id3.eu
+

@@ -1,0 +1,191 @@
+.. index:: 
+  !FingerDetector Class
+
+.. _finger_detector_class:
+
+===============================================================================
+FingerDetector Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  confidenceThreshold<confidence_threshold>
+  detectFingers<detect_fingers>
+  threadCount<thread_count>
+
+
+Definition
+----------
+.. line-block::
+    Detects fingerprints in images.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerDetector
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerDetector implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerDetector
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerDetector implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerDetector
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerDetector *ID3_FINGER_DETECTOR;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerDetector = FingerDetector()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerDetector
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerDetector = sdk.FingerDetector();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerDetector.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerDetector = new FingerDetector())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerDetector = new FingerDetector()
+        // ...
+        fingerDetector.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerDetector fingerDetector = new FingerDetector()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerDetector fingerDetector = new FingerDetector();
+        // ...
+        fingerDetector.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerDetector: FingerDetector? = nil
+        fingerDetector = try FingerDetector()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_DETECTOR hFingerDetector{};
+        int err = id3FingerDetector_Initialize(&hFingerDetector);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerDetector_Dispose(&hFingerDetector);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`confidenceThreshold<finger_detector_confidence_threshold_class_member>`
+    - int
+    - Confidence threshold, from 0 to 100
+  * - :ref:`threadCount<finger_detector_thread_count_class_member>`
+    - int
+    - Number of threads to use for detection.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`detectFingers<finger_detector_detect_fingers_class_method>`
+    - Detects fingers in an image and store their information in a DetectedFingerList object.

@@ -1,0 +1,158 @@
+.. index:: 
+  !PointList.getCount Method
+  
+.. _point_list_get_count_class_method:
+
+===============================================================================
+PointList.getCount Method
+===============================================================================
+
+Module: :ref:`PointList<point_list_class>`
+
+Definition
+----------
+
+Gets the number of elements in the PointList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        get_count(self) -> int
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Number of elements in the Point object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        int getCount()
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Number of elements in the Point object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public int GetCount()
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Number of elements in the Point object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public int getCount() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Number of elements in the Point object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func getCount() throws -> Int32
+
+      **Returns**
+
+        .. line-block::
+
+          ``Int``
+          Number of elements in the Point object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerPointList_GetCount (
+            ID3_FINGER_POINT_LIST hPointList, 
+            int * count)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hPointList`` :ref:`ID3_FINGER_POINT_LIST<point_list_class>`
+          :guilabel:`in` Handle to the PointList object.
+
+          ``count`` int *
+          :guilabel:`out` Number of elements in the Point object.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

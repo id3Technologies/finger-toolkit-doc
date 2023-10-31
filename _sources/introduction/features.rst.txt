@@ -1,0 +1,32 @@
+.. _features:
+
+========
+Features 
+========
+
+|product-name| offers the following features and benefits:
+
+- Highly accurate and interoperable minutiae detection algorithm
+- Fast and accurate one-to-one comparison and one-to-many search
+- Full standards support of biometric data interchange formats (ISO/ANSI)
+- FBI-certified implementation of the Wavelet Scalar Quantization (WSQ) compression algorithm
+- Implementation of the NIST NFIQ algorithm for image quality analysis
+
+id3’s algorithms have been extensively tested by the National Institute of Standards and Technology (NIST)
+in one of the industry’s most reliable, rigorous and statistically significant tests of performance and interoperability
+of core fingerprint algorithms (MINEX). Specifically, id3’s template generator has demonstrated top-level
+accuracy, outperforming most of the well-known biometric market leaders. In combination with smart cards
+implementing fingerprint match-on-card technology, the overall infrastructure delivers the required security and
+privacy for the deployment of a secure, interoperable and flexible solution.
+
+
+Applications
+------------
+
+- Public Safety
+- Border Control
+- Mobile apps
+- ID Management
+- Banking & Payment
+- Automobile & Transportation
+- Healthcare

@@ -1,0 +1,76 @@
+.. index:: 
+  !FingerCaptureDeviceModelId Enumeration
+
+.. _finger_capture_device_model_id_enum:
+
+===============================================================================
+FingerCaptureDeviceModelId Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the fingerprint capture device models registered with the IBIA (www.ibia.org).
+
+.. tab-set::
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerCaptureDeviceModelId
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerCaptureDeviceModelId
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerCaptureDeviceModelId
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerCaptureDeviceModelId
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerCaptureDeviceModelId
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerCaptureDeviceModelId
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``unknown``
+    - 0
+    - Unknown.

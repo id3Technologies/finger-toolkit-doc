@@ -1,0 +1,203 @@
+.. index:: 
+  !FingerMinutia Class
+
+.. _finger_minutia_class:
+
+===============================================================================
+FingerMinutia Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  angle<angle>
+  clone<clone>
+  quality<quality>
+  ridgeType<ridge_type>
+  x<x>
+  y<y>
+
+
+Definition
+----------
+.. line-block::
+    Represents a finger minutia.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerMinutia
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerMinutia implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerMinutia
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerMinutia implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerMinutia
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerMinutia *ID3_FINGER_MINUTIA;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerMinutia = FingerMinutia()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerMinutia
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerMinutia = sdk.FingerMinutia();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerMinutia.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerMinutia = new FingerMinutia())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerMinutia = new FingerMinutia()
+        // ...
+        fingerMinutia.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerMinutia fingerMinutia = new FingerMinutia()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerMinutia fingerMinutia = new FingerMinutia();
+        // ...
+        fingerMinutia.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerMinutia: FingerMinutia? = nil
+        fingerMinutia = try FingerMinutia()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_MINUTIA hFingerMinutia{};
+        int err = id3FingerMinutia_Initialize(&hFingerMinutia);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerMinutia_Dispose(&hFingerMinutia);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`angle<finger_minutia_angle_class_member>`
+    - float
+    - Angle of the minutia in radians. In [0;2*PI[, 0 being horizontal and oriented to the right side of the image, turning clockwise.
+  * - :ref:`quality<finger_minutia_quality_class_member>`
+    - int
+    - Quality of the minutia as computed using id3 proprietary algorithm. In the range [0;100] U {-1}, 100 being maximum quality and -1 meaning 'not computed'.
+  * - :ref:`ridgeType<finger_minutia_ridge_type_class_member>`
+    - :ref:`FingerMinutiaRidgeType<finger_minutia_ridge_type_enum>`
+    - Type of the minutia as defined in FingerMinutiaRidgeType enumeration.
+  * - :ref:`x<finger_minutia_x_class_member>`
+    - int
+    - X-coordinate of the miutia.
+  * - :ref:`y<finger_minutia_y_class_member>`
+    - int
+    - Y-coordinate of the miutia.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`clone<finger_minutia_clone_class_method>`
+    - Clones the FingerMinutia object.

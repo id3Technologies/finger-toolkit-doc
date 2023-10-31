@@ -1,0 +1,222 @@
+.. index:: 
+  !FingerImage.fromBuffer Method
+  
+.. _finger_image_from_buffer_class_method:
+
+===============================================================================
+FingerImage.fromBuffer Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Creates an Image from the specified data buffer.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        from_buffer(data: bytearray, pixel_format: PixelFormat) -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``data`` bytearray
+          :guilabel:`in` A buffer that contains the image data.
+
+          ``pixel_format`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The destination pixel format to convert the input to.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static FingerImage fromBuffer(Uint8List? data, PixelFormat pixelFormat)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``data`` Uint8List
+          :guilabel:`in` A buffer that contains the image data.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The destination pixel format to convert the input to.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static FingerImage FromBuffer(byte[] data, PixelFormat pixelFormat)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``data`` byte[]
+          :guilabel:`in` A buffer that contains the image data.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The destination pixel format to convert the input to.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static FingerImage fromBuffer(byte[] data, PixelFormat pixelFormat) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``data`` byte[]
+          :guilabel:`in` A buffer that contains the image data.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The destination pixel format to convert the input to.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func fromBuffer(data: [UInt8], pixelFormat: PixelFormat) throws -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``data`` [UInt8]
+          :guilabel:`in` A buffer that contains the image data.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The destination pixel format to convert the input to.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_FromBuffer (
+            ID3_FINGER_IMAGE hFingerImage, 
+            unsigned char * data, 
+            int dataSize, 
+            id3FingerPixelFormat ePixelFormat)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``data`` unsigned char *
+          :guilabel:`in` A buffer that contains the image data.
+
+          ``dataSize`` int
+          :guilabel:`in` Size of the 'data' buffer.
+
+          ``ePixelFormat`` :ref:`id3FingerPixelFormat<pixel_format_enum>`
+          :guilabel:`in` The destination pixel format to convert the input to.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

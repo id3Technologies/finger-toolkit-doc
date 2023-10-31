@@ -1,0 +1,202 @@
+.. index:: 
+  !FingerTemplateDict.containsKey Method
+  
+.. _finger_template_dict_contains_key_class_method:
+
+===============================================================================
+FingerTemplateDict.containsKey Method
+===============================================================================
+
+Module: :ref:`FingerTemplateDict<finger_template_dict_class>`
+
+Definition
+----------
+
+Determines whether the FingerTemplateDictobject contains the specified key.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        contains_key(self, key: str) -> bool
+
+      **Parameters**
+
+        .. line-block::
+
+          ``key`` str
+          :guilabel:`in` The key to locate in the FingerTemplate object.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``bool``
+          true if the FingerTemplate object contains an element with the specified key, otherwise false.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        bool containsKey(String? key)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``key`` String
+          :guilabel:`in` The key to locate in the FingerTemplate object.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``bool``
+          true if the FingerTemplate object contains an element with the specified key, otherwise false.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public bool ContainsKey(string key)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``key`` string
+          :guilabel:`in` The key to locate in the FingerTemplate object.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``bool``
+          true if the FingerTemplate object contains an element with the specified key, otherwise false.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public boolean containsKey(String key) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``key`` String
+          :guilabel:`in` The key to locate in the FingerTemplate object.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``boolean``
+          true if the FingerTemplate object contains an element with the specified key, otherwise false.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func containsKey(key: String) throws -> Bool
+
+      **Parameters**
+
+        .. line-block::
+
+          ``key`` String
+          :guilabel:`in` The key to locate in the FingerTemplate object.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``Bool``
+          true if the FingerTemplate object contains an element with the specified key, otherwise false.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerTemplateDict_ContainsKey (
+            ID3_FINGER_TEMPLATE_DICT hFingerTemplateDict, 
+            const char * key, 
+            bool * result)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerTemplateDict`` :ref:`ID3_FINGER_TEMPLATE_DICT<finger_template_dict_class>`
+          :guilabel:`in` Handle to the FingerTemplateDict object.
+
+          ``key`` const char *
+          :guilabel:`in` The key to locate in the FingerTemplate object.
+
+          ``result`` bool *
+          :guilabel:`out` true if the FingerTemplate object contains an element with the specified key, otherwise false.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

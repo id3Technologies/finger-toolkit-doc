@@ -1,0 +1,155 @@
+.. index:: 
+  !FingerLicense.getModuleCount Method
+  
+.. _finger_license_get_module_count_class_method:
+
+===============================================================================
+FingerLicense.getModuleCount Method
+===============================================================================
+
+Module: :ref:`FingerLicense<finger_license_class>`
+
+Definition
+----------
+
+Retrieves the number of modules in the license.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        get_module_count() -> int
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          The number of modules in the license.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static int getModuleCount()
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          The number of modules in the license.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static int GetModuleCount()
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          The number of modules in the license.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static int getModuleCount() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          The number of modules in the license.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func getModuleCount() throws -> Int32
+
+      **Returns**
+
+        .. line-block::
+
+          ``Int``
+          The number of modules in the license.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_GetModuleCount (
+            int * count)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``count`` int *
+          :guilabel:`out` The number of modules in the license.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

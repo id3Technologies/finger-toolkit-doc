@@ -1,0 +1,158 @@
+.. index:: 
+  !FingerCandidate.clone Method
+  
+.. _finger_candidate_clone_class_method:
+
+===============================================================================
+FingerCandidate.clone Method
+===============================================================================
+
+Module: :ref:`FingerCandidate<finger_candidate_class>`
+
+Definition
+----------
+
+Clones the FingerCandidate object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        clone(self) -> FingerCandidate
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidate<finger_candidate_class>`
+          The newly created finger candidate.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerCandidate clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidate<finger_candidate_class>`
+          The newly created finger candidate.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerCandidate Clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidate<finger_candidate_class>`
+          The newly created finger candidate.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerCandidate clone() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidate<finger_candidate_class>`
+          The newly created finger candidate.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func clone() throws -> FingerCandidate
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidate<finger_candidate_class>`
+          The newly created finger candidate.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerCandidate_CopyTo (
+            ID3_FINGER_CANDIDATE hFingerCandidate, 
+            ID3_FINGER_CANDIDATE hFingerCandidateDst)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerCandidate`` :ref:`ID3_FINGER_CANDIDATE<finger_candidate_class>`
+          :guilabel:`in` Handle to the FingerCandidate object.
+
+          ``hFingerCandidateDst`` :ref:`ID3_FINGER_CANDIDATE<finger_candidate_class>`
+          :guilabel:`out` The newly created finger candidate.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

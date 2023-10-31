@@ -1,0 +1,158 @@
+.. index:: 
+  !FingerImageRecord.clone Method
+  
+.. _finger_image_record_clone_class_method:
+
+===============================================================================
+FingerImageRecord.clone Method
+===============================================================================
+
+Module: :ref:`FingerImageRecord<finger_image_record_class>`
+
+Definition
+----------
+
+Clones the FingerImageRecord object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        clone(self) -> FingerImageRecord
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImageRecord<finger_image_record_class>`
+          The newly created finger image record.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerImageRecord clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImageRecord<finger_image_record_class>`
+          The newly created finger image record.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerImageRecord Clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImageRecord<finger_image_record_class>`
+          The newly created finger image record.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerImageRecord clone() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImageRecord<finger_image_record_class>`
+          The newly created finger image record.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func clone() throws -> FingerImageRecord
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImageRecord<finger_image_record_class>`
+          The newly created finger image record.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImageRecord_CopyTo (
+            ID3_FINGER_IMAGE_RECORD hFingerImageRecord, 
+            ID3_FINGER_IMAGE_RECORD hFingerImageRecordDst)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImageRecord`` :ref:`ID3_FINGER_IMAGE_RECORD<finger_image_record_class>`
+          :guilabel:`in` Handle to the FingerImageRecord object.
+
+          ``hFingerImageRecordDst`` :ref:`ID3_FINGER_IMAGE_RECORD<finger_image_record_class>`
+          :guilabel:`out` The newly created finger image record.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

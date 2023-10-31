@@ -1,0 +1,7 @@
+=====================
+Third-Party Libraries
+=====================
+
+.. include:: ../../../3rdParty/3rdParty-Librairies.txt
+    :parser: myst_parser.sphinx_
+    

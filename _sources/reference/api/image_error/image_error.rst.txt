@@ -1,0 +1,112 @@
+.. index:: 
+  !ImageError Enumeration
+
+.. _image_error_enum:
+
+===============================================================================
+ImageError Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates possible error codes related to image management.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class ImageError
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum ImageError
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum ImageError
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum ImageError
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum ImageError
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerImageError
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``success``
+    - 0
+    - No error.
+  * - ``base``
+    - -3000
+    - Base error code for Image module.
+  * - ``minimum``
+    - -3999
+    - Minimum error code for Image module.
+  * - ``invalidHandle``
+    - -3001
+    - The handle is invalid.
+  * - ``invalidParameter``
+    - -3002
+    - The parameter is invalid.
+  * - ``insufficientBuffer``
+    - -3003
+    - The given buffer is too small.
+  * - ``imageSizeMismatch``
+    - -3004
+    - The image sizes are not compatible for the requested operation.
+  * - ``pixelFormatMismatch``
+    - -3005
+    - The pixel formats are not compatible.
+  * - ``keyAlreadyExists``
+    - -3006
+    - The given key is already used in the dictionary. Multiple values per key is not supported.
+  * - ``keyNotFound``
+    - -3007
+    - The given key is not present in the dictionary.
+  * - ``invalidPixelFormat``
+    - -3008
+    - The required pixel format is not correct.
+  * - ``pythonModule``
+    - -3009
+    - An error as occured during python module initialization.
+  * - ``functionNotImplemented``
+    - -3010
+    - Function not implemented.

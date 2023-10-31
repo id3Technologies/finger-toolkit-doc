@@ -1,0 +1,217 @@
+.. index:: 
+  !License.activateSerialKey Method
+  
+.. _license_activate_serial_key_class_method:
+
+===============================================================================
+License.activateSerialKey Method
+===============================================================================
+
+Module: :ref:`License<license_class>`
+
+Definition
+----------
+
+Retrieves a license file using a serial key.
+
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_ActivateSerialKey (
+            const char * hardwareCode, 
+            const char * serialKey, 
+            const char * commentary, 
+            const char * path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` const char *
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``serialKey`` const char *
+          :guilabel:`in` The id3 serial key.
+
+          ``commentary`` const char *
+          :guilabel:`in` Commentary associated to this license activation.
+
+          ``path`` const char *
+          :guilabel:`in` Path to the retrieved license file.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static void activateSerialKey(String? hardwareCode, String? serialKey, String? commentary, String? path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``serialKey`` String
+          :guilabel:`in` The id3 serial key.
+
+          ``commentary`` String
+          :guilabel:`in` Commentary associated to this license activation.
+
+          ``path`` String
+          :guilabel:`in` Path to the retrieved license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static void ActivateSerialKey(string hardwareCode, string serialKey, string commentary, string path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` string
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``serialKey`` string
+          :guilabel:`in` The id3 serial key.
+
+          ``commentary`` string
+          :guilabel:`in` Commentary associated to this license activation.
+
+          ``path`` string
+          :guilabel:`in` Path to the retrieved license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static void activateSerialKey(String hardwareCode, String serialKey, String commentary, String path) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``serialKey`` String
+          :guilabel:`in` The id3 serial key.
+
+          ``commentary`` String
+          :guilabel:`in` Commentary associated to this license activation.
+
+          ``path`` String
+          :guilabel:`in` Path to the retrieved license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        activate_serial_key(hardware_code: str, serial_key: str, commentary: str, path: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardware_code`` str
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``serial_key`` str
+          :guilabel:`in` The id3 serial key.
+
+          ``commentary`` str
+          :guilabel:`in` Commentary associated to this license activation.
+
+          ``path`` str
+          :guilabel:`in` Path to the retrieved license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func activateSerialKey(hardwareCode: String, serialKey: String, commentary: String, path: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``serialKey`` String
+          :guilabel:`in` The id3 serial key.
+
+          ``commentary`` String
+          :guilabel:`in` Commentary associated to this license activation.
+
+          ``path`` String
+          :guilabel:`in` Path to the retrieved license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

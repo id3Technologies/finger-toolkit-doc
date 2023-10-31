@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerPad.model Property
+
+.. _finger_pad_model_class_member:
+
+===============================================================================
+FingerPad.model Property
+===============================================================================
+
+Module: :ref:`FingerPad<finger_pad_class>`
+
+Type: :ref:`FingerModel<finger_model_enum>`
+
+Definition
+----------
+
+Model of finger presentation attack detection.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      model: FingerModel
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerModel get model => getModel();
+      set model(FingerModel value) => setModel(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public FingerModel model
+      {
+          get => Getmodel();
+          set => Setmodel(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public FingerModel getModel() throws FingerException
+      public void setModel(FingerModel model) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var model: FingerModel
+          get {
+              return try! getModel()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerPad_GetModel (ID3_FINGER_PAD hFingerPad, id3FingerModel * eModel)
+      int id3FingerPad_SetModel (ID3_FINGER_PAD hFingerPad, id3FingerModel eModel)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

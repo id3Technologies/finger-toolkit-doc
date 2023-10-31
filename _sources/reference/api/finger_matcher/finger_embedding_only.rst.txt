@@ -1,0 +1,124 @@
+.. index:: 
+  !FingerMatcher.fingerEmbeddingOnly Property
+
+.. _finger_matcher_finger_embedding_only_class_member:
+
+===============================================================================
+FingerMatcher.fingerEmbeddingOnly Property
+===============================================================================
+
+Module: :ref:`FingerMatcher<finger_matcher_class>`
+
+Type: bool
+
+Definition
+----------
+
+Parameter to force the matcher to use finger embedding data only to perform template comparison.
+
+By default, the matcher uses all the data contained in templates to compare them.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      finger_embedding_only: bool
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      bool get fingerEmbeddingOnly => getFingerEmbeddingOnly();
+      set fingerEmbeddingOnly(bool value) => setFingerEmbeddingOnly(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public bool fingerEmbeddingOnly
+      {
+          get => GetfingerEmbeddingOnly();
+          set => SetfingerEmbeddingOnly(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public boolean getFingerEmbeddingOnly() throws FingerException
+      public void setFingerEmbeddingOnly(boolean fingerEmbeddingOnly) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var fingerEmbeddingOnly: Bool
+          get {
+              return try! getFingerEmbeddingOnly()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerMatcher_GetFingerEmbeddingOnly (ID3_FINGER_MATCHER hFingerMatcher, bool * fingerEmbeddingOnly)
+      int id3FingerMatcher_SetFingerEmbeddingOnly (ID3_FINGER_MATCHER hFingerMatcher, bool fingerEmbeddingOnly)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

@@ -1,0 +1,298 @@
+.. index:: 
+  !FingerImage.fromRawBuffer Method
+  
+.. _finger_image_from_raw_buffer_class_method:
+
+===============================================================================
+FingerImage.fromRawBuffer Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Creates an Image from the specified raw data buffer.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        from_raw_buffer(pixels: bytearray, width: int, height: int, stride: int, src_pixel_format: PixelFormat, dst_pixel_format: PixelFormat) -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pixels`` bytearray
+          :guilabel:`in` A buffer that contains image pixels.
+
+          ``width`` int
+          :guilabel:`in` The width, in pixels, of the image.
+
+          ``height`` int
+          :guilabel:`in` The height, in pixels, of the image.
+
+          ``stride`` int
+          :guilabel:`in` The stride, in pixels, of the image.
+
+          ``src_pixel_format`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format of the input image.
+
+          ``dst_pixel_format`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format into which to convert the input image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static FingerImage fromRawBuffer(Uint8List? pixels, int width, int height, int stride, PixelFormat srcPixelFormat, PixelFormat dstPixelFormat)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pixels`` Uint8List
+          :guilabel:`in` A buffer that contains image pixels.
+
+          ``width`` int
+          :guilabel:`in` The width, in pixels, of the image.
+
+          ``height`` int
+          :guilabel:`in` The height, in pixels, of the image.
+
+          ``stride`` int
+          :guilabel:`in` The stride, in pixels, of the image.
+
+          ``srcPixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format of the input image.
+
+          ``dstPixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format into which to convert the input image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static FingerImage FromRawBuffer(byte[] pixels, int width, int height, int stride, PixelFormat srcPixelFormat, PixelFormat dstPixelFormat)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pixels`` byte[]
+          :guilabel:`in` A buffer that contains image pixels.
+
+          ``width`` int
+          :guilabel:`in` The width, in pixels, of the image.
+
+          ``height`` int
+          :guilabel:`in` The height, in pixels, of the image.
+
+          ``stride`` int
+          :guilabel:`in` The stride, in pixels, of the image.
+
+          ``srcPixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format of the input image.
+
+          ``dstPixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format into which to convert the input image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static FingerImage fromRawBuffer(byte[] pixels, int width, int height, int stride, PixelFormat srcPixelFormat, PixelFormat dstPixelFormat) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pixels`` byte[]
+          :guilabel:`in` A buffer that contains image pixels.
+
+          ``width`` int
+          :guilabel:`in` The width, in pixels, of the image.
+
+          ``height`` int
+          :guilabel:`in` The height, in pixels, of the image.
+
+          ``stride`` int
+          :guilabel:`in` The stride, in pixels, of the image.
+
+          ``srcPixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format of the input image.
+
+          ``dstPixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format into which to convert the input image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func fromRawBuffer(pixels: [UInt8], width: Int32, height: Int32, stride: Int32, srcPixelFormat: PixelFormat, dstPixelFormat: PixelFormat) throws -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pixels`` [UInt8]
+          :guilabel:`in` A buffer that contains image pixels.
+
+          ``width`` Int32
+          :guilabel:`in` The width, in pixels, of the image.
+
+          ``height`` Int32
+          :guilabel:`in` The height, in pixels, of the image.
+
+          ``stride`` Int32
+          :guilabel:`in` The stride, in pixels, of the image.
+
+          ``srcPixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format of the input image.
+
+          ``dstPixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format into which to convert the input image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_FromRawBuffer (
+            ID3_FINGER_IMAGE hFingerImage, 
+            unsigned char * pixels, 
+            int pixelsSize, 
+            int width, 
+            int height, 
+            int stride, 
+            id3FingerPixelFormat eSrcPixelFormat, 
+            id3FingerPixelFormat eDstPixelFormat)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``pixels`` unsigned char *
+          :guilabel:`in` A buffer that contains image pixels.
+
+          ``pixelsSize`` int
+          :guilabel:`in` Size of the 'pixels' buffer.
+
+          ``width`` int
+          :guilabel:`in` The width, in pixels, of the image.
+
+          ``height`` int
+          :guilabel:`in` The height, in pixels, of the image.
+
+          ``stride`` int
+          :guilabel:`in` The stride, in pixels, of the image.
+
+          ``eSrcPixelFormat`` :ref:`id3FingerPixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format of the input image.
+
+          ``eDstPixelFormat`` :ref:`id3FingerPixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format into which to convert the input image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

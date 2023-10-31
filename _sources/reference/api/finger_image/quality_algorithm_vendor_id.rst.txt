@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerImage.qualityAlgorithmVendorId Property
+
+.. _finger_image_quality_algorithm_vendor_id_class_member:
+
+===============================================================================
+FingerImage.qualityAlgorithmVendorId Property
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Type: int
+
+Definition
+----------
+
+Quality algorithm vendor identifier as registered with the IBIA (www.ibia.org). 
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      quality_algorithm_vendor_id: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get qualityAlgorithmVendorId => getQualityAlgorithmVendorId();
+      set qualityAlgorithmVendorId(int value) => setQualityAlgorithmVendorId(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int qualityAlgorithmVendorId
+      {
+          get => GetqualityAlgorithmVendorId();
+          set => SetqualityAlgorithmVendorId(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getQualityAlgorithmVendorId() throws FingerException
+      public void setQualityAlgorithmVendorId(int qualityAlgorithmVendorId) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var qualityAlgorithmVendorId: Int
+          get {
+              return Int(try! getQualityAlgorithmVendorId())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerImage_GetQualityAlgorithmVendorId (ID3_FINGER_IMAGE hFingerImage, int * qualityAlgorithmVendorId)
+      int id3FingerImage_SetQualityAlgorithmVendorId (ID3_FINGER_IMAGE hFingerImage, int qualityAlgorithmVendorId)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

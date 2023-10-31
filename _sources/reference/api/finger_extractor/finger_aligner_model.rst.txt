@@ -1,0 +1,124 @@
+.. index:: 
+  !FingerExtractor.fingerAlignerModel Property
+
+.. _finger_extractor_finger_aligner_model_class_member:
+
+===============================================================================
+FingerExtractor.fingerAlignerModel Property
+===============================================================================
+
+Module: :ref:`FingerExtractor<finger_extractor_class>`
+
+Type: :ref:`FingerModel<finger_model_enum>`
+
+Definition
+----------
+
+Model used to align a fingerprint image before encoding.
+
+.. important:: Alignment is mandatory before encoding, for the other algorithms (minutia detection and minutia encoding) it is not necessary.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      finger_aligner_model: FingerModel
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerModel get fingerAlignerModel => getFingerAlignerModel();
+      set fingerAlignerModel(FingerModel value) => setFingerAlignerModel(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public FingerModel fingerAlignerModel
+      {
+          get => GetfingerAlignerModel();
+          set => SetfingerAlignerModel(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public FingerModel getFingerAlignerModel() throws FingerException
+      public void setFingerAlignerModel(FingerModel fingerAlignerModel) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var fingerAlignerModel: FingerModel
+          get {
+              return try! getFingerAlignerModel()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerExtractor_GetFingerAlignerModel (ID3_FINGER_EXTRACTOR hFingerExtractor, id3FingerModel * eFingerAlignerModel)
+      int id3FingerExtractor_SetFingerAlignerModel (ID3_FINGER_EXTRACTOR hFingerExtractor, id3FingerModel eFingerAlignerModel)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

@@ -1,0 +1,203 @@
+.. index:: 
+  !FingerExtractor Class
+
+.. _finger_extractor_class:
+
+===============================================================================
+FingerExtractor Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  createTemplate<create_template>
+  fingerAlignerModel<finger_aligner_model>
+  fingerEncoderModel<finger_encoder_model>
+  minutiaDetectorModel<minutia_detector_model>
+  minutiaEncoderModel<minutia_encoder_model>
+  threadCount<thread_count>
+
+
+Definition
+----------
+.. line-block::
+    Extracts the unique features of a finger image and generates finger templates.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerExtractor
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerExtractor implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerExtractor
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerExtractor implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerExtractor
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerExtractor *ID3_FINGER_EXTRACTOR;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerExtractor = FingerExtractor()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerExtractor
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerExtractor = sdk.FingerExtractor();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerExtractor.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerExtractor = new FingerExtractor())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerExtractor = new FingerExtractor()
+        // ...
+        fingerExtractor.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerExtractor fingerExtractor = new FingerExtractor()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerExtractor fingerExtractor = new FingerExtractor();
+        // ...
+        fingerExtractor.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerExtractor: FingerExtractor? = nil
+        fingerExtractor = try FingerExtractor()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_EXTRACTOR hFingerExtractor{};
+        int err = id3FingerExtractor_Initialize(&hFingerExtractor);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerExtractor_Dispose(&hFingerExtractor);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`fingerAlignerModel<finger_extractor_finger_aligner_model_class_member>`
+    - :ref:`FingerModel<finger_model_enum>`
+    - Model used to align a fingerprint image before encoding.
+  * - :ref:`fingerEncoderModel<finger_extractor_finger_encoder_model_class_member>`
+    - :ref:`FingerModel<finger_model_enum>`
+    - Model used to encode a whole finger image with proprietary features.
+  * - :ref:`minutiaDetectorModel<finger_extractor_minutia_detector_model_class_member>`
+    - :ref:`FingerModel<finger_model_enum>`
+    - Model used to detect minutiae in a finger image.
+  * - :ref:`minutiaEncoderModel<finger_extractor_minutia_encoder_model_class_member>`
+    - :ref:`FingerModel<finger_model_enum>`
+    - Model used to encode minutiae with proprietary features.
+  * - :ref:`threadCount<finger_extractor_thread_count_class_member>`
+    - int
+    - Number of threads to use for feature extraction.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`createTemplate<finger_extractor_create_template_class_method>`
+    - Extracts the unique features of a finger image and generates a FingerTemplate.

@@ -1,0 +1,11 @@
+.. license_transfer
+
+======================
+License repositionning
+======================
+
+License repositionning is possible under certain conditions.
+
+Please contact our sales department or make a support request to obtain a license repositionning.
+
+.. important:: Any request to reposition a licence must be justified and must include the licence serial number.

@@ -1,0 +1,191 @@
+.. index:: 
+  !FingerPad Class
+
+.. _finger_pad_class:
+
+===============================================================================
+FingerPad Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  computeLivenessScore<compute_liveness_score>
+  model<model>
+  threadCount<thread_count>
+
+
+Definition
+----------
+.. line-block::
+    Detects presentation attacks in finger images.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerPad
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerPad implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerPad
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerPad implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerPad
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerPad *ID3_FINGER_PAD;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerPad = FingerPad()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerPad
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerPad = sdk.FingerPad();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerPad.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerPad = new FingerPad())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerPad = new FingerPad()
+        // ...
+        fingerPad.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerPad fingerPad = new FingerPad()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerPad fingerPad = new FingerPad();
+        // ...
+        fingerPad.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerPad: FingerPad? = nil
+        fingerPad = try FingerPad()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_PAD hFingerPad{};
+        int err = id3FingerPad_Initialize(&hFingerPad);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerPad_Dispose(&hFingerPad);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`model<finger_pad_model_class_member>`
+    - :ref:`FingerModel<finger_model_enum>`
+    - Model of finger presentation attack detection.
+  * - :ref:`threadCount<finger_pad_thread_count_class_member>`
+    - int
+    - Number of threads to use for PAD.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`computeLivenessScore<finger_pad_compute_liveness_score_class_method>`
+    - Computes a liveness score for a finger image using the loaded model.

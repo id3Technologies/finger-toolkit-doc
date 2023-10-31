@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerTemplate.position Property
+
+.. _finger_template_position_class_member:
+
+===============================================================================
+FingerTemplate.position Property
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Type: :ref:`FingerPosition<finger_position_enum>`
+
+Definition
+----------
+
+Finger position of the template as defined in ANSI/NIST-ITL 1-2011.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      position: FingerPosition
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerPosition get position => getPosition();
+      set position(FingerPosition value) => setPosition(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public FingerPosition position
+      {
+          get => Getposition();
+          set => Setposition(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public FingerPosition getPosition() throws FingerException
+      public void setPosition(FingerPosition position) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var position: FingerPosition
+          get {
+              return try! getPosition()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerTemplate_GetPosition (ID3_FINGER_TEMPLATE hFingerTemplate, id3FingerPosition * ePosition)
+      int id3FingerTemplate_SetPosition (ID3_FINGER_TEMPLATE hFingerTemplate, id3FingerPosition ePosition)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

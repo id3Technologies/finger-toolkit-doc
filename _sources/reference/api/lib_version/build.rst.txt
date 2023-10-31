@@ -1,0 +1,61 @@
+.. index:: 
+  !LibVersion.build Property
+
+.. _lib_version_build_struct_member:
+
+===============================================================================
+LibVersion.build Property
+===============================================================================
+
+Structure: :ref:`LibVersion<lib_version_struct>`
+
+Definition
+----------
+
+Build.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      int build
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int build
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      int Build
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      int build
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      Int build
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int Build
+

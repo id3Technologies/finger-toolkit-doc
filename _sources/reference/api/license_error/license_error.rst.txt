@@ -1,0 +1,139 @@
+.. index:: 
+  !LicenseError Enumeration
+
+.. _license_error_enum:
+
+===============================================================================
+LicenseError Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the error codes related to license management.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class LicenseError
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum LicenseError
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum LicenseError
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum LicenseError
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum LicenseError
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerLicenseError
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``success``
+    - 0
+    - No error.
+  * - ``base``
+    - 1
+    - Base error code of the License module.
+  * - ``minimum``
+    - -999
+    - Minimum error code of the License module.
+  * - ``licenseNotFound``
+    - -1
+    - No license was found.
+  * - ``invalidLicense``
+    - -2
+    - License is not valid or a required module is not licensed.
+  * - ``expiredLicense``
+    - -3
+    - The license has expired.
+  * - ``invalidHardwareId``
+    - -4
+    - Installation code does not match hardware ID.
+  * - ``alreadyFulfilled``
+    - -5
+    - The license is already fulfilled by another user (or computer).
+  * - ``moduleError``
+    - -6
+    - A required module is not licensed or the usage limit has been reached.
+  * - ``writeError``
+    - -7
+    - The license file cannot be accessed in write mode.
+  * - ``insufficientBuffer``
+    - -8
+    - The given buffer is too small.
+  * - ``invalidHandle``
+    - -10
+    - The handle is invalid.
+  * - ``invalidParameter``
+    - -11
+    - One of the parameters is incorrect.
+  * - ``insufficientLicenseCredits``
+    - -12
+    - The number of available licenses has been reached. There isn't any available license remaining.
+  * - ``invalidSerial``
+    - -13
+    - The serial is invalid.
+  * - ``invalidCredentials``
+    - -15
+    - Invalid login or password.
+  * - ``revokedLicense``
+    - -16
+    - The license is revoked or does not exist anymore.
+  * - ``blockedLicense``
+    - -19
+    - The license is blocked after a predefined period.
+  * - ``unreachableServer``
+    - -20
+    - The license server is currently unreachable.
+  * - ``licenseOtherError``
+    - -100
+    - An unexpected error happened.
+  * - ``missingFile``
+    - -127
+    - No license file was provided.
+  * - ``deviceNotCompatible``
+    - -128
+    - This device is not compatible with id3 licensing system.

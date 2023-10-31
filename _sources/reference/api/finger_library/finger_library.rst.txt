@@ -1,0 +1,84 @@
+.. index:: 
+  !FingerLibrary Class
+
+.. _finger_library_class:
+
+===============================================================================
+FingerLibrary Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  getVersion<get_version>
+  getVersionEx<get_version_ex>
+  loadModel<load_model>
+  loadModelBuffer<load_model_buffer>
+  unloadModel<unload_model>
+
+
+Definition
+----------
+.. line-block::
+    Initialises the SDK library.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerLibrary
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerLibrary
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static partial class FingerLibrary
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerLibrary
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerLibrary
+
+
+Static Methods
+--------------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`getVersion<finger_library_get_version_class_method>`
+    - Retrieves the library version as a `X.Y.Z` formatted string.
+  * - :ref:`getVersionEx<finger_library_get_version_ex_class_method>`
+    - Retrieves the library version as a structure.
+  * - :ref:`loadModel<finger_library_load_model_class_method>`
+    - Loads a model into memory from the specified directory.
+  * - :ref:`loadModelBuffer<finger_library_load_model_buffer_class_method>`
+    - Loads a model from the zoo into the required processing unit.
+  * - :ref:`unloadModel<finger_library_unload_model_class_method>`
+    - Unloads a model from the processing unit it was loaded into.

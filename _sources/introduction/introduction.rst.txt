@@ -1,0 +1,19 @@
+.. _introduction:
+
+============
+Introduction 
+============
+
+|product-name| is a cross-platform library aimed at system integrators willing to quickly add finger detection, recognition and/or analysis capabilities to their products.
+It is available as a Software Development Kit (SDK) offering a comprehensive interface to simplify integration of the library on servers, desktops/laptops, mobile and edge devices.
+
+.. toctree::
+
+   features
+   biometric_performance
+   editions
+   image_formats
+   biometric_standards
+   programming_languages
+   terms
+

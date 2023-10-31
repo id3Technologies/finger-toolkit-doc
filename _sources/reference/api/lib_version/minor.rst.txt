@@ -1,0 +1,61 @@
+.. index:: 
+  !LibVersion.minor Property
+
+.. _lib_version_minor_struct_member:
+
+===============================================================================
+LibVersion.minor Property
+===============================================================================
+
+Structure: :ref:`LibVersion<lib_version_struct>`
+
+Definition
+----------
+
+Release.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      int minor
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int minor
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      int Minor
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      int minor
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      Int minor
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int Minor
+

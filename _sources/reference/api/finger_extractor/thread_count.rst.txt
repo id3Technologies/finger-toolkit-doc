@@ -1,0 +1,124 @@
+.. index:: 
+  !FingerExtractor.threadCount Property
+
+.. _finger_extractor_thread_count_class_member:
+
+===============================================================================
+FingerExtractor.threadCount Property
+===============================================================================
+
+Module: :ref:`FingerExtractor<finger_extractor_class>`
+
+Type: int
+
+Definition
+----------
+
+Number of threads to use for feature extraction.
+
+.. hint:: Default value is 1. Allocating more than 1 thread here can increase the speed of the process.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      thread_count: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get threadCount => getThreadCount();
+      set threadCount(int value) => setThreadCount(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int threadCount
+      {
+          get => GetthreadCount();
+          set => SetthreadCount(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getThreadCount() throws FingerException
+      public void setThreadCount(int threadCount) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var threadCount: Int
+          get {
+              return Int(try! getThreadCount())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerExtractor_GetThreadCount (ID3_FINGER_EXTRACTOR hFingerExtractor, int * threadCount)
+      int id3FingerExtractor_SetThreadCount (ID3_FINGER_EXTRACTOR hFingerExtractor, int threadCount)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

@@ -1,0 +1,216 @@
+.. index:: 
+  !DetectedFinger Class
+
+.. _detected_finger_class:
+
+===============================================================================
+DetectedFinger Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  bounds<bounds>
+  clone<clone>
+  detectionScore<detection_score>
+  fromBuffer<from_buffer>
+  id<id>
+  position<position>
+  toBuffer<to_buffer>
+
+
+Definition
+----------
+.. line-block::
+    Represents a detected finger.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class DetectedFinger
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class DetectedFinger implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class DetectedFinger
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class DetectedFinger implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class DetectedFinger
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3DetectedFinger *ID3_DETECTED_FINGER;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        detectedFinger = DetectedFinger()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del detectedFinger
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final detectedFinger = sdk.DetectedFinger();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        detectedFinger.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var detectedFinger = new DetectedFinger())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var detectedFinger = new DetectedFinger()
+        // ...
+        detectedFinger.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (DetectedFinger detectedFinger = new DetectedFinger()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        DetectedFinger detectedFinger = new DetectedFinger();
+        // ...
+        detectedFinger.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var detectedFinger: DetectedFinger? = nil
+        detectedFinger = try DetectedFinger()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_DETECTED_FINGER hDetectedFinger{};
+        int err = id3DetectedFinger_Initialize(&hDetectedFinger);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3DetectedFinger_Dispose(&hDetectedFinger);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`bounds<detected_finger_bounds_class_member>`
+    - :ref:`Rectangle<rectangle_struct>`
+    - Bounds of the detected finger.
+  * - :ref:`detectionScore<detected_finger_detection_score_class_member>`
+    - int
+    - Confidence score of the detected finger.
+  * - :ref:`id<detected_finger_id_class_member>`
+    - int
+    - ID of the detected finger.
+  * - :ref:`position<detected_finger_position_class_member>`
+    - :ref:`FingerPosition<finger_position_enum>`
+    - Position of the detected finger.
+
+Static Methods
+--------------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`fromBuffer<detected_finger_from_buffer_class_method>`
+    - Imports the finger object from a buffer.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`clone<detected_finger_clone_class_method>`
+    - Clones the DetectedFinger object.
+  * - :ref:`toBuffer<detected_finger_to_buffer_class_method>`
+    - Exports the finger object to a buffer.

@@ -1,0 +1,136 @@
+.. index:: 
+  !FingerCaptureDeviceTechnology Enumeration
+
+.. _finger_capture_device_technology_enum:
+
+===============================================================================
+FingerCaptureDeviceTechnology Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the fingerprint capture device technologies, as defined in ISO/IEC 19794-2:2011.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerCaptureDeviceTechnology
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerCaptureDeviceTechnology
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerCaptureDeviceTechnology
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerCaptureDeviceTechnology
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerCaptureDeviceTechnology
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerCaptureDeviceTechnology
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``unknown``
+    - 0
+    - Unknown or unspecified.
+  * - ``whiteLightOpticalTir``
+    - 1
+    - White light optical TIR.
+  * - ``whiteLightOpticalDirectViewOnPlaten``
+    - 2
+    - White light optical direct view on platen
+  * - ``whiteLightOpticalTouchless``
+    - 3
+    - White light optical toucheless
+  * - ``MonochromaticVisibleOpticalTIR``
+    - 4
+    - Monochromatic optical TIR
+  * - ``monochromaticVisibleOpticalDirectViewOnPlaten``
+    - 5
+    - Monochromatic optical direct view on platen
+  * - ``monochromaticVisibleOpticalToucheless``
+    - 6
+    - Monochromatic optical toucheless
+  * - ``monochromaticIrOpticalTir``
+    - 7
+    - Monochromatic IR optical TIR
+  * - ``monochromaticIrOpticalDirectViewOnPlaten``
+    - 8
+    - Monochromatic IR direct view on platen
+  * - ``monochromaticIrOpticalToucheless``
+    - 9
+    - Monochromatic IR optical toucheless
+  * - ``multispectralOpticalTir``
+    - 10
+    - Multispectral optical TIR
+  * - ``multispectralOpticalDirectViewOnPlaten``
+    - 11
+    - Multispectral optical direct view on platen
+  * - ``multispectralOpticalToucheless``
+    - 12
+    - Multispectral optical toucheless
+  * - ``electroLuminescent``
+    - 13
+    - Electro luminescent
+  * - ``semiconductorCapacitive``
+    - 14
+    - Semiconductor capacitive
+  * - ``semiconductorRf``
+    - 15
+    - Semiconductor RF
+  * - ``semiconductorThermal``
+    - 16
+    - Semiconductor thermal
+  * - ``pressureSensitive``
+    - 17
+    - Pressure sensitive
+  * - ``ultrasound``
+    - 18
+    - Ultrasound
+  * - ``mechanical``
+    - 19
+    - Mechanical
+  * - ``glassFiber``
+    - 20
+    - Glass fiber

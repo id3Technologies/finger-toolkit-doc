@@ -1,0 +1,217 @@
+.. index:: 
+  !PointList Class
+
+.. _point_list_class:
+
+===============================================================================
+PointList Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  add<add>
+  clear<clear>
+  clone<clone>
+  count<count>
+  get<get>
+  getCount<get_count>
+  removeAt<remove_at>
+  resize<resize>
+  set<set>
+
+
+Definition
+----------
+.. line-block::
+    Represents a point list.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class PointList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class PointList implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class PointList
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class PointList implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class PointList
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerPointList *ID3_FINGER_POINT_LIST;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        pointList = PointList()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del pointList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final pointList = sdk.PointList();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        pointList.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var pointList = new PointList())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var pointList = new PointList()
+        // ...
+        pointList.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (PointList pointList = new PointList()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        PointList pointList = new PointList();
+        // ...
+        pointList.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var pointList: PointList? = nil
+        pointList = try PointList()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_POINT_LIST hPointList{};
+        int err = id3FingerPointList_Initialize(&hPointList);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerPointList_Dispose(&hPointList);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`count<point_list_count_class_member>`
+    - int
+    - Gets the number of elements contained in the list
+  * - operator [int index]
+    - :ref:`Point<point_struct>`
+    - Gets or sets the element at the specified index in the list.
+
+Iteration
+---------
+
+This class supports iteration in Dart, C#, Java and Python.
+
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`add<point_list_add_class_method>`
+    - Adds an item to the PointList object.
+  * - :ref:`clear<point_list_clear_class_method>`
+    - Clears the PointList object.
+  * - :ref:`clone<point_list_clone_class_method>`
+    - Clones the PointList object.
+  * - :ref:`get<point_list_get_class_method>`
+    - Gets an item of the PointList object.
+  * - :ref:`getCount<point_list_get_count_class_method>`
+    - Gets the number of elements in the PointList object.
+  * - :ref:`removeAt<point_list_remove_at_class_method>`
+    - Removes an element of the PointList object.
+  * - :ref:`resize<point_list_resize_class_method>`
+    - PointList object.
+  * - :ref:`set<point_list_set_class_method>`
+    - Sets an item of the PointList object.

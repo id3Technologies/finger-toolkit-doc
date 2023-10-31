@@ -1,0 +1,252 @@
+.. index:: 
+  !FingerTemplate.toBit Method
+  
+.. _finger_template_to_bit_class_method:
+
+===============================================================================
+FingerTemplate.toBit Method
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Definition
+----------
+
+Exports the finger template object to a Biometric Information Template (BIT) buffer.
+
+This buffer can only be used with id3 Finger Match-on-Card specific implementations to enroll a finger template.
+
+Threshold value is required and should be set according to the desired security level. Threshold values are specific and can be found in the id3 finger Match-On-Card documentation.
+
+Rotation tolerance defines the maximum rotation allowed between two finger templates in degrees. The operational range is from 17 to 180 degrees. Any value outside this range is automatically adjusted to the limits. Recommended value is 42 degrees.
+
+.. important:: Reference data qualifier should be set according to the smart card requirements.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        to_bit(self, threshold: int, angle_tolerance: int, reference_data_qualifier: int) -> bytearray
+
+      **Parameters**
+
+        .. line-block::
+
+          ``threshold`` int
+          :guilabel:`in` Decision threshold, from 0 to 653535, to be applied during the fingerprint on-card comparison. See MocThreshold for a list of typical values.
+
+          ``angle_tolerance`` int
+          :guilabel:`in` Tolerance on the difference in angle, in degrees, between two compared fingerprints. Note that higher values may tend to increase comparison times. Minimum value is 12°, default value is 42°, maximum value is 180°.
+
+          ``reference_data_qualifier`` int
+          :guilabel:`in` Reference data qualifier.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``bytearray``
+          A buffer that receives the biometric information template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        Uint8List toBit(int threshold, int angleTolerance, int referenceDataQualifier)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``threshold`` int
+          :guilabel:`in` Decision threshold, from 0 to 653535, to be applied during the fingerprint on-card comparison. See MocThreshold for a list of typical values.
+
+          ``angleTolerance`` int
+          :guilabel:`in` Tolerance on the difference in angle, in degrees, between two compared fingerprints. Note that higher values may tend to increase comparison times. Minimum value is 12°, default value is 42°, maximum value is 180°.
+
+          ``referenceDataQualifier`` int
+          :guilabel:`in` Reference data qualifier.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``Uint8List``
+          A buffer that receives the biometric information template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public byte[] ToBit(int threshold, int angleTolerance, int referenceDataQualifier)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``threshold`` int
+          :guilabel:`in` Decision threshold, from 0 to 653535, to be applied during the fingerprint on-card comparison. See MocThreshold for a list of typical values.
+
+          ``angleTolerance`` int
+          :guilabel:`in` Tolerance on the difference in angle, in degrees, between two compared fingerprints. Note that higher values may tend to increase comparison times. Minimum value is 12°, default value is 42°, maximum value is 180°.
+
+          ``referenceDataQualifier`` int
+          :guilabel:`in` Reference data qualifier.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``byte[]``
+          A buffer that receives the biometric information template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public byte[] toBit(int threshold, int angleTolerance, int referenceDataQualifier) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``threshold`` int
+          :guilabel:`in` Decision threshold, from 0 to 653535, to be applied during the fingerprint on-card comparison. See MocThreshold for a list of typical values.
+
+          ``angleTolerance`` int
+          :guilabel:`in` Tolerance on the difference in angle, in degrees, between two compared fingerprints. Note that higher values may tend to increase comparison times. Minimum value is 12°, default value is 42°, maximum value is 180°.
+
+          ``referenceDataQualifier`` int
+          :guilabel:`in` Reference data qualifier.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``byte[]``
+          A buffer that receives the biometric information template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func toBit(threshold: Int32, angleTolerance: Int32, referenceDataQualifier: Int32) throws -> [UInt8]
+
+      **Parameters**
+
+        .. line-block::
+
+          ``threshold`` Int32
+          :guilabel:`in` Decision threshold, from 0 to 653535, to be applied during the fingerprint on-card comparison. See MocThreshold for a list of typical values.
+
+          ``angleTolerance`` Int32
+          :guilabel:`in` Tolerance on the difference in angle, in degrees, between two compared fingerprints. Note that higher values may tend to increase comparison times. Minimum value is 12°, default value is 42°, maximum value is 180°.
+
+          ``referenceDataQualifier`` Int32
+          :guilabel:`in` Reference data qualifier.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``[UInt8]``
+          A buffer that receives the biometric information template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerTemplate_ToBit (
+            ID3_FINGER_TEMPLATE hFingerTemplate, 
+            int threshold, 
+            int angleTolerance, 
+            int referenceDataQualifier, 
+            unsigned char * data, 
+            int * dataSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerTemplate`` :ref:`ID3_FINGER_TEMPLATE<finger_template_class>`
+          :guilabel:`in` Handle to the FingerTemplate object.
+
+          ``threshold`` int
+          :guilabel:`in` Decision threshold, from 0 to 653535, to be applied during the fingerprint on-card comparison. See MocThreshold for a list of typical values.
+
+          ``angleTolerance`` int
+          :guilabel:`in` Tolerance on the difference in angle, in degrees, between two compared fingerprints. Note that higher values may tend to increase comparison times. Minimum value is 12°, default value is 42°, maximum value is 180°.
+
+          ``referenceDataQualifier`` int
+          :guilabel:`in` Reference data qualifier.
+
+          ``data`` unsigned char *
+          :guilabel:`out` A buffer that receives the biometric information template.
+
+          ``dataSize`` int *
+          :guilabel:`in` Size of the 'data' buffer. Receives the number of elements in the 'data' array.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

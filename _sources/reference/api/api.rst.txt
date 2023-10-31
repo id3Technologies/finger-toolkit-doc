@@ -1,0 +1,329 @@
+.. _reference_api:
+
+===============================================================================
+id3 Finger API
+===============================================================================
+
+|product-name| provides an easy to use programming interface available in various languages.
+
+|api-description| 
+
+It includes:
+
+.. toctree::
+  :hidden:
+
+  DetectedFinger <detected_finger/detected_finger>
+  DetectedFingerList <detected_finger_list/detected_finger_list>
+  FingerCandidate <finger_candidate/finger_candidate>
+  FingerCandidateList <finger_candidate_list/finger_candidate_list>
+  FingerCaptureDeviceCertification <finger_capture_device_certification/finger_capture_device_certification>
+  FingerCaptureDeviceCertificationList <finger_capture_device_certification_list/finger_capture_device_certification_list>
+  FingerCaptureDeviceTechnology <finger_capture_device_technology/finger_capture_device_technology>
+  FingerDataFormat <finger_data_format/finger_data_format>
+  FingerDataFormats <finger_data_formats/finger_data_formats>
+  FingerDetector <finger_detector/finger_detector>
+  FingerError <finger_error/finger_error>
+  FingerException <finger_exception/finger_exception>
+  FingerExtractor <finger_extractor/finger_extractor>
+  FingerImage <finger_image/finger_image>
+  FingerImageCompressionAlgorithm <finger_image_compression_algorithm/finger_image_compression_algorithm>
+  FingerImageRecord <finger_image_record/finger_image_record>
+  FingerImageRecordFormat <finger_image_record_format/finger_image_record_format>
+  FingerImageScaleUnit <finger_image_scale_unit/finger_image_scale_unit>
+  FingerImpressionType <finger_impression_type/finger_impression_type>
+  FingerIndexer <finger_indexer/finger_indexer>
+  FingerLibrary <finger_library/finger_library>
+  FingerLicense <finger_license/finger_license>
+  FingerMatchDetails <finger_match_details/finger_match_details>
+  FingerMatchDetailsList <finger_match_details_list/finger_match_details_list>
+  FingerMatcher <finger_matcher/finger_matcher>
+  FingerMatcherThreshold <finger_matcher_threshold/finger_matcher_threshold>
+  FingerMinutia <finger_minutia/finger_minutia>
+  FingerMinutiaList <finger_minutia_list/finger_minutia_list>
+  FingerMinutiaPair <finger_minutia_pair/finger_minutia_pair>
+  FingerMinutiaPairList <finger_minutia_pair_list/finger_minutia_pair_list>
+  FingerMinutiaRidgeType <finger_minutia_ridge_type/finger_minutia_ridge_type>
+  FingerModel <finger_model/finger_model>
+  FingerNfiq <finger_nfiq/finger_nfiq>
+  FingerPad <finger_pad/finger_pad>
+  FingerPosition <finger_position/finger_position>
+  FingerTemplate <finger_template/finger_template>
+  FingerTemplateDict <finger_template_dict/finger_template_dict>
+  FingerTemplateFormat <finger_template_format/finger_template_format>
+  FingerTemplateRecord <finger_template_record/finger_template_record>
+  FingerWsq <finger_wsq/finger_wsq>
+  ImageBuffer <image_buffer/image_buffer>
+  ImageError <image_error/image_error>
+  ImageFormat <image_format/image_format>
+  LibVersion <lib_version/lib_version>
+  LicenseError <license_error/license_error>
+  LicenseHardwareCodeType <license_hardware_code_type/license_hardware_code_type>
+  LicenseType <license_type/license_type>
+  MocThreshold <moc_threshold/moc_threshold>
+  PixelFormat <pixel_format/pixel_format>
+  Point <point/point>
+  PointList <point_list/point_list>
+  PoolingMethod <pooling_method/pooling_method>
+  ProcessingUnit <processing_unit/processing_unit>
+  PruningMethod <pruning_method/pruning_method>
+  Rectangle <rectangle/rectangle>
+  StringList <string_list/string_list>
+
+
+Classes
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+
+  * - :ref:`DetectedFinger <detected_finger_class>`
+    - 
+     | Represents a detected finger.
+
+  * - :ref:`DetectedFingerList <detected_finger_list_class>`
+    - 
+     | Represents a list of detected fingers.
+
+  * - :ref:`FingerCandidate <finger_candidate_class>`
+    - 
+     | Represents a candidate in a one-to-many search.
+
+  * - :ref:`FingerCandidateList <finger_candidate_list_class>`
+    - 
+     | Represents a candidate list in a one-to-many search.
+
+  * - :ref:`FingerCaptureDeviceCertificationList <finger_capture_device_certification_list_class>`
+    - 
+     | Represents a list of capture device certifications.
+
+  * - :ref:`FingerDetector <finger_detector_class>`
+    - 
+     | Detects fingerprints in images.
+
+  * - :ref:`FingerExtractor <finger_extractor_class>`
+    - 
+     | Extracts the unique features of a finger image and generates finger templates.
+
+  * - :ref:`FingerImage <finger_image_class>`
+    - 
+     | Represents a finger image.
+
+  * - :ref:`FingerImageRecord <finger_image_record_class>`
+    - 
+     | Represents a data record for storing, recording, and transmitting the information from one or more finger image areas.
+     | This can be used for the exchange and comparison of finger image data.
+
+  * - :ref:`FingerIndexer <finger_indexer_class>`
+    - 
+     | Performs a one-to-many search on a large number of finger templates.
+
+  * - :ref:`FingerLibrary <finger_library_class>`
+    - 
+     | Initialises the SDK library.
+
+  * - :ref:`FingerLicense <finger_license_class>`
+    - 
+     | Handles the license to use this SDK.
+
+  * - :ref:`FingerMatchDetails <finger_match_details_class>`
+    - 
+     | Represents the finger matching details.
+
+  * - :ref:`FingerMatchDetailsList <finger_match_details_list_class>`
+    - 
+     | Represents a list of finger matching details.
+
+  * - :ref:`FingerMatcher <finger_matcher_class>`
+    - 
+     | Compares two finger templates and searches for a finger template in a list.
+
+  * - :ref:`FingerMinutia <finger_minutia_class>`
+    - 
+     | Represents a finger minutia.
+
+  * - :ref:`FingerMinutiaList <finger_minutia_list_class>`
+    - 
+     | Represents a list of finger minutiae.
+
+  * - :ref:`FingerMinutiaPairList <finger_minutia_pair_list_class>`
+    - 
+     | Represents a list of finger minutia pairs.
+
+  * - :ref:`FingerNfiq <finger_nfiq_class>`
+    - 
+     | Computes the quality of a finger image with the NIST NFIQ algorithm.
+
+  * - :ref:`FingerPad <finger_pad_class>`
+    - 
+     | Detects presentation attacks in finger images.
+
+  * - :ref:`FingerTemplate <finger_template_class>`
+    - 
+     | Represents a finger template.
+
+  * - :ref:`FingerTemplateDict <finger_template_dict_class>`
+    - 
+     | Represents a finger template dictionary.
+
+  * - :ref:`FingerTemplateRecord <finger_template_record_class>`
+    - 
+     | Represents a finger template record.
+
+  * - :ref:`FingerWsq <finger_wsq_class>`
+    - 
+     | Compresses finger images with the NIST WSQ algorithm.
+
+  * - :ref:`ImageBuffer <image_buffer_class>`
+    - 
+     | Represents an image buffer.
+
+  * - :ref:`PointList <point_list_class>`
+    - 
+     | Represents a point list.
+
+  * - :ref:`StringList <string_list_class>`
+    - 
+     | Represents a list of strings.
+
+
+Enumerations
+------------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30,70
+
+  * - :ref:`FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+    - 
+     | Certifications that can claim fingerprint capture devices.
+
+  * - :ref:`FingerCaptureDeviceTechnology<finger_capture_device_technology_enum>`
+    - 
+     | Enumerates the fingerprint capture device technologies, as defined in ISO/IEC 19794-2:2011.
+
+  * - :ref:`FingerDataFormat<finger_data_format_enum>`
+    - 
+     | Fingerprint data format.
+
+  * - :ref:`FingerError<finger_error_enum>`
+    - 
+     | Enumerates the possible error codes returned by this SDK.
+
+  * - :ref:`FingerImageCompressionAlgorithm<finger_image_compression_algorithm_enum>`
+    - 
+     | Enumerates the finger image compression algorithms.
+
+  * - :ref:`FingerImageRecordFormat<finger_image_record_format_enum>`
+    - 
+     | Enumerates the supported format of finger image records.
+
+  * - :ref:`FingerImageScaleUnit<finger_image_scale_unit_enum>`
+    - 
+     | Enumerates finger image scale units.
+
+  * - :ref:`FingerImpressionType<finger_impression_type_enum>`
+    - 
+     | Enumerates the finger image impression types, as defined in ISO/IEC 19794-2:2011.
+
+  * - :ref:`FingerMatcherThreshold<finger_matcher_threshold_enum>`
+    - 
+     | Enumerates some typical values for the matching decision threshold.
+
+  * - :ref:`FingerMinutiaRidgeType<finger_minutia_ridge_type_enum>`
+    - 
+     | Enumerates the finger minutia ridge types.
+
+  * - :ref:`FingerModel<finger_model_enum>`
+    - 
+     | Enumerates the AI models available in this SDK.
+
+  * - :ref:`FingerPosition<finger_position_enum>`
+    - 
+     | Enumerates the finger positions, as defined in ISO/IEC 19794-2:2011.
+
+  * - :ref:`FingerTemplateFormat<finger_template_format_enum>`
+    - 
+     | Enumerates the finger template formats.
+
+  * - :ref:`ImageError<image_error_enum>`
+    - 
+     | Enumerates possible error codes related to image management.
+
+  * - :ref:`ImageFormat<image_format_enum>`
+    - 
+     | Enumerates supported image formats.
+
+  * - :ref:`LicenseError<license_error_enum>`
+    - 
+     | Enumerates the error codes related to license management.
+
+  * - :ref:`LicenseHardwareCodeType<license_hardware_code_type_enum>`
+    - 
+     | Enumerates the types of hardware codes.
+
+  * - :ref:`LicenseType<license_type_enum>`
+    - 
+     | Enumerates the license types.
+
+  * - :ref:`MocThreshold<moc_threshold_enum>`
+    - 
+     | Enumerates some typical values for the match-on-card decision threshold.
+
+  * - :ref:`PixelFormat<pixel_format_enum>`
+    - 
+     | Enumerates supported pixel formats.
+
+  * - :ref:`PoolingMethod<pooling_method_enum>`
+    - 
+     | Enumerates the possible pooling methods for template agregation in the finger matching module.
+
+  * - :ref:`ProcessingUnit<processing_unit_enum>`
+    - 
+     | Enumerates the processing units for the inference o AI models.
+
+  * - :ref:`PruningMethod<pruning_method_enum>`
+    - 
+     | Enumerates the minutia pruning methods.
+
+
+Structures
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30,70
+
+  * - :ref:`FingerDataFormats<finger_data_formats_struct>`
+    - 
+     | Represents finger data formats.
+
+  * - :ref:`FingerMinutiaPair<finger_minutia_pair_struct>`
+    - 
+     | Represents a finger minutia pair.
+
+  * - :ref:`LibVersion<lib_version_struct>`
+    - 
+     | Contains data for LibVersion
+
+  * - :ref:`Point<point_struct>`
+    - 
+     | Represents a point.
+
+  * - :ref:`Rectangle<rectangle_struct>`
+    - 
+     | Represents a rectangle.
+
+
+
+
+Exceptions
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30,70
+
+  * - :ref:`FingerException<finger_exception>`
+    - This exception is thrown when an error occurs in the id3 Finger library.

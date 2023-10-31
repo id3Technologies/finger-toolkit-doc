@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerImage.viewNumber Property
+
+.. _finger_image_view_number_class_member:
+
+===============================================================================
+FingerImage.viewNumber Property
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Type: int
+
+Definition
+----------
+
+Number of the view. Mostly useful for lists with multiple views of the same finger position.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      view_number: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get viewNumber => getViewNumber();
+      set viewNumber(int value) => setViewNumber(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int viewNumber
+      {
+          get => GetviewNumber();
+          set => SetviewNumber(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getViewNumber() throws FingerException
+      public void setViewNumber(int viewNumber) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var viewNumber: Int
+          get {
+              return Int(try! getViewNumber())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerImage_GetViewNumber (ID3_FINGER_IMAGE hFingerImage, int * viewNumber)
+      int id3FingerImage_SetViewNumber (ID3_FINGER_IMAGE hFingerImage, int viewNumber)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

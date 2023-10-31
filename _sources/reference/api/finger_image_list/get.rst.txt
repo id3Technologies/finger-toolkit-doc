@@ -1,0 +1,202 @@
+.. index:: 
+  !FingerImageList.get Method
+  
+.. _finger_image_list_get_class_method:
+
+===============================================================================
+FingerImageList.get Method
+===============================================================================
+
+Module: :ref:`FingerImageList<finger_image_list_class>`
+
+Definition
+----------
+
+Gets an item of the FingerImageList object.
+
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImageList_Get (
+            ID3_FINGER_IMAGE_LIST hFingerImageList, 
+            int index, 
+            ID3_FINGER_IMAGE hFingerImageItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImageList`` :ref:`ID3_FINGER_IMAGE_LIST<finger_image_list_class>`
+          :guilabel:`in` Handle to the FingerImageList object.
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerImage item to get.
+
+          ``hFingerImageItem`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`out` FingerImage item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerImage get(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerImage item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          FingerImage item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerImage Get(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerImage item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          FingerImage item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerImage get(int index) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerImage item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          FingerImage item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        get(self, index: int) -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerImage item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          FingerImage item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func get(index: Int32) throws -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` Index of the FingerImage item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          FingerImage item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

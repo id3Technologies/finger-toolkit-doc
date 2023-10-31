@@ -1,0 +1,118 @@
+.. index:: 
+  !FingerIndexer.maximumTemplateRecordCount Property
+
+.. _finger_indexer_maximum_template_record_count_class_member:
+
+===============================================================================
+FingerIndexer.maximumTemplateRecordCount Property
+===============================================================================
+
+Module: :ref:`FingerIndexer<finger_indexer_class>`
+
+Type: int
+
+Definition
+----------
+
+Maximum number of template records that this finger indexer can hold.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      maximum_template_record_count: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get maximumTemplateRecordCount => getMaximumTemplateRecordCount();
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int maximumTemplateRecordCount
+      {
+          get => GetmaximumTemplateRecordCount();
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getMaximumTemplateRecordCount() throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var maximumTemplateRecordCount: Int
+          get {
+              return Int(try! getMaximumTemplateRecordCount())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerIndexer_GetMaximumTemplateRecordCount (ID3_FINGER_INDEXER hFingerIndexer, int * maximumTemplateRecordCount)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

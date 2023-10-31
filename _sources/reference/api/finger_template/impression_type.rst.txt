@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerTemplate.impressionType Property
+
+.. _finger_template_impression_type_class_member:
+
+===============================================================================
+FingerTemplate.impressionType Property
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Type: :ref:`FingerImpressionType<finger_impression_type_enum>`
+
+Definition
+----------
+
+Impression type of the finger image that the template was derived from.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      impression_type: FingerImpressionType
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerImpressionType get impressionType => getImpressionType();
+      set impressionType(FingerImpressionType value) => setImpressionType(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public FingerImpressionType impressionType
+      {
+          get => GetimpressionType();
+          set => SetimpressionType(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public FingerImpressionType getImpressionType() throws FingerException
+      public void setImpressionType(FingerImpressionType impressionType) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var impressionType: FingerImpressionType
+          get {
+              return try! getImpressionType()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerTemplate_GetImpressionType (ID3_FINGER_TEMPLATE hFingerTemplate, id3FingerImpressionType * eImpressionType)
+      int id3FingerTemplate_SetImpressionType (ID3_FINGER_TEMPLATE hFingerTemplate, id3FingerImpressionType eImpressionType)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

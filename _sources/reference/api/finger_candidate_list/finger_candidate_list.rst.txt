@@ -1,0 +1,214 @@
+.. index:: 
+  !FingerCandidateList Class
+
+.. _finger_candidate_list_class:
+
+===============================================================================
+FingerCandidateList Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  add<add>
+  clear<clear>
+  count<count>
+  get<get>
+  getCount<get_count>
+  removeAt<remove_at>
+  resize<resize>
+  set<set>
+
+
+Definition
+----------
+.. line-block::
+    Represents a candidate list in a one-to-many search.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerCandidateList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerCandidateList implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerCandidateList
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerCandidateList implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerCandidateList
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerCandidateList *ID3_FINGER_CANDIDATE_LIST;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerCandidateList = FingerCandidateList()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerCandidateList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerCandidateList = sdk.FingerCandidateList();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerCandidateList.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerCandidateList = new FingerCandidateList())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerCandidateList = new FingerCandidateList()
+        // ...
+        fingerCandidateList.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerCandidateList fingerCandidateList = new FingerCandidateList()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerCandidateList fingerCandidateList = new FingerCandidateList();
+        // ...
+        fingerCandidateList.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerCandidateList: FingerCandidateList? = nil
+        fingerCandidateList = try FingerCandidateList()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_CANDIDATE_LIST hFingerCandidateList{};
+        int err = id3FingerCandidateList_Initialize(&hFingerCandidateList);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerCandidateList_Dispose(&hFingerCandidateList);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`count<finger_candidate_list_count_class_member>`
+    - int
+    - Gets the number of elements contained in the list
+  * - operator [int index]
+    - :ref:`FingerCandidate<finger_candidate_class>`
+    - Gets or sets the element at the specified index in the list.
+
+Iteration
+---------
+
+This class supports iteration in Dart, C#, Java and Python.
+
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`add<finger_candidate_list_add_class_method>`
+    - Adds an item to the FingerCandidateList object.
+  * - :ref:`clear<finger_candidate_list_clear_class_method>`
+    - Clears the FingerCandidateList object.
+  * - :ref:`get<finger_candidate_list_get_class_method>`
+    - Gets an item of the FingerCandidateList object.
+  * - :ref:`getCount<finger_candidate_list_get_count_class_method>`
+    - Gets the number of elements in the FingerCandidateList object.
+  * - :ref:`removeAt<finger_candidate_list_remove_at_class_method>`
+    - Removes an element of the FingerCandidateList object.
+  * - :ref:`resize<finger_candidate_list_resize_class_method>`
+    - FingerCandidateList object.
+  * - :ref:`set<finger_candidate_list_set_class_method>`
+    - Sets an item of the FingerCandidateList object.

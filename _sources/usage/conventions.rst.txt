@@ -1,0 +1,80 @@
+.. _naming_conventions:
+
+==================
+Naming conventions
+==================
+
+For the sake of clarity in this multi-language documentation, the following naming conventions have been adopted.
+
+- Class, struct and enumeration names are written in *PascalCase*. Example: ``License``.
+- Class and struct member names are written in *lowerCamelCase*. Example: ``activateSerialKey``
+- Enumeration fields are written in *lowerCamelCase*. Example : ``LicenseError.invalidLicense``.
+
+.. warning:: 
+    The naming convention adopted in this documentation does not necessarily reflect the convention for a given programming language.
+    More information is given below.
+    
+Examples
+========
+
+.. tab-set::
+
+    .. tab-item:: Python
+        :sync: Python
+
+        - Class name: ``License``
+        - Function name: ``activate_serial_key``
+        - Structure: ``FingerPoint``
+        - Enumeration field: ``LicenseError.INVALID_LICENSE``
+
+    .. tab-item:: Dart
+        :sync: Dart
+
+        - Class name: ``License``
+        - Function name: ``activateSerialKey``
+        - Structure: ``FingerPoint``
+        - Enumeration field: ``LicenseError.invalidLicense``
+
+    .. tab-item:: C#
+        :sync: C#
+
+        - Class name: ``License``
+        - Function name: ``ActivateSerialKey``
+        - Structure: ``FingerPoint``
+        - Enumeration field: ``LicenseError.InvalidLicense``
+
+    .. tab-item:: Java
+        :sync: Java
+
+        - Class name: ``License``
+        - Function name: ``activateSerialKey``
+        - Structure: ``FingerPoint``
+        - Enumeration field: ``LicenseError.INVALID_LICENSE``
+
+    .. tab-item:: Kotlin
+        :sync: Kotlin
+
+        - Class name: ``License``
+        - Function name: ``activateSerialKey``
+        - Structure: ``FingerPoint``
+        - Enumeration field: ``LicenseError.INVALID_LICENSE``
+
+    .. tab-item:: Swift
+        :sync: Swift
+
+        - Class name: ``License``
+        - Function name: ``activateSerialKey``
+        - Structure: ``FingerPoint``
+        - Enumeration field: ``LicenseError.invalidLicense``
+
+    .. tab-item:: C
+        :sync: C
+        
+        - Class name: ``id3License_``
+        - Function name: ``id3License_ActivateSerialKey``
+        - Structure: ``id3FingerPoint``
+        - Enumeration field: ``id3LicenseError_InvalidLicense`` 
+
+        .. note:: 
+            The C API implements pseudo object-oriented programming concepts where the object is passed explicitly to a member function as first parameter.
+

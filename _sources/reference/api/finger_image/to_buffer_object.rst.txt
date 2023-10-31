@@ -1,0 +1,211 @@
+.. index:: 
+  !FingerImage.toBufferObject Method
+  
+.. _finger_image_to_buffer_object_class_method:
+
+===============================================================================
+FingerImage.toBufferObject Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Copies the image to a buffer in the specified format.
+
+The compression level meaning depends on the algorithm used:
+
+- For JPEG compression, the value is the expected quality and may vary from 1 to 100.
+
+- For JPEG2000 compression, the value is the compression rate and may vary from 1 to 512.
+
+- For PNG compression, the value is the compression rate and may vary from 1 to 10.
+
+- For all other formats, the value is ignored.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        to_buffer_object(self, finger_image_format: ImageFormat, compression_level: float, buffer: ImageBuffer) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``finger_image_format`` :ref:`ImageFormat<image_format_enum>`
+          :guilabel:`in` The output image format.
+
+          ``compression_level`` float
+          :guilabel:`in` The compression level to be applied.
+
+          ``buffer`` :ref:`ImageBuffer<image_buffer_class>`
+          :guilabel:`in` The image buffer that receives the image data.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void toBufferObject(ImageFormat fingerImageFormat, double compressionLevel, ImageBuffer buffer)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerImageFormat`` :ref:`ImageFormat<image_format_enum>`
+          :guilabel:`in` The output image format.
+
+          ``compressionLevel`` double
+          :guilabel:`in` The compression level to be applied.
+
+          ``buffer`` :ref:`ImageBuffer<image_buffer_class>`
+          :guilabel:`in` The image buffer that receives the image data.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void ToBufferObject(ImageFormat fingerImageFormat, float compressionLevel, ImageBuffer buffer)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerImageFormat`` :ref:`ImageFormat<image_format_enum>`
+          :guilabel:`in` The output image format.
+
+          ``compressionLevel`` float
+          :guilabel:`in` The compression level to be applied.
+
+          ``buffer`` :ref:`ImageBuffer<image_buffer_class>`
+          :guilabel:`in` The image buffer that receives the image data.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void toBufferObject(ImageFormat fingerImageFormat, float compressionLevel, ImageBuffer buffer) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerImageFormat`` :ref:`ImageFormat<image_format_enum>`
+          :guilabel:`in` The output image format.
+
+          ``compressionLevel`` float
+          :guilabel:`in` The compression level to be applied.
+
+          ``buffer`` :ref:`ImageBuffer<image_buffer_class>`
+          :guilabel:`in` The image buffer that receives the image data.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func toBufferObject(fingerImageFormat: ImageFormat, compressionLevel: Float, buffer: ImageBuffer) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerImageFormat`` :ref:`ImageFormat<image_format_enum>`
+          :guilabel:`in` The output image format.
+
+          ``compressionLevel`` Float
+          :guilabel:`in` The compression level to be applied.
+
+          ``buffer`` :ref:`ImageBuffer<image_buffer_class>`
+          :guilabel:`in` The image buffer that receives the image data.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_ToBufferObject (
+            ID3_FINGER_IMAGE hFingerImage, 
+            id3FingerImageFormat eFingerImageFormat, 
+            float compressionLevel, 
+            ID3_FINGER_IMAGE_BUFFER hBuffer)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``eFingerImageFormat`` :ref:`id3FingerImageFormat<image_format_enum>`
+          :guilabel:`in` The output image format.
+
+          ``compressionLevel`` float
+          :guilabel:`in` The compression level to be applied.
+
+          ``hBuffer`` :ref:`ID3_FINGER_IMAGE_BUFFER<image_buffer_class>`
+          :guilabel:`in` The image buffer that receives the image data.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

@@ -1,0 +1,118 @@
+.. index:: 
+  !FingerTemplateDict.keys Property
+
+.. _finger_template_dict_keys_class_member:
+
+===============================================================================
+FingerTemplateDict.keys Property
+===============================================================================
+
+Module: :ref:`FingerTemplateDict<finger_template_dict_class>`
+
+Type: :ref:`StringList<string_list_class>`
+
+Definition
+----------
+
+Gets a string list containing the keys in the dict.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      keys: StringList
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      StringList get keys => getKeys();
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public StringList keys
+      {
+          get => Getkeys();
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public StringList getKeys() throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var keys: StringList
+          get {
+              return try! getKeys()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerTemplateDict_GetKeys (ID3_FINGER_TEMPLATE_DICT hFingerTemplateDict, ID3_FINGER_STRING_LIST hKeys)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

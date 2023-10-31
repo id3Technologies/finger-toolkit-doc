@@ -1,0 +1,179 @@
+.. index:: 
+  !FingerLibrary.unloadModel Method
+  
+.. _finger_library_unload_model_class_method:
+
+===============================================================================
+FingerLibrary.unloadModel Method
+===============================================================================
+
+Module: :ref:`FingerLibrary<finger_library_class>`
+
+Definition
+----------
+
+Unloads a model from the processing unit it was loaded into.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        unload_model(finger_model: FingerModel, processing_unit: ProcessingUnit) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``finger_model`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be unloaded.
+
+          ``processing_unit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit used for the model.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static void unloadModel(FingerModel fingerModel, ProcessingUnit processingUnit)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerModel`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be unloaded.
+
+          ``processingUnit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit used for the model.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static void UnloadModel(FingerModel fingerModel, ProcessingUnit processingUnit)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerModel`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be unloaded.
+
+          ``processingUnit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit used for the model.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static void unloadModel(FingerModel fingerModel, ProcessingUnit processingUnit) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerModel`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be unloaded.
+
+          ``processingUnit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit used for the model.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func unloadModel(fingerModel: FingerModel, processingUnit: ProcessingUnit) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerModel`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be unloaded.
+
+          ``processingUnit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit used for the model.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLibrary_UnloadModel (
+            id3FingerModel eFingerModel, 
+            id3FingerProcessingUnit eProcessingUnit)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``eFingerModel`` :ref:`id3FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be unloaded.
+
+          ``eProcessingUnit`` :ref:`id3FingerProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit used for the model.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

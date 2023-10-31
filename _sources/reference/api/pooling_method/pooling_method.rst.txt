@@ -1,0 +1,79 @@
+.. index:: 
+  !PoolingMethod Enumeration
+
+.. _pooling_method_enum:
+
+===============================================================================
+PoolingMethod Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the possible pooling methods for template agregation in the finger matching module.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class PoolingMethod
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum PoolingMethod
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum PoolingMethod
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum PoolingMethod
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum PoolingMethod
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerPoolingMethod
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``average``
+    - 0
+    - Average pooling method. Merges instances (scores, templates, etc) into one.
+  * - ``maximum``
+    - 1
+    - Maximum pooling method. Selects best instance according to a given metric.

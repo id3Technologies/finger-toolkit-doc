@@ -1,0 +1,61 @@
+.. index:: 
+  !FingerDataFormats.minutiaeEmbeddingsDataFormat Property
+
+.. _finger_data_formats_minutiae_embeddings_data_format_struct_member:
+
+===============================================================================
+FingerDataFormats.minutiaeEmbeddingsDataFormat Property
+===============================================================================
+
+Structure: :ref:`FingerDataFormats<finger_data_formats_struct>`
+
+Definition
+----------
+
+Minutiae embeddings data format.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      FingerDataFormat minutiae_embeddings_data_format
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerDataFormat minutiaeEmbeddingsDataFormat
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      FingerDataFormat MinutiaeEmbeddingsDataFormat
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      FingerDataFormat minutiaeEmbeddingsDataFormat
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      FingerDataFormat minutiaeEmbeddingsDataFormat
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      id3FingerDataFormat MinutiaeEmbeddingsDataFormat
+

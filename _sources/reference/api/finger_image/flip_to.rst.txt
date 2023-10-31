@@ -1,0 +1,201 @@
+.. index:: 
+  !FingerImage.flipTo Method
+  
+.. _finger_image_flip_to_class_method:
+
+===============================================================================
+FingerImage.flipTo Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Flips the image.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        flip_to(self, flip_horizontally: bool, flip_vertically: bool, dst_finger_image: FingerImage) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``flip_horizontally`` bool
+          :guilabel:`in` Value indicating whether the image should be flipped horizontally.
+
+          ``flip_vertically`` bool
+          :guilabel:`in` Value indicating whether the image should be flipped vertically.
+
+          ``dst_finger_image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` The destination Image object that receives the flipped image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void flipTo(bool flipHorizontally, bool flipVertically, FingerImage dstFingerImage)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``flipHorizontally`` bool
+          :guilabel:`in` Value indicating whether the image should be flipped horizontally.
+
+          ``flipVertically`` bool
+          :guilabel:`in` Value indicating whether the image should be flipped vertically.
+
+          ``dstFingerImage`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` The destination Image object that receives the flipped image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void FlipTo(bool flipHorizontally, bool flipVertically, FingerImage dstFingerImage)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``flipHorizontally`` bool
+          :guilabel:`in` Value indicating whether the image should be flipped horizontally.
+
+          ``flipVertically`` bool
+          :guilabel:`in` Value indicating whether the image should be flipped vertically.
+
+          ``dstFingerImage`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` The destination Image object that receives the flipped image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void flipTo(boolean flipHorizontally, boolean flipVertically, FingerImage dstFingerImage) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``flipHorizontally`` boolean
+          :guilabel:`in` Value indicating whether the image should be flipped horizontally.
+
+          ``flipVertically`` boolean
+          :guilabel:`in` Value indicating whether the image should be flipped vertically.
+
+          ``dstFingerImage`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` The destination Image object that receives the flipped image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func flipTo(flipHorizontally: Bool, flipVertically: Bool, dstFingerImage: FingerImage) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``flipHorizontally`` Bool
+          :guilabel:`in` Value indicating whether the image should be flipped horizontally.
+
+          ``flipVertically`` Bool
+          :guilabel:`in` Value indicating whether the image should be flipped vertically.
+
+          ``dstFingerImage`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` The destination Image object that receives the flipped image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_FlipTo (
+            ID3_FINGER_IMAGE hFingerImage, 
+            bool flipHorizontally, 
+            bool flipVertically, 
+            ID3_FINGER_IMAGE hDstFingerImage)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``flipHorizontally`` bool
+          :guilabel:`in` Value indicating whether the image should be flipped horizontally.
+
+          ``flipVertically`` bool
+          :guilabel:`in` Value indicating whether the image should be flipped vertically.
+
+          ``hDstFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` The destination Image object that receives the flipped image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

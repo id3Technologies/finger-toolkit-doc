@@ -1,0 +1,158 @@
+.. index:: 
+  !FingerImageRecord.getCount Method
+  
+.. _finger_image_record_get_count_class_method:
+
+===============================================================================
+FingerImageRecord.getCount Method
+===============================================================================
+
+Module: :ref:`FingerImageRecord<finger_image_record_class>`
+
+Definition
+----------
+
+Gets the number of elements in the FingerImageRecord object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        get_count(self) -> int
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Number of elements in the FingerImage object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        int getCount()
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Number of elements in the FingerImage object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public int GetCount()
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Number of elements in the FingerImage object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public int getCount() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          Number of elements in the FingerImage object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func getCount() throws -> Int32
+
+      **Returns**
+
+        .. line-block::
+
+          ``Int``
+          Number of elements in the FingerImage object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImageRecord_GetCount (
+            ID3_FINGER_IMAGE_RECORD hFingerImageRecord, 
+            int * count)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImageRecord`` :ref:`ID3_FINGER_IMAGE_RECORD<finger_image_record_class>`
+          :guilabel:`in` Handle to the FingerImageRecord object.
+
+          ``count`` int *
+          :guilabel:`out` Number of elements in the FingerImage object.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

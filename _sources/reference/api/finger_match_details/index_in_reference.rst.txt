@@ -1,0 +1,118 @@
+.. index:: 
+  !FingerMatchDetails.indexInReference Property
+
+.. _finger_match_details_index_in_reference_class_member:
+
+===============================================================================
+FingerMatchDetails.indexInReference Property
+===============================================================================
+
+Module: :ref:`FingerMatchDetails<finger_match_details_class>`
+
+Type: int
+
+Definition
+----------
+
+Index in reference template record. Relevent only if calling CompareTemplateRecords().
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      index_in_reference: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get indexInReference => getIndexInReference();
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int indexInReference
+      {
+          get => GetindexInReference();
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getIndexInReference() throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var indexInReference: Int
+          get {
+              return Int(try! getIndexInReference())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerMatchDetails_GetIndexInReference (ID3_FINGER_MATCH_DETAILS hFingerMatchDetails, int * indexInReference)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

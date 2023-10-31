@@ -1,0 +1,122 @@
+.. index:: 
+  !DetectedFinger.id Property
+
+.. _detected_finger_id_class_member:
+
+===============================================================================
+DetectedFinger.id Property
+===============================================================================
+
+Module: :ref:`DetectedFinger<detected_finger_class>`
+
+Type: int
+
+Definition
+----------
+
+ID of the detected finger.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      id: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get id => getId();
+      set id(int value) => setId(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int id
+      {
+          get => Getid();
+          set => Setid(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getId() throws FingerException
+      public void setId(int id) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var id: Int
+          get {
+              return Int(try! getId())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3DetectedFinger_GetId (ID3_DETECTED_FINGER hDetectedFinger, int * id)
+      int id3DetectedFinger_SetId (ID3_DETECTED_FINGER hDetectedFinger, int id)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

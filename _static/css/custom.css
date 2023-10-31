@@ -1,0 +1,71 @@
+.content {
+  width: 50.0em;
+}
+.sidebar-container {
+  width: 20.0em;
+}
+.p{
+  font-size: 16px;
+}
+.line{
+  font-size: 16px;
+}
+.line-block {
+  margin: .35rem;
+}
+h1{
+  font-size: 2.4em;
+  font-weight: 600;
+}
+h2 {
+  font-weight:600;
+}
+h3 {
+  font-weight:600;
+}
+.table-wrapper {
+  font-size: 16px;
+}
+p.admonition-title {
+  font-weight: 700;
+  /* font-size: 1rem; */
+}
+p.rubric {
+  margin-top: 1.5rem;
+}
+th.head {
+  text-align: left;
+}
+code.literal {
+  font-weight: 700;
+  font-size: 100%;
+}
+p .sig-inline, p code.literal {
+  padding: 4px;
+  margin-right: 0px;
+}
+.sig-inline, code.literal  {
+  padding: 1px 0px;
+  margin-right: 1em;
+}
+.sidebar-logo {
+  margin: 0;
+}
+.sidebar-brand-text{
+  margin: 0;
+}
+.sd-tab-set {
+  margin: -0.5rem 0 1.5rem 0;
+}
+.toctree-wrapper.compound .caption, .toctree-wrapper.compound :not(.caption) > .caption-text {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+article[role="main"] .highlight pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; /*for IE*/
+}
+ol, ul {
+  margin-top: 0rem;
+}

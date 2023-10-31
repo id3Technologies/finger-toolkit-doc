@@ -1,0 +1,163 @@
+.. index:: 
+  !FingerIndexer.toFile Method
+  
+.. _finger_indexer_to_file_class_method:
+
+===============================================================================
+FingerIndexer.toFile Method
+===============================================================================
+
+Module: :ref:`FingerIndexer<finger_indexer_class>`
+
+Definition
+----------
+
+Saves the finger indexer object to a file.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        to_file(self, path: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` str
+          :guilabel:`in` Path to the file to export the finger indexer object to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void toFile(String? path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` String
+          :guilabel:`in` Path to the file to export the finger indexer object to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void ToFile(string path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` string
+          :guilabel:`in` Path to the file to export the finger indexer object to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void toFile(String path) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` String
+          :guilabel:`in` Path to the file to export the finger indexer object to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func toFile(path: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` String
+          :guilabel:`in` Path to the file to export the finger indexer object to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerIndexer_ToFile (
+            ID3_FINGER_INDEXER hFingerIndexer, 
+            const char * path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerIndexer`` :ref:`ID3_FINGER_INDEXER<finger_indexer_class>`
+          :guilabel:`in` Handle to the FingerIndexer object.
+
+          ``path`` const char *
+          :guilabel:`in` Path to the file to export the finger indexer object to.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

@@ -1,0 +1,22 @@
+.. _licensing:
+
+=========
+Licensing 
+=========
+
+|product-name| uses software protection to protect id3's intellectual property.
+To work, the |product-name| libraries require a license key, which must be installed on the target system before starting your application.
+
+The trial version of the SDK is a full version time-limited (60 days).
+A developer license is required to develop an application based on |product-name|.
+A runtime license is required to deploy an application based on |product-name|.
+
+.. toctree::
+    :maxdepth: 1 
+
+    license_types
+    license_modules
+    license_activation
+    license_hardware_id
+    license_manager
+    license_transfer

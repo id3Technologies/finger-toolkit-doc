@@ -1,0 +1,163 @@
+.. index:: 
+  !PointList.add Method
+  
+.. _point_list_add_class_method:
+
+===============================================================================
+PointList.add Method
+===============================================================================
+
+Module: :ref:`PointList<point_list_class>`
+
+Definition
+----------
+
+Adds an item to the PointList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        add(self, point_item: Point) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``point_item`` :ref:`Point<point_struct>`
+          :guilabel:`in` Point item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void add(Point pointItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pointItem`` :ref:`Point<point_struct>`
+          :guilabel:`in` Point item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Add(Point pointItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pointItem`` :ref:`Point<point_struct>`
+          :guilabel:`in` Point item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void add(Point pointItem) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pointItem`` :ref:`Point<point_struct>`
+          :guilabel:`in` Point item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func add(pointItem: Point) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``pointItem`` :ref:`Point<point_struct>`
+          :guilabel:`in` Point item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerPointList_Add (
+            ID3_FINGER_POINT_LIST hPointList, 
+            const id3FingerPoint * sPointItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hPointList`` :ref:`ID3_FINGER_POINT_LIST<point_list_class>`
+          :guilabel:`in` Handle to the PointList object.
+
+          ``sPointItem`` :ref:`const id3FingerPoint *<point_struct>`
+          :guilabel:`in` Point item to add.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

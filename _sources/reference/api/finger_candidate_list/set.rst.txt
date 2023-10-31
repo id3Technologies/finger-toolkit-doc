@@ -1,0 +1,182 @@
+.. index:: 
+  !FingerCandidateList.set Method
+  
+.. _finger_candidate_list_set_class_method:
+
+===============================================================================
+FingerCandidateList.set Method
+===============================================================================
+
+Module: :ref:`FingerCandidateList<finger_candidate_list_class>`
+
+Definition
+----------
+
+Sets an item of the FingerCandidateList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        set(self, index: int, finger_candidate_item: FingerCandidate) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCandidate item to set.
+
+          ``finger_candidate_item`` :ref:`FingerCandidate<finger_candidate_class>`
+          :guilabel:`in` FingerCandidate item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void set(int index, FingerCandidate fingerCandidateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCandidate item to set.
+
+          ``fingerCandidateItem`` :ref:`FingerCandidate<finger_candidate_class>`
+          :guilabel:`in` FingerCandidate item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Set(int index, FingerCandidate fingerCandidateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCandidate item to set.
+
+          ``fingerCandidateItem`` :ref:`FingerCandidate<finger_candidate_class>`
+          :guilabel:`in` FingerCandidate item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void set(int index, FingerCandidate fingerCandidateItem) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCandidate item to set.
+
+          ``fingerCandidateItem`` :ref:`FingerCandidate<finger_candidate_class>`
+          :guilabel:`in` FingerCandidate item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func set(index: Int32, fingerCandidateItem: FingerCandidate) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` Index of the FingerCandidate item to set.
+
+          ``fingerCandidateItem`` :ref:`FingerCandidate<finger_candidate_class>`
+          :guilabel:`in` FingerCandidate item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerCandidateList_Set (
+            ID3_FINGER_CANDIDATE_LIST hFingerCandidateList, 
+            int index, 
+            ID3_FINGER_CANDIDATE hFingerCandidateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerCandidateList`` :ref:`ID3_FINGER_CANDIDATE_LIST<finger_candidate_list_class>`
+          :guilabel:`in` Handle to the FingerCandidateList object.
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCandidate item to set.
+
+          ``hFingerCandidateItem`` :ref:`ID3_FINGER_CANDIDATE<finger_candidate_class>`
+          :guilabel:`in` FingerCandidate item to set.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

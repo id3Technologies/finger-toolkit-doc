@@ -1,0 +1,101 @@
+.. index:: 
+  !FingerImage.set Method
+  
+.. _finger_image_set_class_method:
+
+===============================================================================
+FingerImage.set Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Sets the Image object fields.
+
+.. warning:: This function does not allocate any memory and is unsafe! The user must handle the pixels pointer carefully.
+
+
+.. tab-set::
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static FingerImage Set(int width, int height, PixelFormat pixelFormat, IntPtr pixels)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``width`` int
+          :guilabel:`in` The width, in pixels, of the image.
+
+          ``height`` int
+          :guilabel:`in` The height, in pixels, of the image.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format of the image.
+
+          ``pixels`` IntPtr
+          :guilabel:`in` A pointer to the image pixels of the image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_Set (
+            ID3_FINGER_IMAGE hFingerImage, 
+            int width, 
+            int height, 
+            id3FingerPixelFormat ePixelFormat, 
+            void * pixels)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``width`` int
+          :guilabel:`in` The width, in pixels, of the image.
+
+          ``height`` int
+          :guilabel:`in` The height, in pixels, of the image.
+
+          ``ePixelFormat`` :ref:`id3FingerPixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format of the image.
+
+          ``pixels`` void *
+          :guilabel:`in` A pointer to the image pixels of the image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

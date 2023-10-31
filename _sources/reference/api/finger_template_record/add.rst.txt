@@ -1,0 +1,163 @@
+.. index:: 
+  !FingerTemplateRecord.add Method
+  
+.. _finger_template_record_add_class_method:
+
+===============================================================================
+FingerTemplateRecord.add Method
+===============================================================================
+
+Module: :ref:`FingerTemplateRecord<finger_template_record_class>`
+
+Definition
+----------
+
+Adds an item to the FingerTemplateRecord object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        add(self, finger_template_item: FingerTemplate) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``finger_template_item`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` FingerTemplate item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void add(FingerTemplate fingerTemplateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerTemplateItem`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` FingerTemplate item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Add(FingerTemplate fingerTemplateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerTemplateItem`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` FingerTemplate item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void add(FingerTemplate fingerTemplateItem) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerTemplateItem`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` FingerTemplate item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func add(fingerTemplateItem: FingerTemplate) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerTemplateItem`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` FingerTemplate item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerTemplateRecord_Add (
+            ID3_FINGER_TEMPLATE_RECORD hFingerTemplateRecord, 
+            ID3_FINGER_TEMPLATE hFingerTemplateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerTemplateRecord`` :ref:`ID3_FINGER_TEMPLATE_RECORD<finger_template_record_class>`
+          :guilabel:`in` Handle to the FingerTemplateRecord object.
+
+          ``hFingerTemplateItem`` :ref:`ID3_FINGER_TEMPLATE<finger_template_class>`
+          :guilabel:`in` FingerTemplate item to add.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

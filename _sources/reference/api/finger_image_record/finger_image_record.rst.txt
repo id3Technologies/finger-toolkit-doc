@@ -1,0 +1,241 @@
+.. index:: 
+  !FingerImageRecord Class
+
+.. _finger_image_record_class:
+
+===============================================================================
+FingerImageRecord Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  add<add>
+  clear<clear>
+  clone<clone>
+  count<count>
+  fromBuffer<from_buffer>
+  fromFile<from_file>
+  get<get>
+  getCount<get_count>
+  removeAt<remove_at>
+  resize<resize>
+  set<set>
+  toBuffer<to_buffer>
+  toFile<to_file>
+
+
+Definition
+----------
+.. line-block::
+    Represents a data record for storing, recording, and transmitting the information from one or more finger image areas.
+    This can be used for the exchange and comparison of finger image data.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerImageRecord
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerImageRecord implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerImageRecord
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerImageRecord implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerImageRecord
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerImageRecord *ID3_FINGER_IMAGE_RECORD;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerImageRecord = FingerImageRecord()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerImageRecord
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerImageRecord = sdk.FingerImageRecord();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerImageRecord.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerImageRecord = new FingerImageRecord())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerImageRecord = new FingerImageRecord()
+        // ...
+        fingerImageRecord.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerImageRecord fingerImageRecord = new FingerImageRecord()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerImageRecord fingerImageRecord = new FingerImageRecord();
+        // ...
+        fingerImageRecord.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerImageRecord: FingerImageRecord? = nil
+        fingerImageRecord = try FingerImageRecord()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_IMAGE_RECORD hFingerImageRecord{};
+        int err = id3FingerImageRecord_Initialize(&hFingerImageRecord);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerImageRecord_Dispose(&hFingerImageRecord);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`count<finger_image_record_count_class_member>`
+    - int
+    - Gets the number of elements contained in the list
+  * - operator [int index]
+    - :ref:`FingerImage<finger_image_class>`
+    - Gets or sets the element at the specified index in the list.
+
+Iteration
+---------
+
+This class supports iteration in Dart, C#, Java and Python.
+
+
+Static Methods
+--------------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`fromBuffer<finger_image_record_from_buffer_class_method>`
+    - Creates a FingerImageRecord from a buffer.
+  * - :ref:`fromFile<finger_image_record_from_file_class_method>`
+    - Creates a FingerImageRecord from a file.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`add<finger_image_record_add_class_method>`
+    - Adds an item to the FingerImageRecord object.
+  * - :ref:`clear<finger_image_record_clear_class_method>`
+    - Clears the FingerImageRecord object.
+  * - :ref:`clone<finger_image_record_clone_class_method>`
+    - Clones the FingerImageRecord object.
+  * - :ref:`get<finger_image_record_get_class_method>`
+    - Gets an item of the FingerImageRecord object.
+  * - :ref:`getCount<finger_image_record_get_count_class_method>`
+    - Gets the number of elements in the FingerImageRecord object.
+  * - :ref:`removeAt<finger_image_record_remove_at_class_method>`
+    - Removes an element of the FingerImageRecord object.
+  * - :ref:`resize<finger_image_record_resize_class_method>`
+    - FingerImageRecord object.
+  * - :ref:`set<finger_image_record_set_class_method>`
+    - Sets an item of the FingerImageRecord object.
+  * - :ref:`toBuffer<finger_image_record_to_buffer_class_method>`
+    - Exports the FingerImageRecord to a buffer.
+  * - :ref:`toFile<finger_image_record_to_file_class_method>`
+    - Exports the FingerImageRecord to a file.

@@ -1,0 +1,44 @@
+.. index:: 
+  !License Types
+
+.. _license_types:
+
+=================
+License types
+=================
+
+The following licenses are available: 
+
+.. list-table:: 
+  :width: 100%
+  :widths: 20 80
+  :header-rows: 1
+
+  * - License
+    - Description
+     
+  * - Perpetual license
+    - 
+      | The perpetual license authorizes to use the product indefinitely with the payment of a single fee.
+        The license is bound to a device and never expires.
+      | No internet connection required.
+
+  * - Temporary license
+    - | The temporary license expires after a fixed number of days following its activation.
+      | No internet connection required.
+
+  * - Online license
+    - | The online license requires a regular internet connection to work.
+      | A mechanism allows the software to run offline during a grace period (generally 30 days).
+
+.. note:: Temporary licenses may be extended on request. Please contact our sales department for a license extension.
+
+
+.. _dongle_license:
+
+Dongle license
+==============
+For Windows applications, a license can be installed on a standard USB key.
+
+.. warning:: A dongle license is linked to the serial number of the USB key, so once a license is installed on that particular dongle, it cannot be transferred to another dongle.
+

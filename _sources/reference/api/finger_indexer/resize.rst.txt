@@ -1,0 +1,163 @@
+.. index:: 
+  !FingerIndexer.resize Method
+  
+.. _finger_indexer_resize_class_method:
+
+===============================================================================
+FingerIndexer.resize Method
+===============================================================================
+
+Module: :ref:`FingerIndexer<finger_indexer_class>`
+
+Definition
+----------
+
+Resizes the maximum number of template records that the finger indexer can hold.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        resize(self, maximum_template_record_count: int) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``maximum_template_record_count`` int
+          :guilabel:`in` Maximum number of template records that this finger indexer can hold.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void resize(int maximumTemplateRecordCount)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``maximumTemplateRecordCount`` int
+          :guilabel:`in` Maximum number of template records that this finger indexer can hold.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Resize(int maximumTemplateRecordCount)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``maximumTemplateRecordCount`` int
+          :guilabel:`in` Maximum number of template records that this finger indexer can hold.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void resize(int maximumTemplateRecordCount) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``maximumTemplateRecordCount`` int
+          :guilabel:`in` Maximum number of template records that this finger indexer can hold.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func resize(maximumTemplateRecordCount: Int32) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``maximumTemplateRecordCount`` Int32
+          :guilabel:`in` Maximum number of template records that this finger indexer can hold.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerIndexer_Resize (
+            ID3_FINGER_INDEXER hFingerIndexer, 
+            int maximumTemplateRecordCount)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerIndexer`` :ref:`ID3_FINGER_INDEXER<finger_indexer_class>`
+          :guilabel:`in` Handle to the FingerIndexer object.
+
+          ``maximumTemplateRecordCount`` int
+          :guilabel:`in` Maximum number of template records that this finger indexer can hold.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

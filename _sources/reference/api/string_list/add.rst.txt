@@ -1,0 +1,163 @@
+.. index:: 
+  !StringList.add Method
+  
+.. _string_list_add_class_method:
+
+===============================================================================
+StringList.add Method
+===============================================================================
+
+Module: :ref:`StringList<string_list_class>`
+
+Definition
+----------
+
+Adds an item to the StringList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        add(self, item: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``item`` str
+          :guilabel:`in`  item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void add(String? item)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``item`` String
+          :guilabel:`in`  item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Add(string item)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``item`` string
+          :guilabel:`in`  item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void add(String item) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``item`` String
+          :guilabel:`in`  item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func add(item: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``item`` String
+          :guilabel:`in`  item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerStringList_Add (
+            ID3_FINGER_STRING_LIST hStringList, 
+            const char * item)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hStringList`` :ref:`ID3_FINGER_STRING_LIST<string_list_class>`
+          :guilabel:`in` Handle to the StringList object.
+
+          ``item`` const char *
+          :guilabel:`in`  item to add.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

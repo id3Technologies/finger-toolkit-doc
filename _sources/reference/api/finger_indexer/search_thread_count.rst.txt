@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerIndexer.searchThreadCount Property
+
+.. _finger_indexer_search_thread_count_class_member:
+
+===============================================================================
+FingerIndexer.searchThreadCount Property
+===============================================================================
+
+Module: :ref:`FingerIndexer<finger_indexer_class>`
+
+Type: int
+
+Definition
+----------
+
+Number of threads used for search.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      search_thread_count: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get searchThreadCount => getSearchThreadCount();
+      set searchThreadCount(int value) => setSearchThreadCount(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int searchThreadCount
+      {
+          get => GetsearchThreadCount();
+          set => SetsearchThreadCount(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getSearchThreadCount() throws FingerException
+      public void setSearchThreadCount(int searchThreadCount) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var searchThreadCount: Int
+          get {
+              return Int(try! getSearchThreadCount())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerIndexer_GetSearchThreadCount (ID3_FINGER_INDEXER hFingerIndexer, int * searchThreadCount)
+      int id3FingerIndexer_SetSearchThreadCount (ID3_FINGER_INDEXER hFingerIndexer, int searchThreadCount)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

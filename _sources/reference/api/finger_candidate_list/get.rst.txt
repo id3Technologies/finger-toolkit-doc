@@ -1,0 +1,202 @@
+.. index:: 
+  !FingerCandidateList.get Method
+  
+.. _finger_candidate_list_get_class_method:
+
+===============================================================================
+FingerCandidateList.get Method
+===============================================================================
+
+Module: :ref:`FingerCandidateList<finger_candidate_list_class>`
+
+Definition
+----------
+
+Gets an item of the FingerCandidateList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        get(self, index: int) -> FingerCandidate
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCandidate item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidate<finger_candidate_class>`
+          FingerCandidate item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerCandidate get(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCandidate item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidate<finger_candidate_class>`
+          FingerCandidate item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerCandidate Get(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCandidate item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidate<finger_candidate_class>`
+          FingerCandidate item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerCandidate get(int index) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCandidate item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidate<finger_candidate_class>`
+          FingerCandidate item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func get(index: Int32) throws -> FingerCandidate
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` Index of the FingerCandidate item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCandidate<finger_candidate_class>`
+          FingerCandidate item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerCandidateList_Get (
+            ID3_FINGER_CANDIDATE_LIST hFingerCandidateList, 
+            int index, 
+            ID3_FINGER_CANDIDATE hFingerCandidateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerCandidateList`` :ref:`ID3_FINGER_CANDIDATE_LIST<finger_candidate_list_class>`
+          :guilabel:`in` Handle to the FingerCandidateList object.
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerCandidate item to get.
+
+          ``hFingerCandidateItem`` :ref:`ID3_FINGER_CANDIDATE<finger_candidate_class>`
+          :guilabel:`out` FingerCandidate item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

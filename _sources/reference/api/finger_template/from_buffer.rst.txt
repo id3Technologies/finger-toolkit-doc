@@ -1,0 +1,222 @@
+.. index:: 
+  !FingerTemplate.fromBuffer Method
+  
+.. _finger_template_from_buffer_class_method:
+
+===============================================================================
+FingerTemplate.fromBuffer Method
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Definition
+----------
+
+Imports the finger template object from a buffer.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        from_buffer(format: FingerTemplateFormat, data: bytearray) -> FingerTemplate
+
+      **Parameters**
+
+        .. line-block::
+
+          ``format`` :ref:`FingerTemplateFormat<finger_template_format_enum>`
+          :guilabel:`in` Finger template buffer type to import the finger template object from.
+
+          ``data`` bytearray
+          :guilabel:`in` Buffer to import the finger template object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          The newly created finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static FingerTemplate fromBuffer(FingerTemplateFormat format, Uint8List? data)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``format`` :ref:`FingerTemplateFormat<finger_template_format_enum>`
+          :guilabel:`in` Finger template buffer type to import the finger template object from.
+
+          ``data`` Uint8List
+          :guilabel:`in` Buffer to import the finger template object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          The newly created finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static FingerTemplate FromBuffer(FingerTemplateFormat format, byte[] data)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``format`` :ref:`FingerTemplateFormat<finger_template_format_enum>`
+          :guilabel:`in` Finger template buffer type to import the finger template object from.
+
+          ``data`` byte[]
+          :guilabel:`in` Buffer to import the finger template object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          The newly created finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static FingerTemplate fromBuffer(FingerTemplateFormat format, byte[] data) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``format`` :ref:`FingerTemplateFormat<finger_template_format_enum>`
+          :guilabel:`in` Finger template buffer type to import the finger template object from.
+
+          ``data`` byte[]
+          :guilabel:`in` Buffer to import the finger template object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          The newly created finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func fromBuffer(format: FingerTemplateFormat, data: [UInt8]) throws -> FingerTemplate
+
+      **Parameters**
+
+        .. line-block::
+
+          ``format`` :ref:`FingerTemplateFormat<finger_template_format_enum>`
+          :guilabel:`in` Finger template buffer type to import the finger template object from.
+
+          ``data`` [UInt8]
+          :guilabel:`in` Buffer to import the finger template object from.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          The newly created finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerTemplate_FromBuffer (
+            ID3_FINGER_TEMPLATE hFingerTemplate, 
+            id3FingerTemplateFormat eFormat, 
+            unsigned char * data, 
+            int dataSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerTemplate`` :ref:`ID3_FINGER_TEMPLATE<finger_template_class>`
+          :guilabel:`in` Handle to the FingerTemplate object.
+
+          ``eFormat`` :ref:`id3FingerTemplateFormat<finger_template_format_enum>`
+          :guilabel:`in` Finger template buffer type to import the finger template object from.
+
+          ``data`` unsigned char *
+          :guilabel:`in` Buffer to import the finger template object from.
+
+          ``dataSize`` int
+          :guilabel:`in` Size of the 'data' buffer.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

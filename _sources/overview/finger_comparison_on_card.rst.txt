@@ -1,0 +1,124 @@
+.. _finger_comparison_on_card:
+
+==============================
+Fingerprint comparison on card
+==============================
+
+Fingerprint comparison on smart card, also known as Match-on-Card technology, means that the final stage of biometric verification is carried out on an integrated circuit card (ICC). This technology makes a smart card truly personal by replacing the PIN code needed to give access to the card with biometric recognition.
+
+.. note:: `Contact us <mailto:contact@id3.eu>`_ for a list of cards compatible with our Match-on-Card technology.
+
+Enrolment data
+==============
+
+The biometric data to be sent to the card for the purpose of enrolment must be in the form of a Biometric Information Template (BIT), as per ISO/IEC 7816-11.
+The BIT contains descriptive information about the associated biometric template data.
+
+The template data shall be generated using the :ref:`FingerExtractor<finger_extractor_class>`.
+Then call the :ref:`finger_template_to_bit_class_method` for correctly formatted data.
+
+.. important:: 
+  The BIT must contain the decision threshold associated with the finger template. See :ref:`match_on_card_decision_threshold` for details.
+
+Verification data
+=================
+
+The biometric data to be sent to the card for the purpose of verification must be in the form of a Biometric Data Template (BDT) as per ISO/IEC 7816-11.
+The BDT contains biometric template data encapsulated in a BER-TLV data object '7F2E'.
+
+The template data shall be generated using the :ref:`FingerExtractor<finger_extractor_class>`.
+Then call the :ref:`finger_template_to_bdt_class_method` for correctly formatted data.
+
+.. _match_on_card_decision_threshold:
+
+Decision thresholds
+===================
+
+The table below defines typical matching decision values for use with id3 minutia extractor:
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - False Match Rate
+    - Decision threshold
+  * - 1.0%
+    - 2045
+  * - 0.1%
+    - 2828
+  * - 0.01%
+    - 4085
+  * - 0.001%
+    - 5011
+  * - 0.0001%
+    - 6069
+
+
+Example
+=======
+
+The example below demonstrates how to obtain the biometric data from a fingerprint image.
+
+.. tab-set::
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. literalinclude:: /../samples/sample.dart
+      :language: dart
+      :start-after: [finger_comparison_on_card]
+      :end-before: [finger_comparison_on_card]
+      :dedent: 2
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. literalinclude:: /../samples/sample.cs
+      :language: c#
+      :start-after: [finger_comparison_on_card]
+      :end-before: [finger_comparison_on_card]
+      :dedent: 12
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. literalinclude:: /../samples/sample.java
+      :language: java
+      :start-after: [finger_comparison_on_card]
+      :end-before: [finger_comparison_on_card]
+      :dedent: 8
+
+  .. tab-item:: Kotlin
+    :sync: Kotlin
+
+    .. literalinclude:: /../samples/sample.kt
+      :language: kotlin
+      :start-after: [finger_comparison_on_card]
+      :end-before: [finger_comparison_on_card]
+      :dedent: 4
+
+  .. tab-item:: Python
+    :sync: python
+
+    .. literalinclude:: /../samples/sample.py
+      :language: python
+      :start-after: [finger_comparison_on_card]
+      :end-before: [finger_comparison_on_card]
+      :dedent: 4
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. literalinclude:: /../samples/sample.swift
+      :language: swift
+      :start-after: [finger_comparison_on_card]
+      :end-before: [finger_comparison_on_card]
+      :dedent: 4
+
+
+See also
+========
+
+- :ref:`finger_extractor_class`
+- :ref:`finger_template_class`

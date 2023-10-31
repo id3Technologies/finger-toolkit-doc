@@ -1,0 +1,169 @@
+.. index:: 
+  !FingerImage.setResolution Method
+  
+.. _finger_image_set_resolution_class_method:
+
+===============================================================================
+FingerImage.setResolution Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Sets both the image horizontal and vertical resolutions.
+
+This is a shortcut function to replace SetHorizontalResolution() and SetVerticalResolution() when they are equal.
+
+Mostly used to set both to 500dpi, which is the working resolution of the FingerExtractor.
+
+.. warning:: this function does not process the image, it simply sets the resolution fields.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        set_resolution(self, resolution: int) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``resolution`` int
+          :guilabel:`in` Resolution to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void setResolution(int resolution)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``resolution`` int
+          :guilabel:`in` Resolution to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void SetResolution(int resolution)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``resolution`` int
+          :guilabel:`in` Resolution to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void setResolution(int resolution) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``resolution`` int
+          :guilabel:`in` Resolution to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func setResolution(resolution: Int32) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``resolution`` Int32
+          :guilabel:`in` Resolution to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_SetResolution (
+            ID3_FINGER_IMAGE hFingerImage, 
+            int resolution)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``resolution`` int
+          :guilabel:`in` Resolution to set.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

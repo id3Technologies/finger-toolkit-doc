@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerImage.qualityAlgorithmId Property
+
+.. _finger_image_quality_algorithm_id_class_member:
+
+===============================================================================
+FingerImage.qualityAlgorithmId Property
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Type: int
+
+Definition
+----------
+
+Quality algorithm identifier (including version) as assigned by the vendor.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      quality_algorithm_id: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get qualityAlgorithmId => getQualityAlgorithmId();
+      set qualityAlgorithmId(int value) => setQualityAlgorithmId(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int qualityAlgorithmId
+      {
+          get => GetqualityAlgorithmId();
+          set => SetqualityAlgorithmId(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getQualityAlgorithmId() throws FingerException
+      public void setQualityAlgorithmId(int qualityAlgorithmId) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var qualityAlgorithmId: Int
+          get {
+              return Int(try! getQualityAlgorithmId())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerImage_GetQualityAlgorithmId (ID3_FINGER_IMAGE hFingerImage, int * qualityAlgorithmId)
+      int id3FingerImage_SetQualityAlgorithmId (ID3_FINGER_IMAGE hFingerImage, int qualityAlgorithmId)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

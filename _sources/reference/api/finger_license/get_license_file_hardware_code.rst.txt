@@ -1,0 +1,159 @@
+.. index:: 
+  !FingerLicense.getLicenseFileHardwareCode Method
+  
+.. _finger_license_get_license_file_hardware_code_class_method:
+
+===============================================================================
+FingerLicense.getLicenseFileHardwareCode Method
+===============================================================================
+
+Module: :ref:`FingerLicense<finger_license_class>`
+
+Definition
+----------
+
+Retrieves the hardware code of the previously loaded license.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        get_license_file_hardware_code() -> str
+
+      **Returns**
+
+        .. line-block::
+
+          ``str``
+          The license hardware code.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static String getLicenseFileHardwareCode()
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          The license hardware code.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static string GetLicenseFileHardwareCode()
+
+      **Returns**
+
+        .. line-block::
+
+          ``string``
+          The license hardware code.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static String getLicenseFileHardwareCode() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          The license hardware code.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func getLicenseFileHardwareCode() throws -> String
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          The license hardware code.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_GetLicenseFileHardwareCode (
+            char * licenseFileHardwareCode, 
+            int * licenseFileHardwareCodeSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseFileHardwareCode`` char *
+          :guilabel:`out` The license hardware code.
+
+          ``licenseFileHardwareCodeSize`` int *
+          :guilabel:`in` Size of the 'licenseFileHardwareCode' buffer. Receives the minimum required buffer size to hold the 'licenseFileHardwareCode' string if the given one is too small (including the terminating NULL character), otherwise receives the number of characters in 'licenseFileHardwareCode' (excluding terminating NULL character).
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

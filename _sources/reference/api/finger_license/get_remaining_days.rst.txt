@@ -1,0 +1,155 @@
+.. index:: 
+  !FingerLicense.getRemainingDays Method
+  
+.. _finger_license_get_remaining_days_class_method:
+
+===============================================================================
+FingerLicense.getRemainingDays Method
+===============================================================================
+
+Module: :ref:`FingerLicense<finger_license_class>`
+
+Definition
+----------
+
+Retrieves the number of remaining days.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        get_remaining_days() -> int
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          The number of remaining days.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static int getRemainingDays()
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          The number of remaining days.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static int GetRemainingDays()
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          The number of remaining days.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static int getRemainingDays() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          The number of remaining days.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func getRemainingDays() throws -> Int32
+
+      **Returns**
+
+        .. line-block::
+
+          ``Int``
+          The number of remaining days.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_GetRemainingDays (
+            int * remainingDays)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``remainingDays`` int *
+          :guilabel:`out` The number of remaining days.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

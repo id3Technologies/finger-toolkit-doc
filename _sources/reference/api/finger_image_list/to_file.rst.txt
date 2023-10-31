@@ -1,0 +1,222 @@
+.. index:: 
+  !FingerImageList.toFile Method
+  
+.. _finger_image_list_to_file_class_method:
+
+===============================================================================
+FingerImageList.toFile Method
+===============================================================================
+
+Module: :ref:`FingerImageList<finger_image_list_class>`
+
+Definition
+----------
+
+Exports the finger image list object to a file.
+
+For ANSI/NIST-ITL 1-2011 (AN2K) transaction export, all images will be exported in WSQ in type 14 records, NIEM-XML encoding mode is not supported.
+
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImageList_ToFile (
+            ID3_FINGER_IMAGE_LIST hFingerImageList, 
+            id3FingerImageBufferType eImageBufferType, 
+            id3FingerImageCompressionAlgorithm eCompressionAlgorithm, 
+            float compressionLevel, 
+            const char * path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImageList`` :ref:`ID3_FINGER_IMAGE_LIST<finger_image_list_class>`
+          :guilabel:`in` Handle to the FingerImageList object.
+
+          ``eImageBufferType`` :ref:`id3FingerImageBufferType<finger_image_buffer_type_enum>`
+          :guilabel:`in` Finger image buffer type to export the finger image object to.
+
+          ``eCompressionAlgorithm`` :ref:`id3FingerImageCompressionAlgorithm<finger_image_compression_algorithm_enum>`
+          :guilabel:`in` Compression algorithm used to compress the images in a record. Note: this value is not prioritary versus the value in an image object, but if the image does not have a compression algorithm, then the one passed here is used.
+
+          ``compressionLevel`` float
+          :guilabel:`in` Compression level. Range and default value depends on the compression algorithm, see CompressionAlgorithm enumeration for more details.
+
+          ``path`` const char *
+          :guilabel:`in` Path to the file to export the finger image list object to.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void toFile(FingerImageBufferType imageBufferType, FingerImageCompressionAlgorithm compressionAlgorithm, double compressionLevel, String? path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``imageBufferType`` :ref:`FingerImageBufferType<finger_image_buffer_type_enum>`
+          :guilabel:`in` Finger image buffer type to export the finger image object to.
+
+          ``compressionAlgorithm`` :ref:`FingerImageCompressionAlgorithm<finger_image_compression_algorithm_enum>`
+          :guilabel:`in` Compression algorithm used to compress the images in a record. Note: this value is not prioritary versus the value in an image object, but if the image does not have a compression algorithm, then the one passed here is used.
+
+          ``compressionLevel`` double
+          :guilabel:`in` Compression level. Range and default value depends on the compression algorithm, see CompressionAlgorithm enumeration for more details.
+
+          ``path`` String
+          :guilabel:`in` Path to the file to export the finger image list object to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void ToFile(FingerImageBufferType imageBufferType, FingerImageCompressionAlgorithm compressionAlgorithm, float compressionLevel, string path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``imageBufferType`` :ref:`FingerImageBufferType<finger_image_buffer_type_enum>`
+          :guilabel:`in` Finger image buffer type to export the finger image object to.
+
+          ``compressionAlgorithm`` :ref:`FingerImageCompressionAlgorithm<finger_image_compression_algorithm_enum>`
+          :guilabel:`in` Compression algorithm used to compress the images in a record. Note: this value is not prioritary versus the value in an image object, but if the image does not have a compression algorithm, then the one passed here is used.
+
+          ``compressionLevel`` float
+          :guilabel:`in` Compression level. Range and default value depends on the compression algorithm, see CompressionAlgorithm enumeration for more details.
+
+          ``path`` string
+          :guilabel:`in` Path to the file to export the finger image list object to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void toFile(FingerImageBufferType imageBufferType, FingerImageCompressionAlgorithm compressionAlgorithm, float compressionLevel, String path) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``imageBufferType`` :ref:`FingerImageBufferType<finger_image_buffer_type_enum>`
+          :guilabel:`in` Finger image buffer type to export the finger image object to.
+
+          ``compressionAlgorithm`` :ref:`FingerImageCompressionAlgorithm<finger_image_compression_algorithm_enum>`
+          :guilabel:`in` Compression algorithm used to compress the images in a record. Note: this value is not prioritary versus the value in an image object, but if the image does not have a compression algorithm, then the one passed here is used.
+
+          ``compressionLevel`` float
+          :guilabel:`in` Compression level. Range and default value depends on the compression algorithm, see CompressionAlgorithm enumeration for more details.
+
+          ``path`` String
+          :guilabel:`in` Path to the file to export the finger image list object to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        to_file(self, image_buffer_type: FingerImageBufferType, compression_algorithm: FingerImageCompressionAlgorithm, compression_level: float, path: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image_buffer_type`` :ref:`FingerImageBufferType<finger_image_buffer_type_enum>`
+          :guilabel:`in` Finger image buffer type to export the finger image object to.
+
+          ``compression_algorithm`` :ref:`FingerImageCompressionAlgorithm<finger_image_compression_algorithm_enum>`
+          :guilabel:`in` Compression algorithm used to compress the images in a record. Note: this value is not prioritary versus the value in an image object, but if the image does not have a compression algorithm, then the one passed here is used.
+
+          ``compression_level`` float
+          :guilabel:`in` Compression level. Range and default value depends on the compression algorithm, see CompressionAlgorithm enumeration for more details.
+
+          ``path`` str
+          :guilabel:`in` Path to the file to export the finger image list object to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func toFile(imageBufferType: FingerImageBufferType, compressionAlgorithm: FingerImageCompressionAlgorithm, compressionLevel: Float, path: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``imageBufferType`` :ref:`FingerImageBufferType<finger_image_buffer_type_enum>`
+          :guilabel:`in` Finger image buffer type to export the finger image object to.
+
+          ``compressionAlgorithm`` :ref:`FingerImageCompressionAlgorithm<finger_image_compression_algorithm_enum>`
+          :guilabel:`in` Compression algorithm used to compress the images in a record. Note: this value is not prioritary versus the value in an image object, but if the image does not have a compression algorithm, then the one passed here is used.
+
+          ``compressionLevel`` Float
+          :guilabel:`in` Compression level. Range and default value depends on the compression algorithm, see CompressionAlgorithm enumeration for more details.
+
+          ``path`` String
+          :guilabel:`in` Path to the file to export the finger image list object to.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

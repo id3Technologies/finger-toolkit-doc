@@ -1,0 +1,118 @@
+.. index:: 
+  !FingerTemplate.captureDeviceModelId Property
+
+.. _finger_template_capture_device_model_id_class_member:
+
+===============================================================================
+FingerTemplate.captureDeviceModelId Property
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Type: :ref:`FingerCaptureDeviceModelId<finger_capture_device_model_id_enum>`
+
+Definition
+----------
+
+Model identifier of the device used to the capture the finger image that the template was derived from, as registered with the IBIA (www.ibia.org).
+
+
+.. tab-set::
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerTemplate_GetCaptureDeviceModelId (ID3_FINGER_TEMPLATE hFingerTemplate, id3FingerCaptureDeviceModelId * eCaptureDeviceModelId)
+      int id3FingerTemplate_SetCaptureDeviceModelId (ID3_FINGER_TEMPLATE hFingerTemplate, id3FingerCaptureDeviceModelId eCaptureDeviceModelId)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerCaptureDeviceModelId get captureDeviceModelId => getCaptureDeviceModelId();
+      set captureDeviceModelId(FingerCaptureDeviceModelId value) => setCaptureDeviceModelId(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        ``FingerException``
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public FingerCaptureDeviceModelId captureDeviceModelId
+      {
+          get => GetcaptureDeviceModelId();
+          set => SetcaptureDeviceModelId(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        ``FingerException``
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public FingerCaptureDeviceModelId getCaptureDeviceModelId() throws FingerException
+      public void setCaptureDeviceModelId(FingerCaptureDeviceModelId captureDeviceModelId) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        ``FingerException``
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      capture_device_model_id: FingerCaptureDeviceModelId
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        ``FingerException``
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      TODO
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        ``FingerException``
+        An error has occurred during Finger Library execution.
+

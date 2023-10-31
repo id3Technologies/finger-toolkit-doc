@@ -1,0 +1,73 @@
+.. _feature_extraction:
+
+==================
+Feature extraction
+==================
+
+Feature extraction is the process of extracting unique features from a fingerprint image. It outputs a :ref:`finger template<finger_template>` to be used for :ref:`finger_comparison<finger_comparison>` or :ref:`fingerprint search<finger_search>`.
+
+This component includes several complementary features:
+
+- **Minutia detection** -- This is the core algorithm for fingerprint feature extraction. Minutiae are the most interoperable features and their encoding is precisely defined in ANSI and ISO standards.
+
+- **Minutia encoding** -- Extracts a local signature for each minutia to improve overall matching performance.
+
+- **Finger encoding** -- Extracts a signature of the whole fingerprint to improve the recognition performance. To be used in addition to the minutia detection.
+
+.. hint:: For finger encoding, ensure that the fingerprint image is large enough (above 200x200px at 500dpi) and well captured (correct pose).
+
+.. important:: Finger encoding requires the finger aligner model to be specified.
+
+
+AI models
+=========
+The finger extractor component contains the following machine learning models:
+
+.. list-table::
+    :width: 100%
+    :widths: 20 20 60
+    :header-rows: 1
+
+    * - Model
+      - Size
+      - Description
+
+    * - FingerAligner1A 
+      - 2009 kB
+      - Aligns a fingerprint before encoding.
+
+    * - FingerEncoder1A
+      - 4,683 kB
+      - Provides proprietary information at the fingerprint level to increase match accuracy.
+
+    * - FingerMinutiaDetector3B
+      - 3,522 kB
+      - Detects minutiae.
+
+    * - FingerMinutiaEncoder1A
+      - 1,697 kB
+      - Provides proprietary information at the minutiae level to increase match accuracy.
+
+Example
+=======
+
+The example below demonstrates how to generate a :ref:`FingerTemplate<finger_template_class>` from a :ref:`FingerImage<finger_image_class>`:
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. literalinclude:: /../samples/sample.py
+      :language: python
+      :start-after: [feature_extraction]
+      :end-before: [feature_extraction]
+      :dedent: 4
+
+
+See also
+========
+
+- :ref:`finger_extractor_class`
+- :ref:`finger_image_class`
+- :ref:`finger_template_class`

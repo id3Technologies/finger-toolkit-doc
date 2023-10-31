@@ -1,0 +1,158 @@
+.. index:: 
+  !FingerMinutiaList.clone Method
+  
+.. _finger_minutia_list_clone_class_method:
+
+===============================================================================
+FingerMinutiaList.clone Method
+===============================================================================
+
+Module: :ref:`FingerMinutiaList<finger_minutia_list_class>`
+
+Definition
+----------
+
+Clones the FingerMinutiaList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        clone(self) -> FingerMinutiaList
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMinutiaList<finger_minutia_list_class>`
+          The newly created finger minutia list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerMinutiaList clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMinutiaList<finger_minutia_list_class>`
+          The newly created finger minutia list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerMinutiaList Clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMinutiaList<finger_minutia_list_class>`
+          The newly created finger minutia list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerMinutiaList clone() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMinutiaList<finger_minutia_list_class>`
+          The newly created finger minutia list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func clone() throws -> FingerMinutiaList
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMinutiaList<finger_minutia_list_class>`
+          The newly created finger minutia list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerMinutiaList_CopyTo (
+            ID3_FINGER_MINUTIA_LIST hFingerMinutiaList, 
+            ID3_FINGER_MINUTIA_LIST hFingerMinutiaListDst)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerMinutiaList`` :ref:`ID3_FINGER_MINUTIA_LIST<finger_minutia_list_class>`
+          :guilabel:`in` Handle to the FingerMinutiaList object.
+
+          ``hFingerMinutiaListDst`` :ref:`ID3_FINGER_MINUTIA_LIST<finger_minutia_list_class>`
+          :guilabel:`out` The newly created finger minutia list.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

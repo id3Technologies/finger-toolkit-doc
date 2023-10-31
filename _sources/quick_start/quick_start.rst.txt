@@ -1,0 +1,78 @@
+.. _quick_start:
+
+===============
+Quick start
+===============
+
+Step 1 -- Request a license
+---------------------------
+
+To use the SDK, you need to get a license:
+
+- Create an account on our customer portal: https://portal.id3.eu
+- Make your request to our sales department: mailto:contact@id3.eu
+
+Step 2 -- Install the SDK
+-------------------------
+
+1. Download the archive on our cloud drive (the link should provided by our sales department)
+2. Uncompress the archive.
+
+SDK Archive
+===========
+
+|product-name| is delivered as a compressed archive (ZIP file) that contains the following directories and files: 
+
+::
+
+    ├───activation                      # License activation tools for Windows, Linux and Jetson Nano
+    │   ├───cli-tool
+    │   └───windows-tool
+    ├───bin                             # Native libraries + benchmark tool
+    │   ├───android
+    │   ├───apple
+    │   ├───linux
+    │   └───windows
+    ├───dart                            # Dart wrapper source code
+    │   └───id3_finger
+    ├───docs                            # API reference and Developer Guide
+    │   ├───3rdparty
+    │   ├───javadoc
+    │   └───developer-guide
+    ├───dotnet                          # .NET dynamic libraries
+    ├───include                         # C header files
+    ├───java                            # Java jar archives
+    ├───python                          # Python package
+    ├── CHANGELOG.md
+    ├── LICENSE.md
+    └── README.md
+
+Step 3 -- Download the AI models
+--------------------------------
+
+|product-name| requires AI models to run. They are common to every platform and should be distributed according to the application's needs. 
+
+.. important::
+    
+    | Models can be downloaded at the following URL: 
+    | https://cloud.id3.eu/index.php/s/x3XHygq82oi7BP4 
+
+Since there are lots of models in the folder, it is recommended to download and deploy only the necessary ones for the application.
+
+See :ref:`ai_models` for details.
+
+Step 4 -- Run the samples
+-------------------------
+
+|product-name| contains sample projects for the following programming platforms and languages:
+
+- Windows, Linux (C/C++)
+- .NET (C#)
+- Flutter (Dart)
+- Android (Kotlin + Java)
+- iOS (Swift)
+
+.. note:: 
+    | Those samples are not delivered in the ZIP archive.
+    | They can be found directly here: https://github.com/id3Technologies/sdk-samples
+

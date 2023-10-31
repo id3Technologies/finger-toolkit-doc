@@ -1,0 +1,201 @@
+.. index:: 
+  !FingerImage.correctGamma Method
+  
+.. _finger_image_correct_gamma_class_method:
+
+===============================================================================
+FingerImage.correctGamma Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Applies a gamma correction to the image.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        correct_gamma(self, contrast: int, brightness: int, gamma: float) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``contrast`` int
+          :guilabel:`in` Contrast coefficient, from -255 to 255, to be applied to the image.
+
+          ``brightness`` int
+          :guilabel:`in` Brightness coefficient, from -255 to 255, to be applid to the image.
+
+          ``gamma`` float
+          :guilabel:`in` Gamma coefficient, from 0.25 to 2.50, to be applied to the image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void correctGamma(int contrast, int brightness, double gamma)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``contrast`` int
+          :guilabel:`in` Contrast coefficient, from -255 to 255, to be applied to the image.
+
+          ``brightness`` int
+          :guilabel:`in` Brightness coefficient, from -255 to 255, to be applid to the image.
+
+          ``gamma`` double
+          :guilabel:`in` Gamma coefficient, from 0.25 to 2.50, to be applied to the image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void CorrectGamma(int contrast, int brightness, float gamma)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``contrast`` int
+          :guilabel:`in` Contrast coefficient, from -255 to 255, to be applied to the image.
+
+          ``brightness`` int
+          :guilabel:`in` Brightness coefficient, from -255 to 255, to be applid to the image.
+
+          ``gamma`` float
+          :guilabel:`in` Gamma coefficient, from 0.25 to 2.50, to be applied to the image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void correctGamma(int contrast, int brightness, float gamma) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``contrast`` int
+          :guilabel:`in` Contrast coefficient, from -255 to 255, to be applied to the image.
+
+          ``brightness`` int
+          :guilabel:`in` Brightness coefficient, from -255 to 255, to be applid to the image.
+
+          ``gamma`` float
+          :guilabel:`in` Gamma coefficient, from 0.25 to 2.50, to be applied to the image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func correctGamma(contrast: Int32, brightness: Int32, gamma: Float) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``contrast`` Int32
+          :guilabel:`in` Contrast coefficient, from -255 to 255, to be applied to the image.
+
+          ``brightness`` Int32
+          :guilabel:`in` Brightness coefficient, from -255 to 255, to be applid to the image.
+
+          ``gamma`` Float
+          :guilabel:`in` Gamma coefficient, from 0.25 to 2.50, to be applied to the image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_CorrectGamma (
+            ID3_FINGER_IMAGE hFingerImage, 
+            int contrast, 
+            int brightness, 
+            float gamma)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``contrast`` int
+          :guilabel:`in` Contrast coefficient, from -255 to 255, to be applied to the image.
+
+          ``brightness`` int
+          :guilabel:`in` Brightness coefficient, from -255 to 255, to be applid to the image.
+
+          ``gamma`` float
+          :guilabel:`in` Gamma coefficient, from 0.25 to 2.50, to be applied to the image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

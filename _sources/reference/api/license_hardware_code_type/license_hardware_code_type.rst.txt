@@ -1,0 +1,100 @@
+.. index:: 
+  !LicenseHardwareCodeType Enumeration
+
+.. _license_hardware_code_type_enum:
+
+===============================================================================
+LicenseHardwareCodeType Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the types of hardware codes.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class LicenseHardwareCodeType
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum LicenseHardwareCodeType
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum LicenseHardwareCodeType
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum LicenseHardwareCodeType
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum LicenseHardwareCodeType
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerLicenseHardwareCodeType
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``windowsOs``
+    - 1
+    - License locked on Windows OS.
+  * - ``windowsUsb``
+    - 11
+    - License locked on Windows USB stick.
+  * - ``linuxOs``
+    - 3
+    - License locked on Linux OS.
+  * - ``android``
+    - 5
+    - License locked on Android device.
+  * - ``androidPackageName``
+    - 6
+    - License locked on Android application package name.
+  * - ``iOS``
+    - 7
+    - License locked on iOS device.
+  * - ``macOS``
+    - 8
+    - License locked on macOS.
+  * - ``jetsonNano``
+    - 9
+    - License locked on Jetson Nano.
+  * - ``iOSBundleid``
+    - 10
+    - License locked on iOS application Bundle ID.

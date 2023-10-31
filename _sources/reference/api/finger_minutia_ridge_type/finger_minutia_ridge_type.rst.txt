@@ -1,0 +1,82 @@
+.. index:: 
+  !FingerMinutiaRidgeType Enumeration
+
+.. _finger_minutia_ridge_type_enum:
+
+===============================================================================
+FingerMinutiaRidgeType Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the finger minutia ridge types.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerMinutiaRidgeType
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerMinutiaRidgeType
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerMinutiaRidgeType
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerMinutiaRidgeType
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerMinutiaRidgeType
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerMinutiaRidgeType
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``unknown``
+    - 0
+    - Unknown minutia type.
+  * - ``ending``
+    - 1
+    - Ridge ending as defined in norm ISO19794-2.
+  * - ``bifurcation``
+    - 2
+    - Ridge bifurcation as defined in norm ISO19794-2.

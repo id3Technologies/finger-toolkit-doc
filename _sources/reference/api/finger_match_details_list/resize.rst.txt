@@ -1,0 +1,163 @@
+.. index:: 
+  !FingerMatchDetailsList.resize Method
+  
+.. _finger_match_details_list_resize_class_method:
+
+===============================================================================
+FingerMatchDetailsList.resize Method
+===============================================================================
+
+Module: :ref:`FingerMatchDetailsList<finger_match_details_list_class>`
+
+Definition
+----------
+
+FingerMatchDetailsList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        resize(self, new_size: int) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``new_size`` int
+          :guilabel:`in` FingerMatchDetails object.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void resize(int newSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``newSize`` int
+          :guilabel:`in` FingerMatchDetails object.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Resize(int newSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``newSize`` int
+          :guilabel:`in` FingerMatchDetails object.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void resize(int newSize) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``newSize`` int
+          :guilabel:`in` FingerMatchDetails object.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func resize(newSize: Int32) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``newSize`` Int32
+          :guilabel:`in` FingerMatchDetails object.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerMatchDetailsList_Resize (
+            ID3_FINGER_MATCH_DETAILS_LIST hFingerMatchDetailsList, 
+            int newSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerMatchDetailsList`` :ref:`ID3_FINGER_MATCH_DETAILS_LIST<finger_match_details_list_class>`
+          :guilabel:`in` Handle to the FingerMatchDetailsList object.
+
+          ``newSize`` int
+          :guilabel:`in` FingerMatchDetails object.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

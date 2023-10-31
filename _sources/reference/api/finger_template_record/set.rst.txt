@@ -1,0 +1,182 @@
+.. index:: 
+  !FingerTemplateRecord.set Method
+  
+.. _finger_template_record_set_class_method:
+
+===============================================================================
+FingerTemplateRecord.set Method
+===============================================================================
+
+Module: :ref:`FingerTemplateRecord<finger_template_record_class>`
+
+Definition
+----------
+
+Sets an item of the FingerTemplateRecord object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        set(self, index: int, finger_template_item: FingerTemplate) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerTemplate item to set.
+
+          ``finger_template_item`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` FingerTemplate item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void set(int index, FingerTemplate fingerTemplateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerTemplate item to set.
+
+          ``fingerTemplateItem`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` FingerTemplate item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Set(int index, FingerTemplate fingerTemplateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerTemplate item to set.
+
+          ``fingerTemplateItem`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` FingerTemplate item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void set(int index, FingerTemplate fingerTemplateItem) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerTemplate item to set.
+
+          ``fingerTemplateItem`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` FingerTemplate item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func set(index: Int32, fingerTemplateItem: FingerTemplate) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` Index of the FingerTemplate item to set.
+
+          ``fingerTemplateItem`` :ref:`FingerTemplate<finger_template_class>`
+          :guilabel:`in` FingerTemplate item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerTemplateRecord_Set (
+            ID3_FINGER_TEMPLATE_RECORD hFingerTemplateRecord, 
+            int index, 
+            ID3_FINGER_TEMPLATE hFingerTemplateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerTemplateRecord`` :ref:`ID3_FINGER_TEMPLATE_RECORD<finger_template_record_class>`
+          :guilabel:`in` Handle to the FingerTemplateRecord object.
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerTemplate item to set.
+
+          ``hFingerTemplateItem`` :ref:`ID3_FINGER_TEMPLATE<finger_template_class>`
+          :guilabel:`in` FingerTemplate item to set.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

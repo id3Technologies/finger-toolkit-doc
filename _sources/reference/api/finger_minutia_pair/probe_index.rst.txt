@@ -1,0 +1,61 @@
+.. index:: 
+  !FingerMinutiaPair.probeIndex Property
+
+.. _finger_minutia_pair_probe_index_struct_member:
+
+===============================================================================
+FingerMinutiaPair.probeIndex Property
+===============================================================================
+
+Structure: :ref:`FingerMinutiaPair<finger_minutia_pair_struct>`
+
+Definition
+----------
+
+Index of the minutia in the probe template.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      int probe_index
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int probeIndex
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      int ProbeIndex
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      int probeIndex
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      Int probeIndex
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int ProbeIndex
+

@@ -1,0 +1,191 @@
+.. index:: 
+  !FingerCandidate Class
+
+.. _finger_candidate_class:
+
+===============================================================================
+FingerCandidate Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  clone<clone>
+  id<id>
+  score<score>
+
+
+Definition
+----------
+.. line-block::
+    Represents a candidate in a one-to-many search.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerCandidate
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerCandidate implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerCandidate
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerCandidate implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerCandidate
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerCandidate *ID3_FINGER_CANDIDATE;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerCandidate = FingerCandidate()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerCandidate
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerCandidate = sdk.FingerCandidate();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerCandidate.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerCandidate = new FingerCandidate())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerCandidate = new FingerCandidate()
+        // ...
+        fingerCandidate.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerCandidate fingerCandidate = new FingerCandidate()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerCandidate fingerCandidate = new FingerCandidate();
+        // ...
+        fingerCandidate.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerCandidate: FingerCandidate? = nil
+        fingerCandidate = try FingerCandidate()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_CANDIDATE hFingerCandidate{};
+        int err = id3FingerCandidate_Initialize(&hFingerCandidate);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerCandidate_Dispose(&hFingerCandidate);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`id<finger_candidate_id_class_member>`
+    - string
+    - ID of the most similar finger template as defined in the reference finger template record used to perform the search.
+  * - :ref:`score<finger_candidate_score_class_member>`
+    - int
+    - Match score between the finger probe template and the most similar one in the reference finger template record used to perform the search.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`clone<finger_candidate_clone_class_method>`
+    - Clones the FingerCandidate object.

@@ -1,0 +1,121 @@
+.. index:: 
+  !FingerImpressionType Enumeration
+
+.. _finger_impression_type_enum:
+
+===============================================================================
+FingerImpressionType Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the finger image impression types, as defined in ISO/IEC 19794-2:2011.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerImpressionType
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerImpressionType
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerImpressionType
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerImpressionType
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerImpressionType
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerImpressionType
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``liveScanPlain``
+    - 0
+    - Live scan plain.
+  * - ``liveScanRolled``
+    - 1
+    - Live scan rolled.
+  * - ``nonLiveScanPlain``
+    - 2
+    - Non-live scan plain.
+  * - ``nonLiveScanRolled``
+    - 3
+    - Non-live scan rolled.
+  * - ``latentImpression``
+    - 4
+    - Latent impression.
+  * - ``latentTracing``
+    - 5
+    - Latent tracing.
+  * - ``latentPhoto``
+    - 6
+    - Latent photo.
+  * - ``latentLift``
+    - 7
+    - Latent lift.
+  * - ``liveScanSwipe``
+    - 8
+    - Live scan swipe.
+  * - ``verticalRoll``
+    - 9
+    - Vertical roll.
+  * - ``liveScanOpticalContactlessPlain``
+    - 24
+    - Live scan optical contactless plain.
+  * - ``liveScanOpticalContactlessRolled``
+    - 25
+    - Live scan optical contactless rolled.
+  * - ``other``
+    - 28
+    - Other.
+  * - ``unknown``
+    - 29
+    - Unknown.
+  * - ``liveScanOpticalContactlessRolledMovingSubject``
+    - 41
+    - Live scan optical contactless rolled - moving subject.
+  * - ``liveScanOpticalContactlessPlainMovingSubject``
+    - 42
+    - Live scan optical contactless plain - moving subject.

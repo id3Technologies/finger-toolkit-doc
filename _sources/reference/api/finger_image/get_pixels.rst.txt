@@ -1,0 +1,72 @@
+.. index:: 
+  !FingerImage.getPixels Method
+  
+.. _finger_image_get_pixels_class_method:
+
+===============================================================================
+FingerImage.getPixels Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Gets a pointer to the image pixels.
+
+.. warning:: This method is unsafe! The user must handle the pixels pointer carefully.
+
+
+.. tab-set::
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public IntPtr GetPixels()
+
+      **Returns**
+
+        .. line-block::
+
+          ``IntPtr``
+          Pointer to the image pixels.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_GetPixels (
+            ID3_FINGER_IMAGE hFingerImage, 
+            void ** pixels)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``pixels`` void **
+          :guilabel:`out` Pointer to the image pixels.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

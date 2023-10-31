@@ -1,0 +1,202 @@
+.. index:: 
+  !FingerDetector.detectFingers Method
+  
+.. _finger_detector_detect_fingers_class_method:
+
+===============================================================================
+FingerDetector.detectFingers Method
+===============================================================================
+
+Module: :ref:`FingerDetector<finger_detector_class>`
+
+Definition
+----------
+
+Detects fingers in an image and store their information in a DetectedFingerList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        detect_fingers(self, image: FingerImage) -> DetectedFingerList
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFingerList<detected_finger_list_class>`
+          List of detected fingers.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        DetectedFingerList detectFingers(FingerImage image)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFingerList<detected_finger_list_class>`
+          List of detected fingers.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public DetectedFingerList DetectFingers(FingerImage image)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFingerList<detected_finger_list_class>`
+          List of detected fingers.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public DetectedFingerList detectFingers(FingerImage image) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFingerList<detected_finger_list_class>`
+          List of detected fingers.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func detectFingers(image: FingerImage) throws -> DetectedFingerList
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFingerList<detected_finger_list_class>`
+          List of detected fingers.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerDetector_DetectFingers (
+            ID3_FINGER_DETECTOR hFingerDetector, 
+            ID3_FINGER_IMAGE hImage, 
+            ID3_DETECTED_FINGER_LIST hDetectedFingerList)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerDetector`` :ref:`ID3_FINGER_DETECTOR<finger_detector_class>`
+          :guilabel:`in` Handle to the FingerDetector object.
+
+          ``hImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Source image to process.
+
+          ``hDetectedFingerList`` :ref:`ID3_DETECTED_FINGER_LIST<detected_finger_list_class>`
+          :guilabel:`out` List of detected fingers.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

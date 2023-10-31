@@ -1,0 +1,159 @@
+.. index:: 
+  !License.getLicenseName Method
+  
+.. _license_get_license_name_class_method:
+
+===============================================================================
+License.getLicenseName Method
+===============================================================================
+
+Module: :ref:`License<license_class>`
+
+Definition
+----------
+
+Retrieves the license name.
+
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_GetLicenseName (
+            char * licenseName, 
+            int * licenseNameSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseName`` char *
+          :guilabel:`out` Pointer to a pre-allocated buffer to receive the name.
+
+          ``licenseNameSize`` int *
+          :guilabel:`in` Size of the 'licenseName' buffer. Receives the minimum required buffer size to hold the 'licenseName' string if the given one is too small (including the terminating NULL character), otherwise receives the number of characters in 'licenseName' (excluding terminating NULL character).
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static String getLicenseName()
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          Pointer to a pre-allocated buffer to receive the name.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static string GetLicenseName()
+
+      **Returns**
+
+        .. line-block::
+
+          ``string``
+          Pointer to a pre-allocated buffer to receive the name.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static String getLicenseName() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          Pointer to a pre-allocated buffer to receive the name.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        get_license_name() -> str
+
+      **Returns**
+
+        .. line-block::
+
+          ``str``
+          Pointer to a pre-allocated buffer to receive the name.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func getLicenseName() throws -> String
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          Pointer to a pre-allocated buffer to receive the name.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

@@ -1,0 +1,228 @@
+.. index:: 
+  !FingerIndexer Class
+
+.. _finger_indexer_class:
+
+===============================================================================
+FingerIndexer Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  addTemplateRecord<add_template_record>
+  create<create>
+  deleteTemplateRecord<delete_template_record>
+  format<format>
+  fromFile<from_file>
+  maximumTemplateRecordCount<maximum_template_record_count>
+  resize<resize>
+  searchTemplateRecord<search_template_record>
+  searchThreadCount<search_thread_count>
+  templateRecordCount<template_record_count>
+  toFile<to_file>
+
+
+Definition
+----------
+.. line-block::
+    Performs a one-to-many search on a large number of finger templates.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerIndexer
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerIndexer implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerIndexer
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerIndexer implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerIndexer
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerIndexer *ID3_FINGER_INDEXER;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerIndexer = FingerIndexer()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerIndexer
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerIndexer = sdk.FingerIndexer();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerIndexer.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerIndexer = new FingerIndexer())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerIndexer = new FingerIndexer()
+        // ...
+        fingerIndexer.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerIndexer fingerIndexer = new FingerIndexer()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerIndexer fingerIndexer = new FingerIndexer();
+        // ...
+        fingerIndexer.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerIndexer: FingerIndexer? = nil
+        fingerIndexer = try FingerIndexer()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_INDEXER hFingerIndexer{};
+        int err = id3FingerIndexer_Initialize(&hFingerIndexer);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerIndexer_Dispose(&hFingerIndexer);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`format<finger_indexer_format_class_member>`
+    - :ref:`FingerDataFormat<finger_data_format_enum>`
+    - Finger data format accepted by this finger indexer.
+  * - :ref:`maximumTemplateRecordCount<finger_indexer_maximum_template_record_count_class_member>`
+    - int
+    - Maximum number of template records that this finger indexer can hold.
+  * - :ref:`searchThreadCount<finger_indexer_search_thread_count_class_member>`
+    - int
+    - Number of threads used for search.
+  * - :ref:`templateRecordCount<finger_indexer_template_record_count_class_member>`
+    - int
+    - Current number of indexed template records.
+
+Static Methods
+--------------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`create<finger_indexer_create_class_method>`
+    - Creates an empty finger indexer.
+  * - :ref:`fromFile<finger_indexer_from_file_class_method>`
+    - Imports the finger indexer object from a file.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`addTemplateRecord<finger_indexer_add_template_record_class_method>`
+    - Adds a template record to the finger indexer.
+  * - :ref:`deleteTemplateRecord<finger_indexer_delete_template_record_class_method>`
+    - Deletes a template record from the finger indexed.
+  * - :ref:`resize<finger_indexer_resize_class_method>`
+    - Resizes the maximum number of template records that the finger indexer can hold.
+  * - :ref:`searchTemplateRecord<finger_indexer_search_template_record_class_method>`
+    - Performs a one-to-many search of a probe finger template record against a previously initialized finger indexer and outputs a candidate list.
+  * - :ref:`toFile<finger_indexer_to_file_class_method>`
+    - Saves the finger indexer object to a file.

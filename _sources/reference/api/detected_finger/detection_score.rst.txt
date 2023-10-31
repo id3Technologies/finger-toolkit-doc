@@ -1,0 +1,122 @@
+.. index:: 
+  !DetectedFinger.detectionScore Property
+
+.. _detected_finger_detection_score_class_member:
+
+===============================================================================
+DetectedFinger.detectionScore Property
+===============================================================================
+
+Module: :ref:`DetectedFinger<detected_finger_class>`
+
+Type: int
+
+Definition
+----------
+
+Confidence score of the detected finger.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      detection_score: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get detectionScore => getDetectionScore();
+      set detectionScore(int value) => setDetectionScore(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int detectionScore
+      {
+          get => GetdetectionScore();
+          set => SetdetectionScore(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getDetectionScore() throws FingerException
+      public void setDetectionScore(int detectionScore) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var detectionScore: Int
+          get {
+              return Int(try! getDetectionScore())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3DetectedFinger_GetDetectionScore (ID3_DETECTED_FINGER hDetectedFinger, int * detectionScore)
+      int id3DetectedFinger_SetDetectionScore (ID3_DETECTED_FINGER hDetectedFinger, int detectionScore)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

@@ -1,0 +1,88 @@
+.. index:: 
+  !FingerDataFormats Structure
+
+.. _finger_data_formats_struct:
+
+===============================================================================
+FingerDataFormats Structure
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  fingerEmbeddingDataFormat<finger_embedding_data_format>
+  minutiaeDataFormat<minutiae_data_format>
+  minutiaeEmbeddingsDataFormat<minutiae_embeddings_data_format>
+
+Definition
+----------
+.. line-block::
+    Represents finger data formats.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      class FingerDataFormats
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      class FingerDataFormats
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public partial struct FingerDataFormats
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public class FingerDataFormats
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public typealias FingerDataFormats = id3FingerDataFormats
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      typedef struct id3FingerDataFormats
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`fingerEmbeddingDataFormat<finger_data_formats_finger_embedding_data_format_struct_member>`
+    - :ref:`FingerDataFormat<finger_data_format_enum>`
+    - Finger embedding data format.
+  * - :ref:`minutiaeDataFormat<finger_data_formats_minutiae_data_format_struct_member>`
+    - :ref:`FingerDataFormat<finger_data_format_enum>`
+    - Minutiae data format.
+  * - :ref:`minutiaeEmbeddingsDataFormat<finger_data_formats_minutiae_embeddings_data_format_struct_member>`
+    - :ref:`FingerDataFormat<finger_data_format_enum>`
+    - Minutiae embeddings data format.

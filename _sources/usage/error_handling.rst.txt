@@ -1,0 +1,91 @@
+.. _error_handling:
+
+===============
+Error Handling
+===============
+
+When an error occurs within the SDK, a :ref:`FingerException<finger_exception>` exception is thrown. Generally you should wrap all invocations of the API into a try-catch block. 
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        try:
+            # ...
+        except id3finger.FingerException as ex:
+            print(f"SDK exception: {ex}")
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: dart
+
+        try
+        {
+           // ...
+        }
+        on FingerException catch (e) {
+            print('Finger SDK exception: $e');
+        }
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        try
+        {
+           // ...
+        }
+        catch (FingerException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try {
+            // ...
+        }
+        catch (FingerException ex) {
+        }
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        do {
+            // ...
+        } catch let error as FingerException {
+            print(error.message)
+        }
+
+    .. tab-item:: C
+      :sync: C
+
+      In C and C++ languages, you have to handle the errors manually. The possible error codes are listed in the :ref:`FingerError<finger_error_enum>`, :ref:`ImageError<image_error_enum>` and :ref:`LicenseError<license_error_enum>` enumerations.
+
+      An example is given below:
+      
+      .. code-block:: cpp
+
+        int err = id3FingerLicense_CheckLicense(path, nullptr);
+        if (err != id3FingerError_Success) {
+          // handle error here.
+        }
+
+
+
+See also
+--------
+- :ref:`finger_exception`
+- :ref:`finger_error_enum`
+- :ref:`image_error_enum`
+- :ref:`license_error_enum`

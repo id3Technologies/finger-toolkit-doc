@@ -1,0 +1,202 @@
+.. index:: 
+  !FingerImage.extractRoi Method
+  
+.. _finger_image_extract_roi_class_method:
+
+===============================================================================
+FingerImage.extractRoi Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Extracts a region of interest in the image according to the given bounds.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        extract_roi(self, bounds: Rectangle) -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``bounds`` :ref:`Rectangle<rectangle_struct>`
+          :guilabel:`in` Bounds of the crop to extract.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The extracted region of interest.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerImage extractRoi(Rectangle bounds)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``bounds`` :ref:`Rectangle<rectangle_struct>`
+          :guilabel:`in` Bounds of the crop to extract.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The extracted region of interest.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerImage ExtractRoi(Rectangle bounds)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``bounds`` :ref:`Rectangle<rectangle_struct>`
+          :guilabel:`in` Bounds of the crop to extract.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The extracted region of interest.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerImage extractRoi(Rectangle bounds) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``bounds`` :ref:`Rectangle<rectangle_struct>`
+          :guilabel:`in` Bounds of the crop to extract.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The extracted region of interest.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func extractRoi(bounds: Rectangle) throws -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``bounds`` :ref:`Rectangle<rectangle_struct>`
+          :guilabel:`in` Bounds of the crop to extract.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The extracted region of interest.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_ExtractRoi (
+            ID3_FINGER_IMAGE hFingerImage, 
+            const id3FingerRectangle * sBounds, 
+            ID3_FINGER_IMAGE hFingerImageRoi)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``sBounds`` :ref:`const id3FingerRectangle *<rectangle_struct>`
+          :guilabel:`in` Bounds of the crop to extract.
+
+          ``hFingerImageRoi`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`out` The extracted region of interest.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

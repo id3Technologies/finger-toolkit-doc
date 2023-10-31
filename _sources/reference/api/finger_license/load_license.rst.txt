@@ -1,0 +1,182 @@
+.. index:: 
+  !FingerLicense.loadLicense Method
+  
+.. _finger_license_load_license_class_method:
+
+===============================================================================
+FingerLicense.loadLicense Method
+===============================================================================
+
+Module: :ref:`FingerLicense<finger_license_class>`
+
+Definition
+----------
+
+Loads and checks a license from a file.
+
+
+
+ This function does two things:
+
+  - First it loads the license from a file using the given path
+
+  - Then it checks the validity of the license regarding the host it is called on (Windows, Linux, Android ...)
+
+
+
+ Calling this function is required to get access to the license member getters.
+
+
+
+ The optional parameter is required on Android and must be the JNIEnv* pointer casted as a void*.
+
+ It can be set as NULL for other devices.
+
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_LoadLicense (
+            const char * licensePath, 
+            void * optionalParameter)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licensePath`` const char *
+          :guilabel:`in` Absolute or relative path to the license file.
+
+          ``optionalParameter`` void *
+          :guilabel:`in` Only used on Android: JNIEnv* pointer casted as a void*. Ignored for other devices.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static void loadLicense(String? licensePath)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licensePath`` String
+          :guilabel:`in` Absolute or relative path to the license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static void LoadLicense(string licensePath)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licensePath`` string
+          :guilabel:`in` Absolute or relative path to the license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static void loadLicense(String licensePath) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licensePath`` String
+          :guilabel:`in` Absolute or relative path to the license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        load_license(license_path: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``license_path`` str
+          :guilabel:`in` Absolute or relative path to the license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func loadLicense(licensePath: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licensePath`` String
+          :guilabel:`in` Absolute or relative path to the license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

@@ -1,0 +1,240 @@
+.. index:: 
+  !FingerMatcher.compareTemplateRecords Method
+  
+.. _finger_matcher_compare_template_records_class_method:
+
+===============================================================================
+FingerMatcher.compareTemplateRecords Method
+===============================================================================
+
+Module: :ref:`FingerMatcher<finger_matcher_class>`
+
+Definition
+----------
+
+Compares two template records and outputs a list of match details.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        compare_template_records(self, reference_record: FingerTemplateRecord, probe_record: FingerTemplateRecord, trust_filled_positions: bool) -> FingerMatchDetailsList
+
+      **Parameters**
+
+        .. line-block::
+
+          ``reference_record`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Reference template record.
+
+          ``probe_record`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Probe template record.
+
+          ``trust_filled_positions`` bool
+          :guilabel:`in` If True, template(s) of one position in reference will be compared only to the templates of the same position in probe. If False, all templates in reference will be compared to all templates in probe (this method is also known as 'flat' comparison).
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMatchDetailsList<finger_match_details_list_class>`
+          Finger match details list associated to this comparison. This list can be pooled to output a unique score if necessary, see FingerMatchDetails functions for that.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerMatchDetailsList compareTemplateRecords(FingerTemplateRecord referenceRecord, FingerTemplateRecord probeRecord, bool trustFilledPositions)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``referenceRecord`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Reference template record.
+
+          ``probeRecord`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Probe template record.
+
+          ``trustFilledPositions`` bool
+          :guilabel:`in` If True, template(s) of one position in reference will be compared only to the templates of the same position in probe. If False, all templates in reference will be compared to all templates in probe (this method is also known as 'flat' comparison).
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMatchDetailsList<finger_match_details_list_class>`
+          Finger match details list associated to this comparison. This list can be pooled to output a unique score if necessary, see FingerMatchDetails functions for that.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerMatchDetailsList CompareTemplateRecords(FingerTemplateRecord referenceRecord, FingerTemplateRecord probeRecord, bool trustFilledPositions)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``referenceRecord`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Reference template record.
+
+          ``probeRecord`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Probe template record.
+
+          ``trustFilledPositions`` bool
+          :guilabel:`in` If True, template(s) of one position in reference will be compared only to the templates of the same position in probe. If False, all templates in reference will be compared to all templates in probe (this method is also known as 'flat' comparison).
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMatchDetailsList<finger_match_details_list_class>`
+          Finger match details list associated to this comparison. This list can be pooled to output a unique score if necessary, see FingerMatchDetails functions for that.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerMatchDetailsList compareTemplateRecords(FingerTemplateRecord referenceRecord, FingerTemplateRecord probeRecord, boolean trustFilledPositions) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``referenceRecord`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Reference template record.
+
+          ``probeRecord`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Probe template record.
+
+          ``trustFilledPositions`` boolean
+          :guilabel:`in` If True, template(s) of one position in reference will be compared only to the templates of the same position in probe. If False, all templates in reference will be compared to all templates in probe (this method is also known as 'flat' comparison).
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMatchDetailsList<finger_match_details_list_class>`
+          Finger match details list associated to this comparison. This list can be pooled to output a unique score if necessary, see FingerMatchDetails functions for that.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func compareTemplateRecords(referenceRecord: FingerTemplateRecord, probeRecord: FingerTemplateRecord, trustFilledPositions: Bool) throws -> FingerMatchDetailsList
+
+      **Parameters**
+
+        .. line-block::
+
+          ``referenceRecord`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Reference template record.
+
+          ``probeRecord`` :ref:`FingerTemplateRecord<finger_template_record_class>`
+          :guilabel:`in` Probe template record.
+
+          ``trustFilledPositions`` Bool
+          :guilabel:`in` If True, template(s) of one position in reference will be compared only to the templates of the same position in probe. If False, all templates in reference will be compared to all templates in probe (this method is also known as 'flat' comparison).
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerMatchDetailsList<finger_match_details_list_class>`
+          Finger match details list associated to this comparison. This list can be pooled to output a unique score if necessary, see FingerMatchDetails functions for that.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerMatcher_CompareTemplateRecords (
+            ID3_FINGER_MATCHER hFingerMatcher, 
+            ID3_FINGER_TEMPLATE_RECORD hReferenceRecord, 
+            ID3_FINGER_TEMPLATE_RECORD hProbeRecord, 
+            bool trustFilledPositions, 
+            ID3_FINGER_MATCH_DETAILS_LIST hMatchDetailsList)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerMatcher`` :ref:`ID3_FINGER_MATCHER<finger_matcher_class>`
+          :guilabel:`in` Handle to the FingerMatcher object.
+
+          ``hReferenceRecord`` :ref:`ID3_FINGER_TEMPLATE_RECORD<finger_template_record_class>`
+          :guilabel:`in` Reference template record.
+
+          ``hProbeRecord`` :ref:`ID3_FINGER_TEMPLATE_RECORD<finger_template_record_class>`
+          :guilabel:`in` Probe template record.
+
+          ``trustFilledPositions`` bool
+          :guilabel:`in` If True, template(s) of one position in reference will be compared only to the templates of the same position in probe. If False, all templates in reference will be compared to all templates in probe (this method is also known as 'flat' comparison).
+
+          ``hMatchDetailsList`` :ref:`ID3_FINGER_MATCH_DETAILS_LIST<finger_match_details_list_class>`
+          :guilabel:`out` Finger match details list associated to this comparison. This list can be pooled to output a unique score if necessary, see FingerMatchDetails functions for that.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

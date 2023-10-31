@@ -1,0 +1,163 @@
+.. index:: 
+  !FingerCandidateList.add Method
+  
+.. _finger_candidate_list_add_class_method:
+
+===============================================================================
+FingerCandidateList.add Method
+===============================================================================
+
+Module: :ref:`FingerCandidateList<finger_candidate_list_class>`
+
+Definition
+----------
+
+Adds an item to the FingerCandidateList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        add(self, finger_candidate_item: FingerCandidate) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``finger_candidate_item`` :ref:`FingerCandidate<finger_candidate_class>`
+          :guilabel:`in` FingerCandidate item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void add(FingerCandidate fingerCandidateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerCandidateItem`` :ref:`FingerCandidate<finger_candidate_class>`
+          :guilabel:`in` FingerCandidate item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Add(FingerCandidate fingerCandidateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerCandidateItem`` :ref:`FingerCandidate<finger_candidate_class>`
+          :guilabel:`in` FingerCandidate item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void add(FingerCandidate fingerCandidateItem) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerCandidateItem`` :ref:`FingerCandidate<finger_candidate_class>`
+          :guilabel:`in` FingerCandidate item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func add(fingerCandidateItem: FingerCandidate) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``fingerCandidateItem`` :ref:`FingerCandidate<finger_candidate_class>`
+          :guilabel:`in` FingerCandidate item to add.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerCandidateList_Add (
+            ID3_FINGER_CANDIDATE_LIST hFingerCandidateList, 
+            ID3_FINGER_CANDIDATE hFingerCandidateItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerCandidateList`` :ref:`ID3_FINGER_CANDIDATE_LIST<finger_candidate_list_class>`
+          :guilabel:`in` Handle to the FingerCandidateList object.
+
+          ``hFingerCandidateItem`` :ref:`ID3_FINGER_CANDIDATE<finger_candidate_class>`
+          :guilabel:`in` FingerCandidate item to add.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

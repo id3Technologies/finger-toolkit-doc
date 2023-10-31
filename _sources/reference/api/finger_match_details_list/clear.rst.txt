@@ -1,0 +1,119 @@
+.. index:: 
+  !FingerMatchDetailsList.clear Method
+  
+.. _finger_match_details_list_clear_class_method:
+
+===============================================================================
+FingerMatchDetailsList.clear Method
+===============================================================================
+
+Module: :ref:`FingerMatchDetailsList<finger_match_details_list_class>`
+
+Definition
+----------
+
+Clears the FingerMatchDetailsList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        clear(self) -> None
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void clear()
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Clear()
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void clear() throws FingerException
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func clear() throws
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerMatchDetailsList_Clear (
+            ID3_FINGER_MATCH_DETAILS_LIST hFingerMatchDetailsList)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerMatchDetailsList`` :ref:`ID3_FINGER_MATCH_DETAILS_LIST<finger_match_details_list_class>`
+          :guilabel:`in` Handle to the FingerMatchDetailsList object.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

@@ -1,0 +1,155 @@
+.. index:: 
+  !FingerLibrary.getVersionEx Method
+  
+.. _finger_library_get_version_ex_class_method:
+
+===============================================================================
+FingerLibrary.getVersionEx Method
+===============================================================================
+
+Module: :ref:`FingerLibrary<finger_library_class>`
+
+Definition
+----------
+
+Retrieves the library version as a structure.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        get_version_ex() -> LibVersion
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`LibVersion<lib_version_struct>`
+          The version.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static LibVersion getVersionEx()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`LibVersion<lib_version_struct>`
+          The version.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static LibVersion GetVersionEx()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`LibVersion<lib_version_struct>`
+          The version.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static LibVersion getVersionEx() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`LibVersion<lib_version_struct>`
+          The version.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func getVersionEx() throws -> LibVersion
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`LibVersion<lib_version_struct>`
+          The version.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLibrary_GetVersionEx (
+            id3FingerLibVersion * sVersion)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``sVersion`` :ref:`id3FingerLibVersion *<lib_version_struct>`
+          :guilabel:`out` The version.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

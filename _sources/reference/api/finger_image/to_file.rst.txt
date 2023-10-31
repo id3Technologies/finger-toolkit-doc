@@ -1,0 +1,192 @@
+.. index:: 
+  !FingerImage.toFile Method
+  
+.. _finger_image_to_file_class_method:
+
+===============================================================================
+FingerImage.toFile Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Saves the image to the specified file.
+
+The compression level meaning depends on the algorithm used:
+
+- For JPEG compression, the value is the expected quality and may vary from 1 to 100.
+
+- For JPEG2000 compression, the value is the compression rate and may vary from 1 to 512.
+
+- For PNG compression, the value is the compression rate and may vary from 1 to 10.
+
+- For all other formats, the value is ignored.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        to_file(self, filepath: str, compression_level: float) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``filepath`` str
+          :guilabel:`in` A string that contains the name of the file to which to save the image.
+
+          ``compression_level`` float
+          :guilabel:`in` The compression level to be applied.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void toFile(String? filepath, double compressionLevel)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``filepath`` String
+          :guilabel:`in` A string that contains the name of the file to which to save the image.
+
+          ``compressionLevel`` double
+          :guilabel:`in` The compression level to be applied.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void ToFile(string filepath, float compressionLevel)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``filepath`` string
+          :guilabel:`in` A string that contains the name of the file to which to save the image.
+
+          ``compressionLevel`` float
+          :guilabel:`in` The compression level to be applied.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void toFile(String filepath, float compressionLevel) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``filepath`` String
+          :guilabel:`in` A string that contains the name of the file to which to save the image.
+
+          ``compressionLevel`` float
+          :guilabel:`in` The compression level to be applied.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func toFile(filepath: String, compressionLevel: Float) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``filepath`` String
+          :guilabel:`in` A string that contains the name of the file to which to save the image.
+
+          ``compressionLevel`` Float
+          :guilabel:`in` The compression level to be applied.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_ToFile (
+            ID3_FINGER_IMAGE hFingerImage, 
+            const char * filepath, 
+            float compressionLevel)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``filepath`` const char *
+          :guilabel:`in` A string that contains the name of the file to which to save the image.
+
+          ``compressionLevel`` float
+          :guilabel:`in` The compression level to be applied.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

@@ -1,0 +1,154 @@
+.. _license_handling:
+
+==================
+License handling
+==================
+
+Activating a license 
+=====================
+
+One of the following methods can be used to activate a license programmatically:
+
+- :ref:`finger_license_activate_class_method`
+- :ref:`finger_license_activate_buffer_class_method`
+- :ref:`finger_license_activate_activation_key_class_method`
+- :ref:`finger_license_activate_activation_key_buffer_class_method`
+- :ref:`finger_license_activate_serial_key_class_method`
+- :ref:`finger_license_activate_serial_key_buffer_class_method`
+
+Here is an example how to activate a license using a serial number:
+
+.. tab-set::
+
+    .. tab-item:: Python
+        :sync: Python
+   
+        .. literalinclude:: /../samples/sample.py
+            :language: python
+            :start-after: [license_activation]
+            :end-before: [license_activation]
+            :dedent: 4
+
+    .. tab-item:: Dart
+        :sync: Dart
+
+        .. literalinclude:: /../samples/sample.dart
+            :language: dart
+            :start-after: [license_activation]
+            :end-before: [license_activation]
+            :dedent: 2
+
+    .. tab-item:: C#
+        :sync: C#
+   
+        .. literalinclude:: /../samples/sample.cs
+            :language: c#
+            :start-after: [license_activation]
+            :end-before: [license_activation]
+            :dedent: 12
+
+    .. tab-item:: Java
+        :sync: Java
+   
+        .. literalinclude:: /../samples/sample.java
+            :language: java
+            :start-after: [license_activation]
+            :end-before: [license_activation]
+            :dedent: 8
+
+    .. tab-item:: Kotlin
+        :sync: Kotlin
+   
+        .. literalinclude:: /../samples/sample.kt
+            :language: kotlin
+            :start-after: [license_activation]
+            :end-before: [license_activation]
+            :dedent: 4
+
+    .. tab-item:: C
+        :sync: C
+
+        .. literalinclude:: /../samples/sample.c
+            :language: c
+            :start-after: [license_activation]
+            :end-before: [license_activation]
+            :dedent: 4
+
+.. important:: 
+    On Android and iOS platforms, it is not possible, for reasons of confidentiality, to retrieve a truly unique hardware identifier. The side effect is that the hardware code is different (but fixed) for every application you develop, even on the same device.
+
+.. hint:: 
+    We recommend that you activate the application the first time you run it, and then store the license on the device for future use.
+
+.. warning:: Internet usage permission is required for the activation process.
+
+Checking the license
+====================
+
+Before calling any function of the SDK, you need to check a valid license file first.
+
+.. .. note:: To obtain a license file, please use the provided activation tool or call one of the activation methods in your application.
+
+.. tab-set::
+
+    .. tab-item:: Python
+        :sync: Python
+   
+        .. literalinclude:: /../samples/sample.py
+            :language: python
+            :start-after: [license_check]
+            :end-before: [license_check]
+            :dedent: 4
+
+    .. tab-item:: Dart
+        :sync: dart
+
+        .. literalinclude:: /../samples/sample.dart
+            :language: dart
+            :start-after: [license_check]
+            :end-before: [license_check]
+            :dedent: 2
+
+    .. tab-item:: C#
+        :sync: csharp
+   
+        .. literalinclude:: /../samples/sample.cs
+            :language: c#
+            :start-after: [license_check]
+            :end-before: [license_check]
+            :dedent: 12
+
+    .. tab-item:: Java
+        :sync: java
+   
+        .. literalinclude:: /../samples/sample.java
+            :language: java
+            :start-after: [license_check]
+            :end-before: [license_check]
+            :dedent: 8
+
+    .. tab-item:: Kotlin
+        :sync: kotlin
+   
+        .. literalinclude:: /../samples/sample.kt
+            :language: kotlin
+            :start-after: [license_check]
+            :end-before: [license_check]
+            :dedent: 4
+
+    .. tab-item:: C
+        :sync: C
+
+        .. literalinclude:: /../samples/sample.c
+            :language: c
+            :start-after: [license_check]
+            :end-before: [license_check]
+            :dedent: 4
+
+
+See also
+========
+- :ref:`license_activation`
+- :ref:`license_hardware_id`
+- :ref:`finger_license_activate_serial_key_class_method`
+- :ref:`finger_license_get_host_hardware_code_class_method`

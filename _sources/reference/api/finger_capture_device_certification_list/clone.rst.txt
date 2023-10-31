@@ -1,0 +1,158 @@
+.. index:: 
+  !FingerCaptureDeviceCertificationList.clone Method
+  
+.. _finger_capture_device_certification_list_clone_class_method:
+
+===============================================================================
+FingerCaptureDeviceCertificationList.clone Method
+===============================================================================
+
+Module: :ref:`FingerCaptureDeviceCertificationList<finger_capture_device_certification_list_class>`
+
+Definition
+----------
+
+Clones the FingerCaptureDeviceCertificationList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        clone(self) -> FingerCaptureDeviceCertificationList
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCaptureDeviceCertificationList<finger_capture_device_certification_list_class>`
+          The newly created finger capture device certification list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerCaptureDeviceCertificationList clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCaptureDeviceCertificationList<finger_capture_device_certification_list_class>`
+          The newly created finger capture device certification list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerCaptureDeviceCertificationList Clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCaptureDeviceCertificationList<finger_capture_device_certification_list_class>`
+          The newly created finger capture device certification list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerCaptureDeviceCertificationList clone() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCaptureDeviceCertificationList<finger_capture_device_certification_list_class>`
+          The newly created finger capture device certification list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func clone() throws -> FingerCaptureDeviceCertificationList
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerCaptureDeviceCertificationList<finger_capture_device_certification_list_class>`
+          The newly created finger capture device certification list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerCaptureDeviceCertificationList_CopyTo (
+            ID3_FINGER_CAPTURE_DEVICE_CERTIFICATION_LIST hFingerCaptureDeviceCertificationList, 
+            ID3_FINGER_CAPTURE_DEVICE_CERTIFICATION_LIST hFingerCaptureDeviceCertificationListDst)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerCaptureDeviceCertificationList`` :ref:`ID3_FINGER_CAPTURE_DEVICE_CERTIFICATION_LIST<finger_capture_device_certification_list_class>`
+          :guilabel:`in` Handle to the FingerCaptureDeviceCertificationList object.
+
+          ``hFingerCaptureDeviceCertificationListDst`` :ref:`ID3_FINGER_CAPTURE_DEVICE_CERTIFICATION_LIST<finger_capture_device_certification_list_class>`
+          :guilabel:`out` The newly created finger capture device certification list.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

@@ -1,0 +1,177 @@
+.. index:: 
+  !ImageBuffer Class
+
+.. _image_buffer_class:
+
+===============================================================================
+ImageBuffer Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  clone<clone>
+  getData<get_data>
+  getPixels<get_pixels>
+
+
+Definition
+----------
+.. line-block::
+    Represents an image buffer.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class ImageBuffer
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class ImageBuffer implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class ImageBuffer
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class ImageBuffer implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class ImageBuffer
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerImageBuffer *ID3_FINGER_IMAGE_BUFFER;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        imageBuffer = ImageBuffer()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del imageBuffer
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final imageBuffer = sdk.ImageBuffer();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        imageBuffer.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var imageBuffer = new ImageBuffer())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var imageBuffer = new ImageBuffer()
+        // ...
+        imageBuffer.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (ImageBuffer imageBuffer = new ImageBuffer()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        ImageBuffer imageBuffer = new ImageBuffer();
+        // ...
+        imageBuffer.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var imageBuffer: ImageBuffer? = nil
+        imageBuffer = try ImageBuffer()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_IMAGE_BUFFER hImageBuffer{};
+        int err = id3FingerImageBuffer_Initialize(&hImageBuffer);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerImageBuffer_Dispose(&hImageBuffer);
+        }
+
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`clone<image_buffer_clone_class_method>`
+    - Clones the ImageBuffer object.
+  * - :ref:`getData<image_buffer_get_data_class_method>`
+    - Gets the image buffer data.
+  * - :ref:`getPixels<image_buffer_get_pixels_class_method>`
+    - Gets a pointer to the pixels of the image. Unsafe! The user must handle the pixels pointer carefully.

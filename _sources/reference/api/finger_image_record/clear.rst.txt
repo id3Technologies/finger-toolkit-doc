@@ -1,0 +1,119 @@
+.. index:: 
+  !FingerImageRecord.clear Method
+  
+.. _finger_image_record_clear_class_method:
+
+===============================================================================
+FingerImageRecord.clear Method
+===============================================================================
+
+Module: :ref:`FingerImageRecord<finger_image_record_class>`
+
+Definition
+----------
+
+Clears the FingerImageRecord object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        clear(self) -> None
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void clear()
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Clear()
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void clear() throws FingerException
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func clear() throws
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImageRecord_Clear (
+            ID3_FINGER_IMAGE_RECORD hFingerImageRecord)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImageRecord`` :ref:`ID3_FINGER_IMAGE_RECORD<finger_image_record_class>`
+          :guilabel:`in` Handle to the FingerImageRecord object.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

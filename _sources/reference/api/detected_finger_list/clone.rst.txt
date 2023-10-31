@@ -1,0 +1,158 @@
+.. index:: 
+  !DetectedFingerList.clone Method
+  
+.. _detected_finger_list_clone_class_method:
+
+===============================================================================
+DetectedFingerList.clone Method
+===============================================================================
+
+Module: :ref:`DetectedFingerList<detected_finger_list_class>`
+
+Definition
+----------
+
+Clones the DetectedFingerList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        clone(self) -> DetectedFingerList
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFingerList<detected_finger_list_class>`
+          The newly created detected finger list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        DetectedFingerList clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFingerList<detected_finger_list_class>`
+          The newly created detected finger list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public DetectedFingerList Clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFingerList<detected_finger_list_class>`
+          The newly created detected finger list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public DetectedFingerList clone() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFingerList<detected_finger_list_class>`
+          The newly created detected finger list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func clone() throws -> DetectedFingerList
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFingerList<detected_finger_list_class>`
+          The newly created detected finger list.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3DetectedFingerList_CopyTo (
+            ID3_DETECTED_FINGER_LIST hDetectedFingerList, 
+            ID3_DETECTED_FINGER_LIST hDetectedFingerListDst)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hDetectedFingerList`` :ref:`ID3_DETECTED_FINGER_LIST<detected_finger_list_class>`
+          :guilabel:`in` Handle to the DetectedFingerList object.
+
+          ``hDetectedFingerListDst`` :ref:`ID3_DETECTED_FINGER_LIST<detected_finger_list_class>`
+          :guilabel:`out` The newly created detected finger list.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

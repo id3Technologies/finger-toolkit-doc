@@ -1,0 +1,72 @@
+.. index:: 
+  !FingerNfiq Class
+
+.. _finger_nfiq_class:
+
+===============================================================================
+FingerNfiq Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  computeNfiq1<compute_nfiq1>
+
+
+Definition
+----------
+.. line-block::
+    Computes the quality of a finger image with the NIST NFIQ algorithm.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerNfiq
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerNfiq
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static partial class FingerNfiq
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerNfiq
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerNfiq
+
+
+Static Methods
+--------------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`computeNfiq1<finger_nfiq_compute_nfiq1_class_method>`
+    - Computes the Nist Fingerprint Image Quality version 1 (NFIQ1) of a FingerImage.

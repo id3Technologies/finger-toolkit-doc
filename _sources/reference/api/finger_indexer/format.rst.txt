@@ -1,0 +1,118 @@
+.. index:: 
+  !FingerIndexer.format Property
+
+.. _finger_indexer_format_class_member:
+
+===============================================================================
+FingerIndexer.format Property
+===============================================================================
+
+Module: :ref:`FingerIndexer<finger_indexer_class>`
+
+Type: :ref:`FingerDataFormat<finger_data_format_enum>`
+
+Definition
+----------
+
+Finger data format accepted by this finger indexer.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      format: FingerDataFormat
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerDataFormat get format => getFormat();
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public FingerDataFormat format
+      {
+          get => Getformat();
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public FingerDataFormat getFormat() throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var format: FingerDataFormat
+          get {
+              return try! getFormat()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerIndexer_GetFormat (ID3_FINGER_INDEXER hFingerIndexer, id3FingerDataFormat * eFormat)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

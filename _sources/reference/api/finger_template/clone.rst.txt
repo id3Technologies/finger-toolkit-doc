@@ -1,0 +1,158 @@
+.. index:: 
+  !FingerTemplate.clone Method
+  
+.. _finger_template_clone_class_method:
+
+===============================================================================
+FingerTemplate.clone Method
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Definition
+----------
+
+Clones the FingerTemplate object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        clone(self) -> FingerTemplate
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          The newly created finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        FingerTemplate clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          The newly created finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public FingerTemplate Clone()
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          The newly created finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public FingerTemplate clone() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          The newly created finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func clone() throws -> FingerTemplate
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerTemplate<finger_template_class>`
+          The newly created finger template.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerTemplate_CopyTo (
+            ID3_FINGER_TEMPLATE hFingerTemplate, 
+            ID3_FINGER_TEMPLATE hFingerTemplateDst)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerTemplate`` :ref:`ID3_FINGER_TEMPLATE<finger_template_class>`
+          :guilabel:`in` Handle to the FingerTemplate object.
+
+          ``hFingerTemplateDst`` :ref:`ID3_FINGER_TEMPLATE<finger_template_class>`
+          :guilabel:`out` The newly created finger template.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

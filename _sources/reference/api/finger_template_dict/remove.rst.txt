@@ -1,0 +1,163 @@
+.. index:: 
+  !FingerTemplateDict.remove Method
+  
+.. _finger_template_dict_remove_class_method:
+
+===============================================================================
+FingerTemplateDict.remove Method
+===============================================================================
+
+Module: :ref:`FingerTemplateDict<finger_template_dict_class>`
+
+Definition
+----------
+
+Removes an element of the FingerTemplateDict object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        remove(self, key: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``key`` str
+          :guilabel:`in` Unique key of the FingerTemplate item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void remove(String? key)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``key`` String
+          :guilabel:`in` Unique key of the FingerTemplate item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Remove(string key)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``key`` string
+          :guilabel:`in` Unique key of the FingerTemplate item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void remove(String key) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``key`` String
+          :guilabel:`in` Unique key of the FingerTemplate item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func remove(key: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``key`` String
+          :guilabel:`in` Unique key of the FingerTemplate item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerTemplateDict_Remove (
+            ID3_FINGER_TEMPLATE_DICT hFingerTemplateDict, 
+            const char * key)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerTemplateDict`` :ref:`ID3_FINGER_TEMPLATE_DICT<finger_template_dict_class>`
+          :guilabel:`in` Handle to the FingerTemplateDict object.
+
+          ``key`` const char *
+          :guilabel:`in` Unique key of the FingerTemplate item to remove.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

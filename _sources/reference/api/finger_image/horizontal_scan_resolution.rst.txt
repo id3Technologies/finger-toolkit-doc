@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerImage.horizontalScanResolution Property
+
+.. _finger_image_horizontal_scan_resolution_class_member:
+
+===============================================================================
+FingerImage.horizontalScanResolution Property
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Type: int
+
+Definition
+----------
+
+Horizontal scan resolution of the image (in DPI). Independent from image rescaling.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      horizontal_scan_resolution: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get horizontalScanResolution => getHorizontalScanResolution();
+      set horizontalScanResolution(int value) => setHorizontalScanResolution(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int horizontalScanResolution
+      {
+          get => GethorizontalScanResolution();
+          set => SethorizontalScanResolution(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getHorizontalScanResolution() throws FingerException
+      public void setHorizontalScanResolution(int horizontalScanResolution) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var horizontalScanResolution: Int
+          get {
+              return Int(try! getHorizontalScanResolution())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerImage_GetHorizontalScanResolution (ID3_FINGER_IMAGE hFingerImage, int * horizontalScanResolution)
+      int id3FingerImage_SetHorizontalScanResolution (ID3_FINGER_IMAGE hFingerImage, int horizontalScanResolution)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

@@ -1,0 +1,199 @@
+.. index:: 
+  !FingerWsq.decodeFromFile Method
+  
+.. _finger_wsq_decode_from_file_class_method:
+
+===============================================================================
+FingerWsq.decodeFromFile Method
+===============================================================================
+
+Module: :ref:`FingerWsq<finger_wsq_class>`
+
+Definition
+----------
+
+Decodes a NIST WSQ encoded file to a FingerImage.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        decode_from_file(path: str) -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` str
+          :guilabel:`in` Path of the WSQ file to decode.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The decoded WSQ image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static FingerImage decodeFromFile(String? path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` String
+          :guilabel:`in` Path of the WSQ file to decode.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The decoded WSQ image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static FingerImage DecodeFromFile(string path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` string
+          :guilabel:`in` Path of the WSQ file to decode.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The decoded WSQ image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static FingerImage decodeFromFile(String path) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` String
+          :guilabel:`in` Path of the WSQ file to decode.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The decoded WSQ image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func decodeFromFile(path: String) throws -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` String
+          :guilabel:`in` Path of the WSQ file to decode.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The decoded WSQ image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerWsq_DecodeFromFile (
+            const char * path, 
+            ID3_FINGER_IMAGE hImage)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``path`` const char *
+          :guilabel:`in` Path of the WSQ file to decode.
+
+          ``hImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`out` The decoded WSQ image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

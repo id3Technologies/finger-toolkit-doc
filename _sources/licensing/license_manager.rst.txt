@@ -1,0 +1,16 @@
+.. _license_manager:
+
+===============
+License manager 
+===============
+
+The id3 License Manager is a Windows application that helps you manage your license files. Before you can
+use id3 Software Development Kits (SDKs), you must have the correct license installed.
+
+The purpose of this guide is to describe the use of id3 License Manager and how to activate a license.
+
+**Prerequisites**
+
+- Microsoft Windows 7, 8 or 10,
+- An active Internet connection
+

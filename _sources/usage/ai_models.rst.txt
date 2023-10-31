@@ -1,0 +1,83 @@
+.. _ai_models:
+
+=========
+AI Models
+=========
+
+This SDK makes extensive use of AI models, particularly for minutiae detection and encoding tasks.
+
+The following models are available:
+
+.. list-table:: 
+    :widths: 20 80
+    :header-rows: 1
+
+    * - Model Name
+      - Description
+
+    * - FingerDetector2A
+      - Finger detector 2A.
+
+    * - FingerEncoder1A
+      - Finger encoder 1A. Provides proprietary information at the fingerprint level to increase match accuracy.
+
+    * - FingerMinutiaDetector3B
+      - Finger minutia detector 3B. Corresponds to id3_13B1 submission to NIST MINEX III.
+
+    * - FingerMinutiaEncoder1A
+      - Finger minutia encoder 1A. Provides proprietary information at the minutiae level to increase match accuracy.
+
+    * - FingerAligner1A
+      - Finger aligner 1A.
+
+  
+.. important::
+    
+    | Models can be downloaded at the following URL: 
+    | https://cloud.id3.eu/index.php/s/x3XHygq82oi7BP4 
+
+
+AI model files
+==============
+
+AI model files have the ``.id3nn`` extension. You must copy the necessary data files into your application package. If you wish to reduce the size of your application, we recommend copying only the files required by the biometric algorithm.
+
+In your application's source code you should specify location of these files.
+
+.. warning::
+
+    AI model files MUST NOT be renamed.
+
+
+.. _model_loading:
+
+Loading AI models
+=================
+
+It is recommended to load the AI models on application startup. The :ref:`finger_library_class` provides methods for loading and unloading AI model file in memory.
+
+An example is given below:
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. literalinclude:: /../samples/sample.py
+        :language: python
+        :start-after: [loading_ai_models]
+        :end-before: [loading_ai_models]
+        :dedent: 4
+
+
+
+Processing unit
+===============
+
+The inference of the AI models can be executed on either the CPU or the GPU if available.
+To enable execution on the GPU, the corresponding library must be used.
+
+See also
+========
+- :ref:`finger_library_class`
+- :ref:`finger_library_load_model_class_method`

@@ -1,0 +1,124 @@
+.. index:: 
+  !FingerMatcher.minexOnly Property
+
+.. _finger_matcher_minex_only_class_member:
+
+===============================================================================
+FingerMatcher.minexOnly Property
+===============================================================================
+
+Module: :ref:`FingerMatcher<finger_matcher_class>`
+
+Type: bool
+
+Definition
+----------
+
+Parameter to force the matcher to use interoperable minutiae data only to perform template comparison.
+
+By default, the matcher uses all the data contained in templates to compare them.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      minex_only: bool
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      bool get minexOnly => getMinexOnly();
+      set minexOnly(bool value) => setMinexOnly(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public bool minexOnly
+      {
+          get => GetminexOnly();
+          set => SetminexOnly(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public boolean getMinexOnly() throws FingerException
+      public void setMinexOnly(boolean minexOnly) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var minexOnly: Bool
+          get {
+              return try! getMinexOnly()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerMatcher_GetMinexOnly (ID3_FINGER_MATCHER hFingerMatcher, bool * minexOnly)
+      int id3FingerMatcher_SetMinexOnly (ID3_FINGER_MATCHER hFingerMatcher, bool minexOnly)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

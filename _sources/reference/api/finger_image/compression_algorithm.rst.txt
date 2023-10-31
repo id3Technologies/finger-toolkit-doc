@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerImage.compressionAlgorithm Property
+
+.. _finger_image_compression_algorithm_class_member:
+
+===============================================================================
+FingerImage.compressionAlgorithm Property
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Type: :ref:`FingerImageCompressionAlgorithm<finger_image_compression_algorithm_enum>`
+
+Definition
+----------
+
+Compression algorithm used to compress the image in a record.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      compression_algorithm: FingerImageCompressionAlgorithm
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerImageCompressionAlgorithm get compressionAlgorithm => getCompressionAlgorithm();
+      set compressionAlgorithm(FingerImageCompressionAlgorithm value) => setCompressionAlgorithm(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public FingerImageCompressionAlgorithm compressionAlgorithm
+      {
+          get => GetcompressionAlgorithm();
+          set => SetcompressionAlgorithm(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public FingerImageCompressionAlgorithm getCompressionAlgorithm() throws FingerException
+      public void setCompressionAlgorithm(FingerImageCompressionAlgorithm compressionAlgorithm) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var compressionAlgorithm: FingerImageCompressionAlgorithm
+          get {
+              return try! getCompressionAlgorithm()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerImage_GetCompressionAlgorithm (ID3_FINGER_IMAGE hFingerImage, id3FingerImageCompressionAlgorithm * eCompressionAlgorithm)
+      int id3FingerImage_SetCompressionAlgorithm (ID3_FINGER_IMAGE hFingerImage, id3FingerImageCompressionAlgorithm eCompressionAlgorithm)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

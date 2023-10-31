@@ -1,0 +1,122 @@
+.. index:: 
+  !DetectedFinger.bounds Property
+
+.. _detected_finger_bounds_class_member:
+
+===============================================================================
+DetectedFinger.bounds Property
+===============================================================================
+
+Module: :ref:`DetectedFinger<detected_finger_class>`
+
+Type: :ref:`Rectangle<rectangle_struct>`
+
+Definition
+----------
+
+Bounds of the detected finger.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      bounds: Rectangle
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      Rectangle get bounds => getBounds();
+      set bounds(Rectangle value) => setBounds(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public Rectangle bounds
+      {
+          get => Getbounds();
+          set => Setbounds(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public Rectangle getBounds() throws FingerException
+      public void setBounds(Rectangle bounds) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var bounds: Rectangle
+          get {
+              return try! getBounds()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3DetectedFinger_GetBounds (ID3_DETECTED_FINGER hDetectedFinger, id3FingerRectangle * sBounds)
+      int id3DetectedFinger_SetBounds (ID3_DETECTED_FINGER hDetectedFinger, const id3FingerRectangle * sBounds)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

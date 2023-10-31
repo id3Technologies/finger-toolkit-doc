@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerTemplate.horizontalResolution Property
+
+.. _finger_template_horizontal_resolution_class_member:
+
+===============================================================================
+FingerTemplate.horizontalResolution Property
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Type: int
+
+Definition
+----------
+
+Horizontal resolution of the minutiae coordinate system. Be careful, setting this field does update the minutiae! Use Rescale for this purpose.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      horizontal_resolution: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get horizontalResolution => getHorizontalResolution();
+      set horizontalResolution(int value) => setHorizontalResolution(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int horizontalResolution
+      {
+          get => GethorizontalResolution();
+          set => SethorizontalResolution(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getHorizontalResolution() throws FingerException
+      public void setHorizontalResolution(int horizontalResolution) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var horizontalResolution: Int
+          get {
+              return Int(try! getHorizontalResolution())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerTemplate_GetHorizontalResolution (ID3_FINGER_TEMPLATE hFingerTemplate, int * horizontalResolution)
+      int id3FingerTemplate_SetHorizontalResolution (ID3_FINGER_TEMPLATE hFingerTemplate, int horizontalResolution)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

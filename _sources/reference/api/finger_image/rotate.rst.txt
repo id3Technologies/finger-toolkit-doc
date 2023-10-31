@@ -1,0 +1,165 @@
+.. index:: 
+  !FingerImage.rotate Method
+  
+.. _finger_image_rotate_class_method:
+
+===============================================================================
+FingerImage.rotate Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Rotates the image in-place to the specified angle.
+
+.. note:: The rotation is performed counter-clockwise.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        rotate(self, angle: int) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``angle`` int
+          :guilabel:`in` The rotation angle, in degree. Supported values are [0, 90, 180, 270].
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void rotate(int angle)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``angle`` int
+          :guilabel:`in` The rotation angle, in degree. Supported values are [0, 90, 180, 270].
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Rotate(int angle)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``angle`` int
+          :guilabel:`in` The rotation angle, in degree. Supported values are [0, 90, 180, 270].
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void rotate(int angle) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``angle`` int
+          :guilabel:`in` The rotation angle, in degree. Supported values are [0, 90, 180, 270].
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func rotate(angle: Int32) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``angle`` Int32
+          :guilabel:`in` The rotation angle, in degree. Supported values are [0, 90, 180, 270].
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_Rotate (
+            ID3_FINGER_IMAGE hFingerImage, 
+            int angle)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``angle`` int
+          :guilabel:`in` The rotation angle, in degree. Supported values are [0, 90, 180, 270].
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

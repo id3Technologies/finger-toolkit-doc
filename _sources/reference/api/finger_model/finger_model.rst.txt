@@ -1,0 +1,94 @@
+.. index:: 
+  !FingerModel Enumeration
+
+.. _finger_model_enum:
+
+===============================================================================
+FingerModel Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the AI models available in this SDK.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerModel
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerModel
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerModel
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerModel
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerModel
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerModel
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``undefined``
+    - 0
+    - Undefined.
+  * - ``fingerDetector2A``
+    - 2001
+    - Finger detector 2A.
+  * - ``fingerEncoder1A``
+    - 2101
+    - Finger encoder 1A. Provides proprietary information at the fingerprint level to increase match accuracy.
+  * - ``fingerMinutiaDetector3B``
+    - 2202
+    - Finger minutia detector 3B. Corresponds to id3_13B1 submission to NIST MINEX III.
+  * - ``fingerMinutiaEncoder1A``
+    - 2301
+    - Finger minutia encoder 1A. Provides proprietary information at the minutiae level to increase match accuracy.
+  * - ``fingerAligner1A``
+    - 2401
+    - Finger aligner 1A.
+  * - ``fingerPadIsorg1A``
+    - 2501
+    - Finger PAD Isorg sensor 1A.

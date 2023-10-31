@@ -1,0 +1,186 @@
+.. index:: 
+  !License.loadLicenseBuffer Method
+  
+.. _license_load_license_buffer_class_method:
+
+===============================================================================
+License.loadLicenseBuffer Method
+===============================================================================
+
+Module: :ref:`License<license_class>`
+
+Definition
+----------
+
+Loads and checks a license from a buffer.
+
+
+
+ This function does two things:
+
+  - First it loads the license from a buffer
+
+  - Then it checks the validity of the license regarding the host it is called on (Windows, Linux, Android ...)
+
+
+
+ Calling one of the license loading function is required to get access to all the license member getters.
+
+
+
+ The optional parameter is required on Android and must be the JNIEnv* pointer casted as a void*.
+
+ It can be set as NULL for other devices.
+
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_LoadLicenseBuffer (
+            unsigned char * licenseData, 
+            int licenseDataSize, 
+            void * optionalParameter)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseData`` unsigned char *
+          :guilabel:`in` A buffer containing the license file data.
+
+          ``licenseDataSize`` int
+          :guilabel:`in` Size of the 'licenseData' buffer.
+
+          ``optionalParameter`` void *
+          :guilabel:`in` Only used on Android: JNIEnv* pointer casted as a void*. Ignored for other devices.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static void loadLicenseBuffer(Uint8List? licenseData)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseData`` Uint8List
+          :guilabel:`in` A buffer containing the license file data.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static void LoadLicenseBuffer(byte[] licenseData)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseData`` byte[]
+          :guilabel:`in` A buffer containing the license file data.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static void loadLicenseBuffer(byte[] licenseData) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseData`` byte[]
+          :guilabel:`in` A buffer containing the license file data.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        load_license_buffer(license_data: bytearray) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``license_data`` bytearray
+          :guilabel:`in` A buffer containing the license file data.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func loadLicenseBuffer(licenseData: [UInt8]) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseData`` [UInt8]
+          :guilabel:`in` A buffer containing the license file data.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

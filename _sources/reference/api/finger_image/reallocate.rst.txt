@@ -1,0 +1,203 @@
+.. index:: 
+  !FingerImage.reallocate Method
+  
+.. _finger_image_reallocate_class_method:
+
+===============================================================================
+FingerImage.reallocate Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Reallocates the internal memory of the Image from parameters.
+
+.. note:: If the given parameters are the same as the ones of the object, then there is nothing done in this function.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        reallocate(self, width: int, height: int, pixel_format: PixelFormat) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``width`` int
+          :guilabel:`in` The new width, in pixels.
+
+          ``height`` int
+          :guilabel:`in` The new height, in pixels.
+
+          ``pixel_format`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The new pixel format.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void reallocate(int width, int height, PixelFormat pixelFormat)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``width`` int
+          :guilabel:`in` The new width, in pixels.
+
+          ``height`` int
+          :guilabel:`in` The new height, in pixels.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The new pixel format.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Reallocate(int width, int height, PixelFormat pixelFormat)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``width`` int
+          :guilabel:`in` The new width, in pixels.
+
+          ``height`` int
+          :guilabel:`in` The new height, in pixels.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The new pixel format.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void reallocate(int width, int height, PixelFormat pixelFormat) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``width`` int
+          :guilabel:`in` The new width, in pixels.
+
+          ``height`` int
+          :guilabel:`in` The new height, in pixels.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The new pixel format.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func reallocate(width: Int32, height: Int32, pixelFormat: PixelFormat) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``width`` Int32
+          :guilabel:`in` The new width, in pixels.
+
+          ``height`` Int32
+          :guilabel:`in` The new height, in pixels.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The new pixel format.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_Reallocate (
+            ID3_FINGER_IMAGE hFingerImage, 
+            int width, 
+            int height, 
+            id3FingerPixelFormat ePixelFormat)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``width`` int
+          :guilabel:`in` The new width, in pixels.
+
+          ``height`` int
+          :guilabel:`in` The new height, in pixels.
+
+          ``ePixelFormat`` :ref:`id3FingerPixelFormat<pixel_format_enum>`
+          :guilabel:`in` The new pixel format.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

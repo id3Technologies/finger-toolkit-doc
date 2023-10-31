@@ -1,0 +1,198 @@
+.. index:: 
+  !FingerLicense.reactivate Method
+  
+.. _finger_license_reactivate_class_method:
+
+===============================================================================
+FingerLicense.reactivate Method
+===============================================================================
+
+Module: :ref:`FingerLicense<finger_license_class>`
+
+Definition
+----------
+
+Reactivates a license file using the host hardware code and the product reference.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        reactivate(hardware_code: str, product_reference: str, path: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardware_code`` str
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``product_reference`` str
+          :guilabel:`in` The product reference.
+
+          ``path`` str
+          :guilabel:`in` Path to the license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static void reactivate(String? hardwareCode, String? productReference, String? path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``productReference`` String
+          :guilabel:`in` The product reference.
+
+          ``path`` String
+          :guilabel:`in` Path to the license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static void Reactivate(string hardwareCode, string productReference, string path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` string
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``productReference`` string
+          :guilabel:`in` The product reference.
+
+          ``path`` string
+          :guilabel:`in` Path to the license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static void reactivate(String hardwareCode, String productReference, String path) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``productReference`` String
+          :guilabel:`in` The product reference.
+
+          ``path`` String
+          :guilabel:`in` Path to the license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func reactivate(hardwareCode: String, productReference: String, path: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``productReference`` String
+          :guilabel:`in` The product reference.
+
+          ``path`` String
+          :guilabel:`in` Path to the license file.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_Reactivate (
+            const char * hardwareCode, 
+            const char * productReference, 
+            const char * path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` const char *
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``productReference`` const char *
+          :guilabel:`in` The product reference.
+
+          ``path`` const char *
+          :guilabel:`in` Path to the license file.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

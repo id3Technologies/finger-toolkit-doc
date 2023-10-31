@@ -1,0 +1,159 @@
+.. index:: 
+  !FingerLicense.getLicenseOwner Method
+  
+.. _finger_license_get_license_owner_class_method:
+
+===============================================================================
+FingerLicense.getLicenseOwner Method
+===============================================================================
+
+Module: :ref:`FingerLicense<finger_license_class>`
+
+Definition
+----------
+
+Retrieves the license owner.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        get_license_owner() -> str
+
+      **Returns**
+
+        .. line-block::
+
+          ``str``
+          The license owner.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static String getLicenseOwner()
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          The license owner.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static string GetLicenseOwner()
+
+      **Returns**
+
+        .. line-block::
+
+          ``string``
+          The license owner.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static String getLicenseOwner() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          The license owner.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func getLicenseOwner() throws -> String
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          The license owner.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_GetLicenseOwner (
+            char * licenseOwner, 
+            int * licenseOwnerSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``licenseOwner`` char *
+          :guilabel:`out` The license owner.
+
+          ``licenseOwnerSize`` int *
+          :guilabel:`in` Size of the 'licenseOwner' buffer. Receives the minimum required buffer size to hold the 'licenseOwner' string if the given one is too small (including the terminating NULL character), otherwise receives the number of characters in 'licenseOwner' (excluding terminating NULL character).
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

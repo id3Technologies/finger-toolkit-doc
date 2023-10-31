@@ -1,0 +1,76 @@
+.. index:: 
+  !FingerCaptureDeviceVendorId Enumeration
+
+.. _finger_capture_device_vendor_id_enum:
+
+===============================================================================
+FingerCaptureDeviceVendorId Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Vendors of fingerprint capture devices that are registered with the IBIA (www.ibia.org).
+
+.. tab-set::
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerCaptureDeviceVendorId
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerCaptureDeviceVendorId
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerCaptureDeviceVendorId
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerCaptureDeviceVendorId
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerCaptureDeviceVendorId
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerCaptureDeviceVendorId
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``unknown``
+    - 0
+    - Unknown.

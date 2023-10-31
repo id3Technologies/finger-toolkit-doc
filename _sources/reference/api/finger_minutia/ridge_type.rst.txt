@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerMinutia.ridgeType Property
+
+.. _finger_minutia_ridge_type_class_member:
+
+===============================================================================
+FingerMinutia.ridgeType Property
+===============================================================================
+
+Module: :ref:`FingerMinutia<finger_minutia_class>`
+
+Type: :ref:`FingerMinutiaRidgeType<finger_minutia_ridge_type_enum>`
+
+Definition
+----------
+
+Type of the minutia as defined in FingerMinutiaRidgeType enumeration.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      ridge_type: FingerMinutiaRidgeType
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      FingerMinutiaRidgeType get ridgeType => getRidgeType();
+      set ridgeType(FingerMinutiaRidgeType value) => setRidgeType(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public FingerMinutiaRidgeType ridgeType
+      {
+          get => GetridgeType();
+          set => SetridgeType(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public FingerMinutiaRidgeType getRidgeType() throws FingerException
+      public void setRidgeType(FingerMinutiaRidgeType ridgeType) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var ridgeType: FingerMinutiaRidgeType
+          get {
+              return try! getRidgeType()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerMinutia_GetRidgeType (ID3_FINGER_MINUTIA hFingerMinutia, id3FingerMinutiaRidgeType * eRidgeType)
+      int id3FingerMinutia_SetRidgeType (ID3_FINGER_MINUTIA hFingerMinutia, id3FingerMinutiaRidgeType eRidgeType)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

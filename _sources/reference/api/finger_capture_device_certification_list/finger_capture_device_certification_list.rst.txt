@@ -1,0 +1,217 @@
+.. index:: 
+  !FingerCaptureDeviceCertificationList Class
+
+.. _finger_capture_device_certification_list_class:
+
+===============================================================================
+FingerCaptureDeviceCertificationList Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  add<add>
+  clear<clear>
+  clone<clone>
+  count<count>
+  get<get>
+  getCount<get_count>
+  removeAt<remove_at>
+  resize<resize>
+  set<set>
+
+
+Definition
+----------
+.. line-block::
+    Represents a list of capture device certifications.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerCaptureDeviceCertificationList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerCaptureDeviceCertificationList implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerCaptureDeviceCertificationList
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerCaptureDeviceCertificationList implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerCaptureDeviceCertificationList
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerCaptureDeviceCertificationList *ID3_FINGER_CAPTURE_DEVICE_CERTIFICATION_LIST;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerCaptureDeviceCertificationList = FingerCaptureDeviceCertificationList()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerCaptureDeviceCertificationList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerCaptureDeviceCertificationList = sdk.FingerCaptureDeviceCertificationList();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerCaptureDeviceCertificationList.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerCaptureDeviceCertificationList = new FingerCaptureDeviceCertificationList())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerCaptureDeviceCertificationList = new FingerCaptureDeviceCertificationList()
+        // ...
+        fingerCaptureDeviceCertificationList.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerCaptureDeviceCertificationList fingerCaptureDeviceCertificationList = new FingerCaptureDeviceCertificationList()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerCaptureDeviceCertificationList fingerCaptureDeviceCertificationList = new FingerCaptureDeviceCertificationList();
+        // ...
+        fingerCaptureDeviceCertificationList.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerCaptureDeviceCertificationList: FingerCaptureDeviceCertificationList? = nil
+        fingerCaptureDeviceCertificationList = try FingerCaptureDeviceCertificationList()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_CAPTURE_DEVICE_CERTIFICATION_LIST hFingerCaptureDeviceCertificationList{};
+        int err = id3FingerCaptureDeviceCertificationList_Initialize(&hFingerCaptureDeviceCertificationList);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerCaptureDeviceCertificationList_Dispose(&hFingerCaptureDeviceCertificationList);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`count<finger_capture_device_certification_list_count_class_member>`
+    - int
+    - Gets the number of elements contained in the list
+  * - operator [int index]
+    - :ref:`FingerCaptureDeviceCertification<finger_capture_device_certification_enum>`
+    - Gets or sets the element at the specified index in the list.
+
+Iteration
+---------
+
+This class supports iteration in Dart, C#, Java and Python.
+
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`add<finger_capture_device_certification_list_add_class_method>`
+    - Adds an item to the FingerCaptureDeviceCertificationList object.
+  * - :ref:`clear<finger_capture_device_certification_list_clear_class_method>`
+    - Clears the FingerCaptureDeviceCertificationList object.
+  * - :ref:`clone<finger_capture_device_certification_list_clone_class_method>`
+    - Clones the FingerCaptureDeviceCertificationList object.
+  * - :ref:`get<finger_capture_device_certification_list_get_class_method>`
+    - Gets an item of the FingerCaptureDeviceCertificationList object.
+  * - :ref:`getCount<finger_capture_device_certification_list_get_count_class_method>`
+    - Gets the number of elements in the FingerCaptureDeviceCertificationList object.
+  * - :ref:`removeAt<finger_capture_device_certification_list_remove_at_class_method>`
+    - Removes an element of the FingerCaptureDeviceCertificationList object.
+  * - :ref:`resize<finger_capture_device_certification_list_resize_class_method>`
+    - FingerCaptureDeviceCertificationList object.
+  * - :ref:`set<finger_capture_device_certification_list_set_class_method>`
+    - Sets an item of the FingerCaptureDeviceCertificationList object.

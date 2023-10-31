@@ -1,0 +1,279 @@
+.. index:: 
+  !FingerLicense.activateBuffer Method
+  
+.. _finger_license_activate_buffer_class_method:
+
+===============================================================================
+FingerLicense.activateBuffer Method
+===============================================================================
+
+Module: :ref:`FingerLicense<finger_license_class>`
+
+Definition
+----------
+
+Retrieves a license file buffer using customer credentials and a product reference and returns the license in a data buffer.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        activate_buffer(hardware_code: str, login: str, password: str, product_reference: str, commentary: str) -> bytearray
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardware_code`` str
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``login`` str
+          :guilabel:`in` The customer login.
+
+          ``password`` str
+          :guilabel:`in` The customer password.
+
+          ``product_reference`` str
+          :guilabel:`in` The requested product reference.
+
+          ``commentary`` str
+          :guilabel:`in` Commentary associated to this license activation, generally the host name.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``bytearray``
+          The license data.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static Uint8List activateBuffer(String? hardwareCode, String? login, String? password, String? productReference, String? commentary)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``login`` String
+          :guilabel:`in` The customer login.
+
+          ``password`` String
+          :guilabel:`in` The customer password.
+
+          ``productReference`` String
+          :guilabel:`in` The requested product reference.
+
+          ``commentary`` String
+          :guilabel:`in` Commentary associated to this license activation, generally the host name.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``Uint8List``
+          The license data.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static byte[] ActivateBuffer(string hardwareCode, string login, string password, string productReference, string commentary)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` string
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``login`` string
+          :guilabel:`in` The customer login.
+
+          ``password`` string
+          :guilabel:`in` The customer password.
+
+          ``productReference`` string
+          :guilabel:`in` The requested product reference.
+
+          ``commentary`` string
+          :guilabel:`in` Commentary associated to this license activation, generally the host name.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``byte[]``
+          The license data.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static byte[] activateBuffer(String hardwareCode, String login, String password, String productReference, String commentary) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``login`` String
+          :guilabel:`in` The customer login.
+
+          ``password`` String
+          :guilabel:`in` The customer password.
+
+          ``productReference`` String
+          :guilabel:`in` The requested product reference.
+
+          ``commentary`` String
+          :guilabel:`in` Commentary associated to this license activation, generally the host name.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``byte[]``
+          The license data.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func activateBuffer(hardwareCode: String, login: String, password: String, productReference: String, commentary: String) throws -> [UInt8]
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` String
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``login`` String
+          :guilabel:`in` The customer login.
+
+          ``password`` String
+          :guilabel:`in` The customer password.
+
+          ``productReference`` String
+          :guilabel:`in` The requested product reference.
+
+          ``commentary`` String
+          :guilabel:`in` Commentary associated to this license activation, generally the host name.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``[UInt8]``
+          The license data.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_ActivateBuffer (
+            const char * hardwareCode, 
+            const char * login, 
+            const char * password, 
+            const char * productReference, 
+            const char * commentary, 
+            unsigned char * licenseFileBuffer, 
+            int * licenseFileBufferSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCode`` const char *
+          :guilabel:`in` The hardware code on which the license file will be attached, to be retrieved using the GetHostHardwareCode function.
+
+          ``login`` const char *
+          :guilabel:`in` The customer login.
+
+          ``password`` const char *
+          :guilabel:`in` The customer password.
+
+          ``productReference`` const char *
+          :guilabel:`in` The requested product reference.
+
+          ``commentary`` const char *
+          :guilabel:`in` Commentary associated to this license activation, generally the host name.
+
+          ``licenseFileBuffer`` unsigned char *
+          :guilabel:`out` The license data.
+
+          ``licenseFileBufferSize`` int *
+          :guilabel:`in` Size of the 'licenseFileBuffer' buffer. Receives the number of elements in the 'licenseFileBuffer' array.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

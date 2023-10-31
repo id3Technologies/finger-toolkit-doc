@@ -1,0 +1,218 @@
+.. index:: 
+  !FingerImage.fromFile Method
+  
+.. _finger_image_from_file_class_method:
+
+===============================================================================
+FingerImage.fromFile Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Creates an Image from the specified file.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        from_file(filepath: str, pixel_format: PixelFormat) -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``filepath`` str
+          :guilabel:`in` A string that contains the name of the file from which to create the Image.
+
+          ``pixel_format`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format into which to convert the input image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static FingerImage fromFile(String? filepath, PixelFormat pixelFormat)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``filepath`` String
+          :guilabel:`in` A string that contains the name of the file from which to create the Image.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format into which to convert the input image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static FingerImage FromFile(string filepath, PixelFormat pixelFormat)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``filepath`` string
+          :guilabel:`in` A string that contains the name of the file from which to create the Image.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format into which to convert the input image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static FingerImage fromFile(String filepath, PixelFormat pixelFormat) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``filepath`` String
+          :guilabel:`in` A string that contains the name of the file from which to create the Image.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format into which to convert the input image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func fromFile(filepath: String, pixelFormat: PixelFormat) throws -> FingerImage
+
+      **Parameters**
+
+        .. line-block::
+
+          ``filepath`` String
+          :guilabel:`in` A string that contains the name of the file from which to create the Image.
+
+          ``pixelFormat`` :ref:`PixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format into which to convert the input image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`FingerImage<finger_image_class>`
+          The newly created finger image.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_FromFile (
+            ID3_FINGER_IMAGE hFingerImage, 
+            const char * filepath, 
+            id3FingerPixelFormat ePixelFormat)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``filepath`` const char *
+          :guilabel:`in` A string that contains the name of the file from which to create the Image.
+
+          ``ePixelFormat`` :ref:`id3FingerPixelFormat<pixel_format_enum>`
+          :guilabel:`in` The pixel format into which to convert the input image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

@@ -1,0 +1,61 @@
+.. index:: 
+  !FingerMinutiaPair.score Property
+
+.. _finger_minutia_pair_score_struct_member:
+
+===============================================================================
+FingerMinutiaPair.score Property
+===============================================================================
+
+Structure: :ref:`FingerMinutiaPair<finger_minutia_pair_struct>`
+
+Definition
+----------
+
+Internal comparison score of this minutia pair.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      int score
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int score
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      int Score
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      int score
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      Int score
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int Score
+

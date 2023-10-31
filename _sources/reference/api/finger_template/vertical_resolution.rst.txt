@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerTemplate.verticalResolution Property
+
+.. _finger_template_vertical_resolution_class_member:
+
+===============================================================================
+FingerTemplate.verticalResolution Property
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Type: int
+
+Definition
+----------
+
+Vertical resolution of the minutiae coordinate system. Be careful, setting this field does update the minutiae! Use Rescale for this purpose.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      vertical_resolution: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get verticalResolution => getVerticalResolution();
+      set verticalResolution(int value) => setVerticalResolution(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int verticalResolution
+      {
+          get => GetverticalResolution();
+          set => SetverticalResolution(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getVerticalResolution() throws FingerException
+      public void setVerticalResolution(int verticalResolution) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var verticalResolution: Int
+          get {
+              return Int(try! getVerticalResolution())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerTemplate_GetVerticalResolution (ID3_FINGER_TEMPLATE hFingerTemplate, int * verticalResolution)
+      int id3FingerTemplate_SetVerticalResolution (ID3_FINGER_TEMPLATE hFingerTemplate, int verticalResolution)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

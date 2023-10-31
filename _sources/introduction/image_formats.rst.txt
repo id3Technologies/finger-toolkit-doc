@@ -1,0 +1,18 @@
+.. _image_formats:
+
+=============
+Image formats
+=============
+
+The following image formats are currently supported:
+
+- BMP
+- JPEG
+- JPEG 2000
+- PNG 
+- TIFF
+- WEPB 
+- Raw buffer 
+- WSQ Gray-Scale Fingerprint Image Compression Specification, Version 3.1
+
+.. important:: Images must be grayscale 8 bits.

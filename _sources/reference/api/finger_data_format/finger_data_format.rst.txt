@@ -1,0 +1,85 @@
+.. index:: 
+  !FingerDataFormat Enumeration
+
+.. _finger_data_format_enum:
+
+===============================================================================
+FingerDataFormat Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Fingerprint data format.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class FingerDataFormat
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum FingerDataFormat
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum FingerDataFormat
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum FingerDataFormat
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum FingerDataFormat
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerDataFormat
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``none``
+    - 0x0000
+    - No data.
+  * - ``minutiaeV3B``
+    - 0x303B
+    - Minutia data extracted with id3 extractor version 3B.
+  * - ``fingerEmbeddingV1A``
+    - 0x311A
+    - Fingerprint proprietary embedding data version 1A.
+  * - ``minutiaEmbeddingsV1A``
+    - 0x321A
+    - Minutia proprietary embedding data version 1A.

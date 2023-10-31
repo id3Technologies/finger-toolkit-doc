@@ -1,0 +1,120 @@
+.. index:: 
+  !FingerImage.captureDeviceModel Property
+
+.. _finger_image_capture_device_model_class_member:
+
+===============================================================================
+FingerImage.captureDeviceModel Property
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Type: int
+
+Definition
+----------
+
+Capture device type identifier that identifies the product type that created this finger image.
+
+.. note:: The identifier shall be assigned by the registered product owner or other approved registration authority, such as IBIA (www.ibia.org). A value of all zeros indicates that the capture device type is unreported.
+
+
+.. tab-set::
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerImage_GetCaptureDeviceModel (ID3_FINGER_IMAGE hFingerImage, int * captureDeviceModel)
+      int id3FingerImage_SetCaptureDeviceModel (ID3_FINGER_IMAGE hFingerImage, int captureDeviceModel)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get captureDeviceModel => getCaptureDeviceModel();
+      set captureDeviceModel(int value) => setCaptureDeviceModel(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        ``FingerException``
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int captureDeviceModel
+      {
+          get => GetcaptureDeviceModel();
+          set => SetcaptureDeviceModel(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        ``FingerException``
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getCaptureDeviceModel() throws FingerException
+      public void setCaptureDeviceModel(int captureDeviceModel) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        ``FingerException``
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      capture_device_model: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        ``FingerException``
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      TODO
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        ``FingerException``
+        An error has occurred during Finger Library execution.
+

@@ -1,0 +1,163 @@
+.. index:: 
+  !FingerMinutiaList.removeAt Method
+  
+.. _finger_minutia_list_remove_at_class_method:
+
+===============================================================================
+FingerMinutiaList.removeAt Method
+===============================================================================
+
+Module: :ref:`FingerMinutiaList<finger_minutia_list_class>`
+
+Definition
+----------
+
+Removes an element of the FingerMinutiaList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        remove_at(self, index: int) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerMinutia item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void removeAt(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerMinutia item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void RemoveAt(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerMinutia item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void removeAt(int index) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerMinutia item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func removeAt(index: Int32) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` Index of the FingerMinutia item to remove.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerMinutiaList_RemoveAt (
+            ID3_FINGER_MINUTIA_LIST hFingerMinutiaList, 
+            int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerMinutiaList`` :ref:`ID3_FINGER_MINUTIA_LIST<finger_minutia_list_class>`
+          :guilabel:`in` Handle to the FingerMinutiaList object.
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerMinutia item to remove.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

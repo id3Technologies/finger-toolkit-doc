@@ -1,0 +1,202 @@
+.. index:: 
+  !FingerLibrary.loadModelBuffer Method
+  
+.. _finger_library_load_model_buffer_class_method:
+
+===============================================================================
+FingerLibrary.loadModelBuffer Method
+===============================================================================
+
+Module: :ref:`FingerLibrary<finger_library_class>`
+
+Definition
+----------
+
+Loads a model from the zoo into the required processing unit.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        load_model_buffer(model_buffer: bytearray, finger_model: FingerModel, processing_unit: ProcessingUnit) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``model_buffer`` bytearray
+          :guilabel:`in` A buffer containing the AI model to be loaded.
+
+          ``finger_model`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be loaded.
+
+          ``processing_unit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit to be used.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static void loadModelBuffer(Uint8List? modelBuffer, FingerModel fingerModel, ProcessingUnit processingUnit)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``modelBuffer`` Uint8List
+          :guilabel:`in` A buffer containing the AI model to be loaded.
+
+          ``fingerModel`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be loaded.
+
+          ``processingUnit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit to be used.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static void LoadModelBuffer(byte[] modelBuffer, FingerModel fingerModel, ProcessingUnit processingUnit)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``modelBuffer`` byte[]
+          :guilabel:`in` A buffer containing the AI model to be loaded.
+
+          ``fingerModel`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be loaded.
+
+          ``processingUnit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit to be used.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static void loadModelBuffer(byte[] modelBuffer, FingerModel fingerModel, ProcessingUnit processingUnit) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``modelBuffer`` byte[]
+          :guilabel:`in` A buffer containing the AI model to be loaded.
+
+          ``fingerModel`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be loaded.
+
+          ``processingUnit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit to be used.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func loadModelBuffer(modelBuffer: [UInt8], fingerModel: FingerModel, processingUnit: ProcessingUnit) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``modelBuffer`` [UInt8]
+          :guilabel:`in` A buffer containing the AI model to be loaded.
+
+          ``fingerModel`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be loaded.
+
+          ``processingUnit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit to be used.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLibrary_LoadModelBuffer (
+            unsigned char * modelBuffer, 
+            int modelBufferSize, 
+            id3FingerModel eFingerModel, 
+            id3FingerProcessingUnit eProcessingUnit)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``modelBuffer`` unsigned char *
+          :guilabel:`in` A buffer containing the AI model to be loaded.
+
+          ``modelBufferSize`` int
+          :guilabel:`in` Size of the 'modelBuffer' buffer.
+
+          ``eFingerModel`` :ref:`id3FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be loaded.
+
+          ``eProcessingUnit`` :ref:`id3FingerProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit to be used.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

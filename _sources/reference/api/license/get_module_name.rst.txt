@@ -1,0 +1,203 @@
+.. index:: 
+  !License.getModuleName Method
+  
+.. _license_get_module_name_class_method:
+
+===============================================================================
+License.getModuleName Method
+===============================================================================
+
+Module: :ref:`License<license_class>`
+
+Definition
+----------
+
+Retrieves the name of a given module in the license.
+
+
+.. tab-set::
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_GetModuleName (
+            int index, 
+            char * name, 
+            int * nameSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` index of the module in range [0 ; GetModuleCount() - 1].
+
+          ``name`` char *
+          :guilabel:`out` Pointer to a pre-allocated buffer to receive the name.
+
+          ``nameSize`` int *
+          :guilabel:`in` Size of the 'name' buffer. Receives the minimum required buffer size to hold the 'name' string if the given one is too small (including the terminating NULL character), otherwise receives the number of characters in 'name' (excluding terminating NULL character).
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static String getModuleName(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` index of the module in range [0 ; GetModuleCount() - 1].
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          Pointer to a pre-allocated buffer to receive the name.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static string GetModuleName(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` index of the module in range [0 ; GetModuleCount() - 1].
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``string``
+          Pointer to a pre-allocated buffer to receive the name.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static String getModuleName(int index) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` index of the module in range [0 ; GetModuleCount() - 1].
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          Pointer to a pre-allocated buffer to receive the name.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        get_module_name(index: int) -> str
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` index of the module in range [0 ; GetModuleCount() - 1].
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``str``
+          Pointer to a pre-allocated buffer to receive the name.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func getModuleName(index: Int32) throws -> String
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` index of the module in range [0 ; GetModuleCount() - 1].
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          Pointer to a pre-allocated buffer to receive the name.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+

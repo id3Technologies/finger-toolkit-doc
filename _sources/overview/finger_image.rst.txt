@@ -1,0 +1,76 @@
+.. _finger_image:
+
+==================
+Fingerprint images
+==================
+
+A :ref:`FingerImage<finger_image_class>` contains a fingerprint image and additional data. It includes:
+
+- Raw data
+- Image information
+  
+  - Height and width
+  - Horizontal and vertical resolution
+  - Impression type
+  - Position of the finger
+  - Image quality
+
+- Capture device information
+ 
+  - Certification
+  - Technology
+  - Type identifier (vendor specific)
+  - Vendor identifier (registered by IBIA)
+
+A :ref:`FingerImage<finger_image_class>` also provides functionality for loading and storing image files into various formats, including BMP,
+JPEG and WSQ (see below).
+
+..note:: Several images from one or more fingers can be grouped into a single :ref:`finger_image_record_class`.
+
+It can be stored in a supported standard format for further usage. See :ref:`image_formats` for the list of supported formats.
+
+Creating a FingerImage
+======================
+To create a FingerImage, use one of the following methods:
+
+.. list-table:: 
+    :width: 100%
+    :widths: 30 70
+    :header-rows: 1
+
+    * - Method
+      - Description
+
+    * - :ref:`fromBuffer<finger_image_from_buffer_class_method>`
+      - Creates a FingerImage from a specified data buffer with specified :ref:`image formats<image_formats>`.
+
+    * - :ref:`fromFile<finger_image_from_file_class_method>`
+      - Creates a FingerImage from a specified file with specified :ref:`image formats<image_formats>`.
+
+    * - :ref:`fromRawBuffer<finger_image_from_raw_buffer_class_method>`
+      - Creates a FingerImage from a specified data buffer containing the raw image data (8-bit grayscale).
+
+Saving a FingerImage to a file
+==============================
+To save a FingerImage to a file in one of the supported :ref:`image formats<image_formats>`, proceed as follow:
+
+- call the :ref:`finger_image_to_file_class_method`.
+
+If standardized biometric data interchange format is needed (ISO/IEC 19794-4 or ANSI INCITS-381), proceed as follow:
+
+- create a :ref:`FingerImageRecord<finger_image_record_class>`,
+- add the :ref:`FingerImage<finger_image_class>` to the record,
+- save the record to a file in the required format.
+
+Managing multiple fingeprints of the same user
+==============================================
+A :ref:`FingerImageRecord<finger_image_record_class>` objects provides functionalities for loading and storing the information from one or more finger
+image areas using standardized biometric data interchange formats. This can be used for the exchange and comparison
+of finger image data.
+
+Each image record shall belong to a single subject.
+
+See also
+========
+- :ref:`finger_image_class`
+- :ref:`finger_image_record_class`

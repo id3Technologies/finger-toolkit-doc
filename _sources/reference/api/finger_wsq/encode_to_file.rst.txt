@@ -1,0 +1,198 @@
+.. index:: 
+  !FingerWsq.encodeToFile Method
+  
+.. _finger_wsq_encode_to_file_class_method:
+
+===============================================================================
+FingerWsq.encodeToFile Method
+===============================================================================
+
+Module: :ref:`FingerWsq<finger_wsq_class>`
+
+Definition
+----------
+
+Encodes a FingerImage to a NIST WSQ file.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        encode_to_file(image: FingerImage, bit_rate: float, path: str) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Image to encode to WSQ.
+
+          ``bit_rate`` float
+          :guilabel:`in` WSQ encoding bit rate. The lower the bit rate is, the higher is the compression level and vice versa. The recommended bit rate is 0.75. It corresponds to 15:1 compression. Another common bit rate is 2.25 for 5:1 compression.
+
+          ``path`` str
+          :guilabel:`in` Path to the file to save the WSQ encoded image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static void encodeToFile(FingerImage image, double bitRate, String? path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Image to encode to WSQ.
+
+          ``bitRate`` double
+          :guilabel:`in` WSQ encoding bit rate. The lower the bit rate is, the higher is the compression level and vice versa. The recommended bit rate is 0.75. It corresponds to 15:1 compression. Another common bit rate is 2.25 for 5:1 compression.
+
+          ``path`` String
+          :guilabel:`in` Path to the file to save the WSQ encoded image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static void EncodeToFile(FingerImage image, float bitRate, string path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Image to encode to WSQ.
+
+          ``bitRate`` float
+          :guilabel:`in` WSQ encoding bit rate. The lower the bit rate is, the higher is the compression level and vice versa. The recommended bit rate is 0.75. It corresponds to 15:1 compression. Another common bit rate is 2.25 for 5:1 compression.
+
+          ``path`` string
+          :guilabel:`in` Path to the file to save the WSQ encoded image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static void encodeToFile(FingerImage image, float bitRate, String path) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Image to encode to WSQ.
+
+          ``bitRate`` float
+          :guilabel:`in` WSQ encoding bit rate. The lower the bit rate is, the higher is the compression level and vice versa. The recommended bit rate is 0.75. It corresponds to 15:1 compression. Another common bit rate is 2.25 for 5:1 compression.
+
+          ``path`` String
+          :guilabel:`in` Path to the file to save the WSQ encoded image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func encodeToFile(image: FingerImage, bitRate: Float, path: String) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``image`` :ref:`FingerImage<finger_image_class>`
+          :guilabel:`in` Image to encode to WSQ.
+
+          ``bitRate`` Float
+          :guilabel:`in` WSQ encoding bit rate. The lower the bit rate is, the higher is the compression level and vice versa. The recommended bit rate is 0.75. It corresponds to 15:1 compression. Another common bit rate is 2.25 for 5:1 compression.
+
+          ``path`` String
+          :guilabel:`in` Path to the file to save the WSQ encoded image.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerWsq_EncodeToFile (
+            ID3_FINGER_IMAGE hImage, 
+            float bitRate, 
+            const char * path)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Image to encode to WSQ.
+
+          ``bitRate`` float
+          :guilabel:`in` WSQ encoding bit rate. The lower the bit rate is, the higher is the compression level and vice versa. The recommended bit rate is 0.75. It corresponds to 15:1 compression. Another common bit rate is 2.25 for 5:1 compression.
+
+          ``path`` const char *
+          :guilabel:`in` Path to the file to save the WSQ encoded image.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

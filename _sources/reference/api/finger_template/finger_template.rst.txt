@@ -1,0 +1,291 @@
+.. index:: 
+  !FingerTemplate Class
+
+.. _finger_template_class:
+
+===============================================================================
+FingerTemplate Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  captureDeviceCertificationList<capture_device_certification_list>
+  captureDeviceTechnology<capture_device_technology>
+  captureDeviceType<capture_device_type>
+  captureDeviceVendorId<capture_device_vendor_id>
+  cbeffProductId<cbeff_product_id>
+  clone<clone>
+  dataFormats<data_formats>
+  extendedData<extended_data>
+  fromBuffer<from_buffer>
+  fromFile<from_file>
+  horizontalResolution<horizontal_resolution>
+  imageHeight<image_height>
+  imageWidth<image_width>
+  impressionType<impression_type>
+  minutiaList<minutia_list>
+  position<position>
+  prune<prune>
+  quality<quality>
+  qualityAlgorithmId<quality_algorithm_id>
+  qualityAlgorithmVendorId<quality_algorithm_vendor_id>
+  ridgeEndingType<ridge_ending_type>
+  toBdt<to_bdt>
+  toBit<to_bit>
+  toBuffer<to_buffer>
+  toFile<to_file>
+  verticalResolution<vertical_resolution>
+  viewNumber<view_number>
+
+
+Definition
+----------
+.. line-block::
+    Represents a finger template.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerTemplate
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerTemplate implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerTemplate
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerTemplate implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerTemplate
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerTemplate *ID3_FINGER_TEMPLATE;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerTemplate = FingerTemplate()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerTemplate
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerTemplate = sdk.FingerTemplate();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerTemplate.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerTemplate = new FingerTemplate())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerTemplate = new FingerTemplate()
+        // ...
+        fingerTemplate.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerTemplate fingerTemplate = new FingerTemplate()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerTemplate fingerTemplate = new FingerTemplate();
+        // ...
+        fingerTemplate.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerTemplate: FingerTemplate? = nil
+        fingerTemplate = try FingerTemplate()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_TEMPLATE hFingerTemplate{};
+        int err = id3FingerTemplate_Initialize(&hFingerTemplate);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerTemplate_Dispose(&hFingerTemplate);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`captureDeviceCertificationList<finger_template_capture_device_certification_list_class_member>`
+    - :ref:`FingerCaptureDeviceCertificationList<finger_capture_device_certification_list_class>`
+    - Certification(s) of the device used to the capture the finger image that the template was derived from.
+  * - :ref:`captureDeviceTechnology<finger_template_capture_device_technology_class_member>`
+    - :ref:`FingerCaptureDeviceTechnology<finger_capture_device_technology_enum>`
+    - Technology of the device used to the capture the finger image that the template was derived from, as defined in ISO/IEC 19794-2:2011.
+  * - :ref:`captureDeviceType<finger_template_capture_device_type_class_member>`
+    - int
+    - Capture device type identifier that identifies the product type that created this finger template.
+  * - :ref:`captureDeviceVendorId<finger_template_capture_device_vendor_id_class_member>`
+    - int
+    - Capture device vendor identifier.
+  * - :ref:`cbeffProductId<finger_template_cbeff_product_id_class_member>`
+    - int
+    - CBEFF product ID as registered with the IBIA (www.ibia.org).
+  * - :ref:`dataFormats<finger_template_data_formats_class_member>`
+    - :ref:`FingerDataFormats<finger_data_formats_struct>`
+    - Fingerprint data formats information: minutiae, minutia embeddings and finger embedding formats.
+  * - :ref:`extendedData<finger_template_extended_data_class_member>`
+    - byte[]
+    - Extended data of the finger template. Optional. Usually contains proprietary information that is useful for matching.
+  * - :ref:`horizontalResolution<finger_template_horizontal_resolution_class_member>`
+    - int
+    - Horizontal resolution of the minutiae coordinate system. Be careful, setting this field does update the minutiae! Use Rescale for this purpose.
+  * - :ref:`imageHeight<finger_template_image_height_class_member>`
+    - int
+    - Size of the image that the template was derived from in the y direction (in pixels).
+  * - :ref:`imageWidth<finger_template_image_width_class_member>`
+    - int
+    - Size of the image that the template was derived from in the x direction (in pixels).
+  * - :ref:`impressionType<finger_template_impression_type_class_member>`
+    - :ref:`FingerImpressionType<finger_impression_type_enum>`
+    - Impression type of the finger image that the template was derived from.
+  * - :ref:`minutiaList<finger_template_minutia_list_class_member>`
+    - :ref:`FingerMinutiaList<finger_minutia_list_class>`
+    - List of minutiae.
+  * - :ref:`position<finger_template_position_class_member>`
+    - :ref:`FingerPosition<finger_position_enum>`
+    - Finger position of the template as defined in ANSI/NIST-ITL 1-2011.
+  * - :ref:`quality<finger_template_quality_class_member>`
+    - int
+    - Quality of the created template. In the range [0;100] U {-1}, 100 being maximum quality and -1 meaning 'not computed'.
+  * - :ref:`qualityAlgorithmId<finger_template_quality_algorithm_id_class_member>`
+    - int
+    - Quality algorithm identifier (including version) as assigned by the vendor.
+  * - :ref:`qualityAlgorithmVendorId<finger_template_quality_algorithm_vendor_id_class_member>`
+    - int
+    - Quality algorithm vendor identifier as registered with the IBIA (www.ibia.org). 
+  * - :ref:`ridgeEndingType<finger_template_ridge_ending_type_class_member>`
+    - int
+    - Method used to determine the location of a ridge ending with respect to the ISO/IEC 19794-2:2011. 0 indicates that the minutia was located at the intersection of 3 valleys, 1 means that it was located using the ridge skeleton endpoint.
+  * - :ref:`verticalResolution<finger_template_vertical_resolution_class_member>`
+    - int
+    - Vertical resolution of the minutiae coordinate system. Be careful, setting this field does update the minutiae! Use Rescale for this purpose.
+  * - :ref:`viewNumber<finger_template_view_number_class_member>`
+    - int
+    - Number of the view. Mostly useful for lists with multiple views of the same finger position.
+
+Static Methods
+--------------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`fromBuffer<finger_template_from_buffer_class_method>`
+    - Imports the finger template object from a buffer.
+  * - :ref:`fromFile<finger_template_from_file_class_method>`
+    - Imports the finger template object from a file.
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`clone<finger_template_clone_class_method>`
+    - Clones the FingerTemplate object.
+  * - :ref:`prune<finger_template_prune_class_method>`
+    - Reduces the number of minutiae in the template using the given method.
+  * - :ref:`toBdt<finger_template_to_bdt_class_method>`
+    - Exports the finger template object to a Biometric Data Template (BDT) buffer.
+  * - :ref:`toBit<finger_template_to_bit_class_method>`
+    - Exports the finger template object to a Biometric Information Template (BIT) buffer.
+  * - :ref:`toBuffer<finger_template_to_buffer_class_method>`
+    - Exports the finger template object to a buffer.
+  * - :ref:`toFile<finger_template_to_file_class_method>`
+    - Exports the finger template object to a file.

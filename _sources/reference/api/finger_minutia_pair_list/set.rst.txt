@@ -1,0 +1,182 @@
+.. index:: 
+  !FingerMinutiaPairList.set Method
+  
+.. _finger_minutia_pair_list_set_class_method:
+
+===============================================================================
+FingerMinutiaPairList.set Method
+===============================================================================
+
+Module: :ref:`FingerMinutiaPairList<finger_minutia_pair_list_class>`
+
+Definition
+----------
+
+Sets an item of the FingerMinutiaPairList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        set(self, index: int, finger_minutia_pair_item: FingerMinutiaPair) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerMinutiaPair item to set.
+
+          ``finger_minutia_pair_item`` :ref:`FingerMinutiaPair<finger_minutia_pair_struct>`
+          :guilabel:`in` FingerMinutiaPair item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void set(int index, FingerMinutiaPair fingerMinutiaPairItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerMinutiaPair item to set.
+
+          ``fingerMinutiaPairItem`` :ref:`FingerMinutiaPair<finger_minutia_pair_struct>`
+          :guilabel:`in` FingerMinutiaPair item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Set(int index, FingerMinutiaPair fingerMinutiaPairItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerMinutiaPair item to set.
+
+          ``fingerMinutiaPairItem`` :ref:`FingerMinutiaPair<finger_minutia_pair_struct>`
+          :guilabel:`in` FingerMinutiaPair item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void set(int index, FingerMinutiaPair fingerMinutiaPairItem) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerMinutiaPair item to set.
+
+          ``fingerMinutiaPairItem`` :ref:`FingerMinutiaPair<finger_minutia_pair_struct>`
+          :guilabel:`in` FingerMinutiaPair item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func set(index: Int32, fingerMinutiaPairItem: FingerMinutiaPair) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` Index of the FingerMinutiaPair item to set.
+
+          ``fingerMinutiaPairItem`` :ref:`FingerMinutiaPair<finger_minutia_pair_struct>`
+          :guilabel:`in` FingerMinutiaPair item to set.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerMinutiaPairList_Set (
+            ID3_FINGER_MINUTIA_PAIR_LIST hFingerMinutiaPairList, 
+            int index, 
+            const id3FingerMinutiaPair * sFingerMinutiaPairItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerMinutiaPairList`` :ref:`ID3_FINGER_MINUTIA_PAIR_LIST<finger_minutia_pair_list_class>`
+          :guilabel:`in` Handle to the FingerMinutiaPairList object.
+
+          ``index`` int
+          :guilabel:`in` Index of the FingerMinutiaPair item to set.
+
+          ``sFingerMinutiaPairItem`` :ref:`const id3FingerMinutiaPair *<finger_minutia_pair_struct>`
+          :guilabel:`in` FingerMinutiaPair item to set.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

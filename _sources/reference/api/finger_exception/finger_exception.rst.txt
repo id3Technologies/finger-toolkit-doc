@@ -1,0 +1,69 @@
+.. index:: 
+  !FingerException
+
+.. _finger_exception:
+
+===============================================================================
+FingerException Exception
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+
+Definition
+----------
+.. line-block::
+    This class represents errors that can occur during finger library execution.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerException(Exception)
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerException implements Exception
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public class FingerException : Exception
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerException extends RuntimeException
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerException: Error
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - errorCode
+    - int
+    - Gets the error code classifying this exception.

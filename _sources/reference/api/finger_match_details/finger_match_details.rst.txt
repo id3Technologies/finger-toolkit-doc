@@ -1,0 +1,185 @@
+.. index:: 
+  !FingerMatchDetails Class
+
+.. _finger_match_details_class:
+
+===============================================================================
+FingerMatchDetails Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  indexInProbe<index_in_probe>
+  indexInReference<index_in_reference>
+  minutiaPairList<minutia_pair_list>
+  score<score>
+
+
+Definition
+----------
+.. line-block::
+    Represents the finger matching details.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerMatchDetails
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerMatchDetails implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerMatchDetails
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerMatchDetails implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerMatchDetails
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerMatchDetails *ID3_FINGER_MATCH_DETAILS;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerMatchDetails = FingerMatchDetails()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerMatchDetails
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerMatchDetails = sdk.FingerMatchDetails();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerMatchDetails.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerMatchDetails = new FingerMatchDetails())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerMatchDetails = new FingerMatchDetails()
+        // ...
+        fingerMatchDetails.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerMatchDetails fingerMatchDetails = new FingerMatchDetails()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerMatchDetails fingerMatchDetails = new FingerMatchDetails();
+        // ...
+        fingerMatchDetails.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerMatchDetails: FingerMatchDetails? = nil
+        fingerMatchDetails = try FingerMatchDetails()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_MATCH_DETAILS hFingerMatchDetails{};
+        int err = id3FingerMatchDetails_Initialize(&hFingerMatchDetails);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerMatchDetails_Dispose(&hFingerMatchDetails);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`indexInProbe<finger_match_details_index_in_probe_class_member>`
+    - int
+    - Index in probe template record. Relevent only if calling CompareTemplateRecords().
+  * - :ref:`indexInReference<finger_match_details_index_in_reference_class_member>`
+    - int
+    - Index in reference template record. Relevent only if calling CompareTemplateRecords().
+  * - :ref:`minutiaPairList<finger_match_details_minutia_pair_list_class_member>`
+    - :ref:`FingerMinutiaPairList<finger_minutia_pair_list_class>`
+    - Minutia pair list associated to this comparison.
+  * - :ref:`score<finger_match_details_score_class_member>`
+    - int
+    - Matching score. In the range [0:65535]. See FingerMatcherThreshold to set a threshold to take a match/no-match decision.

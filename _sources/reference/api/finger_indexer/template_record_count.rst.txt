@@ -1,0 +1,118 @@
+.. index:: 
+  !FingerIndexer.templateRecordCount Property
+
+.. _finger_indexer_template_record_count_class_member:
+
+===============================================================================
+FingerIndexer.templateRecordCount Property
+===============================================================================
+
+Module: :ref:`FingerIndexer<finger_indexer_class>`
+
+Type: int
+
+Definition
+----------
+
+Current number of indexed template records.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      template_record_count: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get templateRecordCount => getTemplateRecordCount();
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int templateRecordCount
+      {
+          get => GettemplateRecordCount();
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getTemplateRecordCount() throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var templateRecordCount: Int
+          get {
+              return Int(try! getTemplateRecordCount())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerIndexer_GetTemplateRecordCount (ID3_FINGER_INDEXER hFingerIndexer, int * templateRecordCount)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

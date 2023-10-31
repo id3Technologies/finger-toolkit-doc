@@ -1,0 +1,163 @@
+.. index:: 
+  !PointList.resize Method
+  
+.. _point_list_resize_class_method:
+
+===============================================================================
+PointList.resize Method
+===============================================================================
+
+Module: :ref:`PointList<point_list_class>`
+
+Definition
+----------
+
+PointList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        resize(self, new_size: int) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``new_size`` int
+          :guilabel:`in` Point object.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        void resize(int newSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``newSize`` int
+          :guilabel:`in` Point object.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public void Resize(int newSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``newSize`` int
+          :guilabel:`in` Point object.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public void resize(int newSize) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``newSize`` int
+          :guilabel:`in` Point object.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func resize(newSize: Int32) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``newSize`` Int32
+          :guilabel:`in` Point object.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerPointList_Resize (
+            ID3_FINGER_POINT_LIST hPointList, 
+            int newSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hPointList`` :ref:`ID3_FINGER_POINT_LIST<point_list_class>`
+          :guilabel:`in` Handle to the PointList object.
+
+          ``newSize`` int
+          :guilabel:`in` Point object.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

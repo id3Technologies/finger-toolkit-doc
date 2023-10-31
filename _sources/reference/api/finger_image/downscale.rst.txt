@@ -1,0 +1,204 @@
+.. index:: 
+  !FingerImage.downscale Method
+  
+.. _finger_image_downscale_class_method:
+
+===============================================================================
+FingerImage.downscale Method
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Definition
+----------
+
+Downscales the image in-place so that its maximum dimension is equal to the given maximum size, while preserving the aspect ratio.
+
+.. note:: If the maximum dimension is already smaller than the given maximum size, the function does nothing and the scaling ration returned is 1.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        downscale(self, max_size: int) -> float
+
+      **Parameters**
+
+        .. line-block::
+
+          ``max_size`` int
+          :guilabel:`in` Maximum image size, in pixels. The value must be greater than 0.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``float``
+          The scaling ratio applied to the image. Range is ]0:1].
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        double downscale(int maxSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``maxSize`` int
+          :guilabel:`in` Maximum image size, in pixels. The value must be greater than 0.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``double``
+          The scaling ratio applied to the image. Range is ]0:1].
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public float Downscale(int maxSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``maxSize`` int
+          :guilabel:`in` Maximum image size, in pixels. The value must be greater than 0.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``float``
+          The scaling ratio applied to the image. Range is ]0:1].
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public float downscale(int maxSize) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``maxSize`` int
+          :guilabel:`in` Maximum image size, in pixels. The value must be greater than 0.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``float``
+          The scaling ratio applied to the image. Range is ]0:1].
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func downscale(maxSize: Int32) throws -> Float
+
+      **Parameters**
+
+        .. line-block::
+
+          ``maxSize`` Int32
+          :guilabel:`in` Maximum image size, in pixels. The value must be greater than 0.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``Float``
+          The scaling ratio applied to the image. Range is ]0:1].
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImage_Downscale (
+            ID3_FINGER_IMAGE hFingerImage, 
+            int maxSize, 
+            float * scaleRatio)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hFingerImage`` :ref:`ID3_FINGER_IMAGE<finger_image_class>`
+          :guilabel:`in` Handle to the FingerImage object.
+
+          ``maxSize`` int
+          :guilabel:`in` Maximum image size, in pixels. The value must be greater than 0.
+
+          ``scaleRatio`` float *
+          :guilabel:`out` The scaling ratio applied to the image. Range is ]0:1].
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

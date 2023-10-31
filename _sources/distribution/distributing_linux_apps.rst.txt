@@ -1,0 +1,12 @@
+.. _distributing_linux_app:
+
+---------------------------------
+Distributing Linux applications
+---------------------------------
+
+To distribute a Linux application that uses |product-name|, you must deploy the following libraries and files:
+
+- libid3Finger.so
+- :ref:`ai_models`
+
+For Java applications the java archive file *eu.id3.finger.jar* shall be distributed in addition to the native libraries.

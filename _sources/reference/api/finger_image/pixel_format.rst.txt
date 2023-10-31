@@ -1,0 +1,118 @@
+.. index:: 
+  !FingerImage.pixelFormat Property
+
+.. _finger_image_pixel_format_class_member:
+
+===============================================================================
+FingerImage.pixelFormat Property
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Type: :ref:`PixelFormat<pixel_format_enum>`
+
+Definition
+----------
+
+Pixel format.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      pixel_format: PixelFormat
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      PixelFormat get pixelFormat => getPixelFormat();
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public PixelFormat pixelFormat
+      {
+          get => GetpixelFormat();
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public PixelFormat getPixelFormat() throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var pixelFormat: PixelFormat
+          get {
+              return try! getPixelFormat()
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerImage_GetPixelFormat (ID3_FINGER_IMAGE hFingerImage, id3FingerPixelFormat * ePixelFormat)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

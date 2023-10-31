@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerImage.cbeffProductId Property
+
+.. _finger_image_cbeff_product_id_class_member:
+
+===============================================================================
+FingerImage.cbeffProductId Property
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Type: int
+
+Definition
+----------
+
+CBEFF product ID as registered with the IBIA (www.ibia.org).
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      cbeff_product_id: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get cbeffProductId => getCbeffProductId();
+      set cbeffProductId(int value) => setCbeffProductId(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int cbeffProductId
+      {
+          get => GetcbeffProductId();
+          set => SetcbeffProductId(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getCbeffProductId() throws FingerException
+      public void setCbeffProductId(int cbeffProductId) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var cbeffProductId: Int
+          get {
+              return Int(try! getCbeffProductId())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerImage_GetCbeffProductId (ID3_FINGER_IMAGE hFingerImage, int * cbeffProductId)
+      int id3FingerImage_SetCbeffProductId (ID3_FINGER_IMAGE hFingerImage, int cbeffProductId)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerMinutia.y Property
+
+.. _finger_minutia_y_class_member:
+
+===============================================================================
+FingerMinutia.y Property
+===============================================================================
+
+Module: :ref:`FingerMinutia<finger_minutia_class>`
+
+Type: int
+
+Definition
+----------
+
+Y-coordinate of the miutia.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      y: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get y => getY();
+      set y(int value) => setY(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int y
+      {
+          get => Gety();
+          set => Sety(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getY() throws FingerException
+      public void setY(int y) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var y: Int
+          get {
+              return Int(try! getY())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerMinutia_GetY (ID3_FINGER_MINUTIA hFingerMinutia, int * y)
+      int id3FingerMinutia_SetY (ID3_FINGER_MINUTIA hFingerMinutia, int y)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

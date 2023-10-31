@@ -1,0 +1,23 @@
+.. _programming_languages:
+
+=====================
+Programming languages
+=====================
+
+|product-name| provides API for the following programming languages:
+
+- C
+- C++
+- C#
+- Dart
+- F#
+- Java
+- Kotlin
+- Objective C
+- Python
+- Swift
+- VB.NET
+
+.. note:: 
+  | Python packages are provided for 64-bit Windows and Linux operating systems.
+  | Python version 3.9 or 3.11 is required.

@@ -1,0 +1,202 @@
+.. index:: 
+  !DetectedFingerList.get Method
+  
+.. _detected_finger_list_get_class_method:
+
+===============================================================================
+DetectedFingerList.get Method
+===============================================================================
+
+Module: :ref:`DetectedFingerList<detected_finger_list_class>`
+
+Definition
+----------
+
+Gets an item of the DetectedFingerList object.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        get(self, index: int) -> DetectedFinger
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the DetectedFinger item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFinger<detected_finger_class>`
+          DetectedFinger item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        DetectedFinger get(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the DetectedFinger item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFinger<detected_finger_class>`
+          DetectedFinger item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public DetectedFinger Get(int index)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the DetectedFinger item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFinger<detected_finger_class>`
+          DetectedFinger item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public DetectedFinger get(int index) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` int
+          :guilabel:`in` Index of the DetectedFinger item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFinger<detected_finger_class>`
+          DetectedFinger item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func get(index: Int32) throws -> DetectedFinger
+
+      **Parameters**
+
+        .. line-block::
+
+          ``index`` Int32
+          :guilabel:`in` Index of the DetectedFinger item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          :ref:`DetectedFinger<detected_finger_class>`
+          DetectedFinger item to get.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3DetectedFingerList_Get (
+            ID3_DETECTED_FINGER_LIST hDetectedFingerList, 
+            int index, 
+            ID3_DETECTED_FINGER hDetectedFingerItem)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hDetectedFingerList`` :ref:`ID3_DETECTED_FINGER_LIST<detected_finger_list_class>`
+          :guilabel:`in` Handle to the DetectedFingerList object.
+
+          ``index`` int
+          :guilabel:`in` Index of the DetectedFinger item to get.
+
+          ``hDetectedFingerItem`` :ref:`ID3_DETECTED_FINGER<detected_finger_class>`
+          :guilabel:`out` DetectedFinger item to get.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

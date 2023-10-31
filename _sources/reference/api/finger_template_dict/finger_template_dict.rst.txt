@@ -1,0 +1,220 @@
+.. index:: 
+  !FingerTemplateDict Class
+
+.. _finger_template_dict_class:
+
+===============================================================================
+FingerTemplateDict Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  add<add>
+  clear<clear>
+  containsKey<contains_key>
+  count<count>
+  get<get>
+  getCount<get_count>
+  keys<keys>
+  remove<remove>
+  set<set>
+
+
+Definition
+----------
+.. line-block::
+    Represents a finger template dictionary.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerTemplateDict
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerTemplateDict implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class FingerTemplateDict
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerTemplateDict implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerTemplateDict
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerTemplateDict *ID3_FINGER_TEMPLATE_DICT;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        fingerTemplateDict = FingerTemplateDict()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del fingerTemplateDict
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final fingerTemplateDict = sdk.FingerTemplateDict();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        fingerTemplateDict.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var fingerTemplateDict = new FingerTemplateDict())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var fingerTemplateDict = new FingerTemplateDict()
+        // ...
+        fingerTemplateDict.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (FingerTemplateDict fingerTemplateDict = new FingerTemplateDict()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        FingerTemplateDict fingerTemplateDict = new FingerTemplateDict();
+        // ...
+        fingerTemplateDict.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var fingerTemplateDict: FingerTemplateDict? = nil
+        fingerTemplateDict = try FingerTemplateDict()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_TEMPLATE_DICT hFingerTemplateDict{};
+        int err = id3FingerTemplateDict_Initialize(&hFingerTemplateDict);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerTemplateDict_Dispose(&hFingerTemplateDict);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`count<finger_template_dict_count_class_member>`
+    - int
+    - Gets the number of elements contained in the dict
+  * - :ref:`keys<finger_template_dict_keys_class_member>`
+    - :ref:`StringList<string_list_class>`
+    - Gets a string list containing the keys in the dict.
+  * - operator [string key]
+    - :ref:`FingerTemplate<finger_template_class>`
+    - Gets or sets the element for the key in the dict.
+
+Iteration
+---------
+
+This class supports iteration in Dart, C#, Java and Python.
+
+The iteration is done on keys
+
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`add<finger_template_dict_add_class_method>`
+    - Adds an item to the FingerTemplateDict object.
+  * - :ref:`clear<finger_template_dict_clear_class_method>`
+    - Clears the FingerTemplateDict object.
+  * - :ref:`containsKey<finger_template_dict_contains_key_class_method>`
+    - Determines whether the FingerTemplateDictobject contains the specified key.
+  * - :ref:`get<finger_template_dict_get_class_method>`
+    - Gets an item of the FingerTemplateDict object.
+  * - :ref:`getCount<finger_template_dict_get_count_class_method>`
+    - Gets the number of elements in the FingerTemplateDict object.
+  * - :ref:`remove<finger_template_dict_remove_class_method>`
+    - Removes an element of the FingerTemplateDict object.
+  * - :ref:`set<finger_template_dict_set_class_method>`
+    - Sets an item of the FingerTemplateDict object.

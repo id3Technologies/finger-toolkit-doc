@@ -1,0 +1,79 @@
+.. index:: 
+  !PruningMethod Enumeration
+
+.. _pruning_method_enum:
+
+===============================================================================
+PruningMethod Enumeration
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+Definition
+----------
+
+.. line-block::
+    Enumerates the minutia pruning methods.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code-block:: Python
+
+      class PruningMethod
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code-block:: Dart
+
+      enum PruningMethod
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code-block:: C#
+
+      public enum PruningMethod
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code-block:: Java
+
+      public enum PruningMethod
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code-block:: Swift
+
+      public enum PruningMethod
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code-block:: C
+
+      typedef enum id3FingerPruningMethod
+
+
+Fields
+------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Value
+    - Description
+  * - ``byYx``
+    - 0
+    - Minutiae are sorted by Cartesian y-x ascending order. Native method.
+  * - ``byQuality``
+    - 1
+    - Minutiae with the highest qualities are kept.

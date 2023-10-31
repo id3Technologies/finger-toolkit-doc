@@ -1,0 +1,61 @@
+.. index:: 
+  !Point.y Property
+
+.. _point_y_struct_member:
+
+===============================================================================
+Point.y Property
+===============================================================================
+
+Structure: :ref:`Point<point_struct>`
+
+Definition
+----------
+
+Y-coordinate of the point.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      int y
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int y
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      int Y
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      int y
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      Int y
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int Y
+

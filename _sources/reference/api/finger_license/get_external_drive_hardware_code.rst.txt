@@ -1,0 +1,189 @@
+.. index:: 
+  !FingerLicense.getExternalDriveHardwareCode Method
+  
+.. _finger_license_get_external_drive_hardware_code_class_method:
+
+===============================================================================
+FingerLicense.getExternalDriveHardwareCode Method
+===============================================================================
+
+Module: :ref:`FingerLicense<finger_license_class>`
+
+Definition
+----------
+
+Retrieves the hardware code of the external drive you run the library on. This function works on Windows only.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        get_external_drive_hardware_code(hardware_code_type: LicenseHardwareCodeType, external_drive_path: str=None) -> str
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardware_code_type`` :ref:`LicenseHardwareCodeType<license_hardware_code_type_enum>`
+          :guilabel:`in` The requested hardware code type. Must be windowsUsb.
+
+          ``external_drive_path`` str
+          :guilabel:`in` On Windows to activate a license on a USB device, it must contain the path to the requested USB drive (e.g 'G:\').
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``str``
+          The device hardware code.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static String getExternalDriveHardwareCode(LicenseHardwareCodeType hardwareCodeType, String? externalDrivePath)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCodeType`` :ref:`LicenseHardwareCodeType<license_hardware_code_type_enum>`
+          :guilabel:`in` The requested hardware code type. Must be windowsUsb.
+
+          ``externalDrivePath`` String
+          :guilabel:`in` On Windows to activate a license on a USB device, it must contain the path to the requested USB drive (e.g 'G:\').
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          The device hardware code.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static string GetExternalDriveHardwareCode(LicenseHardwareCodeType hardwareCodeType, string externalDrivePath=null)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCodeType`` :ref:`LicenseHardwareCodeType<license_hardware_code_type_enum>`
+          :guilabel:`in` The requested hardware code type. Must be windowsUsb.
+
+          ``externalDrivePath`` string
+          :guilabel:`in` On Windows to activate a license on a USB device, it must contain the path to the requested USB drive (e.g 'G:\').
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``string``
+          The device hardware code.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static String getExternalDriveHardwareCode(LicenseHardwareCodeType hardwareCodeType, String externalDrivePath) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hardwareCodeType`` :ref:`LicenseHardwareCodeType<license_hardware_code_type_enum>`
+          :guilabel:`in` The requested hardware code type. Must be windowsUsb.
+
+          ``externalDrivePath`` String
+          :guilabel:`in` On Windows to activate a license on a USB device, it must contain the path to the requested USB drive (e.g 'G:\').
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``String``
+          The device hardware code.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLicense_GetExternalDriveHardwareCode (
+            id3FingerLicenseHardwareCodeType eHardwareCodeType, 
+            char * code, 
+            int * codeSize, 
+            const char * externalDrivePath)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``eHardwareCodeType`` :ref:`id3FingerLicenseHardwareCodeType<license_hardware_code_type_enum>`
+          :guilabel:`in` The requested hardware code type. Must be windowsUsb.
+
+          ``code`` char *
+          :guilabel:`out` The device hardware code.
+
+          ``codeSize`` int *
+          :guilabel:`in` Size of the 'code' buffer. Receives the minimum required buffer size to hold the 'code' string if the given one is too small (including the terminating NULL character), otherwise receives the number of characters in 'code' (excluding terminating NULL character).
+
+          ``externalDrivePath`` const char *
+          :guilabel:`in` On Windows to activate a license on a USB device, it must contain the path to the requested USB drive (e.g 'G:\').
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

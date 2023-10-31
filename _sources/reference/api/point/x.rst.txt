@@ -1,0 +1,61 @@
+.. index:: 
+  !Point.x Property
+
+.. _point_x_struct_member:
+
+===============================================================================
+Point.x Property
+===============================================================================
+
+Structure: :ref:`Point<point_struct>`
+
+Definition
+----------
+
+X-coordinate of the point.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      int x
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int x
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      int X
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      int x
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      Int x
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int X
+

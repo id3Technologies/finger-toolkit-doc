@@ -1,0 +1,124 @@
+.. index:: 
+  !FingerDetector.confidenceThreshold Property
+
+.. _finger_detector_confidence_threshold_class_member:
+
+===============================================================================
+FingerDetector.confidenceThreshold Property
+===============================================================================
+
+Module: :ref:`FingerDetector<finger_detector_class>`
+
+Type: int
+
+Definition
+----------
+
+Confidence threshold, from 0 to 100
+
+.. hint:: Default value is 70. Setting a high threshold reduces false detection but can increase the number of undetected fingers.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      confidence_threshold: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get confidenceThreshold => getConfidenceThreshold();
+      set confidenceThreshold(int value) => setConfidenceThreshold(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int confidenceThreshold
+      {
+          get => GetconfidenceThreshold();
+          set => SetconfidenceThreshold(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getConfidenceThreshold() throws FingerException
+      public void setConfidenceThreshold(int confidenceThreshold) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var confidenceThreshold: Int
+          get {
+              return Int(try! getConfidenceThreshold())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerDetector_GetConfidenceThreshold (ID3_FINGER_DETECTOR hFingerDetector, int * confidenceThreshold)
+      int id3FingerDetector_SetConfidenceThreshold (ID3_FINGER_DETECTOR hFingerDetector, int confidenceThreshold)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

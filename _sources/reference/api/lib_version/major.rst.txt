@@ -1,0 +1,61 @@
+.. index:: 
+  !LibVersion.major Property
+
+.. _lib_version_major_struct_member:
+
+===============================================================================
+LibVersion.major Property
+===============================================================================
+
+Structure: :ref:`LibVersion<lib_version_struct>`
+
+Definition
+----------
+
+Version.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      int major
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int major
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      int Major
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      int major
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      Int major
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int Major
+

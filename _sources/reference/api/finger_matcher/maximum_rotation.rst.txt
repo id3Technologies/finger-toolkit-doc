@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerMatcher.maximumRotation Property
+
+.. _finger_matcher_maximum_rotation_class_member:
+
+===============================================================================
+FingerMatcher.maximumRotation Property
+===============================================================================
+
+Module: :ref:`FingerMatcher<finger_matcher_class>`
+
+Type: int
+
+Definition
+----------
+
+Maximum supported rotation in degrees between two templates during matching. Range is [0-180].
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      maximum_rotation: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get maximumRotation => getMaximumRotation();
+      set maximumRotation(int value) => setMaximumRotation(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int maximumRotation
+      {
+          get => GetmaximumRotation();
+          set => SetmaximumRotation(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getMaximumRotation() throws FingerException
+      public void setMaximumRotation(int maximumRotation) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var maximumRotation: Int
+          get {
+              return Int(try! getMaximumRotation())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerMatcher_GetMaximumRotation (ID3_FINGER_MATCHER hFingerMatcher, int * maximumRotation)
+      int id3FingerMatcher_SetMaximumRotation (ID3_FINGER_MATCHER hFingerMatcher, int maximumRotation)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

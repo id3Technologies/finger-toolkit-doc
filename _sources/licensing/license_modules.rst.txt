@@ -1,0 +1,40 @@
+.. index:: 
+  !License modules
+
+.. _license_modules:
+
+===================
+License modules
+===================
+
+A license module gives access to some functionalities of the SDK as described below:
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Module
+    - Description
+  * - Finger
+    - Main module
+  * - FingerDetector
+    - Provides access to the :ref:`finger_detector_class`
+  * - FingerEncoder
+    - Provides access to the :ref:`finger_extractor_class`
+  * - FingerGPU
+    - Provides access to the GPU processing for the inference of AI models.
+  * - FingerIndexer
+    - Provides access to the :ref:`finger_indexer_class`
+  * - FingerMatcher
+    - Provides access to the :ref:`finger_matcher_class`
+  * - FingerPAD
+    - Provides access to the :ref:`finger_pad_class`
+  * - ServerEdition
+    - Identifies the server edition (Windows, Linux, Mac)
+  * - MobileEdition
+    - Identifies the mobile edition (Android, iOS)
+  * - EdgeEdition
+    - Identifies the edge edition (Raspberry PI)
+
+.. hint:: In your application, call the :ref:`finger_license_check_module_class_method` to find out whether a particular module is enabled in your license.

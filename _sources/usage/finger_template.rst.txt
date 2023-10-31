@@ -1,0 +1,98 @@
+.. _finger_template:
+
+===============
+Finger template
+===============
+
+A finger template is a representation of a fingerprint using the fundamental notion of minutiae and optionally
+proprietary information. It is the result of the :ref:`feature extraction<feature_extraction>` process applied to a :ref:`finger image<finger_image>`.
+
+A :ref:`FingerTemplate<finger_template_class>` object contains the following elements:
+
+* Minutia data
+* Proprietary fingerprint information such as :ref:`minutia embeddings<minutia_embedding>` and/or :ref:`finger embedding<finger_embedding>`
+* Image information
+
+  - Height and width
+  - Horizontal and vertical resolution
+  - Impression type
+  - Position of the finger
+  - Image quality
+
+* Capture device information
+
+  - Certification
+  - Technology
+  - Type identifier (vendor specific)
+  - Vendor identifier (registered by IBIA)
+
+It can be stored in a supported standard format for further usage. See :ref:`biometric_standards` for the list of supported formats.
+
+.. note:: 
+  Several templates from one or more fingers can be grouped into a single :ref:`finger_template_record_class`.
+
+Minutiae
+========
+Minutiae are points located at the places in the fingerprint image where friction ridges end or split into two
+ridges. Describing a fingerprint in terms of the location and direction of these ridge endings and bifurcations
+provides sufficient information to reliably determine whether two fingerprint records are from the same finger.
+A typical good-quality fingerprint image contains about 20-70 minutiae points; the actual number depends on
+the size of the sensor surface and how the user places his or her finger on the sensor. Each minutia has a
+"type" associated with it. There are two major types of minutiae:
+
+- Ridge endings
+- Ridge bifurcations
+
+.. image:: /_static/images/minutiae.jpg
+
+Minutia placement
+-----------------
+To ensure the best interoperability with other systems, the minutia placement is as follow:
+
+• A minutia on a ridge ending is defined as the valley skeleton bifurcation point.
+• A minutia on a ridge bifurcation is defined as the ridge skeleton bifurcation point.
+
+.. image:: /_static/images/MinutiaPlacementOnARidgeEnding.jpg
+    :width: 40%
+.. image:: /_static/images/MinutiaPlacementOnARidgeBifurcation.jpg
+    :width: 40%
+
+Minutia direction
+-----------------
+The minutia angle is measured increasing counter-clockwise starting from the horizontal axis to the right. The
+angle granularity is 1.40625 (360/256) degrees.
+
+Proprietary information
+=======================
+
+.. _minutia_embedding:
+
+Minutia embedding
+------------------
+A minutia embedding is a local signature representing the neighboorhood of a minutia. It is generated using a deep learning model (see :ref:`ai_models` for details). It is complementary to the positions and angles of the minutiae described above.
+
+Those signatures are stored in the proprietary section of a finger template at a cost of 16 bytes per minutia.
+
+.. _finger_embedding:
+
+Finger embedding
+----------------
+A finger embedding is a global signature of a fingerprint. It is generated using a deep learning model (see :ref:`ai_models` for details). This
+signature contains texture details of the whole fingerprint which is complementary with both the minutiae positions, angles and textures described above.
+
+This signature is stored in the proprietary section of a finger template at a cost of **128 bytes**.
+
+Template quality
+================
+|product-name| computes a quality for each created template. This value between 0 and 100 aims at predicting
+the ability of a template to perform well at matching. A very high template quality means that error rates
+during verification will be as low as possible. On the contrary, a low template quality will induce errors during
+verification and more precisely false rejections: a genuine person will possibly be rejected by the matching
+algorithm because of the poor quality of the presented template. This is why it is important to check template
+quality in an enrollment process.
+
+See also
+========
+- :ref:`feature_extraction`
+- :ref:`finger_template_class`
+- :ref:`finger_template_record_class`

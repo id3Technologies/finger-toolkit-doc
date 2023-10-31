@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerImage.verticalScanResolution Property
+
+.. _finger_image_vertical_scan_resolution_class_member:
+
+===============================================================================
+FingerImage.verticalScanResolution Property
+===============================================================================
+
+Module: :ref:`FingerImage<finger_image_class>`
+
+Type: int
+
+Definition
+----------
+
+Vertical scan resolution of the image (in DPI). Independent from image rescaling.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      vertical_scan_resolution: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get verticalScanResolution => getVerticalScanResolution();
+      set verticalScanResolution(int value) => setVerticalScanResolution(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int verticalScanResolution
+      {
+          get => GetverticalScanResolution();
+          set => SetverticalScanResolution(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getVerticalScanResolution() throws FingerException
+      public void setVerticalScanResolution(int verticalScanResolution) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var verticalScanResolution: Int
+          get {
+              return Int(try! getVerticalScanResolution())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerImage_GetVerticalScanResolution (ID3_FINGER_IMAGE hFingerImage, int * verticalScanResolution)
+      int id3FingerImage_SetVerticalScanResolution (ID3_FINGER_IMAGE hFingerImage, int verticalScanResolution)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

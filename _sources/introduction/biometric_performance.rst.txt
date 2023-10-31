@@ -1,0 +1,105 @@
+.. _biometric_performance:
+
+=====================
+Biometric performance
+=====================
+
+Factors affecting biometric accuracy
+====================================
+
+The overall accuracy of a fingerprint recognition system may vary according to a number of factors such as:
+
+- Quality of the sensor,
+- Quality of the fingerprint pose,
+- Skin condition (dry, wet, scars),
+- Population under test.
+- etc.
+
+Performance metrics
+===================
+
+False non match rate (FNMR) is the proportion of mated comparisons below a threshold set to achieve the
+false match rate (FMR) specified. FMR is the proportion of impostor comparisons at or above that threshold.
+Since FMR and FNMR is in inverse proportion to each other, choosing the operational threshold is a trade-off
+between system security and user convenience.
+
+NIST MINEX III evaluation
+=========================
+
+The MINEX III was initiated by the National Institute of Standards and Technologies (NIST). It aims at measuring
+the performance of automated fingerprint recognition technologies using minutiae data only for interoperability
+among vendors.
+
+Datasets
+--------
+As stated in `MINEX III test plan <https://github.com/usnistgov/minex/blob/master/minexiii/testplan.pdf>`_:
+
+*§3.2. Resolution and dimensions*
+
+"All images for this test will employ 500 pixels per inch resolution (horizontal and vertical). The dimensions of
+the fingerprint images will vary from 150-812 pixels in width, and 166-1000 pixels in height."
+
+*§3.3. Sensor and impression types*
+
+"All images used for testing in MINEX III [...] have been obtained from live-scan sensors (Smiths-Heimann
+ACCO 1394 and Cross Match 300A). All images tested in MINEX III are plain impression type images."
+
+Results
+-------
+The overall ranking can be found here: `<https://www.nist.gov/itl/iad/image-group/minutiae-interoperability-exchange-minex-iii>`_.
+
+The latest reports of the MINEX III for id3 algorithms can be found `here <https://pages.nist.gov/minex/results/reportcards/pdf/minexiii/id3+13B1_generator_report.pdf and https://pages.nist.gov/minex/results/reportcards/pdf/minexiii/id3+13B1_matcher_report.pdf>`_.
+
+The finger minutia detector 3B of this SDK corresponds to the template generator of the *id3_13B1* submission.
+The finger minutia matcher of this SDK corresponds to the template matcher of the *id3_13B1* submission.
+
+
+Internal evaluation
+======================
+
+To help the id3 Finger SDK user to choose what data to extract from a fingerprint depending on its use case,
+we evaluate the various possible fusions on some public datasets.
+
+Datasets
+--------
+We evaluate internally our algorithms on the FVC datasets (2000, 2002 and 2004). More details can be found at the following URLs:
+
+- `<http://bias.csr.unibo.it/fvc2000/databases.asp>`_
+- `<http://bias.csr.unibo.it/fvc2002/databases.asp>`_
+- `<http://bias.csr.unibo.it/fvc2004/databases.asp>`_
+  
+Results
+-------
+The following graph presents the various possible combinations of match fusions using id3 Finger SDK.
+
+.. image:: /_static/images/det_fvc.jpg
+
+.. list-table:: 
+    :width: 100%
+    :widths: 50 25 25
+    :header-rows: 1
+
+    * - Matching method
+      - FNMR @ FMR = 1/1,000
+      - FNMR @ FMR = 1/10,000
+
+    * - MINEX only 
+      - 1.42%
+      - 2.01%
+
+    * - MINEX + minutia embeddings
+      - 0.98% 
+      - 1.43%
+
+    * - MINEX + finger embedding
+      - 0.05%
+      - 0.15%
+
+    * - MINEX + minutia embeddings + finger embedding
+      - 0.04%
+      - 0.12%
+
+.. hint:: 
+    - In the context of interoperability, use minutiae only.
+    - In the context of a "small" sensor (under 200x200px at 500dpi), use minutiae and minutia embeddings.
+    - In the context of a large sensor (above 200x200px at 500dpi), use minutiae, minutia embeddings and finger embedding.

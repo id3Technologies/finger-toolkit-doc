@@ -1,0 +1,122 @@
+.. index:: 
+  !FingerTemplate.ridgeEndingType Property
+
+.. _finger_template_ridge_ending_type_class_member:
+
+===============================================================================
+FingerTemplate.ridgeEndingType Property
+===============================================================================
+
+Module: :ref:`FingerTemplate<finger_template_class>`
+
+Type: int
+
+Definition
+----------
+
+Method used to determine the location of a ridge ending with respect to the ISO/IEC 19794-2:2011. 0 indicates that the minutia was located at the intersection of 3 valleys, 1 means that it was located using the ridge skeleton endpoint.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      ridge_ending_type: int
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      int get ridgeEndingType => getRidgeEndingType();
+      set ridgeEndingType(int value) => setRidgeEndingType(value);
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public int ridgeEndingType
+      {
+          get => GetridgeEndingType();
+          set => SetridgeEndingType(ref value);
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public int getRidgeEndingType() throws FingerException
+      public void setRidgeEndingType(int ridgeEndingType) throws FingerException
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public var ridgeEndingType: Int
+          get {
+              return Int(try! getRidgeEndingType())
+          }
+      }
+
+
+    **Exceptions**
+
+      .. line-block::
+
+        :ref:`FingerException<finger_exception>`
+        An error has occurred during Finger Library execution.
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      int id3FingerTemplate_GetRidgeEndingType (ID3_FINGER_TEMPLATE hFingerTemplate, int * ridgeEndingType)
+      int id3FingerTemplate_SetRidgeEndingType (ID3_FINGER_TEMPLATE hFingerTemplate, int ridgeEndingType)
+
+    **Returns**
+   
+      .. line-block::
+
+        ``int``
+        An error code.
+        See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+

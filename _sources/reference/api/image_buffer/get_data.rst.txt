@@ -1,0 +1,162 @@
+.. index:: 
+  !ImageBuffer.getData Method
+  
+.. _image_buffer_get_data_class_method:
+
+===============================================================================
+ImageBuffer.getData Method
+===============================================================================
+
+Module: :ref:`ImageBuffer<image_buffer_class>`
+
+Definition
+----------
+
+Gets the image buffer data.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        get_data(self) -> bytearray
+
+      **Returns**
+
+        .. line-block::
+
+          ``bytearray``
+          Data of the image buffer object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        Uint8List getData()
+
+      **Returns**
+
+        .. line-block::
+
+          ``Uint8List``
+          Data of the image buffer object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public byte[] GetData()
+
+      **Returns**
+
+        .. line-block::
+
+          ``byte[]``
+          Data of the image buffer object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public byte[] getData() throws FingerException
+
+      **Returns**
+
+        .. line-block::
+
+          ``byte[]``
+          Data of the image buffer object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public func getData() throws -> [UInt8]
+
+      **Returns**
+
+        .. line-block::
+
+          ``[UInt8]``
+          Data of the image buffer object.
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerImageBuffer_GetData (
+            ID3_FINGER_IMAGE_BUFFER hImageBuffer, 
+            unsigned char * data, 
+            int * dataSize)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``hImageBuffer`` :ref:`ID3_FINGER_IMAGE_BUFFER<image_buffer_class>`
+          :guilabel:`in` Handle to the ImageBuffer object.
+
+          ``data`` unsigned char *
+          :guilabel:`out` Data of the image buffer object.
+
+          ``dataSize`` int *
+          :guilabel:`in` Size of the 'data' buffer. Receives the number of elements in the 'data' array.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

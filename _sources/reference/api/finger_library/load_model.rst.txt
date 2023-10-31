@@ -1,0 +1,198 @@
+.. index:: 
+  !FingerLibrary.loadModel Method
+  
+.. _finger_library_load_model_class_method:
+
+===============================================================================
+FingerLibrary.loadModel Method
+===============================================================================
+
+Module: :ref:`FingerLibrary<finger_library_class>`
+
+Definition
+----------
+
+Loads a model into memory from the specified directory.
+
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        @staticmethod
+        load_model(model_path: str, finger_model: FingerModel, processing_unit: ProcessingUnit) -> None
+
+      **Parameters**
+
+        .. line-block::
+
+          ``model_path`` str
+          :guilabel:`in` The path to directory containing the AI model files.
+
+          ``finger_model`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be loaded.
+
+          ``processing_unit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit to be used.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        static void loadModel(String? modelPath, FingerModel fingerModel, ProcessingUnit processingUnit)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``modelPath`` String
+          :guilabel:`in` The path to directory containing the AI model files.
+
+          ``fingerModel`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be loaded.
+
+          ``processingUnit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit to be used.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static void LoadModel(string modelPath, FingerModel fingerModel, ProcessingUnit processingUnit)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``modelPath`` string
+          :guilabel:`in` The path to directory containing the AI model files.
+
+          ``fingerModel`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be loaded.
+
+          ``processingUnit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit to be used.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public static void loadModel(String modelPath, FingerModel fingerModel, ProcessingUnit processingUnit) throws FingerException
+
+      **Parameters**
+
+        .. line-block::
+
+          ``modelPath`` String
+          :guilabel:`in` The path to directory containing the AI model files.
+
+          ``fingerModel`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be loaded.
+
+          ``processingUnit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit to be used.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public static func loadModel(modelPath: String, fingerModel: FingerModel, processingUnit: ProcessingUnit) throws
+
+      **Parameters**
+
+        .. line-block::
+
+          ``modelPath`` String
+          :guilabel:`in` The path to directory containing the AI model files.
+
+          ``fingerModel`` :ref:`FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be loaded.
+
+          ``processingUnit`` :ref:`ProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit to be used.
+
+
+      **Exceptions**
+
+        .. line-block::
+
+          :ref:`FingerException<finger_exception>`
+          An error has occurred during Finger Library execution.
+
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        int id3FingerLibrary_LoadModel (
+            const char * modelPath, 
+            id3FingerModel eFingerModel, 
+            id3FingerProcessingUnit eProcessingUnit)
+
+      **Parameters**
+
+        .. line-block::
+
+          ``modelPath`` const char *
+          :guilabel:`in` The path to directory containing the AI model files.
+
+          ``eFingerModel`` :ref:`id3FingerModel<finger_model_enum>`
+          :guilabel:`in` The AI model to be loaded.
+
+          ``eProcessingUnit`` :ref:`id3FingerProcessingUnit<processing_unit_enum>`
+          :guilabel:`in` The processing unit to be used.
+
+
+      **Returns**
+
+        .. line-block::
+
+          ``int``
+          An error code.
+          See :ref:`id3FingerError<finger_error_enum>` file for the list of possible error codes.
+
+

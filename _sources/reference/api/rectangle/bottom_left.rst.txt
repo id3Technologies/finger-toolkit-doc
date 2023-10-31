@@ -1,0 +1,61 @@
+.. index:: 
+  !Rectangle.bottomLeft Property
+
+.. _rectangle_bottom_left_struct_member:
+
+===============================================================================
+Rectangle.bottomLeft Property
+===============================================================================
+
+Structure: :ref:`Rectangle<rectangle_struct>`
+
+Definition
+----------
+
+Bottom-left corner of the rectangle.
+
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      Point bottom_left
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      Point bottomLeft
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      Point BottomLeft
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      Point bottomLeft
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      Point bottomLeft
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      id3FingerPoint * BottomLeft
+

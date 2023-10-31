@@ -1,0 +1,88 @@
+.. index:: 
+  !FingerMinutiaPair Structure
+
+.. _finger_minutia_pair_struct:
+
+===============================================================================
+FingerMinutiaPair Structure
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  probeIndex<probe_index>
+  referenceIndex<reference_index>
+  score<score>
+
+Definition
+----------
+.. line-block::
+    Represents a finger minutia pair.
+
+.. tab-set::
+
+  .. tab-item:: Python
+    :sync: Python
+
+    .. code:: Python
+
+      class FingerMinutiaPair
+
+  .. tab-item:: Dart
+    :sync: Dart
+
+    .. code:: Dart
+
+      class FingerMinutiaPair
+
+  .. tab-item:: C#
+    :sync: C#
+
+    .. code:: C#
+
+      public partial struct FingerMinutiaPair
+
+  .. tab-item:: Java
+    :sync: Java
+
+    .. code:: Java
+
+      public class FingerMinutiaPair
+
+  .. tab-item:: Swift
+    :sync: Swift
+
+    .. code:: Swift
+
+      public typealias FingerMinutiaPair = id3FingerMinutiaPair
+
+  .. tab-item:: C
+    :sync: C
+
+    .. code:: C
+
+      typedef struct id3FingerMinutiaPair
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 5 5 90
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`probeIndex<finger_minutia_pair_probe_index_struct_member>`
+    - int
+    - Index of the minutia in the probe template.
+  * - :ref:`referenceIndex<finger_minutia_pair_reference_index_struct_member>`
+    - int
+    - Index of the minutia in the reference template.
+  * - :ref:`score<finger_minutia_pair_score_struct_member>`
+    - int
+    - Internal comparison score of this minutia pair.

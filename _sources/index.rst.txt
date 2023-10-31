@@ -1,0 +1,47 @@
+=================================================
+|product-name|
+=================================================
+
+|product-name| is a cross-platform library aimed at system integrators willing to quickly add state-of-the-art,
+standardized and sensor independent fingerprint recognition technology to their products. 
+
+It is available as a Software Development Kit (SDK) offering a comprehensive interface to simplify integration of the library on servers, desktops/laptops, mobile and edge devices.
+
+This document is the developer's guide of |product-name|.
+
+Contents
+========
+
+.. toctree::
+   :maxdepth: 1
+
+   introduction/introduction
+   requirements/requirements
+   quick_start/quick_start
+   licensing/licensing
+   distribution/distribution
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Reference
+
+   Usage<usage/usage>
+   reference/api/api
+
+.. toctree::
+   :maxdepth: 1
+   :caption: ABOUT
+
+   about/release_notes
+   about/license_agreement
+   about/third-party-libraries
+   about/faq
+   about/troubleshooting
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+

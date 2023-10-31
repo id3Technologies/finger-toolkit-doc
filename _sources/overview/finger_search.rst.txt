@@ -1,0 +1,22 @@
+.. index:: 
+  !Fingerprint search
+
+.. _finger_search:
+
+==================
+Fingerprint search
+==================
+
+Fingerprint search is the process in which a probe template is searched against the reference templates of more than one subject. It returns a candidate list.
+
+The :ref:`FingerMatcher<finger_matcher_class>` module provides a search method that performs a one-to-many search of a biometric probe against a previously initialized dictionary of biometric references. This method is generally used when the database size is relatively small (up to 1000 templates).
+
+For large databases (over 1000 templates), the :ref:`FingerIndexer<finger_indexer_class>` module offers a more efficient way of performing a one-to-many search. From an index file created from a list of :ref:`finger templates<finger_template_class>`, it uses modern indexing techniques for fast, lossless searching.
+
+
+See also
+========
+
+- :ref:`finger_extractor_class`
+- :ref:`finger_indexer_class`
+- :ref:`finger_matcher_class`

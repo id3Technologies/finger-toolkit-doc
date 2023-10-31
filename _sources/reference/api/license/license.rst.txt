@@ -1,0 +1,144 @@
+.. index:: 
+  !License Class
+
+.. _license_class:
+
+===============================================================================
+License Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  activate<activate>
+  activateActivationKey<activate_activation_key>
+  activateActivationKeyBuffer<activate_activation_key_buffer>
+  activateBuffer<activate_buffer>
+  activateSerialKey<activate_serial_key>
+  activateSerialKeyBuffer<activate_serial_key_buffer>
+  checkModule<check_module>
+  getExpiryDate<get_expiry_date>
+  getExternalDriveHardwareCode<get_external_drive_hardware_code>
+  getHostHardwareCode<get_host_hardware_code>
+  getLicenseFileHardwareCode<get_license_file_hardware_code>
+  getLicenseFileSerial<get_license_file_serial>
+  getLicenseName<get_license_name>
+  getLicenseOwner<get_license_owner>
+  getLicensePath<get_license_path>
+  getLicenseType<get_license_type>
+  getModuleCount<get_module_count>
+  getModuleName<get_module_name>
+  getModuleValue<get_module_value>
+  getProductReference<get_product_reference>
+  getRemainingDays<get_remaining_days>
+  loadLicense<load_license>
+  loadLicenseBuffer<load_license_buffer>
+  reactivate<reactivate>
+  reactivateBuffer<reactivate_buffer>
+
+
+Definition
+----------
+.. line-block::
+    This class represents a License
+
+.. tab-set::
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class FingerLicense
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public static partial class FingerLicense
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class FingerLicense
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class FingerLicense
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class FingerLicense
+
+
+Static Methods
+--------------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`activate<license_activate_class_method>`
+    - Retrieves a license file using id3 account credentials and a product reference.
+  * - :ref:`activateActivationKey<license_activate_activation_key_class_method>`
+    - Retrieves a license file using an activation key.
+  * - :ref:`activateActivationKeyBuffer<license_activate_activation_key_buffer_class_method>`
+    - Retrieves a license file buffer using an activation key.
+  * - :ref:`activateBuffer<license_activate_buffer_class_method>`
+    - Retrieves a license file buffer using id3 account credentials and a product reference.
+  * - :ref:`activateSerialKey<license_activate_serial_key_class_method>`
+    - Retrieves a license file using a serial key.
+  * - :ref:`activateSerialKeyBuffer<license_activate_serial_key_buffer_class_method>`
+    - Retrieves a license file buffer using a serial key.
+  * - :ref:`checkModule<license_check_module_class_method>`
+    - Checks if a module is present in the license.
+  * - :ref:`getExpiryDate<license_get_expiry_date_class_method>`
+    - Retrieves the license expiry date.
+  * - :ref:`getExternalDriveHardwareCode<license_get_external_drive_hardware_code_class_method>`
+    - Retrieves the hardware code of the external drive you run the library on. This function works on Windows only.
+  * - :ref:`getHostHardwareCode<license_get_host_hardware_code_class_method>`
+    - Retrieves the hardware code of the device using the requested hardware code type.
+  * - :ref:`getLicenseFileHardwareCode<license_get_license_file_hardware_code_class_method>`
+    - Retrieves the hardware code of the previously loaded license file.
+  * - :ref:`getLicenseFileSerial<license_get_license_file_serial_class_method>`
+    - Retrieves the serial of the previously loaded license file.
+  * - :ref:`getLicenseName<license_get_license_name_class_method>`
+    - Retrieves the license name.
+  * - :ref:`getLicenseOwner<license_get_license_owner_class_method>`
+    - Retrieves the license owner.
+  * - :ref:`getLicensePath<license_get_license_path_class_method>`
+    - Retrieves the license path.
+  * - :ref:`getLicenseType<license_get_license_type_class_method>`
+    - Retrieves the license type.
+  * - :ref:`getModuleCount<license_get_module_count_class_method>`
+    - Retrieves the number of modules in the license.
+  * - :ref:`getModuleName<license_get_module_name_class_method>`
+    - Retrieves the name of a given module in the license.
+  * - :ref:`getModuleValue<license_get_module_value_class_method>`
+    - Retrieves the value of a given module in the license.
+  * - :ref:`getProductReference<license_get_product_reference_class_method>`
+    - Retrieves the license product reference.
+  * - :ref:`getRemainingDays<license_get_remaining_days_class_method>`
+    - Retrieves the number of trial remaining days.
+  * - :ref:`loadLicense<license_load_license_class_method>`
+    - Loads and checks a license from a file.
+  * - :ref:`loadLicenseBuffer<license_load_license_buffer_class_method>`
+    - Loads and checks a license from a buffer.
+  * - :ref:`reactivate<license_reactivate_class_method>`
+    - Reactivates a license file using hardware code and product reference.
+  * - :ref:`reactivateBuffer<license_reactivate_buffer_class_method>`
+    - Reactivates a license file buffer using hardware code and product reference.

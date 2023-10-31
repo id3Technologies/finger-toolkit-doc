@@ -1,0 +1,214 @@
+.. index:: 
+  !StringList Class
+
+.. _string_list_class:
+
+===============================================================================
+StringList Class
+===============================================================================
+
+Namespace: :ref:`id3.Finger<reference_api>`
+
+.. toctree::
+  :hidden:
+
+  add<add>
+  clear<clear>
+  count<count>
+  get<get>
+  getCount<get_count>
+  removeAt<remove_at>
+  resize<resize>
+  set<set>
+
+
+Definition
+----------
+.. line-block::
+    Represents a list of strings.
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        class StringList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        class StringList implements Finalizable
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        public partial class StringList
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        public class StringList implements AutoCloseable, Serializable
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        public class StringList
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        typedef struct id3FingerStringList *ID3_FINGER_STRING_LIST;
+
+
+
+Usage
+-----
+
+.. tab-set::
+
+    .. tab-item:: Python
+      :sync: Python
+
+      .. code:: Python
+
+        stringList = StringList()
+        # ...
+
+      **Explicit destruction**
+
+      .. code:: Python
+
+        # ...
+        del stringList
+
+    .. tab-item:: Dart
+      :sync: Dart
+
+      .. code:: Dart
+
+        final stringList = sdk.StringList();
+        // ...
+
+      **Explicit destruction**
+
+      .. code:: Dart
+
+        // ...
+        stringList.dispose()
+
+    .. tab-item:: C#
+      :sync: C#
+
+      .. code:: C#
+
+        using (var stringList = new StringList())
+        {
+           // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: C#
+
+        var stringList = new StringList()
+        // ...
+        stringList.Dispose()
+
+    .. tab-item:: Java
+      :sync: Java
+
+      .. code:: Java
+
+        try (StringList stringList = new StringList()) {
+        // ...
+        }
+
+      **Explicit destruction**
+
+      .. code:: Java
+
+        StringList stringList = new StringList();
+        // ...
+        stringList.close();
+
+    .. tab-item:: Swift
+      :sync: Swift
+
+      .. code:: Swift
+
+        private var stringList: StringList? = nil
+        stringList = try StringList()
+
+    .. tab-item:: C
+      :sync: C
+
+      .. code:: C
+
+        ID3_FINGER_STRING_LIST hStringList{};
+        int err = id3FingerStringList_Initialize(&hStringList);
+        if (err == ID3_SUCCESS) {
+            // ...
+            id3FingerStringList_Dispose(&hStringList);
+        }
+
+
+Properties
+----------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 5 65
+  :header-rows: 1
+
+  * - Name
+    - Type
+    - Description
+  * - :ref:`count<string_list_count_class_member>`
+    - int
+    - Gets the number of elements contained in the list
+  * - operator [int index]
+    - string
+    - Gets or sets the element at the specified index in the list.
+
+Iteration
+---------
+
+This class supports iteration in Dart, C#, Java and Python.
+
+
+Methods
+-------
+
+.. list-table:: 
+  :width: 100%
+  :widths: 30 70
+  :header-rows: 1
+
+  * - Name
+    - Description
+  * - :ref:`add<string_list_add_class_method>`
+    - Adds an item to the StringList object.
+  * - :ref:`clear<string_list_clear_class_method>`
+    - Clears the StringList object.
+  * - :ref:`get<string_list_get_class_method>`
+    - Gets an item of the StringList object.
+  * - :ref:`getCount<string_list_get_count_class_method>`
+    - Gets the number of elements in the StringList object.
+  * - :ref:`removeAt<string_list_remove_at_class_method>`
+    - Removes an element of the StringList object.
+  * - :ref:`resize<string_list_resize_class_method>`
+    - StringList object.
+  * - :ref:`set<string_list_set_class_method>`
+    - Sets an item of the StringList object.

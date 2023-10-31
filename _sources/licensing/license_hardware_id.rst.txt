@@ -1,0 +1,58 @@
+.. index:: 
+  !License Hardware ID
+
+.. _license_hardware_id:
+
+=====================
+License hardware code
+=====================
+
+Each license is bound to a hardware identifier which is calculated according to the target platform.
+
+.. list-table:: 
+  :width: 100%
+  :widths: 20 80
+  :header-rows: 1
+
+  * - Platform
+    - Hardware ID
+     
+  * - Windows OS
+    - 1. NetBIOS name + Volume ID
+      2. Serial number of a USB key (see :ref:`dongle_license`)
+
+  * - Linux OS
+    - Host name + Machine ID
+
+  * - Android
+    - 1. Android ID (unique to each combination of app-signing key, user, and device). `More information. <https://developer.android.com/reference/android/provider/Settings.Secure.html#ANDROID_ID>`_
+      2. Package name (available on request)
+
+  * - iOS
+    - 1. Vendor identifier, or
+      2. Bundle ID (available on request)
+
+  * - macOS
+    - Host name + machine ID
+
+  * - Jetson Nano
+    - Host name + machine ID + serial number
+
+.. warning:: Any change on one of these items may invalidate exsiting licenses on the computer.
+
+.. important:: 
+    On Android and iOS platforms, it is not possible, for reasons of confidentiality, to retrieve a truly unique hardware identifier. The side effect is that the hardware code is different (but fixed) for every application you develop, even on the same device.
+
+The hardware code is in the form ``XXXXXXX-XXXXXXX-XXXXXXX-XXXXX00``
+The last two digits identify the platform:
+
+- ``01``: Windows OS
+- ``03``: Linux OS
+- ``05``: Android
+- ``06``: Android package name
+- ``07``: iOS
+- ``08``: macOS
+- ``09``: Jetson Nano
+- ``10``: iOS Bundle ID
+- ``11``: Dongle (Windows only)
+
